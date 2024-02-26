@@ -449,41 +449,6 @@ li > pre {
   display: none !important;
 }
 
-.pagination {
-  display: flex;
-}
-.pagination span {
-  border: 1px solid #ccc;
-  border-right: 0 none;
-  display: block;
-}
-.pagination span.active, .pagination span.disabled {
-  cursor: default;
-  color: #ccc;
-  padding: 5px 10px;
-}
-.pagination span a {
-  color: #007f7f;
-  display: block;
-  text-decoration: none;
-  border: 0 none;
-  padding: 5px 10px;
-}
-.pagination span a:hover {
-  background-color: #f0f0f0;
-  color: #222;
-}
-.pagination .prev, .pagination span.current:first-child {
-  border-right: 0 none;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.pagination .next, .pagination span.current:last-child {
-  border-right: 1px solid #ccc;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
 .light_gradient {
   background-image: linear-gradient(#f0f0ef, #e8e8e8);
 }
@@ -618,6 +583,146 @@ footer #footer-inner p {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.full-entry .timestamp {
+  display: block;
+  color: #949494;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.full-entry p {
+  text-indent: 10px;
+}
+.full-entry p span,
+.full-entry p div,
+.full-entry p ul,
+.full-entry p ol,
+.full-entry p li,
+.full-entry p img,
+.full-entry p a {
+  text-indent: 0;
+}
+.full-entry .callout {
+  background: #fffbcd;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.full-entry .image_gallery {
+  text-align: center;
+}
+.full-entry .image_gallery .image_container {
+  display: inline-block;
+}
+.full-entry .image_container {
+  max-width: 280px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+}
+.full-entry .image_container a {
+  width: 100%;
+  display: block;
+}
+.full-entry .image_container img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.full-entry .image_container p {
+  text-align: left;
+  font-size: 0.9em;
+  margin-bottom: 0;
+  text-indent: 0;
+}
+.full-entry .image_container.left_aligned {
+  float: left;
+  margin-right: 10px;
+}
+.full-entry .image_container.right_aligned {
+  float: right;
+  margin-left: 10px;
+}
+.full-entry table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
+.full-entry table th {
+  font-weight: bold;
+}
+.full-entry table th,
+.full-entry table td {
+  padding: 5px;
+}
+.full-entry pre {
+  background-color: #fff;
+  padding: 0.5em 1em;
+}
+.full-entry iframe {
+  max-width: 100%;
+}
+.full-entry .inline_code {
+  padding-left: 3px;
+  padding-right: 3px;
+  font-family: monospace;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-style: normal;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+  border-bottom: 1px dotted #222; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  display: none;
+  font-size: 0.8em;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 30rem;
+  background-color: #fff259;
+  color: #000;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -15rem;
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff259 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  display: block;
+  opacity: 1;
 }
 
 @media all and (max-width: 1440px) {

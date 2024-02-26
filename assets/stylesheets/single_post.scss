@@ -1,7 +1,8 @@
 @use 'shared/icomoon';
 @use 'modern-normalize/modern-normalize';
 @use 'blog/global';
-@use 'blog/pagination';
 @use 'blog/main_blocks';
 @use 'blog/posts';
+@use 'blog/post';
+@use 'blog/tooltip';
 @use 'blog/conditional';

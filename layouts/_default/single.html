@@ -1,3 +1,40 @@
+{{ define "css" }}
+{{ partial "css/styles.html" (dict "stylesheetPath" "stylesheets/single_post.scss") }}
+{{ end }}
+
+{{ define "other_meta" }}
+<meta property="og:image" content="{{ .Params.meta_img }}">
+<meta property="og:type" content="blog">
+<meta property="og:title" content="{{ .Title }} |  by Ilya Krukowski">
+<meta property="og:description" content="{{ .Params.meta_desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="Ilya Krukowski">
+{{ end }}
+
+{{ define "desc" }}{{.Params.meta_desc}}{{end}}
+{{ define "main_title" }}{{.Title}}{{end}}
+
 {{ define "main" }}
-  {{ .Content }}  
+<div id="main-wrapper">
+  <div id="content-wrapper">
+    {{ partial "header/top.html" . }}
+
+    <div id="content">
+      <h1>{{.Title}}</h1>
+
+      <article class="full-entry group">
+        <time class="timestamp" datetime="{{ .Date }}">
+          {{ .Date.Format "January 2, 2006" }}
+        </time>
+
+        <section id="post-body">
+          {{ .Content }}
+        </section>
+      </article>
+    </div>
+    <div class="push"></div>
+  </div>
+
+  {{ partial "footer/footer.html" . }}
+</div>
 {{ end }}

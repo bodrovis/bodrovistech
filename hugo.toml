@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://bodrovis.tech/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Ilya Krukowski'
 
 enableRobotsTXT = true
 

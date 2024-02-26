@@ -1,0 +1,102 @@
+.full-entry {
+  .timestamp {
+    display: block;
+    color: #949494;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    text-indent: 10px;
+    span,
+    div,
+    ul,
+    ol,
+    li,
+    img,
+    a {
+      text-indent: 0;
+    }
+  }
+
+  .callout {
+    background: #fffbcd;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image_gallery {
+    text-align: center;
+    .image_container {
+      display: inline-block;
+    }
+  }
+  .image_container {
+    max-width: 280px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    a {
+      width: 100%;
+      display: block;
+    }
+    img {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    p {
+      text-align: left;
+      font-size: 0.9em;
+      margin-bottom: 0;
+      text-indent: 0;
+    }
+  }
+
+  .image_container.left_aligned {
+    float: left;
+    margin-right: 10px;
+  }
+
+  .image_container.right_aligned {
+    float: right;
+    margin-left: 10px;
+  }
+
+  table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    th {
+      font-weight: bold;
+    }
+    th,
+    td {
+      padding: 5px;
+    }
+  }
+
+  pre {
+    background-color: #fff;
+    padding: 0.5em 1em;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  .inline_code {
+    padding-left: 3px;
+    padding-right: 3px;
+    font-family: monospace;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-style: normal;
+  }
+}

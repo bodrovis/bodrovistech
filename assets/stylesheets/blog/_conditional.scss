@@ -15,12 +15,6 @@
   }
 }
 
-@media all and (max-width: 1000px) {
-  #cast-index {
-    width: 200px;
-  }
-}
-
 @media all and (max-width: 870px) {
   html, body {
     font-size: 14px !important;
@@ -33,18 +27,6 @@
       margin-bottom: 15px;
     }
   }
-
-  #related-list {
-    width: auto;
-    float: none;
-    margin-bottom: 15px;
-    ul {
-      li {
-        display: inline-block;
-        padding-right: 10px;
-      }
-    }
-  }
 }
 
 @media all and (max-width: 895px) {
@@ -52,10 +34,6 @@
     #main-top-block {
       #top_main_nav {
         margin-left: 15px;
-      }
-
-      #inner-search-block {
-        margin-right: 15px;
       }
     }
 
@@ -65,13 +43,4 @@
       }
     }
   }
-}
-
-
-@media all and (max-width: 650px) {
-  blockquote {width: 80%;}
-}
-
-@media all and (max-width: 380px) {
-
 }
