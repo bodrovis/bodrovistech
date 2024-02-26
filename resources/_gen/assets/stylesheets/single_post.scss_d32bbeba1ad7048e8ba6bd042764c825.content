@@ -487,10 +487,13 @@ header #main-top-block #top_main_nav {
 header #main-top-block #top_main_nav a {
   border: 0 none;
   text-decoration: underline;
-  margin-right: 10px;
+  margin-right: 0.8em;
 }
 header #main-top-block #top_main_nav a:last-of-type {
   margin-right: 0;
+}
+header #main-top-block #top_main_nav .icon {
+  text-decoration: none;
 }
 header #logo {
   display: block;
@@ -590,18 +593,6 @@ footer #footer-inner p {
   color: #949494;
   font-size: 1rem;
   margin-bottom: 10px;
-}
-.full-entry p {
-  text-indent: 10px;
-}
-.full-entry p span,
-.full-entry p div,
-.full-entry p ul,
-.full-entry p ol,
-.full-entry p li,
-.full-entry p img,
-.full-entry p a {
-  text-indent: 0;
 }
 .full-entry .callout {
   background: #fffbcd;

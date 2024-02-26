@@ -36,10 +36,13 @@ header {
       a {
         border: 0 none;
         text-decoration: underline;
-        margin-right: 10px;
+        margin-right: 0.8em;
         &:last-of-type {
           margin-right: 0;
         }
+      }
+      .icon {
+        text-decoration: none;
       }
     }
   }

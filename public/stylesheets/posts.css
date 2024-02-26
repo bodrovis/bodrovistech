@@ -522,10 +522,13 @@ header #main-top-block #top_main_nav {
 header #main-top-block #top_main_nav a {
   border: 0 none;
   text-decoration: underline;
-  margin-right: 10px;
+  margin-right: 0.8em;
 }
 header #main-top-block #top_main_nav a:last-of-type {
   margin-right: 0;
+}
+header #main-top-block #top_main_nav .icon {
+  text-decoration: none;
 }
 header #logo {
   display: block;

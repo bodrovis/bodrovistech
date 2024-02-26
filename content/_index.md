@@ -9,16 +9,12 @@ draft: false
     (<strong>Илья Круковский</strong>, also known as
     <strong>bodrovis</strong>). I am
     <a href="https://github.com/bodrovis" target="_blank">web developer</a>
-    (Ruby on Rails, JavaScript frameworks, Elixir, Python), head of content/documentation/onboarding at Lokalise, Microsoft and Cisco specialist, author and tutor. Learn more at my
+    (Ruby on Rails, JavaScript frameworks, Elixir, Python), lead of content/documentation/onboarding at Lokalise, Microsoft and Cisco specialist, author and tutor. Learn more at my
     <a href="https://linkedin.com/in/bodrovis" target="_blank">LinkedIn page</a>.
-  </p>
-  <p>
-    <strong>Asking questions</strong>.
-    I receive lots of questions via email or social networks but please understand that I simply cannot reply to everyone. If you wanted to ask something regarding my videos or articles, ideally it should be done via <a href="https://t.me/+MxYT6-01eeA1NTYy" target="_blank">my Telegram chat for devs</a> where other readers/viewers can assist as well. Thank you for your understanding.
   </p>
 
   <p>
-    I give private IT lessons, participate in startups, I'm a tutor and author at
+    I participate in startups, I'm a tutor and author at
     <a href="https://lokalise.com/blog/author/ilya/" target="_blank">Lokalise</a>,
     <a href="https://www.guidedao.xyz/" target="_blank">GuideDAO</a>,
     <a href="http://www.sitepoint.com/author/ibodrov/" target="_blank">Sitepoint</a>,
