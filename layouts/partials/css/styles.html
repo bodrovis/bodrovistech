@@ -1,0 +1,15 @@
+{{ $stylesheetPath := default "stylesheets/index.scss" .stylesheetPath }}
+
+{{ with resources.Get $stylesheetPath }}
+  {{ $opts := dict "transpiler" "dartsass" "includePaths" (slice "node_modules") }}
+
+  {{ with . | toCSS $opts | postCSS }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ else }}
+      {{ with . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}

@@ -1,0 +1,67 @@
+@use "./shared/shared";
+
+h1, h2, h3 {
+  @include shared.font_header();
+  margin: 0;
+  color: shared.$radiant;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 3.998rem;
+  font-variant: small-caps;
+}
+
+h2 {
+  font-size: 2.827rem;
+}
+
+h3 {
+  font-size: 1.999rem;
+}
+
+h4 {
+  font-size: 1.414rem;
+  margin: 0;
+}
+
+h5 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+h6 {
+  font-size: 0.707rem;
+  margin: 0;
+}
+
+p, ul, blockquote {
+  margin: 0;
+  font-size: 1.414rem;
+  line-height: 1.5;
+}
+
+a:link, a:visited {
+  color: shared.$radiant;
+  text-decoration: underline;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: lighten(shared.$radiant, 5%);
+}
+
+.highlight {
+  color: shared.$orange;
+}
+
+#footer {
+  p {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+
+.no-margin-top {
+  margin-top: 0 !important;
+}

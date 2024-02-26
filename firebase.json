@@ -8,7 +8,22 @@
     ],
     "redirects": [
       {
+        "source": "/en/categories/:category/posts/:post",
+        "destination": "/posts/:post",
+        "type": 301
+      },
+      {
+        "source": "/ru/categories/:category/posts/:post",
+        "destination": "/posts/:post",
+        "type": 301
+      },
+      {
         "source": "/en/:path*",
+        "destination": "/:path*",
+        "type": 301
+      },
+      {
+        "source": "/ru/:path*",
         "destination": "/:path*",
         "type": 301
       }

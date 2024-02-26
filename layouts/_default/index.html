@@ -1,3 +1,28 @@
+{{ define "main_title" }}
+  Илья Круковский
+{{ end }}
+
+{{ define "css" }}
+  {{ partial "css/styles.html" dict }}
+{{ end }}
+
 {{ define "main" }}
-  {{.Content}}
+  <header id="header" class="wide-block">
+    {{ with resources.GetMatch "images/icon150trans.png" }}
+      <a href="/blog" class="logo">
+        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="Logo" class="logo-img">
+      </a>
+    {{ end }}
+
+    <div class="main_title">
+      <h1>Ilya Krukowski</h1>
+      <h2>Personal IT tutor</h2>
+    </div>
+  </header>
+
+  {{ .Content }}
+
+  <footer id="footer" class="block wide-block">
+    <p>&copy; Ilya Krukowski | Илья Круковский</p>
+  </footer>
 {{ end }}

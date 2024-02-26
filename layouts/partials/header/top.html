@@ -1,0 +1,19 @@
+<header class="group">
+  <div id="main-top-block" class="light_gradient">
+    <nav id="top_main_nav">
+      <a href="/">About me</a>
+    </nav>
+  </div>
+
+  <a id="logo" href="/blog" class="group">
+    {{ with resources.GetMatch "images/icon150trans.png" }}
+      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="Ilya Krukowski logo" class="img-logo">
+    {{ end }}
+    
+    <p>
+      <span class="capital">I</span>lya <span class="capital">K</span>rukowski
+
+      <span class="subtitle">https://bodrovis.tech</span>
+    </p>
+  </a>
+</header>

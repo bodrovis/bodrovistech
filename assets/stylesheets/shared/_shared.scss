@@ -1,0 +1,13 @@
+$radiant: #007f7f;
+$lightgrey: #fbfbfb;
+$orange: #b24200;
+
+@mixin font_header() {
+  font-family: 'PT Serif', serif;
+  font-weight: 700;
+}
+
+@mixin auto_margin() {
+  margin-left: auto;
+  margin-right: auto;
+}

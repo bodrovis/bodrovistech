@@ -1,0 +1,54 @@
+@media all and (max-width: 900px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 760px) {
+  html, body {
+    font-size: 13px;
+  }
+  .wide-block {
+    width: 40em;
+  }
+
+  .btn.btn-lg {
+    font-size: 1.6rem;
+  }
+}
+
+@media all and (max-width: 640px) {
+  html, body {
+    font-size: 12px;
+  }
+
+  .btn.btn-lg {
+    font-size: 1.5rem;
+  }
+}
+
+@media all and (max-width: 560px) {
+  .wide-block {
+    width: 37em;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .wide-block {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  html, body {
+    font-size: 11px;
+  }
+  .wide-block {
+    width: 90%;
+  }
+
+  #social-links {
+    top: 0.2em;
+    right: 0.5em;
+  }
+}
