@@ -1,6 +1,7 @@
 @use "./shared/shared";
 
-html, body {
+html,
+body {
   background-color: shared.$lightgrey;
   cursor: default;
 }
@@ -8,7 +9,7 @@ html, body {
 body {
   font-size: 16px;
   min-width: 320px;
-  font-family: 'Trebuchet MS', Tahoma, sans-serif;
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
   word-wrap: break-word;
 }
 
@@ -60,7 +61,8 @@ body {
     @include shared.auto_margin();
     width: 120px;
   }
-  p, ul {
+  p,
+  ul {
     margin-top: 0.8em;
     cursor: default;
   }
@@ -97,7 +99,7 @@ body {
   right: 1em;
   top: 1em;
   padding: 0.2em;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   a {
     color: #000 !important;
     display: block;
@@ -118,7 +120,8 @@ body {
   border-radius: 0.625em;
   padding: 0.5em 1em;
   box-shadow: inset #9d9d9d -2px -2px 2px;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     box-shadow: inset #9d9d9d -3px -3px 4px;
     color: shared.$radiant;
   }

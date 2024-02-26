@@ -338,7 +338,8 @@ a:hover, a:focus, a:active {
   margin-top: 0 !important;
 }
 
-html, body {
+html,
+body {
   background-color: #fbfbfb;
   cursor: default;
 }
@@ -406,7 +407,8 @@ body {
   margin-right: auto;
   width: 120px;
 }
-.wide-block p, .wide-block ul {
+.wide-block p,
+.wide-block ul {
   margin-top: 0.8em;
   cursor: default;
 }
