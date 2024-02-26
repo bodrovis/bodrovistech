@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <title>{{ block "main_title" . }}{{end}} | Ilya Krukowski</title>
+    <title>{{ block "main_title" . }}Ilya Krukowski | Илья Круковский{{end}}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ block "desc" . }}Ilya Krukowski (aka Илья Круковский, bodrovis, ibodrov) website. Personal IT tutor. Articles about web, programming, regular expressions, CSS, HTML and more.{{ end }}">
     <meta name="keywords" content="Ilya Krukowski, Илья Круковский, bodrovis, статьи о web, программирование, дизайн, регулярные выражения, web-дизайн, ruby, rails, javascript, jquery, css, html, regexp, плагины, radiant wind, plugins, gems, libraries, tutor, personal teacher, it">
@@ -23,7 +22,5 @@
   <body>
     {{ block "main" . }}
     {{ end }}
-
-    {{ partial "footer/trackers.html" . }}
   </body>
 </html>

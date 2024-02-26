@@ -4,5 +4,7 @@ title = 'Ilya Krukowski'
 
 enableRobotsTXT = true
 
+disableKinds = ["taxonomy"]
+
 [markup.goldmark.renderer]
 unsafe = true

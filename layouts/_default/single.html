@@ -1,4 +1,5 @@
 {{ define "css" }}
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 {{ partial "css/styles.html" (dict "stylesheetPath" "stylesheets/single_post.scss") }}
 {{ end }}
 
@@ -12,7 +13,7 @@
 {{ end }}
 
 {{ define "desc" }}{{.Params.meta_desc}}{{end}}
-{{ define "main_title" }}{{.Title}}{{end}}
+{{ define "main_title" }}{{.Title}} | Ilya Krukowski{{end}}
 
 {{ define "main" }}
 <div id="main-wrapper">
