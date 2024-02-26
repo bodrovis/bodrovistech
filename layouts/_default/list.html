@@ -15,7 +15,7 @@
       <div id="posts-list">
         {{ range where .Site.RegularPages "Section" "posts" }}
         <article class="entry">
-          <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
 
           <div class="additional">
             <time class="timestamp" datetime="{{ .Date }}">
