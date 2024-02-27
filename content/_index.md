@@ -18,17 +18,18 @@ draft: false
   </h3>
 
   <ul>
-    <li>
-      <a href="https://github.com/bodrovis/MCSAnswer" target="_blank">GuideDAO Answer</a> &mdash; intellectual game engine for GuideDAO students
-    </li>
     <li><a href="https://www.guidedao.xyz/" target="_blank">GuideDAO crypto school</a> &mdash; tutor and video creator</li>
     <li><a href="https://lokalise.com/blog/author/ilya/" target="_blank">Lokalise blog</a> and <a href="https://academy.lokalise.com/">Lokalise Academy</a></li>
     <li><a href="http://www.sitepoint.com/author/ibodrov/" target="_blank">Sitepoint blog</a></li>
     <li><a href="https://www.sitepoint.com/premium/users/ilyabodrov" target="_blank">Sitepoint Premium courses</a></li>
     <li><a href="https://tutsplus.com/authors/ilya-bodrov" target="_blank">TutsPlus blog</a></li>
+    <li>
+      <a href="https://github.com/bodrovis/MCSAnswer" target="_blank">GuideDAO Answer</a> &mdash; intellectual game engine for GuideDAO students
+    </li>
     <li>ScrapingBee&nbsp;<span class="badge">no direct link</span></li>
     <li>Scotch.io blog&nbsp;<span class="badge">inactive</span></li>
     <li>Phrase blog&nbsp;<span class="badge">inactive</span></li>
+    <li>Eduonix&nbsp;<span class="badge">inactive</span></li>
   </ul>
 </article>
 
