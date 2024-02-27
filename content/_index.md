@@ -6,10 +6,6 @@ draft: false
   <p>
     Hi! My name is <strong>Ilya Krukowski</strong> (<strong>Илья Круковский</strong>, also known as <strong>bodrovis</strong>). I am developer (Ethereum/Solidity, Rust, Ruby/Rails, JS/TS, Elixir, Python), lead of content/documentation/onboarding at Lokalise, Microsoft and Cisco specialist, author and tutor. Learn more at my <a href="https://linkedin.com/in/bodrovis" target="_blank">LinkedIn page</a> and <a href="https://github.com/bodrovis" target="_blank">GitHub</a>.
   </p>
-
-  <p>
-    I'm also creating <a href="https://www.youtube.com/IlyaBodrovKrukowski" target="_blank">video tutorials on my YouTube</a> and <a href="https://t.me/dev_in_ruby_colors" target="_blank">host Telegram channel</a>.
-  </p>
 </article>
 
 <article class="block wide-block">
@@ -18,6 +14,8 @@ draft: false
   </h3>
 
   <ul>
+    <li><a href="https://www.youtube.com/IlyaBodrovKrukowski" target="_blank">YouTube channel</a> &mdash; owner and host</li>
+    <li><a href="https://t.me/dev_in_ruby_colors" target="_blank" target="_blank">Telegram channel</a> &mdash; owner and host</li>
     <li><a href="https://www.guidedao.xyz/" target="_blank">GuideDAO crypto school</a> &mdash; tutor and video creator</li>
     <li><a href="https://lokalise.com/blog/author/ilya/" target="_blank">Lokalise blog</a> and <a href="https://academy.lokalise.com/">Lokalise Academy</a></li>
     <li><a href="http://www.sitepoint.com/author/ibodrov/" target="_blank">Sitepoint blog</a></li>

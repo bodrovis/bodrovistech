@@ -28,19 +28,26 @@
         "type": 301
       }
     ],
-    "headers": [{
-      "source": "**/*.@(jpg|jpeg|gif|png|css|js|svg|ttf|woff2|webp|eot|woff)",
-      "headers": [{
-        "key": "Cache-Control",
-        "value": "max-age=15552000"
-      }]
-    }, {
-      "source": "404.html",
-      "headers": [{
-        "key": "Cache-Control",
-        "value": "max-age=15552000"
-      }]
-    }],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|css|js|svg|ttf|woff2|webp|eot|woff)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=15552000"
+          }
+        ]
+      },
+      {
+        "source": "404.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=15552000"
+          }
+        ]
+      }
+    ],
     "cleanUrls": true,
     "trailingSlash": false
   }
