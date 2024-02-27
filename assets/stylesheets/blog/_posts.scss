@@ -11,6 +11,7 @@
         border: 0;
         text-decoration: none;
         color: shared.$radiant;
+        transition: text-shadow 0.8s ease 0s;
       }
 
       &:hover {

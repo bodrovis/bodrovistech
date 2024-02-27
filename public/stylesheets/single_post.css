@@ -503,6 +503,7 @@ header #logo {
   margin-right: auto;
   color: #007f7f;
   margin-top: 1.5rem;
+  transition: text-shadow 0.8s ease 0s;
 }
 header #logo h1 {
   margin: 0;
@@ -523,6 +524,7 @@ header #logo p {
   text-shadow: 0 0 3px #888;
   font-variant: small-caps;
   letter-spacing: 3px;
+  transition: text-shadow 0.5s ease 0s;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -574,6 +576,7 @@ footer #footer-inner p {
   border: 0;
   text-decoration: none;
   color: #007f7f;
+  transition: text-shadow 0.8s ease 0s;
 }
 #posts-list h2 a:hover {
   text-shadow: 1px 1px 4px #93c6c6;

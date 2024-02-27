@@ -55,6 +55,7 @@ header {
     margin-right: auto;
     color: shared.$radiant;
     margin-top: 1.5rem;
+    transition: text-shadow 0.8s ease 0s;
     h1 {
       margin: 0;
       line-height: 1;
@@ -74,8 +75,10 @@ header {
       text-shadow: 0 0 3px #888;
       font-variant: small-caps;
       letter-spacing: 3px;
+      transition: text-shadow 0.5s ease 0s;
       margin-bottom: 0;
       margin-top: 0;
+
       .capital {
         font-size: 1.1em;
       }
