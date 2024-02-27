@@ -1,0 +1,1 @@
+(()=>{function e(e){document.readyState!=="loading"?e():document.addEventListener("DOMContentLoaded",e)}e(function(){document.addEventListener("click",function(e){for(var t=e.target;t&&t!=this;t=t.parentNode)if(t.matches(".js-show-gallery")){update_hash.apply(t.closest(".row"));break}},!1)})})()

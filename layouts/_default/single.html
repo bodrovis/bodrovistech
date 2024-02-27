@@ -39,3 +39,9 @@
   {{ partial "footer/footer.html" . }}
 </div>
 {{ end }}
+
+{{ define "footer" }}
+{{- $jsBundle := resources.Get "js/post.js" | js.Build | resources.Minify | fingerprint -}}
+
+<script src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}" defer></script>
+{{ end }}

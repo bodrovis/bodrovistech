@@ -8,8 +8,8 @@ date: 2015-01-12T00:00:00+00:00
 <p>Довольно долго не мог приступить к написанию третьей части — в основном потому, что занимался техническими статьями для другого ресурса. Однако долги надо отдавать, посему прошу любить и жаловать последнюю часть этого цикла. Приятного чтения!</p>
 
 <div class="image_container right_aligned">
-<a data-caption="В лесу недалеко от лагеря" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/1-3.jpg">
-<img data-action="click->posts#showGallery" alt="В лесу недалеко от лагеря" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/1-3-sm.jpg">
+<a data-caption="В лесу недалеко от лагеря" class="js-show-gallery" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/1-3.jpg">
+<img alt="В лесу недалеко от лагеря" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/1-3-sm.jpg">
 </a>
 <p>В лесу недалеко от лагеря.</p>
 </div>
@@ -21,8 +21,8 @@ date: 2015-01-12T00:00:00+00:00
 <p>На Ладоге дул довольно сильный ветер, так что лодку подбрасывало на волнах — один раз вода даже захлестнула за борт и намочила мою сумку, причём именно с той стороны, где лежал телефон — больше я по нему никогда не звонил. Гермомешки в наличии были, но слишком большие, так что их решили не брать. Знал бы, где падать буду, подстелил бы соломку. Впрочем, телефон было не сильно жалко, ибо он был дешёвый и его давно пора было менять. Брать в подобные походы дорогие смартфоны я бы не рекомендовал: всегда может случиться что-то непредвиденное, потом будете жалеть. Зато имеет смысл взять запасной аппарат, ведь на острове его взять будет неоткуда. Только письма писать если что (на самом деле, можно позвонить из офиса паломнической службы, например. У них и доступ к Интернет какой-никакой имеется).</p>
 
 <div class="image_container right_aligned">
-<a data-caption="Здесь, в частности, живут местные" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/2-3.jpg">
-<img data-action="click->posts#showGallery" alt="Здесь, в частности, живут местные" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/2-3-sm.jpg">
+<a data-caption="Здесь, в частности, живут местные" class="js-show-gallery" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/2-3.jpg">
+<img alt="Здесь, в частности, живут местные" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/2-3-sm.jpg">
 </a>
 <p>Здесь, в частности, живут местные.</p>
 </div>
@@ -32,8 +32,8 @@ date: 2015-01-12T00:00:00+00:00
 <p>Здесь росло довольно много очень сладкой земляники, которую мы смели минут за пять, стараясь при этом не топтать хрупкие растения. Собрали травы для чая — благо, её оказалось много, - и установили газовую горелку. Разлили «особой» минералки, выпили за встречу. Поговорили о том, о сём. Не очень люблю слово «романтика», но, наверное, оно тут подходит. Спустя часа полтора <span class="tooltip">собрались<span class="tooltiptext">Не оставляйте ничего, кроме следов; не увозите ничего, кроме фотографий.</span></span> и двинулись обратно к лодке. Спускаться тем же путём будучи под градусом как-то не хотелось, но на счастье с другой стороны скалы обнаружилась тропинка вниз, где пришлось лишь попрыгать по большим камням, которых на Валааме везде в избытке. По дороге чуть ли не в километре от берега заметили одинокого байдарочника, храбро борющегося с волнами. Так как никаких сигналов бедствия он не подавал, проплыли мимо. Предположили, что это <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%8E%D1%85%D0%BE%D0%B2,_%D0%A4%D1%91%D0%B4%D0%BE%D1%80_%D0%A4%D0%B8%D0%BB%D0%B8%D0%BF%D0%BF%D0%BE%D0%B2%D0%B8%D1%87" target="_blank">Фёдор Конюхов</a>. Назад вернулись без приключений. Уже в сумерках приготовили ужин, посидели у костра и ближе к часу ночи наконец-то легли спать. Кстати, говоря о еде, отмечу, что её нужно как следует прятать, иначе в ваше отсутствие чайки все растащат. Не говоря о том, что они могут случайно проглотить кусок пакета.</p>
 
 <div class="image_container left_aligned">
-<a data-caption="Достопримечательности Валаама" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/map3.gif">
-<img data-action="click->posts#showGallery" alt="Достопримечательности Валаама" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/map3-sm.gif">
+<a data-caption="Достопримечательности Валаама" class="js-show-gallery" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/map3.gif">
+<img alt="Достопримечательности Валаама" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/map3-sm.gif">
 </a>
 <p>Достопримечательности Валаама.</p>
 </div>
@@ -43,8 +43,8 @@ date: 2015-01-12T00:00:00+00:00
 <p>Следующие дни мы посвятили прогулкам по острову — благо, погулять есть где. Ещё раз подчеркну, что имеет смысл предварительно распечатать карту Валаама (либо купить у торговцев сувенирами), так как без неё ориентироваться будет проблематично, если, конечно, вы уже не облазили весь остров вдоль и поперёк.</p> 
 
 <div class="image_container right_aligned">
-<a data-caption="Вид на Ладогу рядом с Никольским скитом" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/3-3.jpg">
-<img data-action="click->posts#showGallery" alt="Вид на Ладогу рядом с Никольским скитом" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/3-3-sm.jpg">
+<a data-caption="Вид на Ладогу рядом с Никольским скитом" class="js-show-gallery" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/3-3.jpg">
+<img alt="Вид на Ладогу рядом с Никольским скитом" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/3-3-sm.jpg">
 </a>
 <p>Вид на Ладогу рядом с Никольским скитом.</p>
 </div>
@@ -54,8 +54,8 @@ date: 2015-01-12T00:00:00+00:00
 <p>На территории монастыря можно также найти булочную, где продаётся хлеб местного производства и всякие сладкие штуки, а также почту, откуда при желании можно отправить открытку домой. Здесь же располагается гостиница для паломников и столовая. По всей округе, конечно, полно кошек, которые, впрочем, не сильно голодные и потому почти не попрошайничают — видимо, сказывается соседство со столовой. Зато их можно погладить.</p>
 
 <div class="image_container left_aligned">
-<a data-caption="Никольский скит располагается на отдельном островке" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/4-3.jpg">
-<img data-action="click->posts#showGallery" alt="Никольский скит располагается на отдельном островке" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/4-3-sm.jpg">
+<a data-caption="Никольский скит располагается на отдельном островке" class="js-show-gallery" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/4-3.jpg">
+<img alt="Никольский скит располагается на отдельном островке" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/4-3-sm.jpg">
 </a>
 <p>Никольский скит располагается на отдельном островке.</p>
 </div>
@@ -65,8 +65,8 @@ date: 2015-01-12T00:00:00+00:00
 <p>Никольский скит совсем небольшой, здесь живёт, наверное, не больше двадцати монахов. Имеется свой огород, при входе можно отведать морса собственного производства (само собой, желательно внести <span class="tooltip">посильное пожертвование<span class="tooltiptext">Если честно, то минимальный размер пожертвования вполне чётко определён в висящем рядом объявлении. Для справки - составляет он 15 руб.</span></span>). Поднявшись к храму, вы окажетесь на смотровой площадке. С неё виден пролив, через который метеоры подходят к Монастырской бухте. Будьте осторожны: перила ненадёжные, облокачиваться на них не советую.</p>
 
 <div class="image_container left_aligned">
-<a data-caption="Вид на Ладогу со смотровой площадки Никольского скита" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/7-3.jpg">
-<img data-action="click->posts#showGallery" alt="Вид на Ладогу со смотровой площадки Никольского скита" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/7-3-sm.jpg">
+<a data-caption="Вид на Ладогу со смотровой площадки Никольского скита" class="js-show-gallery" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/7-3.jpg">
+<img alt="Вид на Ладогу со смотровой площадки Никольского скита" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/7-3-sm.jpg">
 </a>
 <p>Вид на Ладогу со смотровой площадки Никольского скита.</p>
 </div>
@@ -80,8 +80,8 @@ date: 2015-01-12T00:00:00+00:00
 <p>На острове, конечно, раздолье для рыбаков. Насчёт улова ничего сказать не могу, но местные с удочкой время от времени встречаются - думаю, можно поинтересоваться, где находятся более рыбные места. Вообще на многих турбазах в Карелии предлагается выезд на удобное для рыбалки место, но обычно стоит это как-то слишком много.</p>
 
 <div class="image_container right_aligned">
-<a data-caption="Местное хозяйство" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/5-3.jpg">
-<img data-action="click->posts#showGallery" alt="Местное хозяйство" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/5-3-sm.jpg">
+<a data-caption="Местное хозяйство" class="js-show-gallery" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/5-3.jpg">
+<img alt="Местное хозяйство" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/5-3-sm.jpg">
 </a>
 <p>Местное хозяйство.</p>
 </div>
@@ -93,8 +93,8 @@ date: 2015-01-12T00:00:00+00:00
 <p>Вечером мы заглянули на причал. Он показался непривычно пустынным: большинство посетителей уехало на шестичасовом метеоре. Посидели у воды, пока не наступили сумерки. Тихо, тепло, спокойно. Только чайки кричат; некоторые, надеясь на угощение, подбираются совсем близко. Хотелось посидеть ещё но путь до лагеря, всё же, неблизкий.</p>
 
 <div class="image_container left_aligned">
-<a data-caption="Дорога к Игуменскому кладбищу" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/6-3.jpg">
-<img data-action="click->posts#showGallery" alt="Дорога к Игуменскому кладбищу" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/6-3-sm.jpg">
+<a data-caption="Дорога к Игуменскому кладбищу" class="js-show-gallery" href="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/6-3.jpg">
+<img alt="Дорога к Игуменскому кладбищу" src="https://s3-eu-west-1.amazonaws.com/radiantwind/valaam/6-3-sm.jpg">
 </a>
 <p>Дорога к Игуменскому кладбищу.</p>
 </div>
