@@ -54,23 +54,10 @@ a:link, a:active, a:visited {
   border-bottom: 1px solid #222;
 }
 
-a.fancybox, a.fancybox-close {
-  border-bottom: 0 none !important;
-  display: block;
-}
-
-a.fancybox-nav {
-  border-bottom: 0 none !important;
-}
-
 a:hover, a:focus {
   color:#808080;
   text-decoration: none;
   border:0;
-}
-
-a.version-badge {
-  border-bottom: 0 none;
 }
 
 /*====== TYPOGRAPHY =======*/
@@ -166,8 +153,4 @@ table {
 
 li > pre {
   font-size: 0.8rem;
-}
-
-.ui-helper-hidden-accessible {
-  display: none !important;
 }
