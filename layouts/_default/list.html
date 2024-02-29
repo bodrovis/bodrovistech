@@ -14,7 +14,9 @@
       {{.Content}}
 
       <div id="posts-list">
-        {{ range where .Site.RegularPages "Section" "posts" }}
+        {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") }}
+
+        {{ range $paginator.Pages }}
         <article class="entry">
           <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
 
@@ -32,6 +34,9 @@
         </article>
         {{ end }}
       </div>
+
+      {{ template "_internal/pagination.html" . }}
+     
     </div>
     <div class="push"></div>
   </div>

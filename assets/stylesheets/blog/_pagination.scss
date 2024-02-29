@@ -2,15 +2,23 @@
 
 .pagination {
   display: flex;
-  span {
+  padding: 0;
+
+  li {
     border: 1px solid #ccc;
     border-right: 0 none;
-    display: block;
+    list-style-type: none;
 
-    &.active, &.disabled {
-      cursor: default;
-      color: #ccc;
-      padding: 5px 10px;
+    &.active,
+    &.disabled {
+      a {
+        &,
+        &:hover {
+          cursor: default;
+          color: #ccc;
+          background-color: transparent;
+        }
+      }
     }
 
     a {
@@ -24,17 +32,22 @@
         color: #222;
       }
     }
-  }
-
-  .prev, span.current:first-child {
-    border-right: 0 none;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-
-  .next, span.current:last-child {
-    border-right: 1px solid #ccc;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    &:last-of-type {
+      border-right: 1px solid #ccc;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      a {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+    &:first-of-type {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      a {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+    }
   }
 }

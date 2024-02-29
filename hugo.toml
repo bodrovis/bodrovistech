@@ -6,5 +6,7 @@ enableRobotsTXT = true
 
 disableKinds = ["taxonomy"]
 
+paginate = 15
+
 [markup.goldmark.renderer]
 unsafe = true

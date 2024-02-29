@@ -451,37 +451,45 @@ li > pre {
 
 .pagination {
   display: flex;
+  padding: 0;
 }
-.pagination span {
+.pagination li {
   border: 1px solid #ccc;
   border-right: 0 none;
-  display: block;
+  list-style-type: none;
 }
-.pagination span.active, .pagination span.disabled {
+.pagination li.active a, .pagination li.active a:hover, .pagination li.disabled a, .pagination li.disabled a:hover {
   cursor: default;
   color: #ccc;
-  padding: 5px 10px;
+  background-color: transparent;
 }
-.pagination span a {
+.pagination li a {
   color: #007f7f;
   display: block;
   text-decoration: none;
   border: 0 none;
   padding: 5px 10px;
 }
-.pagination span a:hover {
+.pagination li a:hover {
   background-color: #f0f0f0;
   color: #222;
 }
-.pagination .prev, .pagination span.current:first-child {
-  border-right: 0 none;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.pagination .next, .pagination span.current:last-child {
+.pagination li:last-of-type {
   border-right: 1px solid #ccc;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+.pagination li:last-of-type a {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.pagination li:first-of-type {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.pagination li:first-of-type a {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .light_gradient {
