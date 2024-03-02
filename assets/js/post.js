@@ -18,7 +18,7 @@ ready(function() {
   hljs.registerLanguage('plaintext', plaintext);
   hljs.registerLanguage('json', json);
 
-  hljs.highlightAll()
+  hljs.highlightAll();
   
   document.addEventListener('click', function(e) {
     for (var target = e.target; target && target != this; target = target.parentNode) {

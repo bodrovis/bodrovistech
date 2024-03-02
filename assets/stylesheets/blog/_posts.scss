@@ -19,16 +19,21 @@
       }
     }
   }
-  .additional {
-    color: lighten($color: #222, $amount: 10%);
+
+  .entry {
+    hr {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    &:last-child {
+      hr {
+        display: none;
+      }
+    }
   }
 }
 
-.entry {
-  hr {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-}
+
 

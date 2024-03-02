@@ -1,13 +1,13 @@
 @use "./shared/shared";
 
-html, body, #main-wrapper {
+html, body  {
   height: 100%;
   background-color: #fbfbfb;
   cursor: default;
 }
 
 html, body {
-  font-size: 18px;
+  font-size: 19px;
 }
 
 body {
@@ -102,6 +102,10 @@ ul, ol, pre {
   line-height: 1.5;
 }
 
+.subtext {
+  color: lighten($color: #222, $amount: 10%);
+}
+
 /*=== STUFF ===*/
 hr {
   display: block;
@@ -123,17 +127,6 @@ hr {
 
 img {
   vertical-align: middle;
-}
-
-.badge {
-  display: inline-block;
-  padding: 0 8px;
-  font-size: 1rem;
-  border-radius: 8px;
-  background-color: shared.$radiant;
-  color: #fbfbfb;
-  vertical-align: middle;
-  margin-left: 2px;
 }
 
 table {

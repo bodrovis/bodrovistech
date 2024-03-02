@@ -16,28 +16,23 @@
 {{ define "main_title" }}{{.Title}} | Ilya Krukowski{{end}}
 
 {{ define "main" }}
-<div id="main-wrapper">
-  <div id="content-wrapper">
-    {{ partial "header/top.html" . }}
+{{ partial "header/top.html" . }}
 
-    <div id="content">
-      <h1>{{.Title}}</h1>
+<main id="content">
+  <h1>{{.Title}}</h1>
 
-      <article class="full-entry group">
-        <time class="timestamp" datetime="{{ .Date }}">
-          {{ .Date.Format "January 2, 2006" }}
-        </time>
+  <article class="full-entry group">
+    <time class="timestamp subtext" datetime="{{ .Date }}">
+      {{ .Date.Format "January 2, 2006" }}
+    </time>
 
-        <section id="post-body">
-          {{ .Content }}
-        </section>
-      </article>
-    </div>
-    <div class="push"></div>
-  </div>
+    <section id="post-body">
+      {{ .Content }}
+    </section>
+  </article>
+</main>
 
-  {{ partial "footer/footer.html" . }}
-</div>
+{{ partial "footer/footer.html" . }}
 {{ end }}
 
 {{ define "footer" }}

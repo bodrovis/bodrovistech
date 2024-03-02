@@ -6,41 +6,36 @@
 {{ define "main_title" }}Blog | Ilya Krukowski{{end}}
 
 {{ define "main" }}
-<div id="main-wrapper">
-  <div id="content-wrapper">
-    {{ partial "header/top.html" . }}
+{{ partial "header/top.html" . }}
 
-    <div id="content">
-      {{.Content}}
+<main id="content">
+  {{.Content}}
 
-      <div id="posts-list">
-        {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") }}
+  <div id="posts-list">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") }}
 
-        {{ range $paginator.Pages }}
-        <article class="entry">
-          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    {{ range $paginator.Pages }}
+    <article class="entry">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
 
-          <div class="additional">
-            <time class="timestamp" datetime="{{ .Date }}">
-              {{ .Date.Format "January 2, 2006" }}
-            </time>
-          </div>
+      <aside class="subtext">
+        <time datetime="{{ .Date }}">
+          {{ .Date.Format "January 2, 2006" }}
+        </time>
+      </aside>
 
-          <p class="post-preview">
-            {{ .Content | plainify | truncate 500 }}
-          </p>
+      <p class="post-preview">
+        {{ .Content | plainify | truncate 500 }}
+      </p>
 
-          <hr>
-        </article>
-        {{ end }}
-      </div>
-
-      {{ template "_internal/pagination.html" . }}
-     
-    </div>
-    <div class="push"></div>
+      <hr>
+    </article>
+    {{ end }}
   </div>
 
-  {{ partial "footer/footer.html" . }}
-</div>
+  {{ template "_internal/pagination.html" . }}
+  
+</main>
+
+{{ partial "footer/footer.html" . }}
 {{ end }}

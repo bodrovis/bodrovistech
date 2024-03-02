@@ -1,6 +1,6 @@
 @media all and (max-width: 1440px) {
   html, body {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
@@ -17,22 +17,20 @@
 
 @media all and (max-width: 870px) {
   html, body {
-    font-size: 14px !important;
+    font-size: 15px !important;
   }
 
-  #content-wrapper {
-    #content {
-      width: 100%;
-      float: none;
-      margin-bottom: 15px;
-    }
+  #content {
+    width: 100%;
+    float: none;
+    margin-bottom: 15px;
   }
 }
 
 @media all and (max-width: 895px) {
   header {
     #main-top-block {
-      #top_main_nav {
+      nav {
         margin-left: 15px;
       }
     }
