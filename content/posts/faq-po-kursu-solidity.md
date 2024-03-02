@@ -3,6 +3,7 @@ title: FAQ по курсу Solidity
 draft: false
 meta_desc: Ответы на часто задаваемые вопросы по курсу Solidity на YouTube.
 date: 2023-06-12T00:00:00+00:00
+lang: ru-RU
 ---
 
 <p>Это ответы на часто задаваемые вопросы по бесплатному курсу Solidity, который <a href="https://www.youtube.com/watch?v=8A8-7Ks26yY&list=PLWlFXymvoaJ_0ok740kLXTn5qn-i1UnYr" target="_blank">вы можете найти на YouTube</a>.</p>

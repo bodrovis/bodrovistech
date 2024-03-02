@@ -706,7 +706,7 @@ footer #footer-inner p {
   text-shadow: 1px 1px 4px #93c6c6;
 }
 #posts-list .additional {
-  color: #949494;
+  color: #3c3c3c;
 }
 
 .entry hr {
@@ -755,7 +755,7 @@ footer #footer-inner p {
 
 .full-entry .timestamp {
   display: block;
-  color: #949494;
+  color: #3c3c3c;
   font-size: 1rem;
   margin-bottom: 10px;
 }

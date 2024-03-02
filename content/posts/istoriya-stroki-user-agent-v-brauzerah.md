@@ -4,6 +4,7 @@ draft: false
 meta_desc: "Статья о том, как изменялась строка user-agent в браузерах ещё с давних времён."
 date: 2013-12-27T00:00:00+00:00
 meta_img: https://s3-eu-west-1.amazonaws.com/radiantwind/meta/user_agent_meta.jpg
+lang: ru-RU
 ---
 
 <p><i>Данная статья является переводом поста <a target="_blank" href="http://webaim.org/blog/user-agent-string-history/">"History of the browser user-agent string"</a> с сайта WebAIM. Некоторые ссылки, указанные в статье, на данный момент уже недоступны, поэтому мне пришлось их изменить (в частности, ссылаться на архив Интернета). В некоторых местах я даю перевод английских слов и дополнения в скобках.</i></p>

@@ -20,7 +20,7 @@
     }
   }
   .additional {
-    color: #949494;
+    color: lighten($color: #222, $amount: 10%);
   }
 }
 
