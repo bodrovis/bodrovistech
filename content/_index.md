@@ -3,8 +3,10 @@ draft: false
 ---
 
 <article class="block wide-block">
+  <h3>Hello!</h3>
+
   <p>
-    Hi! My name is <strong>Ilya Krukowski</strong> (<strong>Илья Круковский</strong>, also known as <strong>bodrovis</strong>). I am developer (Ethereum/Solidity, Rust, Ruby/Rails, JS/TS, Elixir, Python), lead of content/documentation/onboarding at Lokalise, Microsoft and Cisco specialist, author and tutor. Learn more at my <a href="https://linkedin.com/in/bodrovis" target="_blank">LinkedIn page</a> and <a href="https://github.com/bodrovis" target="_blank">GitHub</a>.
+    My name is <strong>Ilya Krukowski</strong> (<strong>Илья Круковский</strong>, also known as <strong>bodrovis</strong>). I am developer (Ethereum/Solidity, Rust, Ruby/Rails, JS/TS, Elixir, Python), lead of content/documentation/onboarding at Lokalise, Microsoft and Cisco specialist, author and tutor. Learn more at my <a href="https://linkedin.com/in/bodrovis" target="_blank">LinkedIn page</a> and <a href="https://github.com/bodrovis" target="_blank">GitHub</a>.
   </p>
 </article>
 
@@ -15,7 +17,7 @@ draft: false
 
   <ul>
     <li><a href="https://www.youtube.com/IlyaBodrovKrukowski" target="_blank">YouTube channel</a> &mdash; owner and host</li>
-    <li><a href="https://t.me/dev_in_ruby_colors" target="_blank" target="_blank">Telegram channel</a> &mdash; owner and host</li>
+    <li><a href="https://t.me/dev_in_ruby_colors" target="_blank">Telegram channel</a> &mdash; owner and host</li>
     <li><a href="https://www.guidedao.xyz/" target="_blank">GuideDAO crypto school</a> &mdash; tutor and video creator</li>
     <li><a href="https://lokalise.com/blog/author/ilya/" target="_blank">Lokalise blog</a> and <a href="https://academy.lokalise.com/">Lokalise Academy</a></li>
     <li><a href="http://www.sitepoint.com/author/ibodrov/" target="_blank">Sitepoint blog</a></li>
@@ -85,10 +87,10 @@ draft: false
   </ul>
 </article>
 
-<section id="social-links" class="block">
+<aside id="social-links" class="block">
   <a class="icon-github" title="GitHub" href="https://github.com/bodrovis" target="_blank"></a>
   <a class="icon-youtube" title="YouTube" href="https://www.youtube.com/@IlyaBodrovKrukowski" target="_blank"></a>
   <a class="icon-telegram" title="Telegram" href="https://t.me/dev_in_ruby_colors" target="_blank"></a>
   <a class="icon-linkedin" title="LinkedIn" href="https://linkedin.com/in/bodrovis" target="_blank"></a>
   <a class="icon-envelop" title="E-mail" id="icon-mail" href="mailto:bodrovis@protonmail.com"></a>
-</section>
+</aside>

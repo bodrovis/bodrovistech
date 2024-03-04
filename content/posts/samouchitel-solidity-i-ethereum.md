@@ -2,7 +2,7 @@
 title: Самоучитель Solidity и Ethereum
 draft: false
 meta_desc: Самоучитель по Ethereum и языку Solidity для разработки смарт-контрактов.
-date: 2023-05-22T00:00:00+00:00
+date: 2023-05-22T00:00:00
 lang: ru-RU
 ---
 

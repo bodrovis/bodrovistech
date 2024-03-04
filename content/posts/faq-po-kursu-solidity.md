@@ -2,7 +2,7 @@
 title: FAQ по курсу Solidity
 draft: false
 meta_desc: Ответы на часто задаваемые вопросы по курсу Solidity на YouTube.
-date: 2023-06-12T00:00:00+00:00
+date: 2023-06-12T00:00:00
 lang: ru-RU
 ---
 
