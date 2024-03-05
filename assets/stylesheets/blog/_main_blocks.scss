@@ -35,6 +35,10 @@ header {
         &:last-of-type {
           margin-right: 0;
         }
+        &.with-spacer {
+          border-right: 1px solid #9e9e9e;
+          padding-right: 0.9em;
+        }
       }
       .icon {
         text-decoration: none;

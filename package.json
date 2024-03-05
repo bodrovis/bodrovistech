@@ -1,9 +1,14 @@
 {
+  "scripts": {
+    "index": "hugo --minify && npx pagefind --site \"public\" --output-subdir ../static/pagefind --force-language en",
+    "start": "npm run index && hugo server"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
+    "highlight.js": "^11.9.0",
     "modern-normalize": "^2.0.0",
+    "pagefind": "^1.0.4",
     "postcss": "^8.4.35",
-    "postcss-cli": "^11.0.0",
-    "highlight.js": "^11.9.0"
+    "postcss-cli": "^11.0.0"
   }
 }

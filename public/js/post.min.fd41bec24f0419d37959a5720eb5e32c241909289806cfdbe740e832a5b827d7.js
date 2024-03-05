@@ -1,1 +1,0 @@
-(()=>{function e(e){document.readyState!=="loading"?e():document.addEventListener("DOMContentLoaded",e)}e(function(){document.addEventListener(".js-show-gallery",function(e){for(var t=e.target;t&&t!=this;t=t.parentNode)if(t.matches(".page-num")){update_hash.apply(t.closest(".row"));break}},!1)})})()

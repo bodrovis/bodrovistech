@@ -1,7 +1,7 @@
 {{ $stylesheetPath := default "stylesheets/index.scss" .stylesheetPath }}
 
 {{ with resources.Get $stylesheetPath }}
-  {{ $opts := dict "transpiler" "dartsass" "includePaths" (slice "node_modules") }}
+  {{ $opts := dict "transpiler" "dartsass" "includePaths" (slice "node_modules" "static") }}
 
   {{ with . | toCSS $opts | postCSS }}
     {{ if hugo.IsDevelopment }}

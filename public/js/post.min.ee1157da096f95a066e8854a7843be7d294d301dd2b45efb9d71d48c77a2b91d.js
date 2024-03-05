@@ -1,1 +1,0 @@
-(()=>{function e(e){document.readyState!=="loading"?e():document.addEventListener("DOMContentLoaded",e)}e(function(){})})()

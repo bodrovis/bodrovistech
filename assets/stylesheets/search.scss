@@ -1,0 +1,12 @@
+@use 'shared/icomoon';
+@use 'shared/shared';
+@use 'modern-normalize/modern-normalize';
+@use 'blog/global';
+@use 'blog/main_blocks';
+@use 'blog/conditional';
+
+:root {
+  --pagefind-ui-font: 'PT Sans', sans-serif;
+  --pagefind-ui-scale: 1.0;
+  --pagefind-ui-primary: shared.$radiant;
+}

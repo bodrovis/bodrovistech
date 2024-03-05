@@ -1,0 +1,27 @@
+{{ define "css" }}
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+{{ partial "css/styles.html" (dict "stylesheetPath" "stylesheets/search.scss") }}
+{{ end }}
+
+{{ define "main_title" }}Search | Ilya Krukowski{{end}}
+
+{{ define "main" }}
+{{ partial "header/top.html" . }}
+
+<main id="content">
+  <div id="search"></div>
+</main>
+
+{{ partial "footer/footer.html" . }}
+{{ end }}
+
+{{ define "footer" }}
+<script src="/pagefind/pagefind-ui.js" defer></script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+      new PagefindUI({ element: "#search", showSubResults: true, showImages: false });
+  });
+</script>
+{{ end }}
