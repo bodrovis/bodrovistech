@@ -110,7 +110,36 @@ footer {
   }
 }
 
-.push {
-  height: 48px;
-  clear: both;
+a.badge {
+  font-size: 0.9rem;
+  background-color: shared.$radiant;
+  color: shared.$lightgrey;
+  border-radius: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  height: 2rem;
+  line-height: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  &:hover {
+    background-color: darken(shared.$radiant, 10%);
+  }
+}
+
+.preamble {
+  margin-bottom: 2rem;
+
+  h3 {
+    margin: 0 0 0.5em 0;
+  }
+  p {
+    margin: 0 0 0.2em 0;
+    font-size: 0.9rem;
+  }
+}
+
+hr.posts-delimeter {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }

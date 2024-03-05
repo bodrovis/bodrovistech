@@ -4,9 +4,13 @@ title = 'Ilya Krukowski'
 
 enableRobotsTXT = true
 
-disableKinds = ["taxonomy"]
+# disableKinds = ["taxonomy"]
 
 paginate = 15
+
+[taxonomies]
+tag = "tags"
+category = "blog"
 
 [markup.goldmark.renderer]
 unsafe = true

@@ -1,0 +1,40 @@
+{{ define "css" }}
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+{{ partial "css/styles.html" (dict "stylesheetPath" "stylesheets/posts.scss") }}
+{{ end }}
+
+{{ define "main_title" }}Tags | Ilya Krukowski{{end}}
+
+{{ define "main" }}
+{{ partial "header/top.html" . }}
+
+<main id="content">
+  <section class="preamble">
+    <h3>Posts tagged with "{{ .Title }}"</h3>
+    <p>Total posts: {{ len .Pages }}</p>
+    <p><a href="/tags">View all tags</a></p>
+  </section>
+
+  <div id="posts-list">
+    {{ range .Data.Pages }}
+    <article class="entry">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  
+      <aside>
+        <time class="subtext" datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+          {{ .Date.Format "January 2, 2006" }}
+        </time>
+      </aside>
+  
+      <p class="post-preview">
+        {{ .Content | plainify | truncate 500 }}
+      </p>
+  
+      <hr>
+    </article>
+    {{ end }}
+  </div>
+</main>
+
+{{ partial "footer/footer.html" . }}
+{{ end }}

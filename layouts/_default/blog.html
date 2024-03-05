@@ -1,0 +1,46 @@
+{{ define "css" }}
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+{{ partial "css/styles.html" (dict "stylesheetPath" "stylesheets/posts.scss") }}
+{{ end }}
+
+{{ define "main_title" }}Blog | Ilya Krukowski{{end}}
+
+{{ define "main" }}
+{{ partial "header/top.html" . }}
+
+<main id="content">
+  {{.Content}}
+
+  <div id="posts-list">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") }}
+
+    {{ range $paginator.Pages }}
+    <article class="entry">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+
+      <aside>
+        <time class="subtext" datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+          {{ .Date.Format "January 2, 2006" }}
+        </time>
+
+        {{ if .Params.tags }}
+        {{ range .Params.tags }}
+        <a class="badge" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+        {{ end }}
+      </aside>
+
+      <p class="post-preview">
+        {{ .Content | plainify | truncate 500 }}
+      </p>
+
+      <hr class="posts-delimeter">
+    </article>
+    {{ end }}
+  </div>
+
+  {{ template "_internal/pagination.html" . }}
+</main>
+
+{{ partial "footer/footer.html" . }}
+{{ end }}

@@ -42,3 +42,18 @@
     }
   }
 }
+
+@media all and (max-width: 500px) {
+  header {
+    #main-top-block {
+      nav {
+        a {
+          margin-right: 0.7em;
+          &.with-spacer {
+            padding-right: 0.7em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -26,6 +26,12 @@
       {{ .Date.Format "January 2, 2006" }}
     </time>
 
+    {{ if .Params.tags }}
+    {{ range .Params.tags }}
+    <a class="badge" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+    {{ end }}
+    {{ end }}
+
     <section id="post-body">
       {{ .Content }}
     </section>

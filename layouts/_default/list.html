@@ -3,37 +3,19 @@
 {{ partial "css/styles.html" (dict "stylesheetPath" "stylesheets/posts.scss") }}
 {{ end }}
 
-{{ define "main_title" }}Blog | Ilya Krukowski{{end}}
+{{ define "main_title" }}Tags | Ilya Krukowski{{end}}
 
 {{ define "main" }}
 {{ partial "header/top.html" . }}
 
 <main id="content">
-  {{.Content}}
+  <h1>{{ .Title }}</h1>
 
-  <div id="posts-list">
-    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") }}
-
-    {{ range $paginator.Pages }}
-    <article class="entry">
-      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-
-      <aside class="subtext">
-        <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
-          {{ .Date.Format "January 2, 2006" }}
-        </time>
-      </aside>
-
-      <p class="post-preview">
-        {{ .Content | plainify | truncate 500 }}
-      </p>
-
-      <hr>
-    </article>
-    {{ end }}
-  </div>
-
-  {{ template "_internal/pagination.html" . }}
+  <ul>
+      {{ range .Data.Terms.Alphabetical }}
+      <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+      {{ end }}
+  </ul>
 </main>
 
 {{ partial "footer/footer.html" . }}
