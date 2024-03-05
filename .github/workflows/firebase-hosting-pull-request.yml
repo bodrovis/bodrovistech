@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run Pagefind
-        run: npm_config_yes=true npx pagefind --site "public"
+        run: npm_config_yes=true npx pagefind --site "public" --force-language en
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
