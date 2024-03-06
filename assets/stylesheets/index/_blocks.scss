@@ -100,11 +100,14 @@ body {
   padding: 1em 0.7em;
   background-color: rgba(255, 255, 255, 0.5);
   a {
-    color: #000 !important;
+    color: #3c3c3c;
     display: block;
     font-size: 1.6em;
     margin: 0.9em auto;
-    text-decoration: none !important;
+    text-decoration: none;
+    &:hover {
+      color: lighten(#3c3c3c, 10%);
+    }
     &:first-of-type {
       margin-top: 0;
     }
@@ -120,19 +123,19 @@ body {
   text-decoration: none !important;
   font-size: 1.414rem;
   color: shared.$radiant;
-  border: 1px solid #e0e0e0;
+  border: 2px solid #e0e0e0;
   background-color: #f2f2f1;
   border-radius: 0.625em;
   padding: 0.5em 1em;
-  box-shadow: inset #9d9d9d -2px -2px 2px;
+  transition: box-shadow 0.3s ease 0s;
+
   &:hover,
   &:focus {
-    box-shadow: inset #9d9d9d -3px -3px 4px;
+    box-shadow: inset #e0e0e0 -3px -3px 4px;
     color: shared.$radiant;
   }
   &:active {
-    box-shadow: inset #9d9d9d 3px 3px 4px;
-    padding: 0.6em 0.4em 0.4em 0.6em;
+    box-shadow: inset #e0e0e0 3px 3px 4px;
     color: shared.$radiant;
   }
   &.btn-lg {

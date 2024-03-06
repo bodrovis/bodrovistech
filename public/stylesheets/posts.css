@@ -1,7 +1,7 @@
 @font-face {
   font-family: "icomoon";
-  src: url("/fonts/icomoon.eot?p3nexj");
-  src: url("/fonts/icomoon.eot?p3nexj#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?p3nexj") format("truetype"), url("/fonts/icomoon.woff?p3nexj") format("woff"), url("/fonts/icomoon.svg?p3nexj#icomoon") format("svg");
+  src: url("/fonts/icomoon.eot?5ucb3y");
+  src: url("/fonts/icomoon.eot?5ucb3y#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?5ucb3y") format("truetype"), url("/fonts/icomoon.woff?5ucb3y") format("woff"), url("/fonts/icomoon.svg?5ucb3y#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -20,7 +20,7 @@
 }
 
 .icon-tags:before {
-  content: "\e936";
+  content: "\e903";
 }
 
 .icon-book:before {
@@ -520,6 +520,9 @@ header #main-top-block nav a {
   margin-right: 0.9em;
   color: #3c3c3c;
 }
+header #main-top-block nav a:hover {
+  color: #565656;
+}
 header #main-top-block nav a:last-of-type {
   margin-right: 0;
 }
@@ -532,7 +535,8 @@ header #main-top-block nav .icon {
   font-size: 1.43rem;
 }
 header #logo {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   border: 0 none;
   margin-left: auto;
@@ -540,24 +544,18 @@ header #logo {
   color: #007f7f;
   margin-top: 1.5rem;
   transition: text-shadow 0.8s ease 0s;
-}
-header #logo h1 {
-  margin: 0;
-  line-height: 1;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 header #logo img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 120px;
-  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 header #logo p {
   font-family: "PT Sans Caption", serif;
   font-weight: 700;
-  text-align: center;
   font-size: 3.5rem;
-  text-shadow: 0 0 3px #888;
   font-variant: small-caps;
   letter-spacing: 3px;
   transition: text-shadow 0.5s ease 0s;
@@ -574,7 +572,7 @@ header #logo p .subtitle {
   letter-spacing: 1px;
   margin-top: -10px;
 }
-header #logo:hover p {
+header #logo p:hover {
   text-shadow: 1px 1px 9px #999;
 }
 

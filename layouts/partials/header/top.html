@@ -1,4 +1,4 @@
-<header class="group" lang="en-US">
+<header lang="en-US">
   <div id="main-top-block" class="light_gradient">
     <nav>
       <a href="/" class="icon icon-home" title="Homepage"></a>
@@ -13,7 +13,7 @@
     </nav>
   </div>
 
-  <a id="logo" href="/blog" class="group">
+  <div id="logo">
     {{ with resources.GetMatch "images/icon150trans.webp" }}
       <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="Ilya Krukowski logo" class="img-logo">
     {{ end }}

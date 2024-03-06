@@ -33,6 +33,9 @@ header {
         text-decoration: underline;
         margin-right: 0.9em;
         color: #3c3c3c;
+        &:hover {
+          color: lighten(#3c3c3c, 10%);
+        }
         &:last-of-type {
           margin-right: 0;
         }
@@ -49,7 +52,8 @@ header {
   }
 
   #logo {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
     border: 0 none;
     margin-left: auto;
@@ -57,23 +61,18 @@ header {
     color: shared.$radiant;
     margin-top: 1.5rem;
     transition: text-shadow 0.8s ease 0s;
-    h1 {
-      margin: 0;
-      line-height: 1;
-    }
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
     img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 120px;
-      height: auto;
+      object-fit: cover;
     }
+
     p {
       font-family: 'PT Sans Caption', serif;
       font-weight: 700;
-      text-align: center;
       font-size: 3.5rem;
-      text-shadow: 0 0 3px #888;
       font-variant: small-caps;
       letter-spacing: 3px;
       transition: text-shadow 0.5s ease 0s;
@@ -90,9 +89,8 @@ header {
         letter-spacing: 1px;
         margin-top: -10px;
       }
-    }
-    &:hover {
-      p {
+
+      &:hover {
         text-shadow: 1px 1px 9px #999;
       }
     }
