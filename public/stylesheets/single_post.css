@@ -1067,6 +1067,23 @@ hr.posts-delimeter {
   cursor: pointer;
 }
 
+.full-entry #TableOfContents {
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+.full-entry #TableOfContents ul {
+  padding-left: 1rem;
+  margin: 0;
+}
+.full-entry #TableOfContents li {
+  list-style: none;
+  margin-bottom: 0.3rem;
+}
+.full-entry #TableOfContents li:last-of-type {
+  margin-bottom: 0;
+}
 .full-entry .timestamp {
   display: block;
   font-size: 1rem;

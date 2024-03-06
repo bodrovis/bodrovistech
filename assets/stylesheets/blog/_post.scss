@@ -1,4 +1,22 @@
 .full-entry {
+  #TableOfContents {
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    ul {
+      padding-left: 1rem;
+      margin: 0;
+    }
+    li {
+      list-style: none;
+      margin-bottom: 0.3rem;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   .timestamp {
     display: block;
     font-size: 1rem;

@@ -503,10 +503,7 @@ header #logo {
   transition: text-shadow 0.8s ease 0s;
   align-items: center;
   text-align: center;
-}
-header #logo h1 {
-  margin: 0;
-  line-height: 1;
+  justify-content: center;
 }
 header #logo img {
   -o-object-fit: cover;
@@ -532,7 +529,7 @@ header #logo p .subtitle {
   letter-spacing: 1px;
   margin-top: -10px;
 }
-header #logo p:hover p {
+header #logo p:hover {
   text-shadow: 1px 1px 9px #999;
 }
 

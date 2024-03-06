@@ -1,7 +1,7 @@
 ---
 title: Криптография эллиптической кривой (ECC) и Ethereum
 draft: false
-meta_desc: Ответы на часто задаваемые вопросы по курсу Solidity на YouTube.
+meta_desc: Мы поговорим о том, что такое криптография эллиптической кривой (elliptic-curve cryptography, ECC) и как она используется в Ethereum.
 date: 2024-03-06T00:00:00
 lang: ru-RU
 tags:

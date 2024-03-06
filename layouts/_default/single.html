@@ -21,7 +21,7 @@
 <main id="content" data-pagefind-body>
   <h1>{{.Title}}</h1>
 
-  <article class="full-entry group">
+  <article class="full-entry">
     <time class="timestamp subtext" datetime="{{ .Date }}">
       {{ .Date.Format "January 2, 2006" }}
     </time>
@@ -33,6 +33,8 @@
     {{ end }}
 
     <section id="post-body">
+      {{ partial "toc.html" . }}
+
       {{ .Content }}
     </section>
   </article>
