@@ -475,6 +475,7 @@ header #main-top-block nav a {
   border: 0 none;
   text-decoration: underline;
   margin-right: 0.9em;
+  color: #3c3c3c;
 }
 header #main-top-block nav a:last-of-type {
   margin-right: 0;
@@ -608,6 +609,14 @@ hr.posts-delimeter {
   }
   header #logo p {
     font-size: 3.3em;
+  }
+}
+@media all and (max-width: 500px) {
+  header #main-top-block nav a {
+    margin-right: 0.7em;
+  }
+  header #main-top-block nav a.with-spacer {
+    padding-right: 0.7em;
   }
 }
 :root {

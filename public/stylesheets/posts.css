@@ -518,6 +518,7 @@ header #main-top-block nav a {
   border: 0 none;
   text-decoration: underline;
   margin-right: 0.9em;
+  color: #3c3c3c;
 }
 header #main-top-block nav a:last-of-type {
   margin-right: 0;

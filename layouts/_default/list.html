@@ -3,7 +3,7 @@
 {{ partial "css/styles.html" (dict "stylesheetPath" "stylesheets/posts.scss") }}
 {{ end }}
 
-{{ define "main_title" }}Tags | Ilya Krukowski{{end}}
+{{ define "main_title" }}{{ .Title }} | Ilya Krukowski{{end}}
 
 {{ define "main" }}
 {{ partial "header/top.html" . }}

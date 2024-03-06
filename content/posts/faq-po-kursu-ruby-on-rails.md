@@ -29,19 +29,25 @@ tags:
 
 <p>Если при установке вылетает ошибка "Error: Can't find stylesheet to import.", это не беда. Открывайте ваш только что созданный проект Rails, удаляйте из корня файл <i class="inline_code">.pnp.cjs</i>, а вместо него создайте файл <i class="inline_code">.yarnrc.yml</i>. В него добавляем вот такой контент:</p>
 
-<pre><code>nodeLinker: node-modules</code></pre>
+{{< highlight plaintext >}}
+nodeLinker: node-modules
+{{< / highlight >}}
 
 <p>Потом просто запустите команду <i class="inline_code">yarn install</i>. Вообще, всё это объясняется в первом видео и дальше можно следовать инструкциям, которые там представлены.</p>
 
 <p>В видео предлагается добавить <i class="inline_code">@rails/ujs</i> версии 6, но сейчас уже есть версия новее, так что ваша строчка в <i class="inline_code">package.json</i> будет такой (впрочем, в этом же видео объясняется, как сделать апдейт всех библиотек):</p>
 
-<pre><code>"@rails/ujs": "^7.0.4-3"</code></pre>
+{{< highlight plaintext >}}
+"@rails/ujs": "^7.0.4-3"
+{{< / highlight >}}
 
 <p>Другой важный момент, если вы работаете на Windows. В какой-то момент, следуя инструкциям в видео, вы открываете файл <i class="inline_code">Procfile.dev</i> и его редактируете. Так вот, если там есть что-то вроде <i class="inline_code">unset PORT</i>, это надо убрать. Ваш <i class="inline_code">Procfile.dev</i> на Windows должен выглядеть вот так:</p>
 
-<pre><code>web: ruby bin/rails server -p 3000
+{{< highlight plaintext >}}
+web: ruby bin/rails server -p 3000
 js: yarn build --watch
-css: yarn build:css --watch</code></pre>
+css: yarn build:css --watch
+{{< / highlight >}}
 
 <h2>А что насчёт Rails 6?</h2>
 
@@ -61,7 +67,9 @@ css: yarn build:css --watch</code></pre>
 
 <p>Если при нажатии по ссылке "удалить" у вас ничего не удаляется, а в консоли вылезает ошибка в духе "маршрут не найден", это значит, что вы всё-таки решили двигаться впереди паровоза и перешли на Turbo, но не ознакомились с его особенностями в уроках, перечисленных выше. Но и это не беда - вам достаточно немного изменить ссылки для удаления. Они должны выглядеть так:</p>
 
-<pre><code><%= link_to 'Destroy', YOUR_ROUTE_HERE, data: { turbo_confirm: "Are you sure?", turbo_method: :delete } %></code></pre>
+{{< highlight plaintext >}}
+<%= link_to 'Destroy', YOUR_ROUTE_HERE, data: { turbo_confirm: "Are you sure?", turbo_method: :delete } %>
+{{< / highlight >}}
 
 <p>Обратите внимание на префикс <i class="inline_code">turbo_</i>. Вообще, если вы уже каким-то образом оказались на Turbo и у вас возникают проблемы такого характера, имеет смысл глянуть хотя бы <a href="https://www.youtube.com/watch?v=d503KrQ7Vys" target="_blank">урок 23</a>, а, может быть, и два следующих, чтобы уже понимать основы этого решения.</p>
 
@@ -71,15 +79,19 @@ css: yarn build:css --watch</code></pre>
 
 <p>Во-первых, проверьте, что вы правильно запускаете приложение (это вообще самая распространённая проблема). В первую очередь, установите библиотеку Foreman (<i class="inline_code">gem install foreman</i>). Далее, на системах nix можно использовать команду <i class="inline_code">bin\dev</i>. На Windows в корне проекта Rails можно создать файл <i class="inline_code">start.cmd</i> с вот таким содержимым:
 
-<pre><code>foreman start -f Procfile.dev</code></pre>
+{{< highlight plaintext >}}
+foreman start -f Procfile.dev
+{{< / highlight >}}
 
 <p>Затем запускаем простой командой <i class="inline_code">start.cmd</i> из терминала.</p>
 
 <p>Удостоверьтесь, что ваш <i class="inline_code">Procfile.dev</i> на Windows имеет содержимое вроде:</p>
 
-<pre><code>web: ruby bin/rails server -p 3000
+{{< highlight plaintext >}}
+web: ruby bin/rails server -p 3000
 js: yarn build --watch
-css: yarn build:css --watch</code></pre>
+css: yarn build:css --watch
+{{< / highlight >}}
 
 <p>Ну, если вы решили перейти на importmap, то там ситуация будет несколько иная, но этот случай рассматривать не будем (он и в уроках почти не упоминается).</p>
 
@@ -93,11 +105,15 @@ css: yarn build:css --watch</code></pre>
 
 <p>Проверьте, что ваш файл <i class="inline_code">application.bootstrap.scss</i> выглядит так:</p>
 
-<pre><code>@import 'bootstrap/scss/bootstrap';
-@import 'bootstrap-icons/font/bootstrap-icons';</code></pre>
+{{< highlight sass >}}
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+{{< / highlight >}}
 
 <p>В уроке предлагается сделать отдельно файл с Bootstrap, а отдельно <i class="inline_code">application.scss</i>, но в простом случае делать этого не надо. Если вы всё-таки решите переименовать файл SCSS, то <strong>обязательно</strong> откройте <i class="inline_code">package.json</i> и найдите там вот этот кусок кода:</p>
 
-<pre><code class="">"build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss</code></pre>
+{{< highlight plaintext >}}
+"build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss
+{{< / highlight >}}
 
 <p>Укажите вместо <i class="inline_code">application.bootstrap.scss</i> новое имя файла, иначе ваши стили просто не будут компилироваться.</p>

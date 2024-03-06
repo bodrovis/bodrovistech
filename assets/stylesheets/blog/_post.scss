@@ -72,7 +72,7 @@
     max-width: 100%;
   }
 
-  .inline_code {
+  .inline_code, p > code {
     padding-left: 3px;
     padding-right: 3px;
     font-family: monospace;

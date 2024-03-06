@@ -5,7 +5,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
-    "highlight.js": "^11.9.0",
     "modern-normalize": "^2.0.0",
     "pagefind": "^1.0.4",
     "postcss": "^8.4.35",

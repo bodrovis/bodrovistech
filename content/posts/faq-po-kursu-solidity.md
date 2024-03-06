@@ -32,14 +32,15 @@ tags:
 
 <p>В старых видео может быть показано, что необходимо установить много всего, это правда. К счастью, теперь у нас есть решение toolbox, которое содержит в себе всё необходимое. Достаточно установить только его. Фактически, ваш файл <i class="inline_code">package.json</i> может содержать только две библиотеки:</p>
 
-<pre><code>{
+{{< highlight json >}}
+{
   "name": "hardhat-project",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "hardhat": "^2.13.0",
   }
 }
-</code></pre>
+{{< / highlight >}}
 
 <p>Только не забудьте добавить toolbox в ваш файл hardhat.config.</p>
 
@@ -47,9 +48,12 @@ tags:
 
 <p>Если при написании скрипта для деплоя вы видите ошибку вроде "no matching function (argument="key", value="deployed" ...)", то используйте код:</p>
 
-<pre><code>const Factory = await ethers.getContractFactory("Demo");
+{{< highlight js >}}
+const Factory = await ethers.getContractFactory("Demo");
 const demo = await Factory.deploy();
-await demo.waitForDeployment(); // вот тут используем новый метод вместо deployed()</code></pre>
+// вот тут используем новый метод вместо deployed():
+await demo.waitForDeployment();
+{{< / highlight >}}
 
 <p>Вместо "Demo" подставьте имя вашего контракта. Дело в том, что в toolbox версии 3 метод <i class="inline_code">deployed()</i> переименовали в <i class="inline_code">waitForDeployment()</i>.</p>
 
@@ -57,9 +61,11 @@ await demo.waitForDeployment(); // вот тут используем новый
 
 <p>Да, такое может быть. Если вы получаете ошибку вида "Property 'address' does not exist" (или что-то подобное, где явно упомянут address и строка, где это свойство использовано), когда пытаетесь вытащить адрес контракта в тестах или скриптах, то нужно использовать один из двух вариантов:</p>
 
-<pre><code>contractObj.target;
+{{< highlight js >}}
+contractObj.target;
 // ИЛИ
-await contractObj.getAddress();</code></pre>
+await contractObj.getAddress();
+{{< / highlight >}}
 
 <p>Оба способа вернут адрес контракта. Такая ошибка появится, если вы перешли на hardhat-toolbox версии 3.</p>
 
@@ -87,18 +93,22 @@ await contractObj.getAddress();</code></pre>
 
 <p>В новых версиях этот тип переехал и теперь импортируется так:</p>
 
-<pre><code>import type { SignerWithAddress } from "@nomicfoundation/hardhat-ethers/signers";</code></pre>
+{{< highlight ts >}}
+import type { SignerWithAddress } from "@nomicfoundation/hardhat-ethers/signers";
+{{< / highlight >}}
 
 <h2>Я получаю ошибку, что utils для ethers не найдено</h2>
 
 <p>Модуль <i class="inline_code">utils</i> был убран. Скорее всего, вам достаточно изменить свой код, убрав его. То есть:</p>
 
-<pre><code>// БЫЛО
+{{< highlight js >}}
+// БЫЛО
 ethers.utils.formatUnits()
 
 // СТАЛО
 
-ethers.formatUnits()</code></pre>
+ethers.formatUnits()
+{{< / highlight >}}
 
 <p>В большинстве случаев этого будет достаточно. Подробнее написано в <a href="https://docs.ethers.org/v6/migrating/">руководстве по переходу на Ethers 6</a>.</p>
 
@@ -110,14 +120,16 @@ ethers.formatUnits()</code></pre>
 
 <p>Если у вас упорно вылезает сеть 31337, а вам нужна 1337, то в конфигурацию Hardhat добавляем:</p>
 
-<pre><code>{
+{{< highlight js >}}
+{
   // тут всякие другие настройки ...
   networks: {
     hardhat: {
       chainId: 1337
     }
   }
-}</code></pre>
+}
+{{< / highlight >}}
 
 <h2>Мне непонятны все эти криптографические штуки, что делать?</h2>
 

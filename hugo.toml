@@ -8,6 +8,8 @@ enableRobotsTXT = true
 
 paginate = 15
 
+markup.highlight.noClasses=false
+
 [taxonomies]
 tag = "tags"
 category = "blog"
