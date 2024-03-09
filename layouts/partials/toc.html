@@ -1,4 +1,4 @@
-{{ if gt .WordCount 500 }}
+{{ if and (gt .WordCount 500 ) (not .Params.skip_toc) }}
 <aside>
   {{ .TableOfContents }}
 </aside>

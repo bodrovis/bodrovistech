@@ -777,8 +777,7 @@ a {
 
 a:link, a:active, a:visited {
   color: #222;
-  text-decoration: none;
-  border-bottom: 1px solid #222;
+  text-decoration: underline;
 }
 
 a:hover, a:focus {
@@ -966,6 +965,10 @@ header #logo p .subtitle {
 header #logo p:hover {
   text-shadow: 1px 1px 9px #999;
 }
+header #logo p a:link, header #logo p a:hover, header #logo p a:focus, header #logo p a:active, header #logo p a:visited {
+  color: #007f7f;
+  text-decoration: none;
+}
 
 footer {
   width: 100%;
@@ -1070,19 +1073,21 @@ hr.posts-delimeter {
 .full-entry #TableOfContents {
   margin: 1rem 0;
   border: 1px solid #ccc;
-  font-size: 0.9rem;
   padding: 0.5rem;
 }
 .full-entry #TableOfContents ul {
-  padding-left: 1rem;
-  margin: 0;
+  font-size: 0.95rem;
+  padding-left: 1em;
+  margin: 0 0 0 0.5em;
 }
 .full-entry #TableOfContents li {
-  list-style: none;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.3em;
 }
 .full-entry #TableOfContents li:last-of-type {
   margin-bottom: 0;
+}
+.full-entry #TableOfContents li a {
+  text-decoration: none;
 }
 .full-entry .timestamp {
   display: block;

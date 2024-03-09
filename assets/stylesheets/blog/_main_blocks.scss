@@ -93,6 +93,11 @@ header {
       &:hover {
         text-shadow: 1px 1px 9px #999;
       }
+
+      a:link, a:hover, a:focus, a:active, a:visited {
+        color: shared.$radiant;
+        text-decoration: none;
+      }
     }
   }
 }

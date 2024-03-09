@@ -343,8 +343,7 @@ a {
 
 a:link, a:active, a:visited {
   color: #222;
-  text-decoration: none;
-  border-bottom: 1px solid #222;
+  text-decoration: underline;
 }
 
 a:hover, a:focus {
@@ -574,6 +573,10 @@ header #logo p .subtitle {
 }
 header #logo p:hover {
   text-shadow: 1px 1px 9px #999;
+}
+header #logo p a:link, header #logo p a:hover, header #logo p a:focus, header #logo p a:active, header #logo p a:visited {
+  color: #007f7f;
+  text-decoration: none;
 }
 
 footer {
