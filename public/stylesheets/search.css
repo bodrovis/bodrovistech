@@ -531,6 +531,10 @@ header #logo p .subtitle {
 header #logo p:hover {
   text-shadow: 1px 1px 9px #999;
 }
+header #logo p a:link, header #logo p a:hover, header #logo p a:focus, header #logo p a:active, header #logo p a:visited {
+  color: #007f7f;
+  text-decoration: none;
+}
 
 footer {
   width: 100%;

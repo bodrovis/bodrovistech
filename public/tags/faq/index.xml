@@ -1,5 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FAQ on Ilya Krukowski</title><link>https://bodrovis.tech/tags/faq/</link><description>Recent content in FAQ on Ilya Krukowski</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 12 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bodrovis.tech/tags/faq/index.xml" rel="self" type="application/rss+xml"/><item><title>FAQ по курсу Solidity</title><link>https://bodrovis.tech/posts/faq-po-kursu-solidity/</link><pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/faq-po-kursu-solidity/</guid><description>Это ответы на часто задаваемые вопросы по бесплатному курсу Solidity, который вы можете найти на YouTube.
-Если вам нужна дополнительная помощь или есть мысли, что ещё можно добавить в этот документ, пишите в наш чат Telegram.
-Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить спонсорство на YouTube, а также использовать DonationAlerts, Boosty или Patreon. Криптовалюту тоже можно отправить, мой адрес 0x719C2d2bcC155c85190f20E1Cc3710F90FAFDa16 (mainnet, binance smart chain, arbitrum one, zk era mainnet, matic mainnet).</description></item><item><title>FAQ по курсу Ruby on Rails</title><link>https://bodrovis.tech/posts/faq-po-kursu-ruby-on-rails/</link><pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/faq-po-kursu-ruby-on-rails/</guid><description>Этот материал содержит в себе ответы на часто задаваемые вопросы по бесплатному курсу Ruby on Rails, который вы можете найти на YouTube.
-Если вам нужна дополнительная помощь или есть мысли, что ещё можно добавить в этот документ, пишите в наш чат Telegram.
-Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить спонсорство на YouTube, а также использовать DonationAlerts, Boosty или Patreon.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FAQ on Ilya Krukowski</title>
+    <link>http://localhost:1313/tags/faq/</link>
+    <description>Recent content in FAQ on Ilya Krukowski</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/faq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FAQ по курсу Solidity</title>
+      <link>http://localhost:1313/posts/faq-po-kursu-solidity/</link>
+      <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/faq-po-kursu-solidity/</guid>
+      <description>Это ответы на часто задаваемые вопросы по бесплатному курсу Solidity, который вы можете найти на YouTube.&#xA;Если вам нужна дополнительная помощь или есть мысли, что ещё можно добавить в этот документ, пишите в наш чат Telegram.&#xA;Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить спонсорство на YouTube, а также использовать DonationAlerts, Boosty или Patreon. Криптовалюту тоже можно отправить, мой адрес 0x719C2d2bcC155c85190f20E1Cc3710F90FAFDa16 (mainnet, binance smart chain, arbitrum one, zk era mainnet, matic mainnet).</description>
+    </item>
+    <item>
+      <title>FAQ по курсу Ruby on Rails</title>
+      <link>http://localhost:1313/posts/faq-po-kursu-ruby-on-rails/</link>
+      <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/faq-po-kursu-ruby-on-rails/</guid>
+      <description>Этот материал содержит в себе ответы на часто задаваемые вопросы по бесплатному курсу Ruby on Rails, который вы можете найти на YouTube.&#xA;Если вам нужна дополнительная помощь или есть мысли, что ещё можно добавить в этот документ, пишите в наш чат Telegram.&#xA;Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить спонсорство на YouTube, а также использовать DonationAlerts, Boosty или Patreon.</description>
+    </item>
+  </channel>
+</rss>

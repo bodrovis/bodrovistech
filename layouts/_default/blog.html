@@ -31,7 +31,7 @@
       </aside>
 
       <p class="post-preview">
-        {{ .Content | plainify | truncate 500 }}
+        {{ .Content | plainify | htmlUnescape | truncate 500 }}
       </p>
 
       <hr class="posts-delimeter">

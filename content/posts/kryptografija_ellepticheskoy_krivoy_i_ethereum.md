@@ -13,7 +13,7 @@ tags:
 
 Это запись по следам видеоурока, который можно найти на YouTube:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q51qT9MRbLs?si=GQE_-k4nnAgpVmBh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{{< video q51qT9MRbLs >}}
 
 *Эта запись также доступна [в канале Telegram "DEV: Рубиновые тона"](https://t.me/dev_in_ruby_colors/788), а обсудить же эту тему можно [в нашем чате Telegram](https://t.me/+MxYT6-01eeA1NTYy).*
 
