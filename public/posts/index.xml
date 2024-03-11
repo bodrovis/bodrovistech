@@ -1,103 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Ilya Krukowski</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content on Ilya Krukowski</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 06 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Криптография эллиптической кривой (ECC) и Ethereum</title>
-      <link>http://localhost:1313/posts/kryptografija_ellepticheskoy_krivoy_i_ethereum/</link>
-      <pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/kryptografija_ellepticheskoy_krivoy_i_ethereum/</guid>
-      <description>Сегодня мы с вами поговорим о криптографии эллиптической кривой (elliptic-curve cryptography, ECC) и конкретно о том, как она используется в Ethereum.&#xA;Это запись по следам видеоурока, который можно найти на YouTube:&#xA;Эта запись также доступна в канале Telegram &amp;ldquo;DEV: Рубиновые тона&amp;rdquo;, а обсудить же эту тему можно в нашем чате Telegram.&#xA;Зачем ECC нужна в Ethereum? Первый вопрос, который может возникнуть у пытливого читателя: зачем вообще всё это надо? Что ж, это весьма логичный вопрос!</description>
-    </item>
-    <item>
-      <title>Почему не надо устанавливать неизвестные сертификаты на свои устройства?</title>
-      <link>http://localhost:1313/posts/pochemu-ne-nado-ustanavlivat-neizvestnyye-sertificaty-na-svoi-ustrojstva/</link>
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/pochemu-ne-nado-ustanavlivat-neizvestnyye-sertificaty-na-svoi-ustrojstva/</guid>
-      <description>В свете того, что в ряде стран пользователей сети Интернет вынуждают устанавливать на компьютеры и смартфоны какие-то &amp;ldquo;специальные&amp;rdquo;, непонятные сертификаты безопасности, некоторые знакомые спрашивают, что всё это значит. В этой статье я попробую совсем по-простому объяснить, в чём тут дело, и расскажу вам сказку.&#xA;Присказка Интернет — вообще штука публичная, огромное количество данных передаётся по сети каждую секунду, и кто даст гарантию, что какой-нибудь хитрец не пытается эти данные перехватить, подслушать?</description>
-    </item>
-    <item>
-      <title>Самоучитель Rust</title>
-      <link>http://localhost:1313/posts/samouchitel-rust/</link>
-      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/samouchitel-rust/</guid>
-      <description>Rust — это современный и популярный язык программирования для написания надёжных и быстродействующих программ. Но возникает вопрос: с чего начать изучение?&#xA;Я предлагаю вашему вниманию серию уроков на YouTube по Rust, в которой мы обсудим основы языка и будем применять его на практике. Никакой воды, только актуальная информация. А знаете, что самое приятное? Всё это абсолютно бесплатно. Не надо отправлять SMS на короткий номер, вводить номер кредитной карты или подписываться кровью.</description>
-    </item>
-    <item>
-      <title>FAQ по курсу Solidity</title>
-      <link>http://localhost:1313/posts/faq-po-kursu-solidity/</link>
-      <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/faq-po-kursu-solidity/</guid>
-      <description>Это ответы на часто задаваемые вопросы по бесплатному курсу Solidity, который вы можете найти на YouTube.&#xA;Если вам нужна дополнительная помощь или есть мысли, что ещё можно добавить в этот документ, пишите в наш чат Telegram.&#xA;Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить спонсорство на YouTube, а также использовать DonationAlerts, Boosty или Patreon. Криптовалюту тоже можно отправить, мой адрес 0x719C2d2bcC155c85190f20E1Cc3710F90FAFDa16 (mainnet, binance smart chain, arbitrum one, zk era mainnet, matic mainnet).</description>
-    </item>
-    <item>
-      <title>Самоучитель Solidity и Ethereum</title>
-      <link>http://localhost:1313/posts/samouchitel-solidity-i-ethereum/</link>
-      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/samouchitel-solidity-i-ethereum/</guid>
-      <description>Ethereum — это децентрализованный открытый блокчейн, который позволяет писать &#34;умные&#34; контракты (они же смарт-контракты) на языке Solidity. За последние годы Ethereum обрёл бешеную популярность и сейчас о нём и о сопутствующих технологиях говорят буквально все. Но возникает вопрос: с чего начать изучение?&#xA;Я предлагаю вашему вниманию серию уроков на YouTube по Ethereum и Solidity, в которой мы обсудим основы языка и будем применять его на реальных проектах, научимся использовать Hardhat и Ethers.</description>
-    </item>
-    <item>
-      <title>FAQ по курсу Ruby on Rails</title>
-      <link>http://localhost:1313/posts/faq-po-kursu-ruby-on-rails/</link>
-      <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/faq-po-kursu-ruby-on-rails/</guid>
-      <description>Этот материал содержит в себе ответы на часто задаваемые вопросы по бесплатному курсу Ruby on Rails, который вы можете найти на YouTube.&#xA;Если вам нужна дополнительная помощь или есть мысли, что ещё можно добавить в этот документ, пишите в наш чат Telegram.&#xA;Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить спонсорство на YouTube, а также использовать DonationAlerts, Boosty или Patreon.</description>
-    </item>
-    <item>
-      <title>Самоучитель Elixir</title>
-      <link>http://localhost:1313/posts/samouchitel-elixir/</link>
-      <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/samouchitel-elixir/</guid>
-      <description>Elixir — это современный язык программирования для написания надёжных информационных систем. Он реализует концепцию фунциональной разработки и тем самым отличается от многих &#34;привычных&#34; языков. Но возникает вопрос: с чего начать изучение?&#xA;Я предлагаю вашему вниманию серию уроков на YouTube по Elixir, в которой мы обсудим основы языка и будем применять его на практике. Никакой воды, только актуальная информация. А знаете, что самое приятное? Всё это абсолютно бесплатно. Не надо отправлять SMS на короткий номер, вводить номер кредитной карты или подписываться кровью.</description>
-    </item>
-    <item>
-      <title>Самоучитель Ruby on Rails 6 и 7</title>
-      <link>http://localhost:1313/posts/samouchitel-ruby-on-rails-6-7/</link>
-      <pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/samouchitel-ruby-on-rails-6-7/</guid>
-      <description>Ruby on Rails &amp;mdash; это популярный web-фреймворк, который появился более 14 лет назад. Сегодня я предлагаю вам цикл лекций по Ruby on Rails 6 и 7 на YouTube, в которых мы обсудим всё, связанное с данной замечательной технологией. Цикл лекций не закончен, однако новые видео выпускаются регулярно. Новый урок по Ruby on Rails 6 и 7 каждую неделю! А знаете, что самое приятное? Всё это абсолютно бесплатно. Вы можете смотреть любые уроки из серии на YouTube безо всяких ограничений, без отправки SMS на короткий номер и прочей ерунды.</description>
-    </item>
-    <item>
-      <title>Возвращение на Валаам</title>
-      <link>http://localhost:1313/posts/vozvraschenie-na-valaam/</link>
-      <pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/vozvraschenie-na-valaam/</guid>
-      <description>Важное обновление от 09.2017! Офис природного парка, сотрудники которого занимались размещением туристов на острове, прекратил свою работу 1 июня 2017. Это означает, что теперь все заявки принимает только Паломническая служба монастыря. Кроме всего прочего, ряд стоянок теперь, судя по всему, предназначен только для паломников. По большому счёту, происходит то, чего боялись уже долгое время: остров потихоньку закрывают для посещений простыми смертными. Я не буду рассуждать здесь на этот счёт и объяснять, как всё это случилось - материала на эту тему в интернете предостаточно (например, тут и тут; а вот здесь более свежий материал за май 2018).</description>
-    </item>
-    <item>
-      <title>На Валаам с палатками (ч. 3)</title>
-      <link>http://localhost:1313/posts/na-valaam-s-palatkami-ch-3/</link>
-      <pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/na-valaam-s-palatkami-ch-3/</guid>
-      <description>Довольно долго не мог приступить к написанию третьей части (вторую можно найти тут) — в основном потому, что занимался техническими статьями для другого ресурса. Однако долги надо отдавать, посему прошу любить и жаловать последнюю часть этого цикла. Приятного чтения!&#xA;В лесу недалеко от лагеря.&#xA;Чаепитие на скале&#xD;Итак, напомню, что нас пригласили прокатиться на моторке вокруг острова и заодно устроить пикничок в каком-нибудь живописном месте. Мы отчалили и взяли курс на запад — в сторону метеостанции.</description>
-    </item>
-    <item>
-      <title>На Валаам с палатками (ч. 2)</title>
-      <link>http://localhost:1313/posts/na-valaam-s-palatkami-ch-2/</link>
-      <pubDate>Fri, 24 Oct 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/na-valaam-s-palatkami-ch-2/</guid>
-      <description>В предыдущем посте я рассказывал о том, как началось наше путешествие на Валаам, как мы добирались из Санкт-Петербурга до Приозерска (с остановкой в Лосево). В этой же части я поведаю о продолжении нашего похода: из Приозерска до Валаама и о размещении на острове. Как и в прошлый раз я постараюсь, чтобы моё повествование было не только интересным, но и полезным для тех, кто решит повторить наш маршрут.&#xA;Приозерск - Валаам&#xD;Итак, расположившись на Валаамском причале в Приозерске на брёвнах и попивая прохладный йогурт, мы с интересом поглядывали вокруг.</description>
-    </item>
-    <item>
-      <title>На Валаам с палатками (ч. 1)</title>
-      <link>http://localhost:1313/posts/na-valaam-s-palatkami-ch-1/</link>
-      <pubDate>Thu, 02 Oct 2014 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/na-valaam-s-palatkami-ch-1/</guid>
-      <description>Важное обновление от 09.2017! Офис природного парка, сотрудники которого занимались размещением туристов на острове, прекратил свою работу 1 июня 2017. Это означает, что теперь все заявки принимает только Паломническая служба монастыря. Кроме всего прочего, ряд стоянок теперь, судя по всему, предназначен только для паломников. По большому счёту, происходит то, чего боялись уже долгое время: остров потихоньку закрывают для посещений простыми смертными. Я не буду рассуждать здесь на этот счёт и объяснять, как всё это случилось - материала на эту тему в интернете предостаточно (например, тут и тут; а вот здесь более свежий материал за май 2018).</description>
-    </item>
-    <item>
-      <title>История строки user-agent в браузерах</title>
-      <link>http://localhost:1313/posts/istoriya-stroki-user-agent-v-brauzerah/</link>
-      <pubDate>Fri, 27 Dec 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/istoriya-stroki-user-agent-v-brauzerah/</guid>
-      <description>Данная статья является переводом поста &#34;History of the browser user-agent string&#34; с сайта WebAIM. Некоторые ссылки, указанные в статье, на данный момент уже недоступны, поэтому мне пришлось их изменить (в частности, ссылаться на архив Интернета). В некоторых местах я даю перевод английских слов и дополнения в скобках.&#xA;Mosaic&#xA;В начале времён был NCSA Mosaic, и Mosaic гордо именовал себя NCSA_Mosaic/2.0 (Windows 3.1). Являл он изображения, равно как и текст, и люди возрадовались.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ilya Krukowski</title><link>https://bodrovis.tech/posts/</link><description>Recent content on Ilya Krukowski</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 06 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://bodrovis.tech/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Криптография эллиптической кривой (ECC) и Ethereum</title><link>https://bodrovis.tech/posts/kryptografija_ellepticheskoy_krivoy_i_ethereum/</link><pubDate>Wed, 06 Mar 2024 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/kryptografija_ellepticheskoy_krivoy_i_ethereum/</guid><description>Сегодня мы с вами поговорим о криптографии эллиптической кривой (elliptic-curve cryptography, ECC) и конкретно о том, как она используется в Ethereum.
+Это запись по следам видеоурока, который можно найти на YouTube:
+Эта запись также доступна в канале Telegram &amp;ldquo;DEV: Рубиновые тона&amp;rdquo;, а обсудить же эту тему можно в нашем чате Telegram.
+Зачем ECC нужна в Ethereum? Первый вопрос, который может возникнуть у пытливого читателя: зачем вообще всё это надо? Что ж, это весьма логичный вопрос!</description></item><item><title>Почему не надо устанавливать неизвестные сертификаты на свои устройства?</title><link>https://bodrovis.tech/posts/pochemu-ne-nado-ustanavlivat-neizvestnyye-sertificaty-na-svoi-ustrojstva/</link><pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/pochemu-ne-nado-ustanavlivat-neizvestnyye-sertificaty-na-svoi-ustrojstva/</guid><description>В свете того, что в ряде стран пользователей сети Интернет вынуждают устанавливать на компьютеры и смартфоны какие-то &amp;ldquo;специальные&amp;rdquo;, непонятные сертификаты безопасности, некоторые знакомые спрашивают, что всё это значит. В этой статье я попробую совсем по-простому объяснить, в чём тут дело, и расскажу вам сказку.
+Присказка Интернет — вообще штука публичная, огромное количество данных передаётся по сети каждую секунду, и кто даст гарантию, что какой-нибудь хитрец не пытается эти данные перехватить, подслушать?</description></item><item><title>Самоучитель Rust</title><link>https://bodrovis.tech/posts/samouchitel-rust/</link><pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/samouchitel-rust/</guid><description>Rust — это современный и популярный язык программирования для написания надёжных и быстродействующих программ. Но возникает вопрос: с чего начать изучение?
+Я предлагаю вашему вниманию серию уроков на YouTube по Rust, в которой мы обсудим основы языка и будем применять его на практике. Никакой воды, только актуальная информация. А знаете, что самое приятное? Всё это абсолютно бесплатно. Не надо отправлять SMS на короткий номер, вводить номер кредитной карты или подписываться кровью.</description></item><item><title>FAQ по курсу Solidity</title><link>https://bodrovis.tech/posts/faq-po-kursu-solidity/</link><pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/faq-po-kursu-solidity/</guid><description>Это ответы на часто задаваемые вопросы по бесплатному курсу Solidity, который вы можете найти на YouTube.
+Если вам нужна дополнительная помощь или есть мысли, что ещё можно добавить в этот документ, пишите в наш чат Telegram.
+Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить спонсорство на YouTube, а также использовать DonationAlerts, Boosty или Patreon. Криптовалюту тоже можно отправить, мой адрес 0x719C2d2bcC155c85190f20E1Cc3710F90FAFDa16 (mainnet, binance smart chain, arbitrum one, zk era mainnet, matic mainnet).</description></item><item><title>Самоучитель Solidity и Ethereum</title><link>https://bodrovis.tech/posts/samouchitel-solidity-i-ethereum/</link><pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/samouchitel-solidity-i-ethereum/</guid><description>Ethereum — это децентрализованный открытый блокчейн, который позволяет писать "умные" контракты (они же смарт-контракты) на языке Solidity. За последние годы Ethereum обрёл бешеную популярность и сейчас о нём и о сопутствующих технологиях говорят буквально все. Но возникает вопрос: с чего начать изучение?
+Я предлагаю вашему вниманию серию уроков на YouTube по Ethereum и Solidity, в которой мы обсудим основы языка и будем применять его на реальных проектах, научимся использовать Hardhat и Ethers.</description></item><item><title>FAQ по курсу Ruby on Rails</title><link>https://bodrovis.tech/posts/faq-po-kursu-ruby-on-rails/</link><pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/faq-po-kursu-ruby-on-rails/</guid><description>Этот материал содержит в себе ответы на часто задаваемые вопросы по бесплатному курсу Ruby on Rails, который вы можете найти на YouTube.
+Если вам нужна дополнительная помощь или есть мысли, что ещё можно добавить в этот документ, пишите в наш чат Telegram.
+Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить спонсорство на YouTube, а также использовать DonationAlerts, Boosty или Patreon.</description></item><item><title>Самоучитель Elixir</title><link>https://bodrovis.tech/posts/samouchitel-elixir/</link><pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/samouchitel-elixir/</guid><description>Elixir — это современный язык программирования для написания надёжных информационных систем. Он реализует концепцию фунциональной разработки и тем самым отличается от многих "привычных" языков. Но возникает вопрос: с чего начать изучение?
+Я предлагаю вашему вниманию серию уроков на YouTube по Elixir, в которой мы обсудим основы языка и будем применять его на практике. Никакой воды, только актуальная информация. А знаете, что самое приятное? Всё это абсолютно бесплатно. Не надо отправлять SMS на короткий номер, вводить номер кредитной карты или подписываться кровью.</description></item><item><title>Самоучитель Ruby on Rails 6 и 7</title><link>https://bodrovis.tech/posts/samouchitel-ruby-on-rails-6-7/</link><pubDate>Mon, 21 Jun 2021 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/samouchitel-ruby-on-rails-6-7/</guid><description>Ruby on Rails &amp;mdash; это популярный web-фреймворк, который появился более 14 лет назад. Сегодня я предлагаю вам цикл лекций по Ruby on Rails 6 и 7 на YouTube, в которых мы обсудим всё, связанное с данной замечательной технологией. Цикл лекций не закончен, однако новые видео выпускаются регулярно. Новый урок по Ruby on Rails 6 и 7 каждую неделю! А знаете, что самое приятное? Всё это абсолютно бесплатно. Вы можете смотреть любые уроки из серии на YouTube безо всяких ограничений, без отправки SMS на короткий номер и прочей ерунды.</description></item><item><title>Возвращение на Валаам</title><link>https://bodrovis.tech/posts/vozvraschenie-na-valaam/</link><pubDate>Wed, 25 Nov 2015 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/vozvraschenie-na-valaam/</guid><description>Важное обновление от 09.2017! Офис природного парка, сотрудники которого занимались размещением туристов на острове, прекратил свою работу 1 июня 2017. Это означает, что теперь все заявки принимает только Паломническая служба монастыря. Кроме всего прочего, ряд стоянок теперь, судя по всему, предназначен только для паломников. По большому счёту, происходит то, чего боялись уже долгое время: остров потихоньку закрывают для посещений простыми смертными. Я не буду рассуждать здесь на этот счёт и объяснять, как всё это случилось - материала на эту тему в интернете предостаточно (например, тут и тут; а вот здесь более свежий материал за май 2018).</description></item><item><title>На Валаам с палатками (ч. 3)</title><link>https://bodrovis.tech/posts/na-valaam-s-palatkami-ch-3/</link><pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/na-valaam-s-palatkami-ch-3/</guid><description>Довольно долго не мог приступить к написанию третьей части (вторую можно найти тут) — в основном потому, что занимался техническими статьями для другого ресурса. Однако долги надо отдавать, посему прошу любить и жаловать последнюю часть этого цикла. Приятного чтения!
+В лесу недалеко от лагеря.
+Чаепитие на скале Итак, напомню, что нас пригласили прокатиться на моторке вокруг острова и заодно устроить пикничок в каком-нибудь живописном месте. Мы отчалили и взяли курс на запад — в сторону метеостанции.</description></item><item><title>На Валаам с палатками (ч. 2)</title><link>https://bodrovis.tech/posts/na-valaam-s-palatkami-ch-2/</link><pubDate>Fri, 24 Oct 2014 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/na-valaam-s-palatkami-ch-2/</guid><description>В предыдущем посте я рассказывал о том, как началось наше путешествие на Валаам, как мы добирались из Санкт-Петербурга до Приозерска (с остановкой в Лосево). В этой же части я поведаю о продолжении нашего похода: из Приозерска до Валаама и о размещении на острове. Как и в прошлый раз я постараюсь, чтобы моё повествование было не только интересным, но и полезным для тех, кто решит повторить наш маршрут.
+Приозерск - Валаам Итак, расположившись на Валаамском причале в Приозерске на брёвнах и попивая прохладный йогурт, мы с интересом поглядывали вокруг.</description></item><item><title>На Валаам с палатками (ч. 1)</title><link>https://bodrovis.tech/posts/na-valaam-s-palatkami-ch-1/</link><pubDate>Thu, 02 Oct 2014 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/na-valaam-s-palatkami-ch-1/</guid><description>Важное обновление от 09.2017! Офис природного парка, сотрудники которого занимались размещением туристов на острове, прекратил свою работу 1 июня 2017. Это означает, что теперь все заявки принимает только Паломническая служба монастыря. Кроме всего прочего, ряд стоянок теперь, судя по всему, предназначен только для паломников. По большому счёту, происходит то, чего боялись уже долгое время: остров потихоньку закрывают для посещений простыми смертными. Я не буду рассуждать здесь на этот счёт и объяснять, как всё это случилось - материала на эту тему в интернете предостаточно (например, тут и тут; а вот здесь более свежий материал за май 2018).</description></item><item><title>История строки user-agent в браузерах</title><link>https://bodrovis.tech/posts/istoriya-stroki-user-agent-v-brauzerah/</link><pubDate>Fri, 27 Dec 2013 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/istoriya-stroki-user-agent-v-brauzerah/</guid><description>Данная статья является переводом поста "History of the browser user-agent string" с сайта WebAIM. Некоторые ссылки, указанные в статье, на данный момент уже недоступны, поэтому мне пришлось их изменить (в частности, ссылаться на архив Интернета). В некоторых местах я даю перевод английских слов и дополнения в скобках.
+Mosaic
+В начале времён был NCSA Mosaic, и Mosaic гордо именовал себя NCSA_Mosaic/2.0 (Windows 3.1). Являл он изображения, равно как и текст, и люди возрадовались.</description></item></channel></rss>
