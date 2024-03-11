@@ -9,16 +9,23 @@
     <lastBuildDate>Mon, 11 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Что такое Unicode, UTF-8 и ASCII?</title>
+      <link>http://localhost:1313/posts/chto_takoe_unicode_utf8_i_ascii/</link>
+      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/chto_takoe_unicode_utf8_i_ascii/</guid>
+      <description>В этой статье мы поговорим о том, как кодируется текст в современных компьютерах, а также о таких понятиях, как Unicode, UTF-8 и ASCII (и не только).&#xA;Это запись по следам видеоурока, который можно найти на YouTube:&#xA;Эта запись также доступна в канале Telegram &amp;ldquo;DEV: Рубиновые тона&amp;rdquo;, а обсудить же эту тему можно в нашем чате Telegram. Статья написана с использованием руководства Джоэля Спольского.&#xA;Зачем нужны кодировки? Люди говорят, думают и пишут на естественных языках, многие из которых развивались на протяжении столетий.</description>
+    </item>
+    <item>
       <title>Как в компьютере представлены дробные числа?</title>
       <link>http://localhost:1313/posts/kak-v-computere-predstavleny-drobnyye-chisla/</link>
-      <pubDate>Mon, 11 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/kak-v-computere-predstavleny-drobnyye-chisla/</guid>
       <description>В этой статье мы поговорим о дробных числах (float) и их представлении в компьютере, в частности, о том, как их описывает стандарт IEEE 754, принятый в 1985 году. Если вас интересует представление целых чисел, об этом можно почитать в предыдущей статье.&#xA;Это запись по следам видеоурока, который можно найти на YouTube:&#xA;Эта запись также доступна в канале Telegram &amp;ldquo;DEV: Рубиновые тона&amp;rdquo;, а обсудить же эту тему можно в нашем чате Telegram.</description>
     </item>
     <item>
       <title>Как в компьютере представлены целые числа?</title>
       <link>http://localhost:1313/posts/kak-v-computere-predstavleny-celye-chisla/</link>
-      <pubDate>Sun, 10 Mar 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/kak-v-computere-predstavleny-celye-chisla/</guid>
       <description>Как целые числа представлены в современных компьютерах? Это немаловажный вопрос, ответ на который состоит из нескольких частей. Дело в том, что у нас есть обычные неотрицательные целые числа (uint), которые представляют собой последовательность от 0 и далее до бесконечности, и просто целые числа (int), которые могут быть и отрицательными, и положительными. Есть ещё числа дробные, но про них речь пойдёт в следующей статье.&#xA;Это запись по следам видеоурока, который можно найти на YouTube:</description>
     </item>

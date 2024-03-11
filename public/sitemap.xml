@@ -8,20 +8,23 @@
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cpu/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/cs/</loc>
     <lastmod>2024-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/kak-v-computere-predstavleny-drobnyye-chisla/</loc>
+    <loc>http://localhost:1313/posts/chto_takoe_unicode_utf8_i_ascii/</loc>
     <lastmod>2024-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/kak-v-computere-predstavleny-celye-chisla/</loc>
+    <loc>http://localhost:1313/tags/cpu/</loc>
     <lastmod>2024-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/kak-v-computere-predstavleny-drobnyye-chisla/</loc>
+    <lastmod>2024-03-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/kak-v-computere-predstavleny-celye-chisla/</loc>
+    <lastmod>2024-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/ethereum/</loc>
     <lastmod>2024-03-06T00:00:00+00:00</lastmod>
