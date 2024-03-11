@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Run Hugo
+        run: hugo --minify
       - name: Run Pagefind
         run: npm_config_yes=true npx pagefind --site "public" --force-language en
       - uses: FirebaseExtended/action-hosting-deploy@v0
