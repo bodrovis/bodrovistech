@@ -5,7 +5,7 @@ meta_desc: Ruby on Rails - это популярный web-фреймворк, �
 date: 2021-06-21T00:00:00
 lang: ru-RU
 tags:
-- Ruby on Rails
+- Rails
 - YouTube
 - Самоучитель
 ---
