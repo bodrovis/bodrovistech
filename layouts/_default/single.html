@@ -4,7 +4,12 @@
 {{ end }}
 
 {{ define "other_meta" }}
-<meta property="og:image" content="{{ .Params.meta_img }}">
+{{ if not .Params.skip_meta_img }}
+{{ $defaultMetaImg := path.Base .RelPermalink }}
+{{ $metaImg := default $defaultMetaImg .Params.meta_img }}
+
+<meta property="og:image" content="{{ .Site.BaseURL }}meta/{{ $metaImg }}.webp">
+{{ end }}
 <meta property="og:type" content="blog">
 <meta property="og:title" content="{{ .Title }} |  by Ilya Krukowski">
 <meta property="og:description" content="{{ .Params.meta_desc }}">

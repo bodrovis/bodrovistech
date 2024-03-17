@@ -3,16 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-12T12:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-12T12:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cs/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-12T12:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-12T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/zakon_amdala/</loc>
+    <lastmod>2024-03-12T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/big_endian_i_little_endian_poryadok_sledovaniya_baytov/</loc>
+    <lastmod>2024-03-11T12:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/chto_takoe_unicode_utf8_i_ascii/</loc>
     <lastmod>2024-03-11T00:00:00+00:00</lastmod>

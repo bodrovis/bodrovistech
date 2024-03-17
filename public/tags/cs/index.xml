@@ -6,8 +6,22 @@
     <description>Recent content in Cs on Ilya Krukowski</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Mar 2024 12:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/cs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Что такое закон Амдала?</title>
+      <link>http://localhost:1313/posts/zakon_amdala/</link>
+      <pubDate>Tue, 12 Mar 2024 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/zakon_amdala/</guid>
+      <description>В этой статье мы поговорим о законе Амдала (Amdahl&amp;rsquo;s law) и он том, в чём его суть.&#xA;Сущность закона Амдала Этот интересный закон был придуман Джином Амдалом несколько десятилетий назад, его время от времени упоминают в контексте информационных систем, так что знать его суть не помешает.&#xA;Вообще, смысл данного закона весьма простой: если мы &amp;ldquo;улучшаем&amp;rdquo; (ускоряем) часть некой системы, то общий эффект на быстродействие всей системы будет зависеть от того, насколько этот компонент был важен (то есть какой процент времени работа с ним занимает) и насколько мы его улучшили.</description>
+    </item>
+    <item>
+      <title>Big-endian и little-endian: порядок следования байтов и причём тут Гулливер</title>
+      <link>http://localhost:1313/posts/big_endian_i_little_endian_poryadok_sledovaniya_baytov/</link>
+      <pubDate>Mon, 11 Mar 2024 12:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/big_endian_i_little_endian_poryadok_sledovaniya_baytov/</guid>
+      <description>В этой статье мы поговорим о понятиях big-endian и little-endian в computer science.&#xA;Эта запись также доступна в канале Telegram &amp;ldquo;DEV: Рубиновые тона&amp;rdquo;, а обсудить же эту тему можно в нашем чате Telegram.&#xA;Дом, который построил Свифт Частенько в руководствах и документации можно встретить термины big-endian и little-endian — да хотя бы в статье про кодировки UTF8 и ASCII. Но что эти понятия вообще значат? На самом деле, всё довольно просто: это буквально война тупоконечников и остроконечников (я серьёзно).</description>
+    </item>
     <item>
       <title>Что такое Unicode, UTF-8 и ASCII?</title>
       <link>http://localhost:1313/posts/chto_takoe_unicode_utf8_i_ascii/</link>
