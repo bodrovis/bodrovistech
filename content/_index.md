@@ -79,10 +79,7 @@ draft: false
       <a href="https://www.patreon.com/bodrovis" target="_blank">Patreon</a>
     </li>
     <li>
-      <a href="https://www.donationalerts.com/r/bodrovis" target="_blank">Donation Alerts</a>
-    </li>
-    <li>
-      Ethereum cryptocurrency (Mainnet, Binance, Arbitrum, ZK Era, Matic): 0x719C2d2bcC155c85190f20E1Cc3710F90FAFDa16
+      ETH Mainnet, BNB Chain, Arbitrum, ZK Era, Polygon, Blast: 0x719C2d2bcC155c85190f20E1Cc3710F90FAFDa16
     </li>
   </ul>
 </article>
