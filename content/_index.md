@@ -92,5 +92,4 @@ draft: false
   <a class="icon-youtube" title="YouTube" href="https://www.youtube.com/@IlyaBodrovKrukowski" target="_blank"></a>
   <a class="icon-telegram" title="Telegram" href="https://t.me/dev_in_ruby_colors" target="_blank"></a>
   <a class="icon-linkedin" title="LinkedIn" href="https://linkedin.com/in/bodrovis" target="_blank"></a>
-  <a class="icon-envelop" title="E-mail" id="icon-mail" href="mailto:bodrovis@protonmail.com"></a>
 </aside>
