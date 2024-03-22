@@ -15,6 +15,8 @@ tags:
 
 {{< video q51qT9MRbLs >}}
 
+{{< video 7jv9XhOF1mU >}}
+
 *Эта запись также доступна [в канале Telegram "DEV: Рубиновые тона"](https://t.me/dev_in_ruby_colors/788), а обсудить же эту тему можно [в нашем чате Telegram](https://t.me/+MxYT6-01eeA1NTYy).*
 
 ## Зачем ECC нужна в Ethereum?
