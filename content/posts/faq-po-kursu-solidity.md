@@ -14,7 +14,7 @@ tags:
 
 <p>Если вам нужна дополнительная помощь или есть мысли, что ещё можно добавить в этот документ, пишите <a href="https://t.me/joinchat/MxYT6-01eeA1NTYy" target="_blank">в наш чат Telegram</a>.</p>
 
-<p>Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить <a href="https://www.youtube.com/channel/UCN2waErKU52T_41pGgUimXw/join">спонсорство на YouTube</a>, а также использовать <a href="https://www.donationalerts.com/r/bodrovis">DonationAlerts</a>, <a href="https://boosty.to/bodrovis">Boosty</a> или <a href="https://www.patreon.com/bodrovis">Patreon</a>. Криптовалюту тоже можно отправить, мой адрес <i class="inline_code">0x719C2d2bcC155c85190f20E1Cc3710F90FAFDa16</i> (mainnet, binance smart chain, arbitrum one, zk era mainnet, matic mainnet).</p>
+<p>Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить <a href="https://www.youtube.com/channel/UCN2waErKU52T_41pGgUimXw/join">спонсорство на YouTube</a>, а также использовать <a href="https://boosty.to/bodrovis">Boosty</a> или <a href="https://www.patreon.com/bodrovis">Patreon</a>. Криптовалюту тоже можно отправить, мой адрес <i class="inline_code">0x719C2d2bcC155c85190f20E1Cc3710F90FAFDa16</i> (mainnet, binance smart chain, arbitrum one, zk era mainnet, matic mainnet).</p>
 
 ## Я не знаю, какую опцию выбирать при создании проекта Hardhat
 
@@ -43,6 +43,10 @@ tags:
 {{< / highlight >}}
 
 <p>Только не забудьте добавить toolbox в ваш файл hardhat.config.</p>
+
+## В Remix я не знаю, какую среду и версию языка выбирать!
+
+На момент весны 2024 года я рекомендую выбирать `Remix VM (Cancun)` и версию языка не ниже 0.8.25.
 
 ## Я пишу тесты, но получаю ошибку, что метода deployed() нет!
 

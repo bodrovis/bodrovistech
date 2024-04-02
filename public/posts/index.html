@@ -1,495 +1,58 @@
-<!DOCTYPE html>
-
-<html lang="ru-RU">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <title>Blog | Ilya Krukowski</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content='Ilya Krukowski (aka Илья Круковский, bodrovis, ibodrov) website. Personal IT tutor. Articles about web, programming, regular expressions, CSS, HTML and more.'>
-    <meta name="keywords" content="Ilya Krukowski, Илья Круковский, bodrovis, статьи о web, программирование, дизайн, регулярные выражения, web-дизайн, ruby, rails, javascript, jquery, css, html, regexp, плагины, radiant wind, plugins, gems, libraries, tutor, personal teacher, it">
-    <meta name="author" content="bodrovis">
-    <meta name="robots" content="all">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
-    
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-
-
-  
-
-  
-    
-      <link rel="stylesheet" href="/stylesheets/posts.css">
-    
-  
-
-
-
-    
-    
-  </head>
-  <body>
-    
-<header lang="en-US">
-  <div id="main-top-block" class="light_gradient">
-    <nav>
-      <a href="/" class="icon icon-home" title="Homepage"></a>
-      <a class="icon icon-book" title="Blog" href="/blog"></a>
-      <a class="icon icon-tags" title="Tags" href="/tags"></a>
-      <a class="icon icon-search with-spacer" title="Search" href="/search"></a>
-      <a class="icon icon-github" title="GitHub" href="https://github.com/bodrovis" target="_blank"></a>
-      <a class="icon icon-youtube" title="YouTube" href="https://www.youtube.com/@IlyaBodrovKrukowski" target="_blank"></a>
-      <a class="icon icon-telegram" title="Telegram" href="https://t.me/dev_in_ruby_colors" target="_blank"></a>
-      <a class="icon icon-linkedin" title="LinkedIn" href="https://linkedin.com/in/bodrovis" target="_blank"></a>
-      <a class="icon icon-envelop" title="E-mail" id="icon-mail" href="mailto:bodrovis@protonmail.com"></a>
-    </nav>
-  </div>
-
-  <div id="logo">
-    
-      <img src="/images/icon150trans.webp" width="150" height="150" alt="Ilya Krukowski logo" class="img-logo">
-    
-    
-    <p>
-      <a href="/blog">
-        <span class="capital">I</span>lya <span class="capital">K</span>rukowski
-
-        <span class="subtitle">https://bodrovis.tech</span>
-      </a>
-    </p>
-  </a>
-</header>
-
-<main id="content">
-  
-
-  <div id="posts-list">
-    
-
-    
-    <article class="entry">
-      <h2><a href="/posts/zakon_amdala/">Что такое закон Амдала?</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2024-03-12T12:00:00Z'>
-          March 12, 2024
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/cs">#cs</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        В этой статье мы поговорим о законе Амдала (Amdahl’s law) и он том, в чём его суть.
+<!doctype html><html lang=ru-RU><head><meta charset=utf-8><link rel=preconnect href=https://fonts.gstatic.com><title>Blog | Ilya Krukowski</title>
+<meta name=viewport content="width=device-width"><meta name=description content='Ilya Krukowski (aka Илья Круковский, bodrovis, ibodrov) website. Personal IT tutor. Articles about web, programming, regular expressions, CSS, HTML and more.'><meta name=keywords content="Ilya Krukowski,Илья Круковский,bodrovis,статьи о web,программирование,дизайн,регулярные выражения,web-дизайн,ruby,rails,javascript,jquery,css,html,regexp,плагины,radiant wind,plugins,gems,libraries,tutor,personal teacher,it"><meta name=author content="bodrovis"><meta name=robots content="all"><link rel=apple-touch-icon href=/apple-touch-icon.png><link rel=icon href=/favicon.ico type=image/x-icon><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=PT+Sans:wght@400;700&display=swap" rel=stylesheet><link rel=stylesheet href=/stylesheets/posts.min.48ee96c1388a7500e81bb3080c66928415c65bb979c0f34e26ba268df526155f.css integrity="sha256-SO6WwTiKdQDoG7MIDGaShBXGW7l5wPNOJromjfUmFV8=" crossorigin=anonymous></head><body><header lang=en-US><div id=main-top-block class=light_gradient><nav><a href=/ class="icon icon-home" title=Homepage></a><a class="icon icon-book" title=Blog href=/blog></a><a class="icon icon-tags" title=Tags href=/tags></a><a class="icon icon-search with-spacer" title=Search href=/search></a><a class="icon icon-github" title=GitHub href=https://github.com/bodrovis target=_blank></a><a class="icon icon-youtube" title=YouTube href=https://www.youtube.com/@IlyaBodrovKrukowski target=_blank></a><a class="icon icon-telegram" title=Telegram href=https://t.me/dev_in_ruby_colors target=_blank></a><a class="icon icon-linkedin" title=LinkedIn href=https://linkedin.com/in/bodrovis target=_blank></a></nav></div><div id=logo><img src=/images/icon150trans.webp width=150 height=150 alt="Ilya Krukowski logo" class=img-logo><p><a href=/blog><span class=capital>I</span>lya <span class=capital>K</span>rukowski
+<span class=subtitle>https://bodrovis.tech</span></a></p></a></header><main id=content><div id=posts-list><article class=entry><h2><a href=/posts/kak-sdelat-prilozhenie-dostupnym-v-internete/>Как локальное приложение сделать доступным из Интернета</a></h2><aside><time class=subtext datetime=2024-03-19T00:00:00Z>March 19, 2024
+</time><a class=badge href=/tags/web>#web</a></aside><p class=post-preview>Итак, представим ситуацию: у вас локально запущен web-сервер с неким приложением. Вам нужно срочно сделать так, чтобы к этому приложению можно было получить доступ из Интернета. У вас нет времени на настройку хостинга (ну, или нет желания/возможности за него платить). Что делать? На самом деле, решить эту проблему можно очень легко, потратив буквально одну минуту. Нас выручит такое решение, как ngrok.
+Установка ngrok В первую очередь, идём на официальный сайт ngrok и следуем инструкциям по …</p><hr class=posts-delimeter></article><article class=entry><h2><a href=/posts/zakon_amdala/>Что такое закон Амдала?</a></h2><aside><time class=subtext datetime=2024-03-12T12:00:00Z>March 12, 2024
+</time><a class=badge href=/tags/cs>#cs</a></aside><p class=post-preview>В этой статье мы поговорим о законе Амдала (Amdahl’s law) и он том, в чём его суть.
 Сущность закона Амдала Этот интересный закон был придуман Джином Амдалом несколько десятилетий назад, его время от времени упоминают в контексте информационных систем, так что знать его суть не помешает.
-Вообще, смысл данного закона весьма простой: если мы “улучшаем” (ускоряем) часть некой системы, то общий эффект на быстродействие всей системы будет зависеть от того, насколько этот компонент был важен (то есть …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-    <article class="entry">
-      <h2><a href="/posts/big_endian_i_little_endian_poryadok_sledovaniya_baytov/">Big-endian и little-endian: порядок следования байтов и причём тут Гулливер</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2024-03-11T12:00:00Z'>
-          March 11, 2024
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/cs">#cs</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        В этой статье мы поговорим о понятиях big-endian и little-endian в computer science.
+Вообще, смысл данного закона весьма простой: если мы “улучшаем” (ускоряем) часть некой системы, то общий эффект на быстродействие всей системы будет зависеть от того, насколько этот компонент был важен (то есть …</p><hr class=posts-delimeter></article><article class=entry><h2><a href=/posts/big_endian_i_little_endian_poryadok_sledovaniya_baytov/>Big-endian и little-endian: порядок следования байтов и причём тут Гулливер</a></h2><aside><time class=subtext datetime=2024-03-11T12:00:00Z>March 11, 2024
+</time><a class=badge href=/tags/cs>#cs</a></aside><p class=post-preview>В этой статье мы поговорим о понятиях big-endian и little-endian в computer science.
 Эта запись также доступна в канале Telegram “DEV: Рубиновые тона”, а обсудить же эту тему можно в нашем чате Telegram.
-Дом, который построил Свифт Частенько в руководствах и документации можно встретить термины big-endian и little-endian — да хотя бы в статье про кодировки UTF8 и ASCII. Но что эти понятия вообще значат? На самом деле, всё довольно просто: это буквально война тупоконечников и остроконечников (я …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-    <article class="entry">
-      <h2><a href="/posts/chto_takoe_unicode_utf8_i_ascii/">Что такое Unicode, UTF-8 и ASCII?</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2024-03-11T00:00:00Z'>
-          March 11, 2024
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/cs">#cs</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        В этой статье мы поговорим о том, как кодируется текст в современных компьютерах, а также о таких понятиях, как Unicode, UTF-8 и ASCII (и не только).
+Дом, который построил Свифт Частенько в руководствах и документации можно встретить термины big-endian и little-endian — да хотя бы в статье про кодировки UTF8 и ASCII. Но что эти понятия вообще значат? На самом деле, всё довольно просто: это буквально война тупоконечников и остроконечников (я …</p><hr class=posts-delimeter></article><article class=entry><h2><a href=/posts/chto_takoe_unicode_utf8_i_ascii/>Что такое Unicode, UTF-8 и ASCII?</a></h2><aside><time class=subtext datetime=2024-03-11T00:00:00Z>March 11, 2024
+</time><a class=badge href=/tags/cs>#cs</a></aside><p class=post-preview>В этой статье мы поговорим о том, как кодируется текст в современных компьютерах, а также о таких понятиях, как Unicode, UTF-8 и ASCII (и не только).
 Это запись по следам видеоурока, который можно найти на YouTube:
 Эта запись также доступна в канале Telegram “DEV: Рубиновые тона”, а обсудить же эту тему можно в нашем чате Telegram. Статья написана с использованием руководства Джоэля Спольского.
-Зачем нужны кодировки? Люди говорят, думают и пишут на естественных языках, многие из которых …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-    <article class="entry">
-      <h2><a href="/posts/kak-v-computere-predstavleny-drobnyye-chisla/">Как в компьютере представлены дробные числа?</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2024-03-10T00:00:00Z'>
-          March 10, 2024
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/cs">#cs</a>
-        
-        <a class="badge" href="/tags/cpu">#cpu</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        В этой статье мы поговорим о дробных числах (float) и их представлении в компьютере, в частности, о том, как их описывает стандарт IEEE 754, принятый в 1985 году. Если вас интересует представление целых чисел, об этом можно почитать в предыдущей статье.
+Зачем нужны кодировки? Люди говорят, думают и пишут на естественных языках, многие из которых …</p><hr class=posts-delimeter></article><article class=entry><h2><a href=/posts/kak-v-computere-predstavleny-drobnyye-chisla/>Как в компьютере представлены дробные числа?</a></h2><aside><time class=subtext datetime=2024-03-10T00:00:00Z>March 10, 2024
+</time><a class=badge href=/tags/cs>#cs</a>
+<a class=badge href=/tags/cpu>#cpu</a></aside><p class=post-preview>В этой статье мы поговорим о дробных числах (float) и их представлении в компьютере, в частности, о том, как их описывает стандарт IEEE 754, принятый в 1985 году. Если вас интересует представление целых чисел, об этом можно почитать в предыдущей статье.
 Это запись по следам видеоурока, который можно найти на YouTube:
 Эта запись также доступна в канале Telegram “DEV: Рубиновые тона”, а обсудить же эту тему можно в нашем чате Telegram.
-Дробные десятичные числа и их представления Чтобы было проще, …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-    <article class="entry">
-      <h2><a href="/posts/kak-v-computere-predstavleny-celye-chisla/">Как в компьютере представлены целые числа?</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2024-03-09T00:00:00Z'>
-          March 9, 2024
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/cs">#cs</a>
-        
-        <a class="badge" href="/tags/cpu">#cpu</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        Как целые числа представлены в современных компьютерах? Это немаловажный вопрос, ответ на который состоит из нескольких частей. Дело в том, что у нас есть обычные неотрицательные целые числа (uint), которые представляют собой последовательность от 0 и далее до бесконечности, и просто целые числа (int), которые могут быть и отрицательными, и положительными. Есть ещё числа дробные, но про них речь пойдёт в следующей статье.
+Дробные десятичные числа и их представления Чтобы было проще, …</p><hr class=posts-delimeter></article><article class=entry><h2><a href=/posts/kak-v-computere-predstavleny-celye-chisla/>Как в компьютере представлены целые числа?</a></h2><aside><time class=subtext datetime=2024-03-09T00:00:00Z>March 9, 2024
+</time><a class=badge href=/tags/cs>#cs</a>
+<a class=badge href=/tags/cpu>#cpu</a></aside><p class=post-preview>Как целые числа представлены в современных компьютерах? Это немаловажный вопрос, ответ на который состоит из нескольких частей. Дело в том, что у нас есть обычные неотрицательные целые числа (uint), которые представляют собой последовательность от 0 и далее до бесконечности, и просто целые числа (int), которые могут быть и отрицательными, и положительными. Есть ещё числа дробные, но про них речь пойдёт в следующей статье.
 Это запись по следам видеоурока, который можно найти на YouTube:
-Эта …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-    <article class="entry">
-      <h2><a href="/posts/kryptografija_ellepticheskoy_krivoy_i_ethereum/">Криптография эллиптической кривой (ECC) и Ethereum</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2024-03-06T00:00:00Z'>
-          March 6, 2024
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F">#криптография</a>
-        
-        <a class="badge" href="/tags/ethereum">#ethereum</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        Сегодня мы с вами поговорим о криптографии эллиптической кривой (elliptic-curve cryptography, ECC) и конкретно о том, как она используется в Ethereum.
+Эта …</p><hr class=posts-delimeter></article><article class=entry><h2><a href=/posts/kryptografija_ellepticheskoy_krivoy_i_ethereum/>Криптография эллиптической кривой (ECC) и Ethereum</a></h2><aside><time class=subtext datetime=2024-03-06T00:00:00Z>March 6, 2024
+</time><a class=badge href=/tags/%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F>#криптография</a>
+<a class=badge href=/tags/ethereum>#ethereum</a></aside><p class=post-preview>Сегодня мы с вами поговорим о криптографии эллиптической кривой (elliptic-curve cryptography, ECC) и конкретно о том, как она используется в Ethereum.
 Это запись по следам видеоурока, который можно найти на YouTube:
 Эта запись также доступна в канале Telegram “DEV: Рубиновые тона”, а обсудить же эту тему можно в нашем чате Telegram.
-Зачем ECC нужна в Ethereum? Первый вопрос, который может возникнуть у пытливого читателя: зачем вообще всё это надо? Что ж, это весьма логичный вопрос! Дело в том, …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-    <article class="entry">
-      <h2><a href="/posts/pochemu-ne-nado-ustanavlivat-neizvestnyye-sertificaty-na-svoi-ustrojstva/">Почему не надо устанавливать неизвестные сертификаты на свои устройства?</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2024-03-05T00:00:00Z'>
-          March 5, 2024
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F">#криптография</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        В свете того, что в ряде стран пользователей сети Интернет вынуждают устанавливать на компьютеры и смартфоны какие-то “специальные”, непонятные сертификаты безопасности, некоторые знакомые спрашивают, что всё это значит. В этой статье я попробую совсем по-простому объяснить, в чём тут дело, и расскажу вам сказку.
+Зачем ECC нужна в Ethereum? Первый вопрос, который может возникнуть у пытливого читателя: зачем вообще всё это надо? Что ж, это весьма логичный вопрос! Дело в том, …</p><hr class=posts-delimeter></article><article class=entry><h2><a href=/posts/pochemu-ne-nado-ustanavlivat-neizvestnyye-sertificaty-na-svoi-ustrojstva/>Почему не надо устанавливать неизвестные сертификаты на свои устройства?</a></h2><aside><time class=subtext datetime=2024-03-05T00:00:00Z>March 5, 2024
+</time><a class=badge href=/tags/%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F>#криптография</a></aside><p class=post-preview>В свете того, что в ряде стран пользователей сети Интернет вынуждают устанавливать на компьютеры и смартфоны какие-то “специальные”, непонятные сертификаты безопасности, некоторые знакомые спрашивают, что всё это значит. В этой статье я попробую совсем по-простому объяснить, в чём тут дело, и расскажу вам сказку.
 Эта запись также доступна в канале Telegram “DEV: Рубиновые тона”, а обсудить же эту тему можно в нашем чате Telegram.
-Присказка Интернет — вообще штука публичная, огромное количество …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-    <article class="entry">
-      <h2><a href="/posts/samouchitel-rust/">Самоучитель Rust</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2023-11-11T00:00:00Z'>
-          November 11, 2023
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/rust">#rust</a>
-        
-        <a class="badge" href="/tags/youtube">#youtube</a>
-        
-        <a class="badge" href="/tags/%D1%81%D0%B0%D0%BC%D0%BE%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C">#самоучитель</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        Rust — это современный и популярный язык программирования для написания надёжных и быстродействующих программ. Но возникает вопрос: с чего начать изучение?
-Я предлагаю вашему вниманию серию уроков на YouTube по Rust, в которой мы обсудим основы языка и будем применять его на практике. Никакой воды, только актуальная информация. А знаете, что самое приятное? Всё это абсолютно бесплатно. Не надо отправлять SMS на короткий номер, вводить номер кредитной карты или подписываться кровью. Вы можете …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-    <article class="entry">
-      <h2><a href="/posts/faq-po-kursu-solidity/">FAQ по курсу Solidity</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2023-06-12T00:00:00Z'>
-          June 12, 2023
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/solidity">#solidity</a>
-        
-        <a class="badge" href="/tags/ethereum">#ethereum</a>
-        
-        <a class="badge" href="/tags/faq">#faq</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        Это ответы на часто задаваемые вопросы по бесплатному курсу Solidity, который вы можете найти на YouTube.
+Присказка Интернет — вообще штука публичная, огромное количество …</p><hr class=posts-delimeter></article><article class=entry><h2><a href=/posts/samouchitel-rust/>Самоучитель Rust</a></h2><aside><time class=subtext datetime=2023-11-11T00:00:00Z>November 11, 2023
+</time><a class=badge href=/tags/rust>#rust</a>
+<a class=badge href=/tags/youtube>#youtube</a>
+<a class=badge href=/tags/%D1%81%D0%B0%D0%BC%D0%BE%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C>#самоучитель</a></aside><p class=post-preview>Rust — это современный и популярный язык программирования для написания надёжных и быстродействующих программ. Но возникает вопрос: с чего начать изучение?
+Я предлагаю вашему вниманию серию уроков на YouTube по Rust, в которой мы обсудим основы языка и будем применять его на практике. Никакой воды, только актуальная информация. А знаете, что самое приятное? Всё это абсолютно бесплатно. Не надо отправлять SMS на короткий номер, вводить номер кредитной карты или подписываться кровью. Вы можете …</p><hr class=posts-delimeter></article><article class=entry><h2><a href=/posts/faq-po-kursu-solidity/>FAQ по курсу Solidity</a></h2><aside><time class=subtext datetime=2023-06-12T00:00:00Z>June 12, 2023
+</time><a class=badge href=/tags/solidity>#solidity</a>
+<a class=badge href=/tags/ethereum>#ethereum</a>
+<a class=badge href=/tags/faq>#faq</a></aside><p class=post-preview>Это ответы на часто задаваемые вопросы по бесплатному курсу Solidity, который вы можете найти на YouTube.
 Если вам нужна дополнительная помощь или есть мысли, что ещё можно добавить в этот документ, пишите в наш чат Telegram.
-Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить спонсорство на YouTube, а также использовать DonationAlerts, Boosty или Patreon. Криптовалюту тоже можно отправить, мой …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-    <article class="entry">
-      <h2><a href="/posts/samouchitel-solidity-i-ethereum/">Самоучитель Solidity и Ethereum</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2023-05-22T00:00:00Z'>
-          May 22, 2023
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/solidity">#solidity</a>
-        
-        <a class="badge" href="/tags/ethereum">#ethereum</a>
-        
-        <a class="badge" href="/tags/youtube">#youtube</a>
-        
-        <a class="badge" href="/tags/%D1%81%D0%B0%D0%BC%D0%BE%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C">#самоучитель</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        Ethereum — это децентрализованный открытый блокчейн, который позволяет писать &#34;умные&#34; контракты (они же смарт-контракты) на языке Solidity. За последние годы Ethereum обрёл бешеную популярность и сейчас о нём и о сопутствующих технологиях говорят буквально все. Но возникает вопрос: с чего начать изучение?
-Я предлагаю вашему вниманию серию уроков на YouTube по Ethereum и Solidity, в которой мы обсудим основы языка и будем применять его на реальных проектах, научимся использовать Hardhat и …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-    <article class="entry">
-      <h2><a href="/posts/faq-po-kursu-ruby-on-rails/">FAQ по курсу Ruby on Rails</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2023-05-08T00:00:00Z'>
-          May 8, 2023
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/rails">#rails</a>
-        
-        <a class="badge" href="/tags/faq">#faq</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        Этот материал содержит в себе ответы на часто задаваемые вопросы по бесплатному курсу Ruby on Rails, который вы можете найти на YouTube.
+Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить спонсорство на YouTube, а также использовать Boosty или Patreon. Криптовалюту тоже можно отправить, мой адрес …</p><hr class=posts-delimeter></article><article class=entry><h2><a href=/posts/samouchitel-solidity-i-ethereum/>Самоучитель Solidity и Ethereum</a></h2><aside><time class=subtext datetime=2023-05-22T00:00:00Z>May 22, 2023
+</time><a class=badge href=/tags/solidity>#solidity</a>
+<a class=badge href=/tags/ethereum>#ethereum</a>
+<a class=badge href=/tags/youtube>#youtube</a>
+<a class=badge href=/tags/%D1%81%D0%B0%D0%BC%D0%BE%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C>#самоучитель</a></aside><p class=post-preview>Ethereum — это децентрализованный открытый блокчейн, который позволяет писать "умные" контракты (они же смарт-контракты) на языке Solidity. За последние годы Ethereum обрёл бешеную популярность и сейчас о нём и о сопутствующих технологиях говорят буквально все. Но возникает вопрос: с чего начать изучение?
+Я предлагаю вашему вниманию серию уроков на YouTube по Ethereum и Solidity, в которой мы обсудим основы языка и будем применять его на реальных проектах, научимся использовать Hardhat и …</p><hr class=posts-delimeter></article><article class=entry><h2><a href=/posts/faq-po-kursu-ruby-on-rails/>FAQ по курсу Ruby on Rails</a></h2><aside><time class=subtext datetime=2023-05-08T00:00:00Z>May 8, 2023
+</time><a class=badge href=/tags/rails>#rails</a>
+<a class=badge href=/tags/faq>#faq</a></aside><p class=post-preview>Этот материал содержит в себе ответы на часто задаваемые вопросы по бесплатному курсу Ruby on Rails, который вы можете найти на YouTube.
 Если вам нужна дополнительная помощь или есть мысли, что ещё можно добавить в этот документ, пишите в наш чат Telegram.
-Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить спонсорство на YouTube, а также использовать DonationAlerts, Boosty или Patreon. …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-    <article class="entry">
-      <h2><a href="/posts/samouchitel-elixir/">Самоучитель Elixir</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2023-05-08T00:00:00Z'>
-          May 8, 2023
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/elixir">#elixir</a>
-        
-        <a class="badge" href="/tags/youtube">#youtube</a>
-        
-        <a class="badge" href="/tags/%D1%81%D0%B0%D0%BC%D0%BE%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C">#самоучитель</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        Elixir — это современный язык программирования для написания надёжных информационных систем. Он реализует концепцию фунциональной разработки и тем самым отличается от многих &#34;привычных&#34; языков. Но возникает вопрос: с чего начать изучение?
-Я предлагаю вашему вниманию серию уроков на YouTube по Elixir, в которой мы обсудим основы языка и будем применять его на практике. Никакой воды, только актуальная информация. А знаете, что самое приятное? Всё это абсолютно бесплатно. Не надо отправлять SMS на …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-    <article class="entry">
-      <h2><a href="/posts/samouchitel-ruby-on-rails-6-7/">Самоучитель Ruby on Rails 6 и 7</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2021-06-21T00:00:00Z'>
-          June 21, 2021
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/rails">#rails</a>
-        
-        <a class="badge" href="/tags/youtube">#youtube</a>
-        
-        <a class="badge" href="/tags/%D1%81%D0%B0%D0%BC%D0%BE%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C">#самоучитель</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        Ruby on Rails — это популярный web-фреймворк, который появился более 14 лет назад. Сегодня я предлагаю вам цикл лекций по Ruby on Rails 6 и 7 на YouTube, в которых мы обсудим всё, связанное с данной замечательной технологией. Цикл лекций не закончен, однако новые видео выпускаются регулярно. Новый урок по Ruby on Rails 6 и 7 каждую неделю! А знаете, что самое приятное? Всё это абсолютно бесплатно. Вы можете смотреть любые уроки из серии на YouTube безо всяких ограничений, без отправки SMS на …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-    <article class="entry">
-      <h2><a href="/posts/vozvraschenie-na-valaam/">Возвращение на Валаам</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2015-11-25T00:00:00Z'>
-          November 25, 2015
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F">#путешествия</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        Важное обновление от 09.2017! Офис природного парка, сотрудники которого занимались размещением туристов на острове, прекратил свою работу 1 июня 2017. Это означает, что теперь все заявки принимает только Паломническая служба монастыря. Кроме всего прочего, ряд стоянок теперь, судя по всему, предназначен только для паломников. По большому счёту, происходит то, чего боялись уже долгое время: остров потихоньку закрывают для посещений простыми смертными. Я не буду рассуждать здесь на этот счёт и …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-    <article class="entry">
-      <h2><a href="/posts/na-valaam-s-palatkami-ch-3/">На Валаам с палатками (ч. 3)</a></h2>
-
-      <aside>
-        <time class="subtext" datetime='2015-01-12T00:00:00Z'>
-          January 12, 2015
-        </time>
-
-        
-        
-        <a class="badge" href="/tags/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F">#путешествия</a>
-        
-        
-      </aside>
-
-      <p class="post-preview">
-        Довольно долго не мог приступить к написанию третьей части (вторую можно найти тут) — в основном потому, что занимался техническими статьями для другого ресурса. Однако долги надо отдавать, посему прошу любить и жаловать последнюю часть этого цикла. Приятного чтения!
-В лесу недалеко от лагеря.
-Чаепитие на скале Итак, напомню, что нас пригласили прокатиться на моторке вокруг острова и заодно устроить пикничок в каком-нибудь живописном месте. Мы отчалили и взяли курс на запад — в сторону …
-      </p>
-
-      <hr class="posts-delimeter">
-    </article>
-    
-  </div>
-
-  
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/posts/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/posts/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/posts/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
-</main>
-
-<footer class="light_gradient" lang="en-US">
-  <p>
-    &copy; Ilya Krukowski
-  </p>
-</footer>
-
-
-    
-    
-  </body>
-</html>
+Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить спонсорство на YouTube, а также использовать Boosty или Patreon. Криптовалюту тоже можно …</p><hr class=posts-delimeter></article><article class=entry><h2><a href=/posts/samouchitel-elixir/>Самоучитель Elixir</a></h2><aside><time class=subtext datetime=2023-05-08T00:00:00Z>May 8, 2023
+</time><a class=badge href=/tags/elixir>#elixir</a>
+<a class=badge href=/tags/youtube>#youtube</a>
+<a class=badge href=/tags/%D1%81%D0%B0%D0%BC%D0%BE%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C>#самоучитель</a></aside><p class=post-preview>Elixir — это современный язык программирования для написания надёжных информационных систем. Он реализует концепцию фунциональной разработки и тем самым отличается от многих "привычных" языков. Но возникает вопрос: с чего начать изучение?
+Я предлагаю вашему вниманию серию уроков на YouTube по Elixir, в которой мы обсудим основы языка и будем применять его на практике. Никакой воды, только актуальная информация. А знаете, что самое приятное? Всё это абсолютно бесплатно. Не надо отправлять SMS на …</p><hr class=posts-delimeter></article><article class=entry><h2><a href=/posts/samouchitel-ruby-on-rails-6-7/>Самоучитель Ruby on Rails 6 и 7</a></h2><aside><time class=subtext datetime=2021-06-21T00:00:00Z>June 21, 2021
+</time><a class=badge href=/tags/rails>#rails</a>
+<a class=badge href=/tags/youtube>#youtube</a>
+<a class=badge href=/tags/%D1%81%D0%B0%D0%BC%D0%BE%D1%83%D1%87%D0%B8%D1%82%D0%B5%D0%BB%D1%8C>#самоучитель</a></aside><p class=post-preview>Ruby on Rails — это популярный web-фреймворк, который появился более 14 лет назад. Сегодня я предлагаю вам цикл лекций по Ruby on Rails 6 и 7 на YouTube, в которых мы обсудим всё, связанное с данной замечательной технологией. Цикл лекций не закончен, однако новые видео выпускаются регулярно. Новый урок по Ruby on Rails 6 и 7 каждую неделю! А знаете, что самое приятное? Всё это абсолютно бесплатно. Вы можете смотреть любые уроки из серии на YouTube безо всяких ограничений, без отправки SMS на …</p><hr class=posts-delimeter></article><article class=entry><h2><a href=/posts/vozvraschenie-na-valaam/>Возвращение на Валаам</a></h2><aside><time class=subtext datetime=2015-11-25T00:00:00Z>November 25, 2015
+</time><a class=badge href=/tags/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F>#путешествия</a></aside><p class=post-preview>Важное обновление от 09.2017! Офис природного парка, сотрудники которого занимались размещением туристов на острове, прекратил свою работу 1 июня 2017. Это означает, что теперь все заявки принимает только Паломническая служба монастыря. Кроме всего прочего, ряд стоянок теперь, судя по всему, предназначен только для паломников. По большому счёту, происходит то, чего боялись уже долгое время: остров потихоньку закрывают для посещений простыми смертными. Я не буду рассуждать здесь на этот счёт и …</p><hr class=posts-delimeter></article></div><ul class="pagination pagination-default"><li class="page-item disabled"><a aria-disabled=true aria-label=First class=page-link role=button tabindex=-1><span aria-hidden=true>&#171;&#171;</span></a></li><li class="page-item disabled"><a aria-disabled=true aria-label=Previous class=page-link role=button tabindex=-1><span aria-hidden=true>&#171;</span></a></li><li class="page-item active"><a aria-current=page aria-label="Page 1" class=page-link role=button>1</a></li><li class=page-item><a href=/posts/page/2/ aria-label="Page 2" class=page-link role=button>2</a></li><li class=page-item><a href=/posts/page/2/ aria-label=Next class=page-link role=button><span aria-hidden=true>&#187;</span></a></li><li class=page-item><a href=/posts/page/2/ aria-label=Last class=page-link role=button><span aria-hidden=true>&#187;&#187;</span></a></li></ul></main><footer class=light_gradient lang=en-US><p>&copy; Ilya Krukowski</p></footer></body></html>
