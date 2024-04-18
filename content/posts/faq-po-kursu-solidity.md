@@ -116,6 +116,18 @@ ethers.formatUnits()
 
 <p>В большинстве случаев этого будет достаточно. Подробнее написано в <a href="https://docs.ethers.org/v6/migrating/">руководстве по переходу на Ethers 6</a>.</p>
 
+## Я получаю ошибку, что функции arrayify нет!
+
+Она переименована. Теперь делаем следующим образом:
+
+```ts
+// БЫЛО
+array = ethers.utils.arrayify(value)
+
+// СТАЛО
+array = ethers.getBytes(value)
+```
+
 ## Не понимаю, как работать с большими числами
 
 <p>Если вы работаете с большими числами, перейти на toolbox v3 точно стоит. Большое число от обычного там отличается лишь суффиком n, например <i class="inline_code">9n</i>. Опять же, смотри <a href="https://docs.ethers.org/v6/migrating/#migrate-bigint">гайд по переходу на ethers 6</a>, а также <a href="https://youtu.be/bzzf0ANyq70">вот это видео</a>, где рассказано обо всех новых фичах.</p>
