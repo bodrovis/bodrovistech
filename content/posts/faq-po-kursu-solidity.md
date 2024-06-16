@@ -12,6 +12,8 @@ tags:
 
 <p>Это ответы на часто задаваемые вопросы по бесплатному курсу Solidity, который <a href="https://www.youtube.com/watch?v=8A8-7Ks26yY&list=PLWlFXymvoaJ_0ok740kLXTn5qn-i1UnYr" target="_blank">вы можете найти на YouTube</a>.</p>
 
+<p>Если же всё-таки вы хотите ещё больше (если точнее, на порядок больше) материала, то можете <a href="https://www.guidedao.xyz/" target="_blank">присмотреться к буткемпам GuideDAO</a>, в создании которых я принимал и принимаю самое активное участие. По промо-коду <code>KRUK</code> вы даже можете получить неплохую скидку, а <a href="https://www.youtube.com/live/EkqlnS6JtWc" target="_blank">вот это видео</a> представляет собой онлайн день открытых дверей, где мы рассказываем о платформе очень подробно. Однако и в бесплатных уроках действительно очень много полезного. Удачного изучения!</p>
+
 <p>Если вам нужна дополнительная помощь или есть мысли, что ещё можно добавить в этот документ, пишите <a href="https://t.me/joinchat/MxYT6-01eeA1NTYy" target="_blank">в наш чат Telegram</a>.</p>
 
 <p>Должен заметить, что все эти уроки создаются на чистом энтузиазме, поэтому ваше пожертвование, даже небольшое, лишним не будет точно. Вы можете оформить <a href="https://www.youtube.com/channel/UCN2waErKU52T_41pGgUimXw/join">спонсорство на YouTube</a>, а также использовать <a href="https://boosty.to/bodrovis">Boosty</a> или <a href="https://www.patreon.com/bodrovis">Patreon</a>. Криптовалюту тоже можно отправить, мой адрес <i class="inline_code">0x719C2d2bcC155c85190f20E1Cc3710F90FAFDa16</i> (mainnet, binance smart chain, arbitrum one, zk era mainnet, matic mainnet).</p>
@@ -36,8 +38,8 @@ tags:
 {
   "name": "hardhat-project",
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
-    "hardhat": "^2.13.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.20.0",
   }
 }
 {{< / highlight >}}
