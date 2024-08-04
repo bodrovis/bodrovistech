@@ -54,6 +54,9 @@ draft: false
     <li>
       <a href="https://harrypot.lol" target="_blank">"Гарри и вагон косяков"</a> &mdash; юмористический проект, посвящённый грехам в книгах о знаменитом персонаже
     </li>
+    <li>
+      <a href="https://catandmouseteam.xyz/" target="_blank">Cat &amp; Mouse team</a> &mdash; game translation team
+    </li>
   </ul>
 </article>
 
