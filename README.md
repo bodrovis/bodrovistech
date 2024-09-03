@@ -1,6 +1,6 @@
 # bodrovis.tech
 
-Personal website built with Hugo.
+Personal website built with Hugo. It does not have electrolytes.
 
 Learn how I've migrated this site from Rails to Hugo: https://www.youtube.com/watch?v=5xu3W9TJ8tE (ru)
 
