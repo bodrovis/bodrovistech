@@ -10,29 +10,29 @@ tags:
 
 ## End of wanderings
 
-Through the distant paths of darkness,
-Under skies that yet unknown...
-We were drifting, we were marching
+Through the distant paths of darkness,  
+Under skies that yet unknown...  
+We were drifting, we were marching  
 To our long forgotten home.
 
-Many months and many seasons,
-Countless days and endless nights...
-We were hoping, we were pleading
+Many months and many seasons,  
+Countless days and endless nights...  
+We were hoping, we were pleading  
 We were yearning for the light.
 
-Every tale has its conclusion,
-Every journey has its end,
-Every word that yet unspoken,
+Every tale has its conclusion,  
+Every journey has its end,  
+Every word that yet unspoken,  
 Every prayer, guiding hand.
 
-We will cherish these emotions,
-Filled with hope, and joy, and grief.
-We will hold onto the memories
+We will cherish these emotions,  
+Filled with hope, and joy, and grief.  
+We will hold onto the memories  
 And the brightest, final dream.
 
-Hear the engines roaring, raging
-As we break through sky of blue.
-Every journey has an ending
+Hear the engines roaring, raging  
+As we break through sky of blue.  
+Every journey has an ending  
 As we touch the morning dew.
 
 ## Пересечение времён
