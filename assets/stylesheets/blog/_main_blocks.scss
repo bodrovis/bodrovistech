@@ -1,4 +1,5 @@
 @use "./shared/shared";
+@use "sass:color";
 
 .light_gradient {
   background-image: linear-gradient(#f0f0ef, #e8e8e8);
@@ -34,7 +35,7 @@ header {
         margin-right: 0.9em;
         color: #3c3c3c;
         &:hover {
-          color: lighten(#3c3c3c, 10%);
+          color: color.adjust(#3c3c3c, $lightness: 10%);
         }
         &:last-of-type {
           margin-right: 0;
@@ -126,7 +127,7 @@ a.badge {
   display: inline-block;
   text-decoration: none;
   &:hover {
-    background-color: darken(shared.$radiant, 10%);
+    background-color: color.adjust(shared.$radiant, $lightness: -5%);
   }
 }
 

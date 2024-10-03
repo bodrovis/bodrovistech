@@ -6,7 +6,8 @@ enableRobotsTXT = true
 
 # disableKinds = ["taxonomy"]
 
-paginate = 15
+[pagination]
+pagerSize = 15
 
 markup.highlight.noClasses=false
 

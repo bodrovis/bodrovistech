@@ -1,4 +1,5 @@
 @use "./shared/shared";
+@use "sass:color";
 
 html,
 body {
@@ -14,11 +15,11 @@ body {
 }
 
 ::selection {
-  background-color: darken(#ccc, 5%);
+  background-color: color.adjust(#ccc, $lightness: -5%);
 }
 
 ::-moz-selection {
-  background-color: darken(#ccc, 5%);
+  background-color: color.adjust(#ccc, $lightness: -5%);
 }
 
 #header {
@@ -40,7 +41,7 @@ body {
 .block {
   background-color: #fff;
   border-radius: 0.625em;
-  border: 1px solid darken(shared.$lightgrey, 10%);
+  border: 1px solid color.adjust(shared.$lightgrey, $lightness: -5%);
 }
 
 .wide-block {
@@ -106,7 +107,7 @@ body {
     margin: 0.9em auto;
     text-decoration: none;
     &:hover {
-      color: lighten(#3c3c3c, 10%);
+      color: color.adjust(#3c3c3c, $lightness: 10%);
     }
     &:first-of-type {
       margin-top: 0;

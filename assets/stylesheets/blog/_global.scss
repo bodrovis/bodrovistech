@@ -1,4 +1,5 @@
 @use "./shared/shared";
+@use "sass:color";
 
 html, body  {
   height: 100%;
@@ -36,11 +37,11 @@ textarea {
 }
 
 ::selection {
-  background-color: darken(#ccc, 5%);
+  background-color: color.adjust(#ccc, $lightness: -5%);
 }
 
 ::-moz-selection {
-  background-color: darken(#ccc, 5%);
+  background-color: color.adjust(#ccc, $lightness: -5%);
 }
 
 /*=== LINKS ===*/
@@ -102,7 +103,7 @@ ul, ol, pre {
 }
 
 .subtext {
-  color: lighten($color: #222, $amount: 10%);
+  color: color.adjust(#222, $lightness: 10%);
 }
 
 /*=== STUFF ===*/
