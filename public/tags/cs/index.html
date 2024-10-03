@@ -1,15 +1,180 @@
-<!doctype html><html lang=en-US><head><meta charset=utf-8><link rel=preconnect href=https://fonts.gstatic.com><title>Tags | Ilya Krukowski</title>
-<meta name=viewport content="width=device-width"><meta name=description content='Ilya Krukowski (aka Илья Круковский, bodrovis, ibodrov) website. Personal IT tutor. Articles about web, programming, regular expressions, CSS, HTML and more.'><meta name=keywords content="Ilya Krukowski,Илья Круковский,bodrovis,статьи о web,программирование,дизайн,регулярные выражения,web-дизайн,ruby,rails,javascript,jquery,css,html,regexp,плагины,radiant wind,plugins,gems,libraries,tutor,personal teacher,it"><meta name=author content="bodrovis"><meta name=robots content="all"><link rel=apple-touch-icon href=/apple-touch-icon.png><link rel=icon href=/favicon.ico type=image/x-icon><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=PT+Sans:wght@400;700&display=swap" rel=stylesheet><link rel=stylesheet href=/stylesheets/posts.min.cc7eeb9771b1d55198db9a5b3da515b6b33af9a376dbcdc65d596c5843a1aba2.css integrity="sha256-zH7rl3Gx1VGY25pbPaUVtrM6+aN2283GXVlsWEOhq6I=" crossorigin=anonymous></head><body><header lang=en-US><div id=main-top-block class=light_gradient><nav><a href=/ class="icon icon-home" title=Homepage></a><a class="icon icon-book" title=Blog href=/blog></a><a class="icon icon-tags" title=Tags href=/tags></a><a class="icon icon-search with-spacer" title=Search href=/search></a><a class="icon icon-github" title=GitHub href=https://github.com/bodrovis target=_blank></a><a class="icon icon-youtube" title=YouTube href=https://www.youtube.com/@IlyaBodrovKrukowski target=_blank></a><a class="icon icon-telegram" title=Telegram href=https://t.me/dev_in_ruby_colors target=_blank></a><a class="icon icon-linkedin" title=LinkedIn href=https://linkedin.com/in/bodrovis target=_blank></a></nav></div><div id=logo><img src=/images/icon150trans.webp width=150 height=150 alt="Ilya Krukowski logo" class=img-logo><p><a href=/blog><span class=capital>I</span>lya <span class=capital>K</span>rukowski
-<span class=subtitle>https://bodrovis.tech</span></a></p></a></header><main id=content><section class=preamble><h3>Posts tagged with "Cs"</h3><p>Total posts: 5</p><p><a href=/tags>View all tags</a></p></section><div id=posts-list><article class=entry><h2><a href=/posts/zakon_amdala/>Что такое закон Амдала?</a></h2><aside><time class=subtext datetime=2024-03-12T12:00:00Z>March 12, 2024</time></aside><p class=post-preview>В этой статье мы поговорим о законе Амдала (Amdahl’s law) и он том, в чём его суть.
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Tags | Ilya Krukowski</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content='Ilya Krukowski (aka Илья Круковский, bodrovis, ibodrov) website. Personal IT tutor. Articles about web, programming, regular expressions, CSS, HTML and more.'>
+    <meta name="keywords" content="Ilya Krukowski, Илья Круковский, bodrovis, статьи о web, программирование, дизайн, регулярные выражения, web-дизайн, ruby, rails, javascript, jquery, css, html, regexp, плагины, radiant wind, plugins, gems, libraries, tutor, personal teacher, it">
+    <meta name="author" content="bodrovis">
+    <meta name="robots" content="all">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+  
+
+  
+    
+      <link rel="stylesheet" href="/stylesheets/posts.css">
+    
+  
+
+
+
+    
+    
+  </head>
+  <body>
+    
+<header lang="en-US">
+  <div id="main-top-block" class="light_gradient">
+    <nav>
+      <a href="/" class="icon icon-home" title="Homepage"></a>
+      <a class="icon icon-book" title="Blog" href="/blog"></a>
+      <a class="icon icon-tags" title="Tags" href="/tags"></a>
+      <a class="icon icon-search with-spacer" title="Search" href="/search"></a>
+      <a class="icon icon-github" title="GitHub" href="https://github.com/bodrovis" target="_blank"></a>
+      <a class="icon icon-youtube" title="YouTube" href="https://www.youtube.com/@IlyaBodrovKrukowski" target="_blank"></a>
+      <a class="icon icon-telegram" title="Telegram" href="https://t.me/dev_in_ruby_colors" target="_blank"></a>
+      <a class="icon icon-linkedin" title="LinkedIn" href="https://linkedin.com/in/bodrovis" target="_blank"></a>
+    </nav>
+  </div>
+
+  <div id="logo">
+    
+      <img src="/images/icon150trans.webp" width="150" height="150" alt="Ilya Krukowski logo" class="img-logo">
+    
+    
+    <p>
+      <a href="/blog">
+        <span class="capital">I</span>lya <span class="capital">K</span>rukowski
+
+        <span class="subtitle">https://bodrovis.tech</span>
+      </a>
+    </p>
+  </a>
+</header>
+
+<main id="content">
+  <section class="preamble">
+    <h3>Posts tagged with "Cs"</h3>
+    <p>Total posts: 5</p>
+    <p><a href="/tags">View all tags</a></p>
+  </section>
+
+  <div id="posts-list">
+    
+    <article class="entry">
+      <h2><a href="/posts/zakon_amdala/">Что такое закон Амдала?</a></h2>
+  
+      <aside>
+        <time class="subtext" datetime='2024-03-12T12:00:00Z'>
+          March 12, 2024
+        </time>
+      </aside>
+  
+      <p class="post-preview">
+        В этой статье мы поговорим о законе Амдала (Amdahl’s law) и он том, в чём его суть.
 Сущность закона Амдала Этот интересный закон был придуман Джином Амдалом несколько десятилетий назад, его время от времени упоминают в контексте информационных систем, так что знать его суть не помешает.
-Вообще, смысл данного закона весьма простой: если мы “улучшаем” (ускоряем) часть некой системы, то общий эффект на быстродействие всей системы будет зависеть от того, насколько этот компонент был важен (то есть …</p><hr></article><article class=entry><h2><a href=/posts/big_endian_i_little_endian_poryadok_sledovaniya_baytov/>Big-endian и little-endian: порядок следования байтов и причём тут Гулливер</a></h2><aside><time class=subtext datetime=2024-03-11T12:00:00Z>March 11, 2024</time></aside><p class=post-preview>В этой статье мы поговорим о понятиях big-endian и little-endian в computer science.
+Вообще, смысл данного закона весьма простой: если мы “улучшаем” (ускоряем) часть некой системы, то общий эффект на быстродействие всей системы будет зависеть от того, насколько этот компонент был важен (то есть …
+      </p>
+  
+      <hr>
+    </article>
+    
+    <article class="entry">
+      <h2><a href="/posts/big_endian_i_little_endian_poryadok_sledovaniya_baytov/">Big-endian и little-endian: порядок следования байтов и причём тут Гулливер</a></h2>
+  
+      <aside>
+        <time class="subtext" datetime='2024-03-11T12:00:00Z'>
+          March 11, 2024
+        </time>
+      </aside>
+  
+      <p class="post-preview">
+        В этой статье мы поговорим о понятиях big-endian и little-endian в computer science.
 Эта запись также доступна в канале Telegram “DEV: Рубиновые тона”, а обсудить же эту тему можно в нашем чате Telegram.
-Дом, который построил Свифт Частенько в руководствах и документации можно встретить термины big-endian и little-endian — да хотя бы в статье про кодировки UTF8 и ASCII. Но что эти понятия вообще значат? На самом деле, всё довольно просто: это буквально война тупоконечников и остроконечников (я …</p><hr></article><article class=entry><h2><a href=/posts/chto_takoe_unicode_utf8_i_ascii/>Что такое Unicode, UTF-8 и ASCII?</a></h2><aside><time class=subtext datetime=2024-03-11T00:00:00Z>March 11, 2024</time></aside><p class=post-preview>В этой статье мы поговорим о том, как кодируется текст в современных компьютерах, а также о таких понятиях, как Unicode, UTF-8 и ASCII (и не только).
+Дом, который построил Свифт Частенько в руководствах и документации можно встретить термины big-endian и little-endian — да хотя бы в статье про кодировки UTF8 и ASCII. Но что эти понятия вообще значат? На самом деле, всё довольно просто: это буквально война тупоконечников и остроконечников (я …
+      </p>
+  
+      <hr>
+    </article>
+    
+    <article class="entry">
+      <h2><a href="/posts/chto_takoe_unicode_utf8_i_ascii/">Что такое Unicode, UTF-8 и ASCII?</a></h2>
+  
+      <aside>
+        <time class="subtext" datetime='2024-03-11T00:00:00Z'>
+          March 11, 2024
+        </time>
+      </aside>
+  
+      <p class="post-preview">
+        В этой статье мы поговорим о том, как кодируется текст в современных компьютерах, а также о таких понятиях, как Unicode, UTF-8 и ASCII (и не только).
 Это запись по следам видеоурока, который можно найти на YouTube:
 Эта запись также доступна в канале Telegram “DEV: Рубиновые тона”, а обсудить же эту тему можно в нашем чате Telegram. Статья написана с использованием руководства Джоэля Спольского.
-Зачем нужны кодировки? Люди говорят, думают и пишут на естественных языках, многие из которых …</p><hr></article><article class=entry><h2><a href=/posts/kak-v-computere-predstavleny-drobnyye-chisla/>Как в компьютере представлены дробные числа?</a></h2><aside><time class=subtext datetime=2024-03-10T00:00:00Z>March 10, 2024</time></aside><p class=post-preview>В этой статье мы поговорим о дробных числах (float) и их представлении в компьютере, в частности, о том, как их описывает стандарт IEEE 754, принятый в 1985 году. Если вас интересует представление целых чисел, об этом можно почитать в предыдущей статье.
+Зачем нужны кодировки? Люди говорят, думают и пишут на естественных языках, многие из которых …
+      </p>
+  
+      <hr>
+    </article>
+    
+    <article class="entry">
+      <h2><a href="/posts/kak-v-computere-predstavleny-drobnyye-chisla/">Как в компьютере представлены дробные числа?</a></h2>
+  
+      <aside>
+        <time class="subtext" datetime='2024-03-10T00:00:00Z'>
+          March 10, 2024
+        </time>
+      </aside>
+  
+      <p class="post-preview">
+        В этой статье мы поговорим о дробных числах (float) и их представлении в компьютере, в частности, о том, как их описывает стандарт IEEE 754, принятый в 1985 году. Если вас интересует представление целых чисел, об этом можно почитать в предыдущей статье.
 Это запись по следам видеоурока, который можно найти на YouTube:
 Эта запись также доступна в канале Telegram “DEV: Рубиновые тона”, а обсудить же эту тему можно в нашем чате Telegram.
-Дробные десятичные числа и их представления Чтобы было проще, …</p><hr></article><article class=entry><h2><a href=/posts/kak-v-computere-predstavleny-celye-chisla/>Как в компьютере представлены целые числа?</a></h2><aside><time class=subtext datetime=2024-03-09T00:00:00Z>March 9, 2024</time></aside><p class=post-preview>Как целые числа представлены в современных компьютерах? Это немаловажный вопрос, ответ на который состоит из нескольких частей. Дело в том, что у нас есть обычные неотрицательные целые числа (uint), которые представляют собой последовательность от 0 и далее до бесконечности, и просто целые числа (int), которые могут быть и отрицательными, и положительными. Есть ещё числа дробные, но про них речь пойдёт в следующей статье.
+Дробные десятичные числа и их представления Чтобы было проще, …
+      </p>
+  
+      <hr>
+    </article>
+    
+    <article class="entry">
+      <h2><a href="/posts/kak-v-computere-predstavleny-celye-chisla/">Как в компьютере представлены целые числа?</a></h2>
+  
+      <aside>
+        <time class="subtext" datetime='2024-03-09T00:00:00Z'>
+          March 9, 2024
+        </time>
+      </aside>
+  
+      <p class="post-preview">
+        Как целые числа представлены в современных компьютерах? Это немаловажный вопрос, ответ на который состоит из нескольких частей. Дело в том, что у нас есть обычные неотрицательные целые числа (uint), которые представляют собой последовательность от 0 и далее до бесконечности, и просто целые числа (int), которые могут быть и отрицательными, и положительными. Есть ещё числа дробные, но про них речь пойдёт в следующей статье.
 Это запись по следам видеоурока, который можно найти на YouTube:
-Эта …</p><hr></article></div></main><footer class=light_gradient lang=en-US><p>&copy; Ilya Krukowski</p></footer></body></html>
+Эта …
+      </p>
+  
+      <hr>
+    </article>
+    
+  </div>
+</main>
+
+<footer class="light_gradient" lang="en-US">
+  <p>
+    &copy; Ilya Krukowski
+  </p>
+</footer>
+
+
+    
+    
+  </body>
+</html>

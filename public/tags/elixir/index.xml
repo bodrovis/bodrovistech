@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Elixir on Ilya Krukowski</title><link>https://bodrovis.tech/tags/elixir/</link><description>Recent content in Elixir on Ilya Krukowski</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 08 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bodrovis.tech/tags/elixir/index.xml" rel="self" type="application/rss+xml"/><item><title>Самоучитель Elixir</title><link>https://bodrovis.tech/posts/samouchitel-elixir/</link><pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/samouchitel-elixir/</guid><description>&lt;p>&lt;strong>Elixir&lt;/strong> — это современный язык программирования для написания надёжных информационных систем. Он реализует концепцию фунциональной разработки и тем самым отличается от многих "привычных" языков. Но возникает вопрос: с чего начать изучение?&lt;/p>
-&lt;p>Я предлагаю вашему вниманию серию уроков на YouTube по Elixir, в которой мы обсудим основы языка и будем применять его на практике. Никакой воды, только актуальная информация. А знаете, что самое приятное? Всё это &lt;strong>абсолютно бесплатно&lt;/strong>. Не надо отправлять SMS на короткий номер, вводить номер кредитной карты или подписываться кровью. Вы можете изучать материал в собственном ритме и пересматривать его столько, сколько требуется. В качестве благодарности вы можете поставить лайк, подписаться на канал или даже отправить пожертвование (ссылки есть под каждым видео), но это остаётся на ваше усмотрение.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elixir on Ilya Krukowski</title>
+    <link>http://localhost:1313/tags/elixir/</link>
+    <description>Recent content in Elixir on Ilya Krukowski</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/elixir/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Самоучитель Elixir</title>
+      <link>http://localhost:1313/posts/samouchitel-elixir/</link>
+      <pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/samouchitel-elixir/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Elixir&lt;/strong&gt; — это современный язык программирования для написания надёжных информационных систем. Он реализует концепцию фунциональной разработки и тем самым отличается от многих &#34;привычных&#34; языков. Но возникает вопрос: с чего начать изучение?&lt;/p&gt;&#xD;&#xA;&lt;p&gt;Я предлагаю вашему вниманию серию уроков на YouTube по Elixir, в которой мы обсудим основы языка и будем применять его на практике. Никакой воды, только актуальная информация. А знаете, что самое приятное? Всё это &lt;strong&gt;абсолютно бесплатно&lt;/strong&gt;. Не надо отправлять SMS на короткий номер, вводить номер кредитной карты или подписываться кровью. Вы можете изучать материал в собственном ритме и пересматривать его столько, сколько требуется. В качестве благодарности вы можете поставить лайк, подписаться на канал или даже отправить пожертвование (ссылки есть под каждым видео), но это остаётся на ваше усмотрение.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

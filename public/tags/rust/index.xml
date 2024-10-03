@@ -1,2 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rust on Ilya Krukowski</title><link>https://bodrovis.tech/tags/rust/</link><description>Recent content in Rust on Ilya Krukowski</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bodrovis.tech/tags/rust/index.xml" rel="self" type="application/rss+xml"/><item><title>Самоучитель Rust</title><link>https://bodrovis.tech/posts/samouchitel-rust/</link><pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate><guid>https://bodrovis.tech/posts/samouchitel-rust/</guid><description>&lt;p>&lt;strong>Rust&lt;/strong> — это современный и популярный язык программирования для написания надёжных и быстродействующих программ. Но возникает вопрос: с чего начать изучение?&lt;/p>
-&lt;p>Я предлагаю вашему вниманию &lt;a href="https://www.youtube.com/watch?v=iWL4ENjd1DM&amp;list=PLWlFXymvoaJ_sriG09F8pEIIlIFPAnIaY">серию уроков на YouTube по Rust&lt;/a>, в которой мы обсудим основы языка и будем применять его на практике. Никакой воды, только актуальная информация. А знаете, что самое приятное? Всё это &lt;strong>абсолютно бесплатно&lt;/strong>. Не надо отправлять SMS на короткий номер, вводить номер кредитной карты или подписываться кровью. Вы можете изучать материал в собственном ритме и пересматривать его столько, сколько требуется. В качестве благодарности вы можете поставить лайк, подписаться на канал или даже отправить пожертвование (ссылки есть под каждым видео), но это остаётся на ваше усмотрение.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rust on Ilya Krukowski</title>
+    <link>http://localhost:1313/tags/rust/</link>
+    <description>Recent content in Rust on Ilya Krukowski</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 11 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Самоучитель Rust</title>
+      <link>http://localhost:1313/posts/samouchitel-rust/</link>
+      <pubDate>Sat, 11 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/samouchitel-rust/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Rust&lt;/strong&gt; — это современный и популярный язык программирования для написания надёжных и быстродействующих программ. Но возникает вопрос: с чего начать изучение?&lt;/p&gt;&#xD;&#xA;&lt;p&gt;Я предлагаю вашему вниманию &lt;a href=&#34;https://www.youtube.com/watch?v=iWL4ENjd1DM&amp;list=PLWlFXymvoaJ_sriG09F8pEIIlIFPAnIaY&#34;&gt;серию уроков на YouTube по Rust&lt;/a&gt;, в которой мы обсудим основы языка и будем применять его на практике. Никакой воды, только актуальная информация. А знаете, что самое приятное? Всё это &lt;strong&gt;абсолютно бесплатно&lt;/strong&gt;. Не надо отправлять SMS на короткий номер, вводить номер кредитной карты или подписываться кровью. Вы можете изучать материал в собственном ритме и пересматривать его столько, сколько требуется. В качестве благодарности вы можете поставить лайк, подписаться на канал или даже отправить пожертвование (ссылки есть под каждым видео), но это остаётся на ваше усмотрение.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

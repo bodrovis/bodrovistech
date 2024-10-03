@@ -4,12 +4,12 @@ title = 'Ilya Krukowski'
 
 enableRobotsTXT = true
 
-# disableKinds = ["taxonomy"]
-
 [pagination]
 pagerSize = 15
 
-markup.highlight.noClasses=false
+[markup]
+[markup.highlight]
+style = 'github'
 
 [taxonomies]
 tag = "tags"

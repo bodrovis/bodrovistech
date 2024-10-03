@@ -1,0 +1,506 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("/fonts/icomoon.eot?5ucb3y");
+  src: url("/fonts/icomoon.eot?5ucb3y#iefix") format("embedded-opentype"), url("/fonts/icomoon.ttf?5ucb3y") format("truetype"), url("/fonts/icomoon.woff?5ucb3y") format("woff"), url("/fonts/icomoon.svg?5ucb3y#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tags:before {
+  content: "\e903";
+}
+
+.icon-book:before {
+  content: "\e91f";
+}
+
+.icon-search:before {
+  content: "\e986";
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+
+.icon-envelop:before {
+  content: "\e945";
+}
+
+.icon-telegram:before {
+  content: "\ea95";
+}
+
+.icon-youtube:before {
+  content: "\ea9d";
+}
+
+.icon-github:before {
+  content: "\eab0";
+}
+
+.icon-linkedin:before {
+  content: "\eac9";
+}
+
+/*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.15; /* 1. Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  -moz-tab-size: 4;
+    -o-tab-size: 4;
+       tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+}
+
+/*
+Sections
+========
+*/
+body {
+  margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct font weight in Chrome and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+Correct table border color inheritance in Chrome and Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  border-color: currentcolor;
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+h1, h2, h3 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  margin: 0;
+  color: #007f7f;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 3.998rem;
+  font-variant: small-caps;
+}
+
+h2 {
+  font-size: 2.827rem;
+}
+
+h3 {
+  font-size: 1.999rem;
+}
+
+h4 {
+  font-size: 1.414rem;
+  margin: 0;
+}
+
+h5 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+h6 {
+  font-size: 0.707rem;
+  margin: 0;
+}
+
+p, ul, blockquote {
+  margin: 0;
+  font-size: 1.414rem;
+  line-height: 1.5;
+}
+
+a:link, a:visited {
+  color: #007f7f;
+  text-decoration: underline;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: rgb(0, 152.5, 152.5);
+}
+
+.highlight {
+  color: #b24200;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.no-margin-top {
+  margin-top: 0 !important;
+}
+
+html,
+body {
+  background-color: #fbfbfb;
+  cursor: default;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  font-family: "Trebuchet MS", Tahoma, sans-serif;
+  word-wrap: break-word;
+}
+
+::-moz-selection {
+  background-color: rgb(191.25, 191.25, 191.25);
+}
+
+::selection {
+  background-color: rgb(191.25, 191.25, 191.25);
+}
+
+::-moz-selection {
+  background-color: rgb(191.25, 191.25, 191.25);
+}
+
+#header {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#header .main_title {
+  text-align: center;
+  display: block;
+}
+#header .main_title h2 {
+  margin-top: -10px;
+}
+#header a {
+  text-decoration: none;
+  color: #007f7f;
+}
+
+.block {
+  background-color: #fff;
+  border-radius: 0.625em;
+  border: 1px solid rgb(238.25, 238.25, 238.25);
+}
+
+.wide-block {
+  width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  padding: 1em;
+}
+.wide-block .logo-img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wide-block .logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+}
+.wide-block p,
+.wide-block ul {
+  margin-top: 0.8em;
+  cursor: default;
+}
+.wide-block li {
+  margin-top: 1rem;
+}
+.wide-block li:first-of-type {
+  margin-top: 0;
+}
+.wide-block .padded {
+  margin: 2em 1em;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.badge {
+  font-size: 1rem;
+  background-color: #007f7f;
+  color: #fbfbfb;
+  border-radius: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  height: 2rem;
+  line-height: 2rem;
+  display: inline-block;
+}
+
+#social-links {
+  text-align: center;
+  position: fixed;
+  right: 1em;
+  top: 1em;
+  padding: 1em 0.7em;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#social-links a {
+  color: #3c3c3c;
+  display: block;
+  font-size: 1.6em;
+  margin: 0.9em auto;
+  text-decoration: none;
+}
+#social-links a:hover {
+  color: rgb(85.5, 85.5, 85.5);
+}
+#social-links a:first-of-type {
+  margin-top: 0;
+}
+#social-links a:last-of-type {
+  margin-bottom: 0;
+}
+
+.btn {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none !important;
+  font-size: 1.414rem;
+  color: #007f7f;
+  border: 2px solid #e0e0e0;
+  background-color: #f2f2f1;
+  border-radius: 0.625em;
+  padding: 0.5em 1em;
+  transition: box-shadow 0.3s ease 0s;
+}
+.btn:hover, .btn:focus {
+  box-shadow: inset #e0e0e0 -3px -3px 4px;
+  color: #007f7f;
+}
+.btn:active {
+  box-shadow: inset #e0e0e0 3px 3px 4px;
+  color: #007f7f;
+}
+.btn.btn-lg {
+  font-size: 1.999rem;
+}
+
+.btn-group {
+  text-align: center;
+}
+.btn-group .btn {
+  margin-bottom: 1em;
+}
+.btn-group .btn:last-of-type {
+  margin-bottom: 0;
+}
+
+@media all and (max-width: 900px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 760px) {
+  html, body {
+    font-size: 13px;
+  }
+  .wide-block {
+    width: 40em;
+  }
+  .btn.btn-lg {
+    font-size: 1.6rem;
+  }
+}
+@media all and (max-width: 640px) {
+  html, body {
+    font-size: 12px;
+  }
+  .btn.btn-lg {
+    font-size: 1.5rem;
+  }
+}
+@media all and (max-width: 560px) {
+  .wide-block {
+    width: 37em;
+  }
+}
+@media all and (max-width: 480px) {
+  .wide-block {
+    width: 90%;
+  }
+}
+@media all and (max-width: 400px) {
+  html, body {
+    font-size: 11px;
+  }
+  .wide-block {
+    width: 90%;
+  }
+  #social-links {
+    top: 0.2em;
+    right: 0.5em;
+  }
+}
