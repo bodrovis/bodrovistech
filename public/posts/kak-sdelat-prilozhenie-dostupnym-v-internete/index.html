@@ -94,24 +94,24 @@
       <p>Итак, представим ситуацию: у вас локально запущен web-сервер с неким приложением. Вам нужно срочно сделать так, чтобы к этому приложению можно было получить доступ из Интернета. У вас нет времени на настройку хостинга (ну, или нет желания/возможности за него платить). Что делать? На самом деле, решить эту проблему можно очень легко, потратив буквально одну минуту. Нас выручит такое решение, как ngrok.</p>
 <h2 id="установка-ngrok">Установка ngrok</h2>
 <p>В первую очередь, <a href="https://ngrok.com/download">идём на официальный сайт ngrok</a> и следуем инструкциям по установке на вашу ОС. К примеру, на Mac можно запустить команду:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>brew install ngrok/ngrok/ngrok
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">brew install ngrok/ngrok/ngrok
 </span></span></code></pre></div><p>На Windows используйте Chocolatey:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>choco install ngrok
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">choco install ngrok
 </span></span></code></pre></div><p>В принципе, это всё, ngrok готов к работе!</p>
 <h2 id="получение-токена">Получение токена</h2>
 <p>Теперь нам потребуется специальный токен ngrok, который можно получить в личном кабинете. Для этого <a href="https://dashboard.ngrok.com/signup">зарегистрируйтесь на сайте</a> и перейдите во вкладку Your authtoken. Здесь просто скопируйте содержимое из поля Your Authtoken, после чего в терминале запустите команду:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ngrok config add-authtoken YOUR_TOKEN_HERE
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">ngrok config add-authtoken YOUR_TOKEN_HERE
 </span></span></code></pre></div><p>Регистрация на сервисе совершенно бесплатна, но учтите, что тариф Free имеет ряд ограничений. В частности, внешний домен будет иметь постфикс <code>ngrok-free.app</code>, а количество запросов HTTP в месяц не может превышать 20 000.</p>
 <h2 id="запуск-ngrok">Запуск ngrok</h2>
 <p>Удостоверьтесь, что ваше web-приложение запущено локально, после чего в отдельной вкладке терминала выполните команду:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ngrok http PORT
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">ngrok http PORT
 </span></span></code></pre></div><p><code>PORT</code> — это номер порта, на котором работает ваше приложение.</p>
 <p>После запуска этой команды вы увидите информацию в духе:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>Forwarding https://2f71-85-254-75-227.ngrok-free.app -&gt; http://localhost:3000 
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Forwarding https://2f71-85-254-75-227.ngrok-free.app -&gt; http://localhost:3000 
 </span></span></code></pre></div><p><code>https://2f71-85-254-75-227.ngrok-free.app</code> — это адрес вашего приложения в Интернете!</p>
 <h3 id="настройки-безопасности">Настройки безопасности</h3>
 <p>Учтите, что некоторые веб-фреймворки (например, Rails) могут по умолчанию блокировать доступы через Ngrok. Чтобы решить эту проблему, вам потребуется разрешить обращение через Ngrok. Конкретный порядок действий зависит от вашего фреймворка. К примеру, на Rails можно в конфигурацию добавить:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#008080">Rails</span><span style="color:#000;font-weight:bold">.</span>application<span style="color:#000;font-weight:bold">.</span>config<span style="color:#000;font-weight:bold">.</span>hosts <span style="color:#000;font-weight:bold">&lt;&lt;</span> <span style="color:#009926">/.*\.ngrok-free\.app/i</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ruby" data-lang="ruby"><span class="line"><span class="cl"><span class="no">Rails</span><span class="o">.</span><span class="n">application</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">hosts</span> <span class="o">&lt;&lt;</span> <span class="sr">/.*\.ngrok-free\.app/i</span>
 </span></span></code></pre></div><p>После этого не забудьте перезапустить сервис.</p>
 
     </section>

@@ -9,7 +9,7 @@ pagerSize = 15
 
 [markup]
 [markup.highlight]
-style = 'github'
+noClasses = false
 
 [taxonomies]
 tag = "tags"
