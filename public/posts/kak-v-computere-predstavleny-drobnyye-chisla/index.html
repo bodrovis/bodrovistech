@@ -1,247 +1,29 @@
-<!DOCTYPE html>
-
-<html lang="ru-RU">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <title>Как в компьютере представлены дробные числа? | Ilya Krukowski</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content='В этой статье мы узнаем, как именно в компьютере (CPU) представлены дробные числа, называемые также &#34;числа с плавающей точкой&#34; или float. В частности, рассмотрим стандарт IEEE 754.'>
-    <meta name="keywords" content="Ilya Krukowski, Илья Круковский, bodrovis, статьи о web, программирование, дизайн, регулярные выражения, web-дизайн, ruby, rails, javascript, jquery, css, html, regexp, плагины, radiant wind, plugins, gems, libraries, tutor, personal teacher, it">
-    <meta name="author" content="bodrovis">
-    <meta name="robots" content="all">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
-    
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-
-
-  
-
-  
-    
-      <link rel="stylesheet" href="/stylesheets/single_post.css">
-    
-  
-
-
-
-    
-
-
-
-
-<meta property="og:image" content="http://localhost:1313/meta/kak-v-computere-predstavleny-drobnyye-chisla.webp">
-
-<meta property="og:type" content="blog">
-<meta property="og:title" content="Как в компьютере представлены дробные числа? |  by Ilya Krukowski">
-<meta property="og:description" content="В этой статье мы узнаем, как именно в компьютере (CPU) представлены дробные числа, называемые также &#34;числа с плавающей точкой&#34; или float. В частности, рассмотрим стандарт IEEE 754.">
-<meta property="og:url" content="http://localhost:1313/posts/kak-v-computere-predstavleny-drobnyye-chisla/">
-<meta property="og:site_name" content="Ilya Krukowski">
-
-  </head>
-  <body>
-    
-<header lang="en-US">
-  <div id="main-top-block" class="light_gradient">
-    <nav>
-      <a href="/" class="icon icon-home" title="Homepage"></a>
-      <a class="icon icon-book" title="Blog" href="/blog"></a>
-      <a class="icon icon-tags" title="Tags" href="/tags"></a>
-      <a class="icon icon-search with-spacer" title="Search" href="/search"></a>
-      <a class="icon icon-github" title="GitHub" href="https://github.com/bodrovis" target="_blank"></a>
-      <a class="icon icon-youtube" title="YouTube" href="https://www.youtube.com/@IlyaBodrovKrukowski" target="_blank"></a>
-      <a class="icon icon-telegram" title="Telegram" href="https://t.me/dev_in_ruby_colors" target="_blank"></a>
-      <a class="icon icon-linkedin" title="LinkedIn" href="https://linkedin.com/in/bodrovis" target="_blank"></a>
-    </nav>
-  </div>
-
-  <div id="logo">
-    
-      <img src="/images/icon150trans.webp" width="150" height="150" alt="Ilya Krukowski logo" class="img-logo">
-    
-    
-    <p>
-      <a href="/blog">
-        <span class="capital">I</span>lya <span class="capital">K</span>rukowski
-
-        <span class="subtitle">https://bodrovis.tech</span>
-      </a>
-    </p>
-  </a>
-</header>
-
-<main id="content" data-pagefind-body>
-  <h1>Как в компьютере представлены дробные числа?</h1>
-
-  <article class="full-entry">
-    <time class="timestamp subtext" datetime="2024-03-10 00:00:00 &#43;0000 UTC">
-      March 10, 2024
-    </time>
-
-    
-    
-    <a class="badge" href="/tags/cs">#cs</a>
-    
-    <a class="badge" href="/tags/cpu">#cpu</a>
-    
-    
-
-    <section id="post-body">
-      
-<aside id="toc-wrapper">
-  <h4>Index</h4>
-  <nav id="TableOfContents">
-  <ul>
-    <li><a href="#дробные-десятичные-числа-и-их-представления">Дробные десятичные числа и их представления</a></li>
-    <li><a href="#дробные-двоичные-числа-и-их-представления">Дробные двоичные числа и их представления</a></li>
-    <li><a href="#ieee-754">IEEE 754</a>
-      <ul>
-        <li><a href="#случай-1-нормированные-значения">Случай 1: Нормированные значения</a></li>
-        <li><a href="#случай-2-денормированные-значения">Случай 2: Денормированные значения</a></li>
-        <li><a href="#случай-3-специальные-значения">Случай 3: Специальные значения</a></li>
-      </ul>
-    </li>
-    <li><a href="#примеры-представление-чисел-с-плавающей-точкой">Примеры: Представление чисел с плавающей точкой</a>
-      <ul>
-        <li><a href="#нуль">Нуль</a></li>
-        <li><a href="#положительная-дробь">Положительная дробь</a></li>
-        <li><a href="#самое-большое-из-денормированных-чисел">Самое большое из денормированных чисел</a></li>
-        <li><a href="#самое-маленькое-из-нормированных-чисел">Самое маленькое из нормированных чисел</a></li>
-        <li><a href="#самое-маленькое-положительное-число">Самое маленькое положительное число</a></li>
-      </ul>
-    </li>
-    <li><a href="#распределение-чисел">Распределение чисел</a></li>
-  </ul>
-</nav>
-</aside>
-
-
-      <p>В этой статье мы поговорим о <strong>дробных числах (float) и их представлении в компьютере</strong>, в частности, о том, как их описывает стандарт <strong>IEEE 754</strong>, принятый в 1985 году. Если вас интересует представление целых чисел, об этом можно почитать <a href="http://localhost:1313/posts/kak-v-computere-predstavleny-celye-chisla/">в предыдущей статье</a>.</p>
-<p>Это запись по следам видеоурока, который можно найти на YouTube:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Pe3GCa3WKBU"
-  title="YouTube video player" frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen></iframe>
-<p><em>Эта запись также доступна <a href="https://t.me/dev_in_ruby_colors/970">в канале Telegram &ldquo;DEV: Рубиновые тона&rdquo;</a>, а обсудить же эту тему можно <a href="https://t.me/+MxYT6-01eeA1NTYy">в нашем чате Telegram</a>.</em></p>
-<h2 id="дробные-десятичные-числа-и-их-представления">Дробные десятичные числа и их представления</h2>
-<p>Чтобы было проще, начнём с обычного десятичного числа <code>35.42</code>, у которого, как можно видеть, имеется дробная часть. Как ещё можно записать это число? Ну, к примеру, вот так:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">3 * (10 ** 1) + 5 * (10 ** 0) + 4 * (10 ** -1) + 2 * (10 ** -2)
-</span></span></code></pre></div><p>То есть тут повторяется ситуация с порядковыми номерами, которую мы видели ранее при обсуждении целых чисел. Каждая цифра здесь привносит определённое значение в зависимости от своего порядкового номера. Так, у тройки порядковый номер будет 1, а у пятёрки — 0. При этом цифрам, стоящим после точки, мы просто присваиваем отрицательные индексы.</p>
-<p>В принципе, это же число можно представить как <code>35 + (42 / 100)</code>, суть та же.</p>
-<h2 id="дробные-двоичные-числа-и-их-представления">Дробные двоичные числа и их представления</h2>
-<p>Ясное дело, что принцип, описанный выше, можно применить и двоичным числам. К примеру, если взять двоичное <code>101.11</code>, то у нас выйдет:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">1 * (2 ** 2) + 0 * (2 ** 1) + 1 * (2 ** 0) + 1 * (2 ** -1) + 1 * (2 ** -2)
-</span></span></code></pre></div><p>Или, проще говоря:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">4 + 0 + 1 + (1/2) + (1/4)
-</span></span></code></pre></div><p>То есть мы видим, что после точки у нас появляются дроби со степенями двойки: <code>1/2</code>, <code>1/4</code>, <code>1/8</code>, и так далее.</p>
-<p>С помощью этого метода мы можем легко представить десятичную дробь <code>3/16</code> (или <code>0.1875</code>), это будет <code>0.0011</code> в двоичной. И хотя на этом подходе можно было бы и остановиться, он не слишком удобен, особенно для очень больших чисел. Именно поэтому был придуман <strong>стандарт IEEE 754</strong>.</p>
-<h2 id="ieee-754">IEEE 754</h2>
-<p>Итак, стандарт IEEE 754 представляет дробные числа в виде формулы:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">((-1) ** s) * M * (2 ** E)
-</span></span></code></pre></div><p>Здесь три параметра, и в компьютере каждый хранится в своём поле:</p>
-<ul>
-<li>
-<p><code>s</code> — это информация о знаке. Данный параметр равен либо 0, либо 1, поэтому соответствующее поле занимает всегда 1 бит.</p>
-</li>
-<li>
-<p><code>M</code> — это мантисса, дробное число, обычно меньше 1. Его представляет поле <code>frac</code>, занимает оно <code>n</code> бит и содержит последовательность <code>f(n-1), ..., f(1), f(0)</code>.</p>
-</li>
-<li>
-<p><code>E</code> — это экспонента, которая может быть как положительной, так и отрицательной. Её представляет поле <code>exp</code> длиной <code>k</code> бит с последовательностью <code>e(k-1), ..., e(1), e(0)</code>.</p>
-</li>
-</ul>
-<p>Итак, согласно стандарту, дробные числа состоят аж из трёх полей сразу, и обычно имеют либо одинарную (single, размерность 32 бита), либо двойную (double, размерность 64 бита) точность. К примеру, для одинарной точности <code>s</code> занимает один бит номер 31, <code>exp</code> — с 23 по 30 биты, остальное (с 0 по 22) отводится под мантиссу.</p>
-<p>Однако дальше становится немного сложно, так как стандарт описывает три возможных случая, связанных со значениями мантиссы и экспоненты.</p>
-<h3 id="случай-1-нормированные-значения">Случай 1: Нормированные значения</h3>
-<p>Сначала поговорим о самом типичном сценарии, который описывает нормированные значения. Это случай, когда экспонента <strong>не</strong> состоит целиком из нулей или целиком из единиц. Говорят, что экспонента хранится в смещённой (biased) форме, а само её значение считается как:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">E = e - B
-</span></span></code></pre></div><ul>
-<li>
-<p><code>e</code> — число без знака с последовательностью <code>e(k-1), ..., e(1), e(0)</code>.</p>
-</li>
-<li>
-<p><code>B</code> — это значение bias, которое равно <code>2 ** (k - 1) - 1</code>. Так, для одинарной точности оно составляет 127, потому что в этом случае длина поля <code>exp</code> составляет 8 бит.</p>
-</li>
-</ul>
-<p>Следовательно, для одинарной точности финальное значение <code>E</code> будет лежать в пределах от -126 (так как <code>e</code> — число без знака, и оно точно больше нуля в данном случае) до 127.</p>
-<p>Поле <code>frac</code> в этом случае описывает дробную часть, то есть его значение <code>f</code> в десятичном виде лежит от 0 (включительно) до 1 (не включительно). Это довольно важно, процесс формирования f увидим в примере ниже.</p>
-<p>Финальное значение мантиссы считается как <code>M = 1 + f</code>.</p>
-<h3 id="случай-2-денормированные-значения">Случай 2: Денормированные значения</h3>
-<p>Следующий случай — денормированные значения, это когда в поле <code>exp</code> содержатся все нули.</p>
-<p>Тогда экспонента считается по формуле <code>E = 1 - B</code> (откуда берётся <code>B</code> мы уже знаем).</p>
-<p>Мантисса будет просто равна полю <code>frac</code>, то есть <code>M = f</code>.</p>
-<p>Такие денормированные значения, в частности, используются, чтобы представить значение <code>0</code>. Но вы можете спросить: &ldquo;А чего бы нам для нуля не использовать первый случай&rdquo;? Ну потому, что там мантисса считается как <code>M = 1 + f</code>, то есть в любом случае <code>M &gt;= 1</code>, ноль таким образом никак не представишь.</p>
-<p>Кстати, в этом же случае получается интересный момент: у нас может быть как <code>+0</code>, так и <code>-0</code>. Почему? Потому что даже если биты в <code>exp</code> и <code>frac</code> занулены, <code>s</code> всё равно может иметь значение как 0, так и 1.</p>
-<p>На самом деле, этот случай используется ещё и тогда, когда нужно представить числа, очень близкие к нулю, как мы увидим в примере ниже.</p>
-<h3 id="случай-3-специальные-значения">Случай 3: Специальные значения</h3>
-<p>Последний третий случай описывает специальные значения: это когда в поле <code>exp</code> записаны все единицы. Правда, этот случай содержит два других возможных сценария.</p>
-<p>Если в <code>frac</code> записаны одни нули, то таким образом мы представляем бесконечность (плюс или минус бесконечность, зависит от знака <code>s</code>). Ну, к примеру, если мы поделили на ноль.</p>
-<p>Если в <code>frac</code> указано что-то иное (не все нули), то это значение называется &ldquo;not a number&rdquo; (<code>NaN</code>). Оно может вылезти, если результат невозможно представить реальными числами (настоящие джедаи помнят про мнимые числа, но это не тот случай, про них данный стандарт ничего не говорит), либо если происходит что-то странное в духе &ldquo;бесконечность минус бесконечность&rdquo;.</p>
-<h2 id="примеры-представление-чисел-с-плавающей-точкой">Примеры: Представление чисел с плавающей точкой</h2>
-<p>В качестве примера давайте возьмём 8-битный формат (можно было бы взять и одинарную точность, но там просто несколько сложнее было бы считать), где на <code>exp</code> отводится <code>k=4</code> бит, а на <code>frac</code> даётся <code>n=3</code> бит. Понятно, что на знак в любом случае занимает 1 бит. В этом случае значение bias считается как <code>B = 2 ** (4-1) - 1 = 7</code>.</p>
-<h3 id="нуль">Нуль</h3>
-<p>Как мы представим в этом случае ноль? Ну, очевидно вот так (биты разграничены по соответствующим полям):</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">0 0000 000
-</span></span></code></pre></div><p>Здесь <code>e=0</code>, <code>E = 1 - 7 = -6</code>.</p>
-<p><code>f</code> можно записать как <code>0 / 8</code> (так как в поле <code>frac</code> у нас все нули). Следовательно, мантисса <code>M = f = 0 / 8</code>.</p>
-<p>Тогда наша формула, представленная выше, преобразуется в такую:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">((-1) ** 0) * (0/8) * (2 ** -6) = 0
-</span></span></code></pre></div><h3 id="положительная-дробь">Положительная дробь</h3>
-<p>Классно. Теперь попробуем представить число <code>7/8</code>, то есть <code>0.875</code>. Его представление:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">0 0110 110
-</span></span></code></pre></div><p><code>e = 0110 = 6</code>, тогда <code>E = 6 - 7 = -1</code>.</p>
-<p>Теперь <code>f</code>. У нас под это поле отводится три бита, то есть <code>2 ** 3 = 8</code> (двойка тут потому, что система счисления двоичная), а само значение <code>frac = 110</code>, то есть 6 в десятичной. Выходит, что <code>f = 6/8</code>, а мантисса считается как <code>M = 14 / 8</code>.</p>
-<p>Подставляем в формулу:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">((-1) ** 0) * (14 / 8) * (2 ** -1) = 0.875
-</span></span></code></pre></div><h3 id="самое-большое-из-денормированных-чисел">Самое большое из денормированных чисел</h3>
-<p>Попробуем ещё взять вот такое число, это в нашем случае самое большое из денормированных:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">0 0000 111
-</span></span></code></pre></div><p>Выходит, что <code>e = 0</code>, <code>E = -6</code>. При этом <code>f = M = 7/8</code>.</p>
-<p>Подставим в формулу:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">((-1) ** 0) * (7/8) * (2 ** -6) ~ 0.013671875
-</span></span></code></pre></div><h3 id="самое-маленькое-из-нормированных-чисел">Самое маленькое из нормированных чисел</h3>
-<p>А если попробовать представить самое маленькое из нормированных чисел? Оно записывается так:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">0 0001 000
-</span></span></code></pre></div><p>Тут <code>e = 1</code>, <code>E = -6</code>, <code>f = 0 / 8</code>, <code>M = 8 / 8</code>.</p>
-<p>Подставляем в формулу:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">((-1) ** 0) * (8/8) * (2 ** -6) ~ 0.015625
-</span></span></code></pre></div><h3 id="самое-маленькое-положительное-число">Самое маленькое положительное число</h3>
-<p>Аналогично, самое маленькое положительное число, которое мы можем представить (грубо говоря, самое близкое к нулю):</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-plain" data-lang="plain"><span class="line"><span class="cl">0 0000 001
-</span></span></code></pre></div><p>Тут <code>e = 0</code>, <code>E = -6</code>, <code>f = M = 1/8</code>.</p>
-<p>Подставляем в формулу:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">((-1) ** 0) * (1/8) * (2 ** -6) = 0.001953125
-</span></span></code></pre></div><p>Вот это как раз и есть случай с денормированными числами, когда мы представляем очень близкое к нулю значение.</p>
-<h2 id="распределение-чисел">Распределение чисел</h2>
-<p>Кстати, тут выходит один интересный момент. Смотрите, что получилось в наших примерах:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">0 0000 000 = 0
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">0 0000 001 = 0.001953125
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">0 0000 111 = 0.013671875
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">0 0001 000 = 0.015625
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">0 0110 110 = 0.875
-</span></span></code></pre></div><p>Я расположил эти числа по возрастанию от самого маленького десятичного к самому большому. Но при этом можно видеть, что их двоичные аналоги тоже стоят по возрастанию! Это вовсе не случайно: стандарт создавался с учётом того, что программистам наверняка потребуется сортировать такие числа по тем же принципам, что и для целых чисел (хотя тут есть небольшая проблема, если в первом бите появляется 1, то есть число отрицательное).</p>
-<p>Собственно говоря, из примеров выше мы видим, что представить &ldquo;любое&rdquo; число мы с помощью такого стандарта не можем. К примеру, у нас идёт &ldquo;перескок&rdquo; от <code>0.013671875</code> сразу к <code>0.015625</code>, и сделать с этим особенно ничего не получится. Да, можно использовать не 8 бит, а 32 или даже 64 (двойная точность), но, как вы понимаете, всё равно покрыть все возможные случаи никак не выйдет. Поэтому в том же Rust, да и в других языках, есть понятие &ldquo;эпсилон&rdquo;, то есть определённая погрешность, которую стоит учитывать.</p>
-
-    </section>
-  </article>
-</main>
-
-<footer class="light_gradient" lang="en-US">
-  <p>
-    &copy; Ilya Krukowski
-  </p>
-</footer>
-
-
-    <script src="/js/post.min.c6a3ca85a318ecf83b8e11535463ad9865ecb2fa1528b59e028c79a6834fc21b.js" integrity="sha256-xqPKhaMY7Pg7jhFTVGOtmGXssvoVKLWeAox5poNPwhs=" defer></script>
-
-  </body>
-</html>
+<!doctype html><html lang=ru-RU><head><meta charset=utf-8><link rel=preconnect href=https://fonts.gstatic.com><title>Как в компьютере представлены дробные числа? | Ilya Krukowski</title>
+<meta name=viewport content="width=device-width"><meta name=description content='В этой статье мы узнаем, как именно в компьютере (CPU) представлены дробные числа, называемые также "числа с плавающей точкой" или float. В частности, рассмотрим стандарт IEEE 754.'><meta name=keywords content="Ilya Krukowski,Илья Круковский,bodrovis,статьи о web,программирование,дизайн,регулярные выражения,web-дизайн,ruby,rails,javascript,jquery,css,html,regexp,плагины,radiant wind,plugins,gems,libraries,tutor,personal teacher,it"><meta name=author content="bodrovis"><meta name=robots content="all"><link rel=apple-touch-icon href=/apple-touch-icon.png><link rel=icon href=/favicon.ico type=image/x-icon><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel=stylesheet><link rel=stylesheet href=/stylesheets/single_post.min.20af447d7ed45be37dbe76b58a3fe53ed39a4c680da8415b0956a8df51710a4c.css integrity="sha256-IK9EfX7UW+N9vna1ij/lPtOaTGgNqEFbCVao31FxCkw=" crossorigin=anonymous><meta property="og:image" content="https://bodrovis.tech/meta/kak-v-computere-predstavleny-drobnyye-chisla.webp"><meta property="og:type" content="blog"><meta property="og:title" content="Как в компьютере представлены дробные числа? |  by Ilya Krukowski"><meta property="og:description" content='В этой статье мы узнаем, как именно в компьютере (CPU) представлены дробные числа, называемые также "числа с плавающей точкой" или float. В частности, рассмотрим стандарт IEEE 754.'><meta property="og:url" content="https://bodrovis.tech/posts/kak-v-computere-predstavleny-drobnyye-chisla/"><meta property="og:site_name" content="Ilya Krukowski"></head><body><header lang=en-US><div id=main-top-block class=light_gradient><nav><a href=/ class="icon icon-home" title=Homepage></a><a class="icon icon-book" title=Blog href=/blog></a><a class="icon icon-tags" title=Tags href=/tags></a><a class="icon icon-search with-spacer" title=Search href=/search></a><a class="icon icon-github" title=GitHub href=https://github.com/bodrovis target=_blank></a><a class="icon icon-youtube" title=YouTube href=https://www.youtube.com/@IlyaBodrovKrukowski target=_blank></a><a class="icon icon-telegram" title=Telegram href=https://t.me/dev_in_ruby_colors target=_blank></a><a class="icon icon-linkedin" title=LinkedIn href=https://linkedin.com/in/bodrovis target=_blank></a></nav></div><div id=logo><img src=/images/icon150trans.webp width=150 height=150 alt="Ilya Krukowski logo" class=img-logo><p><a href=/blog><span class=capital>I</span>lya <span class=capital>K</span>rukowski
+<span class=subtitle>https://bodrovis.tech</span></a></p></a></header><main id=content data-pagefind-body><h1>Как в компьютере представлены дробные числа?</h1><article class=full-entry><time class="timestamp subtext" datetime="2024-03-10 00:00:00 +0000 UTC">March 10, 2024
+</time><a class=badge href=/tags/cs>#cs</a>
+<a class=badge href=/tags/cpu>#cpu</a><section id=post-body><aside id=toc-wrapper><h4>Index</h4><nav id=TableOfContents><ul><li><a href=#дробные-десятичные-числа-и-их-представления>Дробные десятичные числа и их представления</a></li><li><a href=#дробные-двоичные-числа-и-их-представления>Дробные двоичные числа и их представления</a></li><li><a href=#ieee-754>IEEE 754</a><ul><li><a href=#случай-1-нормированные-значения>Случай 1: Нормированные значения</a></li><li><a href=#случай-2-денормированные-значения>Случай 2: Денормированные значения</a></li><li><a href=#случай-3-специальные-значения>Случай 3: Специальные значения</a></li></ul></li><li><a href=#примеры-представление-чисел-с-плавающей-точкой>Примеры: Представление чисел с плавающей точкой</a><ul><li><a href=#нуль>Нуль</a></li><li><a href=#положительная-дробь>Положительная дробь</a></li><li><a href=#самое-большое-из-денормированных-чисел>Самое большое из денормированных чисел</a></li><li><a href=#самое-маленькое-из-нормированных-чисел>Самое маленькое из нормированных чисел</a></li><li><a href=#самое-маленькое-положительное-число>Самое маленькое положительное число</a></li></ul></li><li><a href=#распределение-чисел>Распределение чисел</a></li></ul></nav></aside><p>В этой статье мы поговорим о <strong>дробных числах (float) и их представлении в компьютере</strong>, в частности, о том, как их описывает стандарт <strong>IEEE 754</strong>, принятый в 1985 году. Если вас интересует представление целых чисел, об этом можно почитать <a href=https://bodrovis.tech/posts/kak-v-computere-predstavleny-celye-chisla/>в предыдущей статье</a>.</p><p>Это запись по следам видеоурока, который можно найти на YouTube:</p><iframe width=560 height=315 src=https://www.youtube.com/embed/Pe3GCa3WKBU title="YouTube video player" frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><p><em>Эта запись также доступна <a href=https://t.me/dev_in_ruby_colors/970>в канале Telegram &ldquo;DEV: Рубиновые тона&rdquo;</a>, а обсудить же эту тему можно <a href=https://t.me/+MxYT6-01eeA1NTYy>в нашем чате Telegram</a>.</em></p><h2 id=дробные-десятичные-числа-и-их-представления>Дробные десятичные числа и их представления</h2><p>Чтобы было проще, начнём с обычного десятичного числа <code>35.42</code>, у которого, как можно видеть, имеется дробная часть. Как ещё можно записать это число? Ну, к примеру, вот так:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>3 * (10 ** 1) + 5 * (10 ** 0) + 4 * (10 ** -1) + 2 * (10 ** -2)
+</span></span></code></pre></div><p>То есть тут повторяется ситуация с порядковыми номерами, которую мы видели ранее при обсуждении целых чисел. Каждая цифра здесь привносит определённое значение в зависимости от своего порядкового номера. Так, у тройки порядковый номер будет 1, а у пятёрки — 0. При этом цифрам, стоящим после точки, мы просто присваиваем отрицательные индексы.</p><p>В принципе, это же число можно представить как <code>35 + (42 / 100)</code>, суть та же.</p><h2 id=дробные-двоичные-числа-и-их-представления>Дробные двоичные числа и их представления</h2><p>Ясное дело, что принцип, описанный выше, можно применить и двоичным числам. К примеру, если взять двоичное <code>101.11</code>, то у нас выйдет:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>1 * (2 ** 2) + 0 * (2 ** 1) + 1 * (2 ** 0) + 1 * (2 ** -1) + 1 * (2 ** -2)
+</span></span></code></pre></div><p>Или, проще говоря:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>4 + 0 + 1 + (1/2) + (1/4)
+</span></span></code></pre></div><p>То есть мы видим, что после точки у нас появляются дроби со степенями двойки: <code>1/2</code>, <code>1/4</code>, <code>1/8</code>, и так далее.</p><p>С помощью этого метода мы можем легко представить десятичную дробь <code>3/16</code> (или <code>0.1875</code>), это будет <code>0.0011</code> в двоичной. И хотя на этом подходе можно было бы и остановиться, он не слишком удобен, особенно для очень больших чисел. Именно поэтому был придуман <strong>стандарт IEEE 754</strong>.</p><h2 id=ieee-754>IEEE 754</h2><p>Итак, стандарт IEEE 754 представляет дробные числа в виде формулы:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>((-1) ** s) * M * (2 ** E)
+</span></span></code></pre></div><p>Здесь три параметра, и в компьютере каждый хранится в своём поле:</p><ul><li><p><code>s</code> — это информация о знаке. Данный параметр равен либо 0, либо 1, поэтому соответствующее поле занимает всегда 1 бит.</p></li><li><p><code>M</code> — это мантисса, дробное число, обычно меньше 1. Его представляет поле <code>frac</code>, занимает оно <code>n</code> бит и содержит последовательность <code>f(n-1), ..., f(1), f(0)</code>.</p></li><li><p><code>E</code> — это экспонента, которая может быть как положительной, так и отрицательной. Её представляет поле <code>exp</code> длиной <code>k</code> бит с последовательностью <code>e(k-1), ..., e(1), e(0)</code>.</p></li></ul><p>Итак, согласно стандарту, дробные числа состоят аж из трёх полей сразу, и обычно имеют либо одинарную (single, размерность 32 бита), либо двойную (double, размерность 64 бита) точность. К примеру, для одинарной точности <code>s</code> занимает один бит номер 31, <code>exp</code> — с 23 по 30 биты, остальное (с 0 по 22) отводится под мантиссу.</p><p>Однако дальше становится немного сложно, так как стандарт описывает три возможных случая, связанных со значениями мантиссы и экспоненты.</p><h3 id=случай-1-нормированные-значения>Случай 1: Нормированные значения</h3><p>Сначала поговорим о самом типичном сценарии, который описывает нормированные значения. Это случай, когда экспонента <strong>не</strong> состоит целиком из нулей или целиком из единиц. Говорят, что экспонента хранится в смещённой (biased) форме, а само её значение считается как:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>E = e - B
+</span></span></code></pre></div><ul><li><p><code>e</code> — число без знака с последовательностью <code>e(k-1), ..., e(1), e(0)</code>.</p></li><li><p><code>B</code> — это значение bias, которое равно <code>2 ** (k - 1) - 1</code>. Так, для одинарной точности оно составляет 127, потому что в этом случае длина поля <code>exp</code> составляет 8 бит.</p></li></ul><p>Следовательно, для одинарной точности финальное значение <code>E</code> будет лежать в пределах от -126 (так как <code>e</code> — число без знака, и оно точно больше нуля в данном случае) до 127.</p><p>Поле <code>frac</code> в этом случае описывает дробную часть, то есть его значение <code>f</code> в десятичном виде лежит от 0 (включительно) до 1 (не включительно). Это довольно важно, процесс формирования f увидим в примере ниже.</p><p>Финальное значение мантиссы считается как <code>M = 1 + f</code>.</p><h3 id=случай-2-денормированные-значения>Случай 2: Денормированные значения</h3><p>Следующий случай — денормированные значения, это когда в поле <code>exp</code> содержатся все нули.</p><p>Тогда экспонента считается по формуле <code>E = 1 - B</code> (откуда берётся <code>B</code> мы уже знаем).</p><p>Мантисса будет просто равна полю <code>frac</code>, то есть <code>M = f</code>.</p><p>Такие денормированные значения, в частности, используются, чтобы представить значение <code>0</code>. Но вы можете спросить: &ldquo;А чего бы нам для нуля не использовать первый случай&rdquo;? Ну потому, что там мантисса считается как <code>M = 1 + f</code>, то есть в любом случае <code>M >= 1</code>, ноль таким образом никак не представишь.</p><p>Кстати, в этом же случае получается интересный момент: у нас может быть как <code>+0</code>, так и <code>-0</code>. Почему? Потому что даже если биты в <code>exp</code> и <code>frac</code> занулены, <code>s</code> всё равно может иметь значение как 0, так и 1.</p><p>На самом деле, этот случай используется ещё и тогда, когда нужно представить числа, очень близкие к нулю, как мы увидим в примере ниже.</p><h3 id=случай-3-специальные-значения>Случай 3: Специальные значения</h3><p>Последний третий случай описывает специальные значения: это когда в поле <code>exp</code> записаны все единицы. Правда, этот случай содержит два других возможных сценария.</p><p>Если в <code>frac</code> записаны одни нули, то таким образом мы представляем бесконечность (плюс или минус бесконечность, зависит от знака <code>s</code>). Ну, к примеру, если мы поделили на ноль.</p><p>Если в <code>frac</code> указано что-то иное (не все нули), то это значение называется &ldquo;not a number&rdquo; (<code>NaN</code>). Оно может вылезти, если результат невозможно представить реальными числами (настоящие джедаи помнят про мнимые числа, но это не тот случай, про них данный стандарт ничего не говорит), либо если происходит что-то странное в духе &ldquo;бесконечность минус бесконечность&rdquo;.</p><h2 id=примеры-представление-чисел-с-плавающей-точкой>Примеры: Представление чисел с плавающей точкой</h2><p>В качестве примера давайте возьмём 8-битный формат (можно было бы взять и одинарную точность, но там просто несколько сложнее было бы считать), где на <code>exp</code> отводится <code>k=4</code> бит, а на <code>frac</code> даётся <code>n=3</code> бит. Понятно, что на знак в любом случае занимает 1 бит. В этом случае значение bias считается как <code>B = 2 ** (4-1) - 1 = 7</code>.</p><h3 id=нуль>Нуль</h3><p>Как мы представим в этом случае ноль? Ну, очевидно вот так (биты разграничены по соответствующим полям):</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>0 0000 000
+</span></span></code></pre></div><p>Здесь <code>e=0</code>, <code>E = 1 - 7 = -6</code>.</p><p><code>f</code> можно записать как <code>0 / 8</code> (так как в поле <code>frac</code> у нас все нули). Следовательно, мантисса <code>M = f = 0 / 8</code>.</p><p>Тогда наша формула, представленная выше, преобразуется в такую:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>((-1) ** 0) * (0/8) * (2 ** -6) = 0
+</span></span></code></pre></div><h3 id=положительная-дробь>Положительная дробь</h3><p>Классно. Теперь попробуем представить число <code>7/8</code>, то есть <code>0.875</code>. Его представление:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>0 0110 110
+</span></span></code></pre></div><p><code>e = 0110 = 6</code>, тогда <code>E = 6 - 7 = -1</code>.</p><p>Теперь <code>f</code>. У нас под это поле отводится три бита, то есть <code>2 ** 3 = 8</code> (двойка тут потому, что система счисления двоичная), а само значение <code>frac = 110</code>, то есть 6 в десятичной. Выходит, что <code>f = 6/8</code>, а мантисса считается как <code>M = 14 / 8</code>.</p><p>Подставляем в формулу:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>((-1) ** 0) * (14 / 8) * (2 ** -1) = 0.875
+</span></span></code></pre></div><h3 id=самое-большое-из-денормированных-чисел>Самое большое из денормированных чисел</h3><p>Попробуем ещё взять вот такое число, это в нашем случае самое большое из денормированных:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>0 0000 111
+</span></span></code></pre></div><p>Выходит, что <code>e = 0</code>, <code>E = -6</code>. При этом <code>f = M = 7/8</code>.</p><p>Подставим в формулу:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>((-1) ** 0) * (7/8) * (2 ** -6) ~ 0.013671875
+</span></span></code></pre></div><h3 id=самое-маленькое-из-нормированных-чисел>Самое маленькое из нормированных чисел</h3><p>А если попробовать представить самое маленькое из нормированных чисел? Оно записывается так:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>0 0001 000
+</span></span></code></pre></div><p>Тут <code>e = 1</code>, <code>E = -6</code>, <code>f = 0 / 8</code>, <code>M = 8 / 8</code>.</p><p>Подставляем в формулу:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>((-1) ** 0) * (8/8) * (2 ** -6) ~ 0.015625
+</span></span></code></pre></div><h3 id=самое-маленькое-положительное-число>Самое маленькое положительное число</h3><p>Аналогично, самое маленькое положительное число, которое мы можем представить (грубо говоря, самое близкое к нулю):</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-plain data-lang=plain><span class=line><span class=cl>0 0000 001
+</span></span></code></pre></div><p>Тут <code>e = 0</code>, <code>E = -6</code>, <code>f = M = 1/8</code>.</p><p>Подставляем в формулу:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>((-1) ** 0) * (1/8) * (2 ** -6) = 0.001953125
+</span></span></code></pre></div><p>Вот это как раз и есть случай с денормированными числами, когда мы представляем очень близкое к нулю значение.</p><h2 id=распределение-чисел>Распределение чисел</h2><p>Кстати, тут выходит один интересный момент. Смотрите, что получилось в наших примерах:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>0 0000 000 = 0
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>0 0000 001 = 0.001953125
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>0 0000 111 = 0.013671875
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>0 0001 000 = 0.015625
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>0 0110 110 = 0.875
+</span></span></code></pre></div><p>Я расположил эти числа по возрастанию от самого маленького десятичного к самому большому. Но при этом можно видеть, что их двоичные аналоги тоже стоят по возрастанию! Это вовсе не случайно: стандарт создавался с учётом того, что программистам наверняка потребуется сортировать такие числа по тем же принципам, что и для целых чисел (хотя тут есть небольшая проблема, если в первом бите появляется 1, то есть число отрицательное).</p><p>Собственно говоря, из примеров выше мы видим, что представить &ldquo;любое&rdquo; число мы с помощью такого стандарта не можем. К примеру, у нас идёт &ldquo;перескок&rdquo; от <code>0.013671875</code> сразу к <code>0.015625</code>, и сделать с этим особенно ничего не получится. Да, можно использовать не 8 бит, а 32 или даже 64 (двойная точность), но, как вы понимаете, всё равно покрыть все возможные случаи никак не выйдет. Поэтому в том же Rust, да и в других языках, есть понятие &ldquo;эпсилон&rdquo;, то есть определённая погрешность, которую стоит учитывать.</p></section></article></main><footer class=light_gradient lang=en-US><p>&copy; Ilya Krukowski</p></footer><script src=/js/post.min.c6a3ca85a318ecf83b8e11535463ad9865ecb2fa1528b59e028c79a6834fc21b.js integrity="sha256-xqPKhaMY7Pg7jhFTVGOtmGXssvoVKLWeAox5poNPwhs=" defer></script></body></html>

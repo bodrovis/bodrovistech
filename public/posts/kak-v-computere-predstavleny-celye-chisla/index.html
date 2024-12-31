@@ -1,205 +1,34 @@
-<!DOCTYPE html>
-
-<html lang="ru-RU">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <title>Как в компьютере представлены целые числа? | Ilya Krukowski</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content='В этой статье мы узнаем, как именно в компьютере (CPU) представлены целые числа со знаком и без знака (int и uint).'>
-    <meta name="keywords" content="Ilya Krukowski, Илья Круковский, bodrovis, статьи о web, программирование, дизайн, регулярные выражения, web-дизайн, ruby, rails, javascript, jquery, css, html, regexp, плагины, radiant wind, plugins, gems, libraries, tutor, personal teacher, it">
-    <meta name="author" content="bodrovis">
-    <meta name="robots" content="all">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
-    
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-
-
-  
-
-  
-    
-      <link rel="stylesheet" href="/stylesheets/single_post.css">
-    
-  
-
-
-
-    
-
-
-
-
-<meta property="og:image" content="http://localhost:1313/meta/kak-v-computere-predstavleny-celye-chisla.webp">
-
-<meta property="og:type" content="blog">
-<meta property="og:title" content="Как в компьютере представлены целые числа? |  by Ilya Krukowski">
-<meta property="og:description" content="В этой статье мы узнаем, как именно в компьютере (CPU) представлены целые числа со знаком и без знака (int и uint).">
-<meta property="og:url" content="http://localhost:1313/posts/kak-v-computere-predstavleny-celye-chisla/">
-<meta property="og:site_name" content="Ilya Krukowski">
-
-  </head>
-  <body>
-    
-<header lang="en-US">
-  <div id="main-top-block" class="light_gradient">
-    <nav>
-      <a href="/" class="icon icon-home" title="Homepage"></a>
-      <a class="icon icon-book" title="Blog" href="/blog"></a>
-      <a class="icon icon-tags" title="Tags" href="/tags"></a>
-      <a class="icon icon-search with-spacer" title="Search" href="/search"></a>
-      <a class="icon icon-github" title="GitHub" href="https://github.com/bodrovis" target="_blank"></a>
-      <a class="icon icon-youtube" title="YouTube" href="https://www.youtube.com/@IlyaBodrovKrukowski" target="_blank"></a>
-      <a class="icon icon-telegram" title="Telegram" href="https://t.me/dev_in_ruby_colors" target="_blank"></a>
-      <a class="icon icon-linkedin" title="LinkedIn" href="https://linkedin.com/in/bodrovis" target="_blank"></a>
-    </nav>
-  </div>
-
-  <div id="logo">
-    
-      <img src="/images/icon150trans.webp" width="150" height="150" alt="Ilya Krukowski logo" class="img-logo">
-    
-    
-    <p>
-      <a href="/blog">
-        <span class="capital">I</span>lya <span class="capital">K</span>rukowski
-
-        <span class="subtitle">https://bodrovis.tech</span>
-      </a>
-    </p>
-  </a>
-</header>
-
-<main id="content" data-pagefind-body>
-  <h1>Как в компьютере представлены целые числа?</h1>
-
-  <article class="full-entry">
-    <time class="timestamp subtext" datetime="2024-03-09 00:00:00 &#43;0000 UTC">
-      March 9, 2024
-    </time>
-
-    
-    
-    <a class="badge" href="/tags/cs">#cs</a>
-    
-    <a class="badge" href="/tags/cpu">#cpu</a>
-    
-    
-
-    <section id="post-body">
-      
-<aside id="toc-wrapper">
-  <h4>Index</h4>
-  <nav id="TableOfContents">
-  <ul>
-    <li><a href="#целые-неотрицательные-числа">Целые неотрицательные числа</a>
-      <ul>
-        <li><a href="#пример-кодировки-uint">Пример кодировки uint</a></li>
-        <li><a href="#максимальное-число-uint">Максимальное число uint</a></li>
-      </ul>
-    </li>
-    <li><a href="#целые-числа-со-знаком">Целые числа со знаком</a>
-      <ul>
-        <li><a href="#twos-complement">Two&rsquo;s complement</a></li>
-        <li><a href="#минимальное-и-максимальное-число-int">Минимальное и максимальное число int</a></li>
-      </ul>
-    </li>
-    <li><a href="#как-отличать-uint-от-int">Как отличать uint от int?</a></li>
-  </ul>
-</nav>
-</aside>
-
-
-      <p><strong>Как целые числа представлены в современных компьютерах?</strong> Это немаловажный вопрос, ответ на который состоит из нескольких частей. Дело в том, что у нас есть обычные <strong>неотрицательные целые числа (uint)</strong>, которые представляют собой последовательность от 0 и далее до бесконечности, и просто <strong>целые числа (int)</strong>, которые могут быть и отрицательными, и положительными. Есть ещё числа дробные, но про них речь пойдёт <a href="http://localhost:1313/posts/kak-v-computere-predstavleny-drobnyye-chisla/">в следующей статье</a>.</p>
-<p>Это запись по следам видеоурока, который можно найти на YouTube:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Pe3GCa3WKBU"
-  title="YouTube video player" frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen></iframe>
-<p><em>Эта запись также доступна <a href="https://t.me/dev_in_ruby_colors/966">в канале Telegram &ldquo;DEV: Рубиновые тона&rdquo;</a>, а обсудить же эту тему можно <a href="https://t.me/+MxYT6-01eeA1NTYy">в нашем чате Telegram</a>.</em></p>
-<h2 id="целые-неотрицательные-числа">Целые неотрицательные числа</h2>
-<p>Проще всего, конечно, рассмотреть <code>uint</code>, то есть с целыми неотрицательными числами. В первую очередь, всегда следует помнить, что процессор умеет работать только с нулями и единицами, никакие другие системы счисления он не &ldquo;знает&rdquo;. Тогда выходит, что привычные нам десятичные числа в компьютере могут быть закодированы в виде вектора, состоящего из набора нулей и единиц, к примеру, <code>100101011</code>. В общем случае этот вектор выглядит так:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-plain" data-lang="plain"><span class="line"><span class="cl">[ x(w - 1), x(w - 2), ... x(0) ]
-</span></span></code></pre></div><p>Здесь <code>w</code> — это длина вектора. Естественно, чем больше длина, тем больше чисел мы можем с его помощью закодировать.</p>
-<p>В данном векторе наиболее значимый бит <code>x(w-1)</code> находится слева, а наименее значимый <code>x(0)</code> — справа. Если бит имеет значение 1, то он &ldquo;привносит&rdquo; в закодированное значение величину <code>2 ** i</code>, где <code>i</code> — порядковый номер этого бита. Собственно говоря, именно на этом факте строится процесс перевода из двоичного вида в десятичный.</p>
-<h3 id="пример-кодировки-uint">Пример кодировки uint</h3>
-<p>Чтобы было проще, возьмём <code>w = 4</code> и двоичное число <code>1010</code>. Наиболее значимый бит имеет порядковый номер 3 (считаем с нуля), также у нас установлен в значение 1 бит с порядковым номером 1. Следовательно мы можем возвести двойки в соответствующие степени (1 и 3) и сложить получившиеся значения:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-plain" data-lang="plain"><span class="line"><span class="cl">2 ** 3 + 2 ** 1 = 10
-</span></span></code></pre></div><p>Это можно легко проверить, например, в Rust:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">number</span>: <span class="kt">u8</span> <span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;</span><span class="si">{number:b}</span><span class="s">&#34;</span><span class="p">);</span><span class="w">
-</span></span></span></code></pre></div><p>Таким образом, числу <code>10</code> в десятичной системе счисления соответствует вектор <code>1010</code>, но верно и обратное. Больше того, это соответствие &ldquo;один ко одному&rdquo;, иными словами вектор <code>1010</code> никакое другое десятичное число не представляет. Такая штука называется <strong>биекция</strong>.</p>
-<h3 id="максимальное-число-uint">Максимальное число uint</h3>
-<p>При <code>w = 4</code> минимальное число, которое мы можем закодировать — это, ясное дело, <code>0 0 0 0</code>, то есть просто <code>0</code>. Максимальное же — <code>1 1 1 1</code>, то есть <code>15</code> в десятичной.</p>
-<p>Аналогично, для <code>w = 8</code> максимальное число — это <code>255</code>.</p>
-<p>В общем, здесь всё просто и довольно очевидно: чем больше бит у нас есть, тем более длинные числа мы можем представлять Интереснее становится, когда мы переходим к целым числам, имеющим знак.</p>
-<h2 id="целые-числа-со-знаком">Целые числа со знаком</h2>
-<p>Итак, теперь мы поговорим про целые числа <code>int</code>, которые могут быть как положительными, так и отрицательными. Отрицательное число — это такое, у которого, по большому счёту, есть знак &ldquo;минус&rdquo;. Где и как нам этот знак хранить? Раньше в некоторых уроках мы несколько обходили этот момент, говоря, что отдельный бит резервируется под хранение знака. Это некое упрощение.</p>
-<p>На самом деле, вариантов представления чисел со знаком есть некоторое количество (в том числе, и случай, когда наиболее значимый бит просто говорит &ldquo;есть минус или нет минуса&rdquo;). Но, пожалуй, самый распространённый принцип — это так называемый <strong>two&rsquo;s complement</strong>.</p>
-<h3 id="twos-complement">Two&rsquo;s complement</h3>
-<p>Суть данного метода довольно проста. Как и с <code>uint</code>, у нас опять есть вектор указанной длины из нулей и единиц, предположим, <code>1 0 1 1</code>.</p>
-<p>Все биты, за исключением наиболее значимого, интерпретируются как и раньше, то есть &ldquo;привносят&rdquo; в значение <code>2 ** i</code>. Для последовательности выше мы получим:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">2 ** 1 + 2 ** 0 = 2 + 1 = 3
-</span></span></code></pre></div><p>Наиболее значимый бит (запишем его как <code>X</code>) имеет специальное назначение, и он фигурирует в выражении:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">-X * (2 ** (w - 1))
-</span></span></code></pre></div><p>В нашем случае выходит:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">-1 * (2 ** 3) = -8
-</span></span></code></pre></div><p>Полученное значение затем просто суммируется с тем, что мы получили после обработки всех битов, кроме наиболее значимого:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">-8 + 3 = - 5
-</span></span></code></pre></div><p>Следовательно, вектор <code>1011</code> в двоичной системе счисления равняется <code>-5</code> в десятичной.</p>
-<p>Если же самый наиболее бит <code>X = 0</code>, то формула выше обращается в ноль, и наше число будет неотрицательным. К примеру, <code>0 1 0 1 = 2 ** 2 + 2 ** 0 = 5</code>.</p>
-<h3 id="минимальное-и-максимальное-число-int">Минимальное и максимальное число int</h3>
-<p>Можно сказать, что при использовании подхода two&rsquo;s complement наиболее значимый бит <code>X</code> &ldquo;тянет&rdquo; наше число в сторону отрицательных значений, а другие биты &ldquo;тянут&rdquo; его обратно на положительную сторону. Следовательно, наименьшее значение получится, когда <code>X</code> тянет нас в отрицательную сторону, но все остальные биты отсутствуют:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">1 0 0 0 = -(2 ** 3) = -8
-</span></span></code></pre></div><p>То есть при <code>w = 4</code> наименьшее значение равняется <code>-8</code>.</p>
-<p>Максимальное значение получается, когда &ldquo;знаковый&rdquo; бит равен нулю, зато все остальные, которые тянут нас в положительную сторону, имеют значение <code>1</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">0 1 1 1 = 2 ** 2 + 2 ** 1 + 2 ** 0 = 4 + 2 + 1 = 7
-</span></span></code></pre></div><p>Аналогично, при <code>w = 8</code> диапазон будет от -128 до 127. К примеру этот код вернёт <code>10000000</code>:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">number</span>: <span class="kt">i8</span> <span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">128</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;</span><span class="si">{number:b}</span><span class="s">&#34;</span><span class="p">);</span><span class="w">
-</span></span></span></code></pre></div><h2 id="как-отличать-uint-от-int">Как отличать uint от int?</h2>
-<p>А теперь важный момент: мы понимаем, что <strong>наш вектор из битов можно рассматривать по-разному</strong>. Если мы считаем, что наиболее значимый бит используется для хранения информации о знаке, то, к примеру, последовательность <code>10110100</code> кодирует число <code>-76</code>. Но если мы считаем, что речь идёт о неотрицательных числах, то это <code>180</code>!</p>
-<p>Иными словами, нам нужно объяснить компьютеру, с чем мы имеем дело и как хотим интерпретировать этот вектор. Именно поэтому во многих языках при объявляении переменной мы должны написать <code>uint</code> или <code>int</code> (ну, или нечто аналогичное). И именно поэтому нам нужно быть очень аккуратными, если мы конвертируем числа со знаком в числа без знака:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">number</span>: <span class="kt">i8</span> <span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">6</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;</span><span class="si">{number:b}</span><span class="s">&#34;</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">let</span><span class="w"> </span><span class="n">number2</span>: <span class="kt">u8</span> <span class="o">=</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="kt">u8</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;</span><span class="si">{number2}</span><span class="s">&#34;</span><span class="p">);</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;</span><span class="si">{number2:b}</span><span class="s">&#34;</span><span class="p">);</span><span class="w">
-</span></span></span></code></pre></div><p>Результат выполнения данного кода:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">11111010
-</span></span><span class="line"><span class="cl">250
-</span></span><span class="line"><span class="cl">11111010
-</span></span></code></pre></div><p>То есть изначальная последовательность битов остаётся прежней, но <strong>интерпретация другая</strong>! Это происходит не только в Rust, но и в других языках, к примеру, в C.</p>
-<p>Кстати, в <code>u8</code> ситуация может быть не сильно лучше:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rust" data-lang="rust"><span class="line"><span class="cl"><span class="kd">let</span><span class="w"> </span><span class="n">number</span>: <span class="kt">u8</span> <span class="o">=</span><span class="w"> </span><span class="mi">255</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">let</span><span class="w"> </span><span class="n">number2</span>: <span class="kt">i8</span> <span class="o">=</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="kt">i8</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="fm">println!</span><span class="p">(</span><span class="s">&#34;</span><span class="si">{number2}</span><span class="s">&#34;</span><span class="p">);</span><span class="w">
-</span></span></span></code></pre></div><p>На экран будет выведено <code>-1</code>.</p>
-<p>Из всего этого следует важный вывод: конвертировать числа таким образом стоит с большой осторожностью, потому что это может привести к неожиданным проблемам и серьёзным багам. Инструмент Clippy в Rust даже выдаст предупреждение на моменте <code>number as i8</code>.</p>
-<p>Если вам нужно просто &ldquo;отбросить&rdquo; знак, то следует использовать функцию &ldquo;модуль&rdquo; <code>.abs()</code>.</p>
-
-    </section>
-  </article>
-</main>
-
-<footer class="light_gradient" lang="en-US">
-  <p>
-    &copy; Ilya Krukowski
-  </p>
-</footer>
-
-
-    <script src="/js/post.min.c6a3ca85a318ecf83b8e11535463ad9865ecb2fa1528b59e028c79a6834fc21b.js" integrity="sha256-xqPKhaMY7Pg7jhFTVGOtmGXssvoVKLWeAox5poNPwhs=" defer></script>
-
-  </body>
-</html>
+<!doctype html><html lang=ru-RU><head><meta charset=utf-8><link rel=preconnect href=https://fonts.gstatic.com><title>Как в компьютере представлены целые числа? | Ilya Krukowski</title>
+<meta name=viewport content="width=device-width"><meta name=description content='В этой статье мы узнаем, как именно в компьютере (CPU) представлены целые числа со знаком и без знака (int и uint).'><meta name=keywords content="Ilya Krukowski,Илья Круковский,bodrovis,статьи о web,программирование,дизайн,регулярные выражения,web-дизайн,ruby,rails,javascript,jquery,css,html,regexp,плагины,radiant wind,plugins,gems,libraries,tutor,personal teacher,it"><meta name=author content="bodrovis"><meta name=robots content="all"><link rel=apple-touch-icon href=/apple-touch-icon.png><link rel=icon href=/favicon.ico type=image/x-icon><link rel="shortcut icon" href=/favicon.ico type=image/x-icon><link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel=stylesheet><link rel=stylesheet href=/stylesheets/single_post.min.20af447d7ed45be37dbe76b58a3fe53ed39a4c680da8415b0956a8df51710a4c.css integrity="sha256-IK9EfX7UW+N9vna1ij/lPtOaTGgNqEFbCVao31FxCkw=" crossorigin=anonymous><meta property="og:image" content="https://bodrovis.tech/meta/kak-v-computere-predstavleny-celye-chisla.webp"><meta property="og:type" content="blog"><meta property="og:title" content="Как в компьютере представлены целые числа? |  by Ilya Krukowski"><meta property="og:description" content="В этой статье мы узнаем, как именно в компьютере (CPU) представлены целые числа со знаком и без знака (int и uint)."><meta property="og:url" content="https://bodrovis.tech/posts/kak-v-computere-predstavleny-celye-chisla/"><meta property="og:site_name" content="Ilya Krukowski"></head><body><header lang=en-US><div id=main-top-block class=light_gradient><nav><a href=/ class="icon icon-home" title=Homepage></a><a class="icon icon-book" title=Blog href=/blog></a><a class="icon icon-tags" title=Tags href=/tags></a><a class="icon icon-search with-spacer" title=Search href=/search></a><a class="icon icon-github" title=GitHub href=https://github.com/bodrovis target=_blank></a><a class="icon icon-youtube" title=YouTube href=https://www.youtube.com/@IlyaBodrovKrukowski target=_blank></a><a class="icon icon-telegram" title=Telegram href=https://t.me/dev_in_ruby_colors target=_blank></a><a class="icon icon-linkedin" title=LinkedIn href=https://linkedin.com/in/bodrovis target=_blank></a></nav></div><div id=logo><img src=/images/icon150trans.webp width=150 height=150 alt="Ilya Krukowski logo" class=img-logo><p><a href=/blog><span class=capital>I</span>lya <span class=capital>K</span>rukowski
+<span class=subtitle>https://bodrovis.tech</span></a></p></a></header><main id=content data-pagefind-body><h1>Как в компьютере представлены целые числа?</h1><article class=full-entry><time class="timestamp subtext" datetime="2024-03-09 00:00:00 +0000 UTC">March 9, 2024
+</time><a class=badge href=/tags/cs>#cs</a>
+<a class=badge href=/tags/cpu>#cpu</a><section id=post-body><aside id=toc-wrapper><h4>Index</h4><nav id=TableOfContents><ul><li><a href=#целые-неотрицательные-числа>Целые неотрицательные числа</a><ul><li><a href=#пример-кодировки-uint>Пример кодировки uint</a></li><li><a href=#максимальное-число-uint>Максимальное число uint</a></li></ul></li><li><a href=#целые-числа-со-знаком>Целые числа со знаком</a><ul><li><a href=#twos-complement>Two&rsquo;s complement</a></li><li><a href=#минимальное-и-максимальное-число-int>Минимальное и максимальное число int</a></li></ul></li><li><a href=#как-отличать-uint-от-int>Как отличать uint от int?</a></li></ul></nav></aside><p><strong>Как целые числа представлены в современных компьютерах?</strong> Это немаловажный вопрос, ответ на который состоит из нескольких частей. Дело в том, что у нас есть обычные <strong>неотрицательные целые числа (uint)</strong>, которые представляют собой последовательность от 0 и далее до бесконечности, и просто <strong>целые числа (int)</strong>, которые могут быть и отрицательными, и положительными. Есть ещё числа дробные, но про них речь пойдёт <a href=https://bodrovis.tech/posts/kak-v-computere-predstavleny-drobnyye-chisla/>в следующей статье</a>.</p><p>Это запись по следам видеоурока, который можно найти на YouTube:</p><iframe width=560 height=315 src=https://www.youtube.com/embed/Pe3GCa3WKBU title="YouTube video player" frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><p><em>Эта запись также доступна <a href=https://t.me/dev_in_ruby_colors/966>в канале Telegram &ldquo;DEV: Рубиновые тона&rdquo;</a>, а обсудить же эту тему можно <a href=https://t.me/+MxYT6-01eeA1NTYy>в нашем чате Telegram</a>.</em></p><h2 id=целые-неотрицательные-числа>Целые неотрицательные числа</h2><p>Проще всего, конечно, рассмотреть <code>uint</code>, то есть с целыми неотрицательными числами. В первую очередь, всегда следует помнить, что процессор умеет работать только с нулями и единицами, никакие другие системы счисления он не &ldquo;знает&rdquo;. Тогда выходит, что привычные нам десятичные числа в компьютере могут быть закодированы в виде вектора, состоящего из набора нулей и единиц, к примеру, <code>100101011</code>. В общем случае этот вектор выглядит так:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-plain data-lang=plain><span class=line><span class=cl>[ x(w - 1), x(w - 2), ... x(0) ]
+</span></span></code></pre></div><p>Здесь <code>w</code> — это длина вектора. Естественно, чем больше длина, тем больше чисел мы можем с его помощью закодировать.</p><p>В данном векторе наиболее значимый бит <code>x(w-1)</code> находится слева, а наименее значимый <code>x(0)</code> — справа. Если бит имеет значение 1, то он &ldquo;привносит&rdquo; в закодированное значение величину <code>2 ** i</code>, где <code>i</code> — порядковый номер этого бита. Собственно говоря, именно на этом факте строится процесс перевода из двоичного вида в десятичный.</p><h3 id=пример-кодировки-uint>Пример кодировки uint</h3><p>Чтобы было проще, возьмём <code>w = 4</code> и двоичное число <code>1010</code>. Наиболее значимый бит имеет порядковый номер 3 (считаем с нуля), также у нас установлен в значение 1 бит с порядковым номером 1. Следовательно мы можем возвести двойки в соответствующие степени (1 и 3) и сложить получившиеся значения:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-plain data-lang=plain><span class=line><span class=cl>2 ** 3 + 2 ** 1 = 10
+</span></span></code></pre></div><p>Это можно легко проверить, например, в Rust:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-rust data-lang=rust><span class=line><span class=cl><span class=kd>let</span><span class=w> </span><span class=n>number</span>: <span class=kt>u8</span> <span class=o>=</span><span class=w> </span><span class=mi>10</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=fm>println!</span><span class=p>(</span><span class=s>&#34;</span><span class=si>{number:b}</span><span class=s>&#34;</span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></div><p>Таким образом, числу <code>10</code> в десятичной системе счисления соответствует вектор <code>1010</code>, но верно и обратное. Больше того, это соответствие &ldquo;один ко одному&rdquo;, иными словами вектор <code>1010</code> никакое другое десятичное число не представляет. Такая штука называется <strong>биекция</strong>.</p><h3 id=максимальное-число-uint>Максимальное число uint</h3><p>При <code>w = 4</code> минимальное число, которое мы можем закодировать — это, ясное дело, <code>0 0 0 0</code>, то есть просто <code>0</code>. Максимальное же — <code>1 1 1 1</code>, то есть <code>15</code> в десятичной.</p><p>Аналогично, для <code>w = 8</code> максимальное число — это <code>255</code>.</p><p>В общем, здесь всё просто и довольно очевидно: чем больше бит у нас есть, тем более длинные числа мы можем представлять Интереснее становится, когда мы переходим к целым числам, имеющим знак.</p><h2 id=целые-числа-со-знаком>Целые числа со знаком</h2><p>Итак, теперь мы поговорим про целые числа <code>int</code>, которые могут быть как положительными, так и отрицательными. Отрицательное число — это такое, у которого, по большому счёту, есть знак &ldquo;минус&rdquo;. Где и как нам этот знак хранить? Раньше в некоторых уроках мы несколько обходили этот момент, говоря, что отдельный бит резервируется под хранение знака. Это некое упрощение.</p><p>На самом деле, вариантов представления чисел со знаком есть некоторое количество (в том числе, и случай, когда наиболее значимый бит просто говорит &ldquo;есть минус или нет минуса&rdquo;). Но, пожалуй, самый распространённый принцип — это так называемый <strong>two&rsquo;s complement</strong>.</p><h3 id=twos-complement>Two&rsquo;s complement</h3><p>Суть данного метода довольно проста. Как и с <code>uint</code>, у нас опять есть вектор указанной длины из нулей и единиц, предположим, <code>1 0 1 1</code>.</p><p>Все биты, за исключением наиболее значимого, интерпретируются как и раньше, то есть &ldquo;привносят&rdquo; в значение <code>2 ** i</code>. Для последовательности выше мы получим:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>2 ** 1 + 2 ** 0 = 2 + 1 = 3
+</span></span></code></pre></div><p>Наиболее значимый бит (запишем его как <code>X</code>) имеет специальное назначение, и он фигурирует в выражении:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>-X * (2 ** (w - 1))
+</span></span></code></pre></div><p>В нашем случае выходит:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>-1 * (2 ** 3) = -8
+</span></span></code></pre></div><p>Полученное значение затем просто суммируется с тем, что мы получили после обработки всех битов, кроме наиболее значимого:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>-8 + 3 = - 5
+</span></span></code></pre></div><p>Следовательно, вектор <code>1011</code> в двоичной системе счисления равняется <code>-5</code> в десятичной.</p><p>Если же самый наиболее бит <code>X = 0</code>, то формула выше обращается в ноль, и наше число будет неотрицательным. К примеру, <code>0 1 0 1 = 2 ** 2 + 2 ** 0 = 5</code>.</p><h3 id=минимальное-и-максимальное-число-int>Минимальное и максимальное число int</h3><p>Можно сказать, что при использовании подхода two&rsquo;s complement наиболее значимый бит <code>X</code> &ldquo;тянет&rdquo; наше число в сторону отрицательных значений, а другие биты &ldquo;тянут&rdquo; его обратно на положительную сторону. Следовательно, наименьшее значение получится, когда <code>X</code> тянет нас в отрицательную сторону, но все остальные биты отсутствуют:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>1 0 0 0 = -(2 ** 3) = -8
+</span></span></code></pre></div><p>То есть при <code>w = 4</code> наименьшее значение равняется <code>-8</code>.</p><p>Максимальное значение получается, когда &ldquo;знаковый&rdquo; бит равен нулю, зато все остальные, которые тянут нас в положительную сторону, имеют значение <code>1</code>:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>0 1 1 1 = 2 ** 2 + 2 ** 1 + 2 ** 0 = 4 + 2 + 1 = 7
+</span></span></code></pre></div><p>Аналогично, при <code>w = 8</code> диапазон будет от -128 до 127. К примеру этот код вернёт <code>10000000</code>:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-rust data-lang=rust><span class=line><span class=cl><span class=kd>let</span><span class=w> </span><span class=n>number</span>: <span class=kt>i8</span> <span class=o>=</span><span class=w> </span><span class=o>-</span><span class=mi>128</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=fm>println!</span><span class=p>(</span><span class=s>&#34;</span><span class=si>{number:b}</span><span class=s>&#34;</span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></div><h2 id=как-отличать-uint-от-int>Как отличать uint от int?</h2><p>А теперь важный момент: мы понимаем, что <strong>наш вектор из битов можно рассматривать по-разному</strong>. Если мы считаем, что наиболее значимый бит используется для хранения информации о знаке, то, к примеру, последовательность <code>10110100</code> кодирует число <code>-76</code>. Но если мы считаем, что речь идёт о неотрицательных числах, то это <code>180</code>!</p><p>Иными словами, нам нужно объяснить компьютеру, с чем мы имеем дело и как хотим интерпретировать этот вектор. Именно поэтому во многих языках при объявляении переменной мы должны написать <code>uint</code> или <code>int</code> (ну, или нечто аналогичное). И именно поэтому нам нужно быть очень аккуратными, если мы конвертируем числа со знаком в числа без знака:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-rust data-lang=rust><span class=line><span class=cl><span class=kd>let</span><span class=w> </span><span class=n>number</span>: <span class=kt>i8</span> <span class=o>=</span><span class=w> </span><span class=o>-</span><span class=mi>6</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=fm>println!</span><span class=p>(</span><span class=s>&#34;</span><span class=si>{number:b}</span><span class=s>&#34;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=kd>let</span><span class=w> </span><span class=n>number2</span>: <span class=kt>u8</span> <span class=o>=</span><span class=w> </span><span class=n>number</span><span class=w> </span><span class=k>as</span><span class=w> </span><span class=kt>u8</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=fm>println!</span><span class=p>(</span><span class=s>&#34;</span><span class=si>{number2}</span><span class=s>&#34;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=fm>println!</span><span class=p>(</span><span class=s>&#34;</span><span class=si>{number2:b}</span><span class=s>&#34;</span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></div><p>Результат выполнения данного кода:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>11111010
+</span></span><span class=line><span class=cl>250
+</span></span><span class=line><span class=cl>11111010
+</span></span></code></pre></div><p>То есть изначальная последовательность битов остаётся прежней, но <strong>интерпретация другая</strong>! Это происходит не только в Rust, но и в других языках, к примеру, в C.</p><p>Кстати, в <code>u8</code> ситуация может быть не сильно лучше:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-rust data-lang=rust><span class=line><span class=cl><span class=kd>let</span><span class=w> </span><span class=n>number</span>: <span class=kt>u8</span> <span class=o>=</span><span class=w> </span><span class=mi>255</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=kd>let</span><span class=w> </span><span class=n>number2</span>: <span class=kt>i8</span> <span class=o>=</span><span class=w> </span><span class=n>number</span><span class=w> </span><span class=k>as</span><span class=w> </span><span class=kt>i8</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=fm>println!</span><span class=p>(</span><span class=s>&#34;</span><span class=si>{number2}</span><span class=s>&#34;</span><span class=p>);</span><span class=w>
+</span></span></span></code></pre></div><p>На экран будет выведено <code>-1</code>.</p><p>Из всего этого следует важный вывод: конвертировать числа таким образом стоит с большой осторожностью, потому что это может привести к неожиданным проблемам и серьёзным багам. Инструмент Clippy в Rust даже выдаст предупреждение на моменте <code>number as i8</code>.</p><p>Если вам нужно просто &ldquo;отбросить&rdquo; знак, то следует использовать функцию &ldquo;модуль&rdquo; <code>.abs()</code>.</p></section></article></main><footer class=light_gradient lang=en-US><p>&copy; Ilya Krukowski</p></footer><script src=/js/post.min.c6a3ca85a318ecf83b8e11535463ad9865ecb2fa1528b59e028c79a6834fc21b.js integrity="sha256-xqPKhaMY7Pg7jhFTVGOtmGXssvoVKLWeAox5poNPwhs=" defer></script></body></html>
