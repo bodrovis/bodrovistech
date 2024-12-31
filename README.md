@@ -6,4 +6,4 @@ Learn how I've migrated this site from Rails to Hugo: https://www.youtube.com/wa
 
 Learn how I've added search with Pagefind: https://www.youtube.com/watch?v=vULnuCZrI1Q (ru)
 
-&copy; Ilya Krukowski
+&copy; 2025 Ilya Krukowski
