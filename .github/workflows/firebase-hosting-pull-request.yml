@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install Dart Sass Embedded
-        run: sudo snap install dart-sass-embedded
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
       - name: NPM install
         run: npm install
       - name: Setup Hugo
