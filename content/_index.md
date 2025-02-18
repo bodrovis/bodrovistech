@@ -81,9 +81,6 @@ draft: false
     <li>
       <a href="https://www.patreon.com/bodrovis" target="_blank">Patreon</a>
     </li>
-    <li>
-      ETH Mainnet, BNB Chain, Arbitrum, ZK Era, Polygon, Blast: 0x719C2d2bcC155c85190f20E1Cc3710F90FAFDa16
-    </li>
   </ul>
 </article>
 
