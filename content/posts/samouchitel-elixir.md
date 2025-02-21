@@ -3,7 +3,6 @@ title: Самоучитель Elixir
 draft: false
 meta_desc: Самоучитель по языку Elixir.
 date: 2023-05-08T00:00:00
-lang: ru-RU
 tags:
 - Elixir
 - YouTube

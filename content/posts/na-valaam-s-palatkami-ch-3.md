@@ -4,7 +4,6 @@ draft: false
 meta_desc: В этой статье мы закончим рассказ о путешествии на Валаам.
 meta_img: na-valaam-s-palatkami
 date: 2015-01-12T00:00:00
-lang: ru-RU
 tags:
 - Путешествия
 ---

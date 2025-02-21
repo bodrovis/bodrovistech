@@ -3,7 +3,6 @@ title: FAQ по курсу Ruby on Rails
 draft: false
 meta_desc: Ответы на часто задаваемые вопросы по курсу Ruby on Rails на YouTube.
 date: 2023-05-08T00:00:00
-lang: ru-RU
 tags:
 - Rails
 - FAQ

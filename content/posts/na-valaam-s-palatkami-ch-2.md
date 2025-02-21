@@ -4,7 +4,6 @@ draft: false
 meta_desc: В этой статье я продолжу рассказ о Валааме.
 meta_img: na-valaam-s-palatkami
 date: 2014-10-24T00:00:00
-lang: ru-RU
 tags:
 - Путешествия
 ---

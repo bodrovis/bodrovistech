@@ -4,7 +4,6 @@ draft: false
 meta_desc: "Статья о том, как изменялась строка user-agent в браузерах ещё с давних времён."
 date: 2013-12-27T00:00:00
 meta_img: https://s3-eu-west-1.amazonaws.com/radiantwind/meta/user_agent_meta.jpg
-lang: ru-RU
 tags:
 - Web
 skip_toc: true

@@ -3,7 +3,6 @@ title: Что такое Unicode, UTF-8 и ASCII?
 draft: false
 meta_desc: Мы поговорим о том, что такое Unicode, UTF-8 и ASCII, чем эти понятия отличаются друг от друга, и как кодируется текст в современных компьютерах.
 date: 2024-03-11T00:00:00
-lang: ru-RU
 tags:
 - cs
 ---

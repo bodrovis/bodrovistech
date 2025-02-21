@@ -4,7 +4,6 @@ draft: false
 meta_desc: В этой статье я расскажу о том, как мы вернулись на Валаам в очередной раз.
 meta_img: na-valaam-s-palatkami
 date: 2015-11-25T00:00:00
-lang: ru-RU
 tags:
 - Путешествия
 ---
