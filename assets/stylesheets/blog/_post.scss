@@ -103,7 +103,8 @@
     p {
       text-align: left;
       font-size: 0.9em;
-      margin-bottom: 0;
+      margin-bottom: 0 !important;
+      margin-top: 0 !important;
       text-indent: 0;
     }
   }
