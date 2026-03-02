@@ -1,15 +1,19 @@
-{{ $stylesheetPath := default "stylesheets/index.scss" .stylesheetPath }}
+{{- $stylesheetPath := default "stylesheets/index.scss" .stylesheetPath -}}
 
-{{ with resources.Get $stylesheetPath }}
-  {{ $opts := dict "transpiler" "dartsass" "includePaths" (slice "node_modules" "static") }}
+{{- with resources.Get $stylesheetPath -}}
+  {{- $opts := dict "transpiler" "dartsass" "includePaths" (slice "node_modules" "static") -}}
 
-  {{ with . | toCSS $opts | postCSS }}
-    {{ if hugo.IsDevelopment }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}">
-    {{ else }}
-      {{ with . | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-      {{ end }}
-    {{ end }}
-  {{ end }}
-{{ end }}
+  {{- with . | toCSS $opts | postCSS -}}
+    {{- if hugo.IsDevelopment -}}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" media="all">
+    {{- else -}}
+      {{- with . | resources.Minify | resources.Fingerprint -}}
+        <link rel="stylesheet"
+              href="{{ .RelPermalink }}"
+              integrity="{{ .Data.Integrity }}"
+              crossorigin="anonymous"
+              media="all">
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

@@ -1,40 +1,74 @@
 function ready(fn) {
-  if (document.readyState !== 'loading'){
+  if (document.readyState !== 'loading') {
     fn();
   } else {
     document.addEventListener('DOMContentLoaded', fn);
   }
 }
 
-ready(function() {
-  document.addEventListener('click', function(e) {
-    for (var target = e.target; target && target != this; target = target.parentNode) {
+ready(function () {
+  var body = document.body;
+  var galleryDialog = null;
+  var galleryContent = null;
+
+  function ensureGalleryDialog() {
+    if (galleryDialog) return;
+
+    galleryDialog = document.createElement('div');
+    galleryDialog.className = 'dialog js-image-dialog';
+    galleryDialog.setAttribute('role', 'dialog');
+    galleryDialog.setAttribute('aria-modal', 'true');
+
+    galleryDialog.innerHTML =
+      '<a href="#" class="js-close-gallery close-dialog" aria-label="Close gallery">&times;</a>' +
+      '<div class="dialog-content"></div>';
+
+    galleryContent = galleryDialog.querySelector('.dialog-content');
+
+    body.appendChild(galleryDialog);
+  }
+
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+
+    for (; target && target !== this; target = target.parentNode) {
       if (target.matches('.js-show-gallery')) {
         e.preventDefault();
 
-        if(!document.querySelector('.js-image-dialog .dialog-content')) {
-          document.querySelector(
-            'body'
-          ).innerHTML += '<div class="dialog"><a class="js-close-gallery close-dialog">&times;</a><div class="dialog-content"></div></div>'
-        }
+        ensureGalleryDialog();
 
-        document.querySelector(
-          '.dialog .dialog-content'
-        ).innerHTML = `<img src='${target.href}'><p>${target.dataset.caption}</p>`
-    
-        document.querySelector('.dialog').style.display = 'block'
+        var href = target.getAttribute('href');
+        var caption = target.dataset.caption || '';
+
+        galleryContent.innerHTML = '';
+
+        var img = document.createElement('img');
+        img.src = href;
+        img.alt = caption;
+
+        var p = document.createElement('p');
+        p.textContent = caption;
+
+        galleryContent.appendChild(img);
+        galleryContent.appendChild(p);
+
+        galleryDialog.style.display = 'block';
 
         break;
       }
     }
   }, false);
 
-  document.addEventListener('click', function(e) {
-    for (var target = e.target; target && target != this; target = target.parentNode) {
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+
+    for (; target && target !== this; target = target.parentNode) {
       if (target.matches('.js-close-gallery')) {
         e.preventDefault();
 
-        target.parentNode.style.display = 'none'
+        if (galleryDialog) {
+          galleryDialog.style.display = 'none';
+        }
 
         break;
       }

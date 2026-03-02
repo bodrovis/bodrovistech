@@ -1,6 +1,6 @@
-{{ if and (gt .WordCount 500 ) (not .Params.skip_toc) }}
-<aside id="toc-wrapper">
-  <h4>Index</h4>
+{{ if and (gt .WordCount 500) (not .Params.skip_toc) }}
+<aside id="toc-wrapper" aria-label="Table of contents">
+  <h4>Table of contents</h4>
   {{ .TableOfContents }}
 </aside>
 {{ end }}

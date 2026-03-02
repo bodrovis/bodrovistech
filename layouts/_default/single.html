@@ -1,33 +1,46 @@
 {{ define "css" }}
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=PT+Sans:wght@400;700&display=swap"
+  rel="stylesheet">
 {{ partial "css/styles.html" (dict "stylesheetPath" "stylesheets/single_post.scss") }}
 {{ end }}
 
 {{ define "other_meta" }}
+{{/* og:image */}}
 {{ if not .Params.skip_meta_img }}
 {{ $defaultMetaImg := path.Base .RelPermalink }}
 {{ $metaImg := default $defaultMetaImg .Params.meta_img }}
-
-<meta property="og:image" content="{{ .Site.BaseURL }}meta/{{ $metaImg }}.webp">
+{{ $metaPath := printf "meta/%s.webp" $metaImg }}
+<meta property="og:image" content="{{ $metaPath | absURL }}">
 {{ end }}
-<meta property="og:type" content="blog">
-<meta property="og:title" content="{{ .Title }} |  by Ilya Krukowski">
-<meta property="og:description" content="{{ .Params.meta_desc }}">
+
+{{/* og:description с fallback */}}
+{{ $fallbackDesc := .Content | plainify | htmlUnescape | truncate 200 }}
+{{ $metaDesc := default $fallbackDesc .Params.meta_desc }}
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ .Title }} | Ilya Krukowski">
+<meta property="og:description" content="{{ $metaDesc }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:site_name" content="Ilya Krukowski">
 {{ end }}
 
-{{ define "desc" }}{{.Params.meta_desc}}{{end}}
-{{ define "main_title" }}{{.Title}} | Ilya Krukowski{{end}}
+{{ define "desc" }}
+{{ $fallbackDesc := .Content | plainify | htmlUnescape | truncate 200 }}
+{{ $metaDesc := default $fallbackDesc .Params.meta_desc }}
+{{ $metaDesc }}
+{{ end }}
+
+{{ define "main_title" }}{{ .Title }} | Ilya Krukowski{{ end }}
 
 {{ define "main" }}
 {{ partial "header/top.html" . }}
 
 <main id="content" data-pagefind-body>
-  <h1>{{.Title}}</h1>
+  <h1>{{ .Title }}</h1>
 
   <article class="full-entry">
-    <time class="timestamp subtext" datetime="{{ .Date }}">
+    <time class="timestamp subtext" datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
       {{ .Date.Format "January 2, 2006" }}
     </time>
 
@@ -49,7 +62,6 @@
 {{ end }}
 
 {{ define "footer" }}
-{{- $jsBundle := resources.Get "js/post.js" | js.Build | resources.Minify | fingerprint -}}
-
+{{- $jsBundle := resources.Get "js/post.js" | js.Build | resources.Minify | resources.Fingerprint -}}
 <script src="{{ $jsBundle.RelPermalink }}" integrity="{{ $jsBundle.Data.Integrity }}" defer></script>
 {{ end }}

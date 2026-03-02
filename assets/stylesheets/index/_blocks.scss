@@ -12,6 +12,7 @@ body {
   min-width: 320px;
   font-family: "Trebuchet MS", Tahoma, sans-serif;
   word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 ::selection {
@@ -25,13 +26,16 @@ body {
 #header {
   margin-top: 1em;
   margin-bottom: 1em;
+
   .main_title {
     text-align: center;
     display: block;
+
     h2 {
       margin-top: -10px;
     }
   }
+
   a {
     text-decoration: none;
     color: shared.$radiant;
@@ -50,6 +54,7 @@ body {
   margin-bottom: 2em;
   margin-top: 2em;
   padding: 1em;
+
   .logo-img {
     max-width: 150px;
     width: 100%;
@@ -57,22 +62,27 @@ body {
     display: block;
     @include shared.auto_margin();
   }
+
   .logo {
     display: block;
     @include shared.auto_margin();
     width: 120px;
   }
+
   p,
   ul {
     margin-top: 0.8em;
     cursor: default;
   }
+
   li {
     margin-top: 1rem;
+
     &:first-of-type {
       margin-top: 0;
     }
   }
+
   .padded {
     margin: 2em 1em;
     font-size: 1.4rem;
@@ -100,18 +110,22 @@ body {
   top: 1em;
   padding: 1em 0.7em;
   background-color: rgba(255, 255, 255, 0.5);
+
   a {
     color: #3c3c3c;
     display: block;
     font-size: 1.6em;
     margin: 0.9em auto;
     text-decoration: none;
+
     &:hover {
       color: color.adjust(#3c3c3c, $lightness: 10%);
     }
+
     &:first-of-type {
       margin-top: 0;
     }
+
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -135,10 +149,12 @@ body {
     box-shadow: inset #e0e0e0 -3px -3px 4px;
     color: shared.$radiant;
   }
+
   &:active {
     box-shadow: inset #e0e0e0 3px 3px 4px;
     color: shared.$radiant;
   }
+
   &.btn-lg {
     font-size: 1.999rem;
   }
@@ -146,8 +162,10 @@ body {
 
 .btn-group {
   text-align: center;
+
   .btn {
     margin-bottom: 1em;
+
     &:last-of-type {
       margin-bottom: 0;
     }

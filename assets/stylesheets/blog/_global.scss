@@ -1,13 +1,11 @@
 @use "./shared/shared";
 @use "sass:color";
 
-html, body  {
+html,
+body {
   height: 100%;
   background-color: #fbfbfb;
   cursor: default;
-}
-
-html, body {
   font-size: 19px;
 }
 
@@ -17,14 +15,20 @@ body {
   width: 95%;
   padding: 0;
   margin: 0 auto !important;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   line-height: 1.5;
   word-wrap: break-word;
+  overflow-wrap: break-word;
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'PT Sans Caption', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Sans Caption", sans-serif;
   font-weight: 700;
 }
 
@@ -47,17 +51,15 @@ textarea {
 /*=== LINKS ===*/
 a {
   cursor: pointer;
-}
-
-a:link, a:active, a:visited {
   color: #222;
   text-decoration: underline;
-}
 
-a:hover, a:focus {
-  color:#808080;
-  text-decoration: none;
-  border:0;
+  &:hover,
+  &:focus-visible {
+    color: #808080;
+    text-decoration: none;
+    outline: none;
+  }
 }
 
 /*====== TYPOGRAPHY =======*/
@@ -69,7 +71,8 @@ p {
   letter-spacing: 0.001em;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: shared.$radiant;
 }
 
@@ -97,7 +100,9 @@ h5 {
   font-size: 1rem;
 }
 
-ul, ol, pre {
+ul,
+ol,
+pre {
   font-size: 1.25rem;
   line-height: 1.5;
 }
@@ -116,12 +121,13 @@ hr {
   padding: 0;
 }
 
-.group:before, .group:after {
+.group::before,
+.group::after {
   content: " ";
   display: table;
 }
 
-.group:after {
+.group::after {
   clear: both;
 }
 
@@ -133,12 +139,16 @@ table {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
+
   th {
     font-weight: bold;
   }
-  th, td {
+
+  th,
+  td {
     padding: 10px;
   }
+
   tr:nth-child(even) {
     background-color: #efefef;
   }

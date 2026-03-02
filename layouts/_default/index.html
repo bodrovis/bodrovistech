@@ -1,25 +1,26 @@
 {{ define "css" }}
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-  {{ partial "css/styles.html" dict }}
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+{{ partial "css/styles.html" dict }}
 {{ end }}
 
 {{ define "main" }}
-  <header id="header" class="wide-block">
-    {{ with resources.GetMatch "images/icon150trans.webp" }}
-      <a href="/blog" class="logo">
-        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="Logo" class="logo-img">
-      </a>
-    {{ end }}
+<header id="header" class="wide-block">
+  {{ with resources.GetMatch "images/icon150trans.webp" }}
+  <a href="{{ "/blog" | relURL }}" class="logo">
+    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="Ilya Krukowski logo"
+      class="logo-img">
+  </a>
+  {{ end }}
 
-    <div class="main_title">
-      <h1>Ilya Krukowski</h1>
-      <h2>Dev & tutor</h2>
-    </div>
-  </header>
+  <div class="main_title">
+    <h1>Ilya Krukowski</h1>
+    <h2>Dev & tutor</h2>
+  </div>
+</header>
 
-  {{ .Content }}
+{{ .Content }}
 
-  <footer id="footer" class="block wide-block">
-    <p>&copy; Ilya Krukowski | Илья Круковский</p>
-  </footer>
+<footer id="footer" class="block wide-block">
+  <p>&copy; Ilya Krukowski | Илья Круковский</p>
+</footer>
 {{ end }}

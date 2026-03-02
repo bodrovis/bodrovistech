@@ -26,25 +26,34 @@ header {
     flex-wrap: wrap;
     align-items: center;
     font-size: 1.2rem;
+
     nav {
       flex: 1;
       margin-left: 30px;
+
       a {
-        border: 0 none;
+        border: 0;
         text-decoration: underline;
         margin-right: 0.9em;
         color: #3c3c3c;
-        &:hover {
+        transition: color 0.2s ease;
+
+        &:hover,
+        &:focus-visible {
           color: color.adjust(#3c3c3c, $lightness: 10%);
+          outline: none;
         }
+
         &:last-of-type {
           margin-right: 0;
         }
+
         &.with-spacer {
           border-right: 1px solid #9e9e9e;
           padding-right: 0.9em;
         }
       }
+
       .icon {
         text-decoration: none;
         font-size: 1.43rem;
@@ -56,7 +65,7 @@ header {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    border: 0 none;
+    border: 0;
     margin-left: auto;
     margin-right: auto;
     color: shared.$radiant;
@@ -71,7 +80,7 @@ header {
     }
 
     p {
-      font-family: 'PT Sans Caption', serif;
+      font-family: "PT Sans Caption", sans-serif;
       font-weight: 700;
       font-size: 3.5rem;
       font-variant: small-caps;
@@ -83,6 +92,7 @@ header {
       .capital {
         font-size: 1.1em;
       }
+
       .subtitle {
         font-size: 1rem;
         display: block;
@@ -95,9 +105,15 @@ header {
         text-shadow: 1px 1px 9px #999;
       }
 
-      a:link, a:hover, a:focus, a:active, a:visited {
+      a {
         color: shared.$radiant;
         text-decoration: none;
+
+        &:hover,
+        &:focus-visible {
+          text-decoration: none;
+          outline: none;
+        }
       }
     }
   }
@@ -109,6 +125,7 @@ footer {
   padding: 1rem;
   border: 1px #9e9e9e solid;
   border-radius: 15px;
+
   p {
     margin: 0;
     font-size: 0.8em;
@@ -126,8 +143,11 @@ a.badge {
   line-height: 2rem;
   display: inline-block;
   text-decoration: none;
-  &:hover {
+
+  &:hover,
+  &:focus-visible {
     background-color: color.adjust(shared.$radiant, $lightness: -5%);
+    outline: none;
   }
 }
 
@@ -137,6 +157,7 @@ a.badge {
   h3 {
     margin: 0 0 0.5em 0;
   }
+
   p {
     margin: 0 0 0.2em 0;
     font-size: 0.9rem;

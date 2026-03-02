@@ -4,30 +4,24 @@
   h2 {
     margin-top: 0;
     padding-top: 0;
+
     a {
-      &:link,
-      &:active,
-      &:visited {
+      &:is(:link, :visited, :active) {
         border: 0;
         text-decoration: none;
         color: shared.$radiant;
         transition: text-shadow 0.8s ease 0s;
       }
 
-      &:hover {
+      &:hover,
+      &:focus-visible {
         text-shadow: 1px 1px 4px #93c6c6;
+        outline: none;
       }
     }
   }
 
-  .entry {
-    &:last-child {
-      hr {
-        display: none;
-      }
-    }
+  .entry:last-child hr {
+    display: none;
   }
 }
-
-
-

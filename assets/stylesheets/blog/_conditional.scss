@@ -1,13 +1,17 @@
-@media all and (max-width: 1440px) {
-  html, body {
+/* ===== 1440px ===== */
+@media (max-width: 1440px) {
+  html,
+  body {
     font-size: 17px;
   }
 }
 
-@media all and (max-width: 1110px) {
+/* ===== 1110px ===== */
+@media (max-width: 1110px) {
   .full-entry {
     .image_container {
       max-width: 200px;
+
       img {
         max-width: 200px;
       }
@@ -15,44 +19,40 @@
   }
 }
 
-@media all and (max-width: 870px) {
-  html, body {
+/* ===== 895px ===== */
+@media (max-width: 895px) {
+  header {
+    #main-top-block nav {
+      margin-left: 15px;
+    }
+
+    #logo p {
+      font-size: 3.3em;
+    }
+  }
+}
+
+/* ===== 870px ===== */
+@media (max-width: 870px) {
+  html,
+  body {
     font-size: 15px !important;
   }
 
   #content {
     width: 100%;
-    float: none;
     margin-bottom: 15px;
   }
 }
 
-@media all and (max-width: 895px) {
+/* ===== 500px ===== */
+@media (max-width: 500px) {
   header {
-    #main-top-block {
-      nav {
-        margin-left: 15px;
-      }
-    }
+    #main-top-block nav a {
+      margin-right: 0.7em;
 
-    #logo {
-      p {
-        font-size: 3.3em;
-      }
-    }
-  }
-}
-
-@media all and (max-width: 500px) {
-  header {
-    #main-top-block {
-      nav {
-        a {
-          margin-right: 0.7em;
-          &.with-spacer {
-            padding-right: 0.7em;
-          }
-        }
+      &.with-spacer {
+        padding-right: 0.7em;
       }
     }
   }

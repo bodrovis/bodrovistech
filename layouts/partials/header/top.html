@@ -1,28 +1,36 @@
-<header lang="en-US">
+<header>
   <div id="main-top-block" class="light_gradient">
     <nav>
-      <a href="/" class="icon icon-home" title="Homepage"></a>
-      <a class="icon icon-book" title="Blog" href="/blog"></a>
-      <a class="icon icon-tags" title="Tags" href="/tags"></a>
-      <a class="icon icon-search with-spacer" title="Search" href="/search"></a>
-      <a class="icon icon-github" title="GitHub" href="https://github.com/bodrovis" target="_blank"></a>
-      <a class="icon icon-youtube" title="YouTube" href="https://www.youtube.com/@IlyaBodrovKrukowski" target="_blank"></a>
-      <a class="icon icon-telegram" title="Telegram" href="https://t.me/dev_in_ruby_colors" target="_blank"></a>
-      <a class="icon icon-linkedin" title="LinkedIn" href="https://linkedin.com/in/bodrovis" target="_blank"></a>
+      <a href="{{ "/" | relURL }}" class="icon icon-home" title="Homepage"></a>
+      <a class="icon icon-book" title="Blog" href="{{ "/blog" | relURL }}"></a>
+      <a class="icon icon-tags" title="Tags" href="{{ "/tags" | relURL }}"></a>
+      <a class="icon icon-search with-spacer" title="Search" href="{{ "/search" | relURL }}"></a>
+
+      <a class="icon icon-github" title="GitHub" href="https://github.com/bodrovis" target="_blank"
+        rel="noopener noreferrer"></a>
+
+      <a class="icon icon-youtube" title="YouTube" href="https://www.youtube.com/@IlyaBodrovKrukowski" target="_blank"
+        rel="noopener noreferrer"></a>
+
+      <a class="icon icon-telegram" title="Telegram" href="https://t.me/dev_in_ruby_colors" target="_blank"
+        rel="noopener noreferrer"></a>
+
+      <a class="icon icon-linkedin" title="LinkedIn" href="https://linkedin.com/in/bodrovis" target="_blank"
+        rel="noopener noreferrer"></a>
     </nav>
   </div>
 
   <div id="logo">
     {{ with resources.GetMatch "images/icon150trans.webp" }}
-      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="Ilya Krukowski logo" class="img-logo">
+    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="Ilya Krukowski logo"
+      class="img-logo">
     {{ end }}
-    
-    <p>
-      <a href="/blog">
-        <span class="capital">I</span>lya <span class="capital">K</span>rukowski
 
+    <p>
+      <a href="{{ "/blog" | relURL }}">
+        <span class="capital">I</span>lya <span class="capital">K</span>rukowski
         <span class="subtitle">https://bodrovis.tech</span>
       </a>
     </p>
-  </a>
+  </div>
 </header>
