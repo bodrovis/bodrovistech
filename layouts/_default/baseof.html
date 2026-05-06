@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{{ $lang := default "en-US" (or .Params.lang .Site.LanguageCode) }}
+{{ $lang := default "en-US" (or .Params.lang .Site.Language.Locale) }}
 <html lang="{{ $lang }}">
 
 <head>

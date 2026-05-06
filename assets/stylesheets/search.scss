@@ -6,7 +6,7 @@
 @use 'blog/conditional';
 
 :root {
-  --pagefind-ui-font: 'PT Sans', sans-serif;
-  --pagefind-ui-scale: 1.0;
-  --pagefind-ui-primary: shared.$radiant;
+  --pf-font: 'PT Sans', sans-serif;
+  --pf-outline-focus: shared.$radiant;
+  --pf-border-focus: shared.$radiant;
 }

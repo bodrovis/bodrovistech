@@ -21,52 +21,28 @@ draft: false
 
   <ul>
     <li>
-      <a href="https://www.youtube.com/IlyaBodrovKrukowski" target="_blank" rel="noopener noreferrer">
-        YouTube channel
-      </a>
-      &mdash; owner and host
+      <a href="https://www.youtube.com/IlyaBodrovKrukowski" target="_blank" rel="noopener noreferrer">YouTube channel</a> &mdash; owner and host
     </li>
     <li>
-      <a href="https://t.me/dev_in_ruby_colors" target="_blank" rel="noopener noreferrer">
-        Telegram channel
-      </a>
-      &mdash; owner and host
+      <a href="https://t.me/dev_in_ruby_colors" target="_blank" rel="noopener noreferrer">Telegram channel</a> &mdash; owner and host
     </li>
     <li>
-      <a href="https://www.guidedao.xyz/" target="_blank" rel="noopener noreferrer">
-        GuideDAO crypto school
-      </a>
-      &mdash; tutor and video creator
+      <a href="https://www.guidedao.xyz/" target="_blank" rel="noopener noreferrer">GuideDAO crypto school</a> &mdash; tutor and video creator
     </li>
     <li>
-      <a href="https://lokalise.com/blog/author/ilya/" target="_blank" rel="noopener noreferrer">
-        Lokalise blog
-      </a>
-      and
-      <a href="https://academy.lokalise.com/" target="_blank" rel="noopener noreferrer">
-        Lokalise Academy
-      </a>
+      <a href="https://lokalise.com/blog/author/ilya/" target="_blank" rel="noopener noreferrer">Lokalise blog</a> and <a href="https://academy.lokalise.com/" target="_blank" rel="noopener noreferrer">Lokalise Academy</a>
     </li>
     <li>
-      <a href="http://www.sitepoint.com/author/ibodrov/" target="_blank" rel="noopener noreferrer">
-        Sitepoint blog
-      </a>
+      <a href="http://www.sitepoint.com/author/ibodrov/" target="_blank" rel="noopener noreferrer">Sitepoint blog</a>
     </li>
     <li>
-      <a href="https://www.sitepoint.com/premium/users/ilyabodrov" target="_blank" rel="noopener noreferrer">
-        Sitepoint Premium courses
-      </a>
+      <a href="https://www.sitepoint.com/premium/users/ilyabodrov" target="_blank" rel="noopener noreferrer">Sitepoint Premium courses</a>
     </li>
     <li>
-      <a href="https://tutsplus.com/authors/ilya-bodrov" target="_blank" rel="noopener noreferrer">
-        TutsPlus blog
-      </a>
+      <a href="https://tutsplus.com/authors/ilya-bodrov" target="_blank" rel="noopener noreferrer">TutsPlus blog</a>
     </li>
     <li>
-      <a href="https://github.com/bodrovis/MCSAnswer" target="_blank" rel="noopener noreferrer">
-        GuideDAO Answer
-      </a>
-      &mdash; intellectual game engine for GuideDAO students
+      <a href="https://github.com/bodrovis/MCSAnswer" target="_blank" rel="noopener noreferrer">GuideDAO Answer</a> &mdash; intellectual game engine for GuideDAO students
     </li>
     <li>ScrapingBee&nbsp;<span class="badge">no direct link</span></li>
     <li>Scotch.io blog&nbsp;<span class="badge">inactive</span></li>
@@ -80,33 +56,19 @@ draft: false
 
   <ul>
     <li>
-      <a href="https://ravensdielaughing.bandcamp.com" target="_blank" rel="noopener noreferrer">
-        Ravens Die Laughing
-      </a>
-      &mdash; our musical band. Strange music inside!
+      <a href="https://ravensdielaughing.bandcamp.com" target="_blank" rel="noopener noreferrer">Ravens Die Laughing</a> &mdash; our musical band. Strange music inside!
     </li>
     <li>
-      <a href="https://www.youtube.com/c/northernpridelotro" target="_blank" rel="noopener noreferrer">
-        Northern Pride: a musical band playing in Lord of the Rings Online
-      </a>
+      <a href="https://www.youtube.com/c/northernpridelotro" target="_blank" rel="noopener noreferrer">Northern Pride: a musical band playing in Lord of the Rings Online</a>
     </li>
     <li>
-      <a href="https://vk.com/ossiania_legends" target="_blank" rel="noopener noreferrer">
-        Photo comics
-      </a>
-      (scenario)
+      <a href="https://vk.com/ossiania_legends" target="_blank" rel="noopener noreferrer">Photo comics</a> (scenario)
     </li>
     <li>
-      <a href="https://harrypot.lol" target="_blank" rel="noopener noreferrer">
-        "Гарри и вагон косяков"
-      </a>
-      &mdash; юмористический проект, посвящённый грехам в книгах о знаменитом персонаже
+      <a href="https://harrypot.lol" target="_blank" rel="noopener noreferrer">"Гарри и вагон косяков"</a> &mdash; юмористический проект, посвящённый грехам в книгах о знаменитом персонаже
     </li>
     <li>
-      <a href="https://catandmouseteam.xyz/" target="_blank" rel="noopener noreferrer">
-        Cat &amp; Mouse team
-      </a>
-      &mdash; game translation team
+      <a href="https://catandmouseteam.xyz/" target="_blank" rel="noopener noreferrer">Cat &amp; Mouse team</a> &mdash; game translation team
     </li>
   </ul>
 </article>
