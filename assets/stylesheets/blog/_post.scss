@@ -1,3 +1,5 @@
+@use "./shared/shared";
+
 .full-entry {
   #toc-wrapper {
     margin: 1.7rem 0 0 0;
@@ -20,7 +22,8 @@
     }
 
     li {
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.2rem;
+      margin-top: 0.2rem;
       list-style-type: disc;
       font-family: "PT Sans Caption", sans-serif;
       letter-spacing: 0.1px;
@@ -149,7 +152,7 @@
     font-style: normal;
   }
 
-  p {
+  #post-body > p {
     &:first-of-type {
       margin-top: 1.7rem;
     }
@@ -166,5 +169,23 @@
   pre {
     max-width: 100%;
     overflow-x: auto;
+  }
+
+  blockquote {
+    margin: 1rem 0;
+    padding: 0.75rem 1rem;
+
+    border-left: 4px solid shared.$radiant;
+
+    background: rgba(shared.$radiant, 0.08);
+
+    border-radius: 0 8px 8px 0;
+  }
+
+  blockquote {
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 }

@@ -67,3 +67,7 @@ node_modules/
 
 resources/
 static/pagefind
+
+public/
+
+tmp
