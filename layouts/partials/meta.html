@@ -1,0 +1,49 @@
+{{ $siteTitle := "Ilya Krukowski" }}
+
+{{ $title := .Params.meta_title | default .Title }}
+{{ if not .IsHome }}
+  {{ $title = printf "%s | %s" $title $siteTitle }}
+{{ else }}
+  {{ $title = $siteTitle }}
+{{ end }}
+
+{{ $fallbackDesc := "" }}
+{{ if .IsPage }}
+  {{ $fallbackDesc = .Content | plainify | htmlUnescape | truncate 200 }}
+{{ end }}
+
+{{ $desc := .Params.meta_desc | default .Description | default .Site.Params.description | default $fallbackDesc }}
+{{ $desc = $desc | plainify | htmlUnescape | htmlEscape }}
+
+{{ $image := .Params.meta_img | default .Site.Params.meta_image | default "og-image.png" }}
+{{ $imageURL := $image | absURL }}
+
+<title>{{ $title }}</title>
+
+<meta name="description" content="{{ $desc }}">
+<meta name="author" content="bodrovis">
+<meta name="robots" content="all">
+
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" type="image/x-icon">
+<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}" type="image/x-icon">
+
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ $siteTitle }}">
+
+{{ if not .Params.skip_meta_img }}
+<meta property="og:image" content="{{ $imageURL }}">
+<meta property="og:image:secure_url" content="{{ $imageURL }}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $desc }}">
+<meta name="twitter:image" content="{{ $imageURL }}">
+{{ end }}

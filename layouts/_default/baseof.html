@@ -6,24 +6,11 @@
   <meta charset="utf-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <title>{{ block "main_title" . }}Ilya Krukowski | Илья Круковский{{end}}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content='{{ block "desc" . }}Ilya Krukowski (aka Илья Круковский, bodrovis, ibodrov) website. Personal IT tutor. Articles about web, programming, regular expressions, CSS, HTML and more.{{ end }}'>
-  <meta name="keywords"
-    content="Ilya Krukowski, Илья Круковский, bodrovis, статьи о web, программирование, дизайн, регулярные выражения, web-дизайн, ruby, rails, javascript, jquery, css, html, regexp, плагины, radiant wind, plugins, gems, libraries, tutor, personal teacher, it">
-  <meta name="author" content="bodrovis">
-  <meta name="robots" content="all">
-  <link rel="canonical" href="{{ .Permalink }}">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  {{ partial "meta.html" . }}
 
   {{ block "css" . }}
   {{ end }}
-
-  {{block "other_meta" . }}
-  {{end}}
 </head>
 
 <body>

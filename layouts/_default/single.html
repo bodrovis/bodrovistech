@@ -7,40 +7,22 @@
 {{ partial "css/styles.html" (dict "stylesheetPath" "stylesheets/single_post.scss") }}
 {{ end }}
 
-{{ define "other_meta" }}
-{{/* og:image */}}
-{{ if not .Params.skip_meta_img }}
-{{ $defaultMetaImg := path.Base .RelPermalink }}
-{{ $metaImg := default $defaultMetaImg .Params.meta_img }}
-{{ $metaPath := printf "meta/%s.webp" $metaImg }}
-<meta property="og:image" content="{{ $metaPath | absURL }}">
-{{ end }}
-
-{{/* og:description с fallback */}}
-{{ $fallbackDesc := .Content | plainify | htmlUnescape | truncate 200 }}
-{{ $metaDesc := default $fallbackDesc .Params.meta_desc }}
-
-<meta property="og:type" content="article">
-<meta property="og:title" content="{{ .Title }} | Ilya Krukowski">
-<meta property="og:description" content="{{ $metaDesc }}">
-<meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:site_name" content="Ilya Krukowski">
-{{ end }}
-
-{{ define "desc" }}
-{{ $fallbackDesc := .Content | plainify | htmlUnescape | truncate 200 }}
-{{ $metaDesc := default $fallbackDesc .Params.meta_desc }}
-{{ $metaDesc }}
-{{ end }}
-
-{{ define "main_title" }}{{ .Title }} | Ilya Krukowski{{ end }}
-
 {{ define "main" }}
 {{ partial "header/top.html" . }}
 
 <main id="content" data-pagefind-body>
-  <h1>{{ .Title }}</h1>
+  <header class="page-header">
+    {{ with .Params.general_title }}
+      <p class="general-title">{{ . }}</p>
+    {{ end }}
+    
+    <h1>{{ .Title }}</h1>
 
+    {{ with .Params.subtitle }}
+      <p class="subtitle">{{ . }}</p>
+    {{ end }}
+  </header>
+  
   <article class="full-entry">
     <time class="timestamp subtext" datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>
       {{ .Date.Format "January 2, 2006" }}

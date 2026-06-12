@@ -4,6 +4,10 @@ title = 'Ilya Krukowski'
 
 enableRobotsTXT = true
 
+[params]
+description = "Ilya Krukowski website. Personal IT tutor. Articles about web, programming, regular expressions, CSS, HTML and more."
+meta_image = "og-image.png"
+
 [pagination]
 pagerSize = 15
 
