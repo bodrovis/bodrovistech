@@ -1,7 +1,7 @@
 ---
 title: "Group Homomorphisms: отображения, kernel и потеря информации"
 draft: false
-date: 2026-06-11
+date: 2026-06-15
 meta_desc: "Понятное введение в group homomorphisms: отличие от isomorphisms, kernel, image, свойства, cosets kernel и числовые примеры. Теорема homomorphism."
 tags:
 - абстрактная алгебра
