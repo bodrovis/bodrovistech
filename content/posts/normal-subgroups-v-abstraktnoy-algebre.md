@@ -1,5 +1,5 @@
 ---
-title: "Normal Subgroupsб Factor Groups, Internal direct products: Нормальные подгруппы и фактор-группы"
+title: "Normal Subgroups, Factor Groups, Internal direct products: Нормальные подгруппы и фактор-группы"
 draft: false
 date: 2026-06-11
 meta_desc: "Понятное объяснение normal subgroups: left и right cosets, conjugation test, примеры нормальных и ненормальных подгрупп и связь с factor groups."
