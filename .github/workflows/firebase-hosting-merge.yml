@@ -12,7 +12,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
-          node-version: '26'
+          node-version: 22
           cache: 'npm'
 
       - name: Debug versions
@@ -36,7 +36,7 @@ jobs:
         run: npm_config_yes=true npx pagefind --site "public" --force-language en
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BODROVIS }}'
           channelId: live
           projectId: bodrovis
+          firebaseToolsVersion: 15.19.1
