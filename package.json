@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "index": "hugo --minify && npx pagefind --site \"public\" --output-subdir ../static/pagefind --force-language en",
+    "index": "hugo --minify --gc && npx pagefind --site \"public\" --output-subdir ../static/pagefind --force-language en",
     "start": "npm run index && hugo server"
   },
   "devDependencies": {

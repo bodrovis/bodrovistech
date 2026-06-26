@@ -12,7 +12,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: '26'
           cache: 'npm'
 
       - name: Debug versions
@@ -39,4 +39,3 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BODROVIS }}'
           channelId: live
           projectId: bodrovis
-          firebaseToolsVersion: 15.19.1
