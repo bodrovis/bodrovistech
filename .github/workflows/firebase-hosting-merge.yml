@@ -34,7 +34,7 @@ jobs:
         run: hugo --minify --gc
       - name: Run Pagefind
         run: npm_config_yes=true npx pagefind --site "public" --force-language en
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - uses: FirebaseExtended/action-hosting-deploy@v0.11.0
         with:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BODROVIS }}'
           channelId: live
