@@ -17,6 +17,8 @@ tags:
 
 Но сначала надо понять сами cosets.
 
+{{< video C3BbmEakytc >}}
+
 ## Определение: Coset of H in G
 
 Пусть `G` — группа, и:
