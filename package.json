@@ -1,7 +1,8 @@
 {
   "scripts": {
     "index": "hugo --minify --gc && npx pagefind --site \"public\" --output-subdir ../static/pagefind --force-language en",
-    "start": "npm run index && hugo server"
+    "start": "npm run index && hugo server",
+    "build:search": "pagefind --site public --force-language en"
   },
   "devDependencies": {
     "modern-normalize": "^3.0.0",
