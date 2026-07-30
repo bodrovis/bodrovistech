@@ -890,7 +890,7 @@ G = <a> × K
 
 ## Следствие: подгруппы всех допустимых порядков
 
-По Lagrange’s Theorem, если:
+По Lagrange's Theorem, если:
 
 ```text
 H ≤ G

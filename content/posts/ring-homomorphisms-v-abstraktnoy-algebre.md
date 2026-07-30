@@ -1126,7 +1126,7 @@ Ker φ = {r ∈ R | φ(r) = 0}
 
 Это тот же смысл, что и в group theory:
 
-> kernel показывает, какая часть source ring “схлопывается в ноль”.
+> kernel показывает, какая часть source ring "схлопывается в ноль".
 
 ### Kernels are ideals
 

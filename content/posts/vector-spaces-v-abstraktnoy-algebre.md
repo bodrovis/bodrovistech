@@ -48,7 +48,7 @@ a + bi
 a, b ∈ R
 ```
 
-То есть `C` устроено как “двумерное пространство” над `R`.
+То есть `C` устроено как "двумерное пространство" над `R`.
 
 Позже такая же идея появится для finite fields:
 
@@ -166,7 +166,7 @@ a(v + u) = av + au
 
 Scalar multiplication distributes over vector addition.
 
-То есть scalar можно “разнести” по сумме vectors.
+То есть scalar можно "разнести" по сумме vectors.
 
 ---
 
@@ -202,7 +202,7 @@ Vector space — это место, где можно:
 2. умножать vectors на scalars;
 3. делать это совместимо с arithmetic field `F`.
 
-То есть vector space — это не обязательно “стрелочки на плоскости”.
+То есть vector space — это не обязательно "стрелочки на плоскости".
 
 Vector может быть:
 
@@ -676,7 +676,7 @@ span(v1, v2, ..., vn)
 
 Это subspace of `V`.
 
-### Что значит “vectors span `V`”
+### Что значит "vectors span `V`"
 
 Если:
 
@@ -1168,7 +1168,7 @@ invariance of basis size
 
 ### Почему это важно
 
-Без этой theorem слово “dimension” не имело бы смысла.
+Без этой theorem слово "dimension" не имело бы смысла.
 
 Мы хотим сказать:
 

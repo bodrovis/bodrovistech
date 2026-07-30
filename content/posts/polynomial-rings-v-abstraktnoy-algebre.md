@@ -1360,7 +1360,7 @@ f(x) = (x - a)q(x)
 
 Но degree произведения этих factors равна `k`. Поэтому если polynomial имеет degree `n`, в него нельзя вместить больше чем `n` linear factors. Значит roots может быть не больше `n`.
 
-### Почему важно “over a field”
+### Почему важно "over a field"
 
 Это утверждение работает over fields. В rings with zero divisors всё может ломаться. Например, over `Z12` polynomial:
 
@@ -1426,7 +1426,7 @@ nth roots of unity
 
 Это complex number на unit circle.
 
-По De Moivre’s theorem:
+По De Moivre's theorem:
 
 ```text
 ω^n = 1

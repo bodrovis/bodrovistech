@@ -733,7 +733,7 @@ a^2 ≡ 3 (mod 5)
 
 is irreducible in `Z[√5]`.
 
-Важно: здесь `N(7) = 49`, не prime. То есть converse свойства “prime norm implies irreducible” не работает.
+Важно: здесь `N(7) = 49`, не prime. То есть converse свойства "prime norm implies irreducible" не работает.
 
 Element может быть irreducible even if its norm is not prime.
 
@@ -1151,7 +1151,7 @@ n = m
 
 и после перестановки factors каждый `pi` является associate соответствующего `qi`.
 
-### Что значит “unique up to associates and order”
+### Что значит "unique up to associates and order"
 
 Фраза:
 
@@ -1301,7 +1301,7 @@ Strictly increasing chain ideals:
 <a1> ⊂ <a2> ⊂ <a3> ⊂ ...
 ```
 
-соответствует тому, что generators становятся “всё менее делимыми”.
+соответствует тому, что generators становятся "всё менее делимыми".
 
 В integers это похоже на цепочку:
 
@@ -1635,7 +1635,7 @@ d(r) < d(b)
 measure
 ```
 
-Она измеряет “размер” элемента, чтобы division algorithm мог уменьшать remainder.
+Она измеряет "размер" элемента, чтобы division algorithm мог уменьшать remainder.
 
 ### Example: `Z` is Euclidean domain
 

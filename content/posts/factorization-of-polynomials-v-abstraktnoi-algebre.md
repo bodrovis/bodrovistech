@@ -76,7 +76,7 @@ f(x) = g(x)h(x)
 g(x), h(x) ∈ D[x]
 ```
 
-то один из множителей обязан быть unit. То есть polynomial нельзя разложить на произведение двух “настоящих” nonunit factors.
+то один из множителей обязан быть unit. То есть polynomial нельзя разложить на произведение двух "настоящих" nonunit factors.
 
 ### Reducible polynomial
 
@@ -504,7 +504,7 @@ degree 2 · degree 2
 
 reducible, но rational roots не имеет.
 
-Поэтому тест “нет roots значит irreducible” безопасен только для degrees `2` и `3`.
+Поэтому тест "нет roots значит irreducible" безопасен только для degrees `2` и `3`.
 
 ## Content of a polynomial
 
@@ -620,7 +620,7 @@ content · primitive polynomial
 
 primitive polynomial.
 
-Так мы отделяем “числовой общий множитель” от настоящей polynomial structure.
+Так мы отделяем "числовой общий множитель" от настоящей polynomial structure.
 
 ## Gauss's Lemma
 
@@ -678,7 +678,7 @@ f(x) ∈ Z[x]
 
 > чтобы проверить reducibility integer polynomial over `Q`, часто можно искать factorization уже в `Z[x]`.
 
-Rational coefficients можно “очистить от знаменателей” и получить integer factorization.
+Rational coefficients можно "очистить от знаменателей" и получить integer factorization.
 
 ## Пример: rational factorization превращается в integer factorization
 
@@ -1158,7 +1158,7 @@ Polynomial должен выглядеть так:
 leading coefficient не делится на p
 ```
 
-но все остальные coefficients делятся на `p`. При этом constant term делится на `p`, но не делится на `p^2`. То есть `p` входит в constant term ровно “не слишком сильно”.
+но все остальные coefficients делятся на `p`. При этом constant term делится на `p`, но не делится на `p^2`. То есть `p` входит в constant term ровно "не слишком сильно".
 
 ### Пример Eisenstein
 
@@ -2142,7 +2142,7 @@ multiplication by units ±1
 
 ### Почему это важно
 
-Unique factorization позволяет работать с polynomials почти как с integers. В integers primes являются “атомами” multiplication. В `Z[x]` irreducible polynomials играют похожую роль. Это важно для:
+Unique factorization позволяет работать с polynomials почти как с integers. В integers primes являются "атомами" multiplication. В `Z[x]` irreducible polynomials играют похожую роль. Это важно для:
 
 ```text
 divisibility
