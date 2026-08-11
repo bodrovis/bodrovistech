@@ -10,7 +10,8 @@
   {{.Content}}
 
   <div id="posts-list">
-    {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") }}
+    {{ $pages := where .Site.RegularPages "Section" "posts" }}
+    {{ $paginator := .Paginate $pages.ByDate.Reverse }}
 
     {{ range $paginator.Pages }}
     <article class="entry">

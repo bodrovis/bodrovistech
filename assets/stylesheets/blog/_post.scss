@@ -188,4 +188,32 @@
       margin-bottom: 0;
     }
   }
+
+  .source-content {
+    display: inline;
+
+    margin-left: 0.4em;
+    padding: 0 0.5em;
+
+    font-size: 0.9em;
+    opacity: 0.9;
+
+    background: rgba(shared.$orange, 0.1);
+    border-left: 2px solid shared.$orange;
+    border-radius: 3px;
+
+    &[hidden] {
+      display: none;
+    }
+  }
+
+  .source-reference {
+    font-size: 0.75em;
+
+    a {
+      color: shared.$orange;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
 }

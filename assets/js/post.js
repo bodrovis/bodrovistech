@@ -74,4 +74,43 @@ ready(function () {
       }
     }
   }, false);
+
+  document.addEventListener('click', function (e) {
+    var target = e.target;
+
+    for (; target && target !== this; target = target.parentNode) {
+      if (target.matches('.js-show-source')) {
+        e.preventDefault();
+
+        var citation = target.closest('.source-citation');
+        var content = citation.querySelector('.source-content');
+        var isOpen = !content.hidden;
+
+        var openedSources = document.querySelectorAll(
+          '.source-content:not([hidden])'
+        );
+
+        openedSources.forEach(function (source) {
+          source.hidden = true;
+
+          var parent = source.closest('.source-citation');
+
+          if (parent) {
+            var link = parent.querySelector('.js-show-source');
+
+            if (link) {
+              link.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+
+        if (!isOpen) {
+          content.hidden = false;
+          target.setAttribute('aria-expanded', 'true');
+        }
+
+        break;
+      }
+    }
+  }, false);
 });

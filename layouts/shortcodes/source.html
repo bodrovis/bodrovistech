@@ -1,0 +1,15 @@
+{{- $number := .Get 0 -}}
+
+<span class="source-citation">
+  <sup class="source-reference">
+    <a
+      href="#"
+      class="js-show-source"
+      aria-expanded="false"
+    >[{{ $number }}]</a>
+  </sup>
+
+  <span class="source-content" hidden>
+    {{- .Inner | markdownify -}}
+  </span>
+</span>
