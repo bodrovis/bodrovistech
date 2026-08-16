@@ -6,13 +6,12 @@
 
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(3px);
-  overflow-y: auto;
-  padding-top: 70px;
+
+  padding: 3rem 1rem 2rem;
 
   .dialog-content {
     position: relative;
-    margin: 0 auto 2em auto;
-    padding: 0;
+    margin: 0 auto;
     width: 90%;
     max-width: 90%;
     background: transparent;
@@ -20,7 +19,11 @@
     img {
       display: block;
       max-width: 100%;
-      margin: 0 auto 1rem auto;
+      max-height: calc(100vh - 8rem);
+      width: auto;
+      height: auto;
+      margin: 0 auto 1rem;
+      object-fit: contain;
     }
 
     p {
@@ -32,7 +35,7 @@
   }
 
   .close-dialog {
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 25px;
     text-decoration: none;

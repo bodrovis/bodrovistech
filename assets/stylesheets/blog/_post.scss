@@ -75,51 +75,60 @@
   }
 
   .image_gallery {
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
 
     .image_container {
-      display: inline-block;
-      margin: 0 0.8rem 0.8rem;
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      img {
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+      }
     }
   }
 
   .image_container {
-    max-width: 280px;
+    width: clamp(220px, 30vw, 300px);
     overflow: hidden;
+
     border: 1px solid #ccc;
     padding: 10px;
     border-radius: 10px;
     box-sizing: border-box;
 
     a {
-      width: 100%;
       display: block;
+      width: 100%;
     }
 
     img {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
       display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
     }
 
     p {
       text-align: left;
       font-size: 0.9em;
-      margin-bottom: 0 !important;
-      margin-top: 0 !important;
+      line-height: 1.4;
+      margin: 0.5rem 0 0 !important;
       text-indent: 0;
     }
   }
 
   .image_container.left_aligned {
     float: left;
-    margin-right: 10px;
+    margin: 0.3rem 1.25rem 1rem 0;
   }
 
   .image_container.right_aligned {
     float: right;
-    margin-left: 10px;
+    margin: 0.3rem 0 1rem 1.25rem;
   }
 
   table {

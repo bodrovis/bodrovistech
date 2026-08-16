@@ -6,19 +6,6 @@
   }
 }
 
-/* ===== 1110px ===== */
-@media (max-width: 1110px) {
-  .full-entry {
-    .image_container {
-      max-width: 200px;
-
-      img {
-        max-width: 200px;
-      }
-    }
-  }
-}
-
 /* ===== 895px ===== */
 @media (max-width: 895px) {
   header {
@@ -42,6 +29,16 @@
   #content {
     width: 100%;
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .image_container.left_aligned,
+  .image_container.right_aligned {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
   }
 }
 

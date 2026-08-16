@@ -1,0 +1,23 @@
+{{- $src := .Get "src" -}}
+{{- $preview := .Get "preview" -}}
+{{- $alt := .Get "alt" -}}
+{{- $caption := .Get "caption" -}}
+{{- $modalCaption := .Get "modal_caption" | default $caption -}}
+{{- $align := .Get "align" | default "right" -}}
+
+<div class="image_container {{ $align }}_aligned">
+  <a
+    href="{{ $src }}"
+    class="js-show-gallery"
+    data-caption="{{ $modalCaption }}"
+  >
+    <img
+      src="{{ $preview }}"
+      alt="{{ $alt }}"
+    >
+  </a>
+
+  {{ with $caption }}
+    <p>{{ . }}</p>
+  {{ end }}
+</div>
