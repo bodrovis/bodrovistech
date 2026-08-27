@@ -59,6 +59,10 @@ aN = Na
 
 для каждого `a ∈ G`, то `N` называется **normal subgroup / нормальными подгруппами**.
 
+{{< video 58sSQn56AyA >}}
+
+{{< video qSWuRPmzhiE >}}
+
 ## Определение normal subgroup
 
 Пусть:
