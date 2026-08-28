@@ -83,7 +83,7 @@ tags:
 
 **VINCENT MEIS** – Korda, what the hell?! I told you not to get involved in this. Don't you understand how this will end if you try to force your way into the ghetto with weapons in your hands?
 
-**NARRATOR** – The leader of the racist group steps closer. Five grim-looking men follow behind him. They aren't shouting along with the crowd or getting swept up in the frenzy. They carry themselves far too calmly, almost with boredom — as though they hadn't come to take part in a bloody lynching, but to perform some tiresome job they'd already done a hundred times.
+**NARRATOR** – The leader of the racist group steps closer. Five grim-looking men follow him. They aren't shouting along with the crowd or getting swept up in the frenzy. They carry themselves far too calmly, almost with boredom — as though they hadn't come to take part in a bloody lynching, but to perform some tiresome job they'd already done a hundred times.
 
 **BRAWN** [Challenging: Success] – Those five... they're not just angry townsmen. These men are trained to kill, and their feigned laziness is deceptive; they're ready to fight at a moment's notice. Could the rumors about infiltrators really be true?
 
@@ -141,7 +141,7 @@ tags:
 
 **NARRATOR** – Meis whirls around to face you. For a moment, he seems genuinely baffled by how the merchant's name has managed to surface in the middle of this hell.
 
-**VINCENT MEIS** – What do I care about Leuvaarden?! Is he here now?! The Merchant Quarter has sensibly been sealed off. All the nobles are hiding behind seven locks, terrified of the people's anger — the very people they supposedly care so much about!
+**VINCENT MEIS** – What do I care about Leuvaarden?! Is he here now?! The Merchant Quarter has sensibly been sealed off. All the nobles are hiding behind locked doors, terrified of the people's anger — the very people they supposedly care so much about!
 
 **NARRATOR** – He strikes the rim of his shield with his sword — not hard, but the sound is sharp and unpleasant.
 
@@ -179,7 +179,7 @@ tags:
 
 **VINCENT MEIS** – Enough of your bullshit, bastard!..
 
-**DIALECTIC** [Challenging: Success] – Wait a moment... Vincent said those guards were killed with an arquebus. But elves generally keep their distance from modern technology. Besides, a firearm is too loud, too conspicuous, and too unreliable for people who survive by staying hidden. Their weapons are bows, knives, ambushes, and a swift retreat.
+**DIALECTIC** [Challenging: Success] – Wait a moment... Vincent said those guards were killed with an arquebus. But elves generally keep their distance from modern technology. Besides, a firearm is too loud, too conspicuous, and too unreliable for people who survive by staying hidden. They rely on bows, knives, ambushes, and swift retreats.
 
 **YOU** – Captain, I think he's telling the truth. The elves wouldn't use firearms.
 
@@ -227,7 +227,7 @@ tags:
 
 **VERNON ROCHE** – Please, help us calm the crowd and protect the ghetto from a massacre. And I promise you: we will find whoever is responsible.
 
-**ARMAND LAVELLE** – I know you... Vernon Roche, isn't it? But why are you taking that bastard's side? The whole city is already saying Grave confessed to the murder himself. HHe even boasts that he hanged a noble chevalier and no one can touch him for it! How can you turn a blind eye to that? They desecrated my brother's body!
+**ARMAND LAVELLE** – I know you... Vernon Roche, isn't it? But why are you taking that bastard's side? The whole city is already saying Grave confessed to the murder himself. He even boasts that he hanged a noble chevalier and no one can touch him for it! How can you turn a blind eye to that? They desecrated my brother's body!
 
 **WHISPER** [Easy: Success] – Don't just stand there. You can still change his mind if you tell him what the investigation uncovered. No time to waste.
 

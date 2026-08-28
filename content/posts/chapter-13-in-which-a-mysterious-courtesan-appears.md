@@ -47,13 +47,13 @@ tags:
 
 **NARRATOR** – The woman slowly runs a finger along the balcony railing.
 
-**CODEX** [Impossible: Failure] – Perhaps Monsieur de Valmont really did write something of the sort. Alas, you have never held his treatise in your hands, so you are quite incapable of telling genuine erudition from elegant invention.
+**CODEX** [Impossible: Failure] – Perhaps Monsieur de Valmont really did write something of the sort. Alas, you have never laid hands on his treatise, so you are quite incapable of telling genuine erudition from elegant invention.
 
 **ELOQUENCE** [Challenging: Failure] – And you won't be able to come up with a clever quotation in return, either.
 
 **WOMAN ON THE BALCONY** – And for two hundred orens, you can ask me questions all night long. But believe me, before long you'll forget all about them. We'll have other things to occupy us... There are no questions in the language of love, my sweet — only answers. And when it comes to seeking those answers, I am tireless.
 
-**VICE** [Challenging: Failure] – Two hundred orens?! Damn, you've never even held that kind of money in your life...
+**VICE** [Challenging: Failure] – Two hundred orens?! Damn, you've never even had that kind of money in your life...
 
 **WHISPER** [Easy: Success] – On the other hand, that price does include genuine research work!
 
@@ -89,7 +89,7 @@ tags:
 
 **REFLEX** [Medium: Success] – A moonless night? Interesting. Remember that...
 
-**NARRATOR** – The woman slowly licks her lips and gives you a wink. The chain your medallion hangs from begins to choke you mercilessly once again.
+**NARRATOR** – The woman slowly licks her lips and gives you a wink. The chain holding your medallion begins to choke you mercilessly once again.
 
 **HORRIFIC MEDALLION** – What the hell are you waiting for, kumpel?! Can't you see she WANTS you? Get up there right now and show her what you're capable of. She'll PAY YOU for a night like that, I'll bet my teeth on it!
 

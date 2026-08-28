@@ -34,7 +34,7 @@ tags:
 
 **UMBRA** [Challenging: Failure] – I wonder who they are?
 
-**NARRATOR** – You give Vernon a greeting wave; he is already waiting by the exit. But instead of heading straight over, you walk up to the pair's table. The stranger gives you an appraising look, folds his arms across his chest, and says quietly:
+**NARRATOR** – You give Vernon a quick wave; he is already waiting by the exit. But instead of heading straight over, you walk up to the pair's table. The stranger gives you an appraising look, folds his arms across his chest, and says quietly:
 
 **MAN WITH ORANGE EYES** – You look like shit.
 

@@ -98,7 +98,7 @@ tags:
 
 **NARRATOR** – He does not, however, actually offer you his hand.
 
-**LEUVAARDEN** – Her name is Bozhena, though everyone simply calls her Magpie. From what I gather, she has a habit of dragging home anything shiny and has turned the place into something of a junk heap. Not to mention the dozen or two cats living there...
+**LEUVAARDEN** – Her name is Bozhena, though everyone simply calls her Magpie. From what I gather, she has a habit of dragging home anything shiny and has turned the place into something of a junk heap. Not to mention a dozen or two cats living there...
 
 **STEADINESS** [Medium: Failure] – Oh, not this again. First a vacant lot with a rotting corpse and piles of garbage, then that reeking junk dealer's shop, and now the hovel of the local madwoman.
 
@@ -110,7 +110,7 @@ tags:
 
 **LEUVAARDEN** – Think nothing of it! A favor for a favor. I won't keep you any longer, my friends, but remember: my door is always open to you. Do drop by sometime!
 
-**NARRATOR** – The same servant sees you as far as the gate. Before saying goodbye, he hands you a slip of paper.
+**NARRATOR** – The same servant sees you to the gate. Before saying goodbye, he hands you a slip of paper.
 
 **SERVANT** – This has the address you're looking for in the Temple Quarter, pan witcher. And one more thing...
 
@@ -150,7 +150,7 @@ tags:
 
 **NARRATOR** – She grabs the bewildered Vernon by the sleeve and firmly tugs him inside.
 
-**DIALECTIC** [Easy: Success] – Obviously, the old woman has mistaken you for her sons, whom she has been waiting for all these years. The only question is whether those sons ever existed at all. It's entirely possible the poor woman simply invented them.
+**DIALECTIC** [Easy: Success] – Obviously, the old woman has mistaken you for her sons, whom she has been waiting for all these years. The only question is whether those sons ever existed in the first place. It's entirely possible the poor woman simply invented them.
 
 **UMBRA** [Challenging: Success] – Wacek and Mirek may well have been real people who died long ago. Bozhena simply never managed to come to terms with the loss.
 

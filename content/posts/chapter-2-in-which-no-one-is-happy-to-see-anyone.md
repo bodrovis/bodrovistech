@@ -125,7 +125,7 @@ tags:
 
 **NARRATOR** – He folds his arms across his chest and closes his eyes, as if reciting the lines of a familiar role from memory.
 
-**VERNON ROCHE** – So. Four days ago — on Thursday — the body of a middle-aged man was found hanging from a tree in the backyard of this tavern. Before you ask, let me make one thing clear: this was no nameless vagrant, and there are plenty of those around here. We know for certain that he was a man of noble birth. More than that, he acted as an emissary for some extremely influential people from the Merchant Quarter. Many of them are close to the king, so we're talking about the upper crust here. People with plenty of money, connections, power — and enemies and jealous rivals to match.
+**VERNON ROCHE** – So. Four days ago — on Friday — the body of a middle-aged man was found hanging from a tree in the backyard of this tavern. Before you ask, let me make one thing clear: this was no nameless vagrant, and there are plenty of those around here. We know for certain that he was a man of noble birth. More than that, he acted as an emissary for some extremely influential people from the Merchant Quarter. Many of them are close to the king, so we're talking about the upper crust here. People with plenty of money, connections, power — and enemies and jealous rivals to match.
 
 **SENSIBILITY** [Easy: Success] – It seems Vernon isn't particularly fond of all these "influential people."
 

@@ -146,7 +146,7 @@ tags:
 
 **NARRATOR** – The bandit fills his shot glass again, but this time he doesn't hurry to drink.
 
-**GRAVE** – Anyway, this was on Thursday... Anyone remember what time?
+**GRAVE** – Anyway, this was Thursday night... Anyone remember what time?
 
 **ROSIE** – Half past midnight. Thursday night into Friday.
 
@@ -158,7 +158,7 @@ tags:
 
 **GRAVE** – Yeah. The whole pack.
 
-**SENSIBILITY** [Challenging: Success] – An important choice of words. *Pack* is rough, almost insulting, but there's no contempt in the way he says it. To Grave, the pack isn't just a gang, a collection of convenient accomplices, or expendable muscle. They're *his own*. His inner circle. The people he curses at, threatens to knock their teeth out — and still thinks of as something close to family. Because he has no other family.
+**SENSIBILITY** [Challenging: Success] – An important choice of words. *Pack* is rough, almost insulting, but there's no contempt in the way he says it. To Grave, the pack isn't just a gang, a collection of convenient accomplices, or expendable muscle. They're *his own*. His inner circle. The people he curses at and threatens to knock the teeth out of — and still thinks of as something close to family. Because he has no other family.
 
 **GRAVE** – At some point the door flies open and Karmen comes stumbling in — half-dressed, eyes wild, barely able to keep her legs under her. You could tell right away she'd done a shitload of powder.
 
@@ -206,7 +206,7 @@ tags:
 
 **ROSIE** – Why? What does she have to do with any of this?
 
-**VERNON ROCHE** – We have a theory that your sorceress may have been the one who committed the murder. She could have slipped out to the vacant lot, climbed onto the shed, which has a clear view of the room's window, shot Bastien — perhaps using magic — and then quickly returned.
+**VERNON ROCHE** – We have a theory that your sorceress may have been the one who committed the murder. She could have slipped out to the vacant lot, climbed onto the shed, from which the room's window is clearly visible, shot Bastien — perhaps using magic — and then quickly returned.
 
 **GRAVE** – Ha! By that logic, Roche, you could blame any one of us. Or the Wolf, for that matter. Maybe he was crawling around in some garbage pit that night, then decided to whack somebody just for fun. Gulped down a few of those potions of his and went off raising hell...
 
@@ -314,7 +314,7 @@ tags:
 
 **ROSIE** – "Genuinely concerned"? Or are you just following orders? I'm sure you wouldn't give a damn about the people here otherwise. Unlike us.
 
-**DIALECTIC** [Challenging: Success] – Clever. Rosie replaces a question of consequences with one of motives. An almost academic trick: take the other person's argument, turn it sideways, and force them to defend not the point itself, but their own moral character. At Oxenfurt, I believe they call that *quodlibetum*. Strip away the fancy wrapping, though, and in this case it's simply demagoguery.
+**DIALECTIC** [Challenging: Success] – Clever. Rosie replaces a question of consequences with one of motives. An almost academic trick: take the other person's argument, turn it sideways, and force them to defend not the point itself, but their own moral character. At Oxenfurt, I believe they call that *argumentum ad hominem.* Strip away the fancy wrapping, though, and in this case it's simply demagoguery.
 
 **YOU** – I don't think that matters at all.
 

@@ -66,7 +66,7 @@ tags:
 
 **MAN WITH ORANGE EYES** – Jaskier.
 
-**JASKIER** – ...And the next day, you were acting completely strange. Looking at me like I was a stranger. That's when Triss suggested you might have temporarily lost your memory.
+**JASKIER** – ...And the next day, you were acting really strange. Looking at me like I was a stranger. That's when Triss suggested you might have temporarily lost your memory.
 
 **YOU** – Then where did you disappear to afterward?
 
@@ -512,9 +512,9 @@ tags:
 
 **UMBRA** [Easy: Success] – So Kalkstein was right. You really will have to begin the difficult work of getting to know yourself all over again... And the people who were your friends before you forgot them. Still, there can be no doubt: surely *they*, at least, will turn out to be pleasant enough people.
 
-**BOND OF STEEL** [Impossible: Success] – Bernard Ducat sits in his modest office, idly leafcding through the dossiers spread across his desk. Vernon Roche? Yes. Lambert? Naturally. Eskel? Of course. Vesemir? Yes. Triss Merigold? Certainly. Zoltan Chivay? Yes. Jaskier the bard? Doubtful. Geralt of Rivia? Without question.
+**BOND OF STEEL** [Impossible: Success] – Bernard Ducat sits in his modest office, idly leafing through the dossiers spread across his desk. Vernon Roche? Yes. Lambert? Naturally. Eskel? Of course. Vesemir? Yes. Triss Merigold? Certainly. Zoltan Chivay? Yes. Jaskier the bard? Doubtful. Geralt of Rivia? Without question.
 
 **FOREBODING** [Challenging: Success] – The world did not give you back your memory. Instead, it gave you back the people who remember you. Perhaps, for now, that is enough. Go on, witcher. The journey is not over yet.
 
-> *— Cat & Mouse team*
+> *— [Cat & Mouse team](https://catandmouseteam.xyz/)*
 > Rīga, 2026

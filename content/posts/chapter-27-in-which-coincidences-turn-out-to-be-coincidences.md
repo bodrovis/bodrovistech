@@ -189,11 +189,11 @@ tags:
 
 **YOU** – All right, then why did you desert? What happened?
 
-**WOJCIECH KREIDA** – You could say I stopped understanding what any of it was for. The unknowable ambitions of a king who sits in a comfortable tent and points with a manicured hand, deciding where we advance, which city must be taken, how many soldiers should be "committed" to the task?.. Or I can put it more simply: I was afraid.
+**WOJCIECH KREIDA** – You could say I stopped understanding what any of it was for. The inscrutable ambitions of a king who sits in a comfortable tent and points with a manicured hand, deciding where we advance, which city must be taken, how many soldiers should be "committed" to the task?.. Or I can put it more simply: I was afraid.
 
 **NARRATOR** – There is neither shame nor defiance in his words. Only the weariness of a man who made his peace with the truth long ago, after repeating it to himself for half a century.
 
-**WOJCIECH KREIDA** – We managed to force the Pontar and establish ourselves on the northern bank. The next step was to press the advantage. The infantry moved forward, while we stayed behind as usual, providing covering fire. And then...
+**WOJCIECH KREIDA** – We managed to force a crossing of the Pontar and establish ourselves on the northern bank. The next step was to press the advantage. The infantry moved forward, while we stayed behind as usual, providing covering fire. And then...
 
 **NARRATOR** – His voice suddenly begins to tremble. Gnarled fingers tighten around the pipe.
 

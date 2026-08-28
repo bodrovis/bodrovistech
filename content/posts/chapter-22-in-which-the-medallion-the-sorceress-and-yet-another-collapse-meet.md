@@ -18,7 +18,7 @@ tags:
 >
 > *— Samuel Beckett, Worstward Ho*
 
-**NARRATOR** – At around eleven in the morning, you and Vernon meet outside the Shaggy Bear. After yesterday's conversation with Grave, Vizima seems deceptively calm.
+**NARRATOR** – Around eleven in the morning, you and Vernon meet outside the Shaggy Bear. After yesterday's conversation with Grave, Vizima seems deceptively calm.
 
 **VERNON ROCHE** – Good morning, Geralt.
 

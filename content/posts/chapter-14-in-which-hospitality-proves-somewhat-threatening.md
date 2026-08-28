@@ -219,10 +219,6 @@ tags:
 
 **NARRATOR** – Grave pauses for a moment, as though the question has genuinely stumped him.
 
-**YOU** – All right, but why did you kill him in the first place if you were planning to negotiate?
-
-**NARRATOR** – Grave pauses for a moment, as though the question has genuinely stumped him.
-
 **GRAVE** – Why?..
 
 **JANEK** – Because he was a filthy little aristocrat and we didn't like his fucking face!
@@ -341,7 +337,7 @@ tags:
 
 **NARRATOR** – An unfamiliar silence falls over the table. Even Rock stops chewing.
 
-**YOU** – Lavelle didn't die from strangulation. He was shot. Only afterward were his hands tied and his body was hung from the tree
+**YOU** – Lavelle didn't die from strangulation. He was shot. Only afterward were his hands tied and his body hung from the tree.
 
 **BRAWN** [Trivial: Success] – Now let Roche knock him the fuck out.
 

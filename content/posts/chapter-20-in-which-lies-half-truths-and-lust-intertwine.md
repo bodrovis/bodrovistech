@@ -278,7 +278,7 @@ tags:
 
 **KARMEN** – Please, listen to me! I never wrote any letters, and that "K" could stand for any name: Krystyna, Klementyna, Květa, Kassandra... There are countless women in the world whose names begin with "K"!
 
-**NARRATOR** – Karmen hands the letter back so quickly, as though the parchment were burning her fingers.
+**NARRATOR** – Karmen hands the letter back as though the parchment were burning her fingers.
 
 **KARMEN** – Why are you so determined to blame me for everything? Why are you being so merciless?
 
@@ -492,7 +492,7 @@ tags:
 
 **NARRATOR** – The courtesan answers in a faltering voice.
 
-**KARMEN** – If necessary, I'll report to the guardhouse every day!.. I'll hand my papers over to Captain Meis as collateral today.
+**KARMEN** – If necessary, I'll report to the guardhouse every day!.. I'll hand my papers over to Captain Meis as security today.
 
 **NARRATOR** – Roche merely shakes his head.
 
@@ -594,7 +594,7 @@ tags:
 
 **NARRATOR** – She nods.
 
-**KARMEN** – It happened during the night from Thursday into Friday. He was sitting on the edge of the bed, facing the balcony... His head was tilted back. I was kneeling in front of him, right here...
+**KARMEN** – It happened during the night between Thursday and Friday. He was sitting on the edge of the bed, facing the balcony... His head was tilted back. I was kneeling in front of him, right here...
 
 **NARRATOR** – She points to the floor beside the bed.
 

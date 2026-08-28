@@ -20,7 +20,7 @@ tags:
 
 **NARRATOR** – The door to the courtesan's room is unlocked. Vernon draws his sword just in case and steps decisively inside. You and Rune follow.
 
-**KEEN EYE** [Medium: Success] – Karmen packed in a hurry, but she still took considerable time to erase the traces of her presence.
+**KEEN EYE** [Medium: Success] – Karmen left in a hurry, but she still took the time to erase the traces of her presence.
 
 **DISCERNMENT** [Easy: Success] – And yet a faint scent of orange oil still lingers in the room...
 
@@ -136,7 +136,7 @@ tags:
 
 **NARRATOR** – Vernon narrows his eyes, mentally tracing an invisible line from the tower to the balcony. Then he shakes his head.
 
-**VERNON ROCHE** – You seriously think the shot could have come from there? The distance is enormous — at least a kilometer. I know of no weapon with that kind of range. And even if one existed, an ordinary marksman wouldn't be able to hit so much as a doorway from that distance. You might even have to account for wind speed and direction...
+**VERNON ROCHE** – You seriously think the shot could have come from there? The distance is enormous — at least a kilometer. I know of no weapon capable of an accurate shot at that range. And even if one existed, an ordinary marksman wouldn't be able to hit so much as a doorway from that distance. You might even have to account for wind speed and direction...
 
 **CODEX** [Challenging: Success] – An ordinary marksman, no. But that blue streak suggests the weapon may not have been entirely ordinary.
 
@@ -232,7 +232,7 @@ tags:
 
 **VERNON ROCHE** – Good. Then we cannot afford to let our guard down.
 
-**NARRATOR** – You crouch to examine the floor for any other clues. Near the wall, you find a small pile of black, oily substance that vaguely resembles soot.
+**NARRATOR** – You crouch to examine the floor for any other clues. Near the wall, you find a small patch of black, oily substance that vaguely resembles soot.
 
 **BRAWN** [Challenging: Success] – Serious danger lies ahead. Facing it like this would be unforgivably careless. You need *war paint*.
 

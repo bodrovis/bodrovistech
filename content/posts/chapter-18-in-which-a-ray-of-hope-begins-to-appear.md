@@ -130,7 +130,7 @@ tags:
 
 **VERNON ROCHE** – So you knew about it?
 
-**VINCENT MEIS** – It would be rather strange if the captain of the guard knew nothing about what was happening in the territory under his authority.
+**VINCENT MEIS** – It would be rather strange if the captain of the guard knew nothing about what was happening in the district under his jurisdiction.
 
 **DIALECTIC** [Easy: Success] – Stranger still if the captain of the guard knew all about it and did nothing.
 

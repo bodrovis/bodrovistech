@@ -188,7 +188,7 @@ tags:
 
 **KALKSTEIN** – Of course. But knowing is not the same as thinking. They never ask themselves what happens when all those separate actions are put together. Each sees only his own table, his own cauldron, and the few coins he'll be paid that evening. And if you corner them, they all give the same answer: "I didn't decide anything. I was just doing my job."
 
-**DIALECTIC** [Medium: Success] – So perhaps evil is not the absence of good. Perhaps it is the absence of thought — or a deliberate refusal to follow one's own actions through to their consequences.
+**DIALECTIC** [Medium: Success] – So perhaps evil is not the absence of good. Perhaps it is the absence of thought — or a deliberate refusal to think one's own actions through to their consequences.
 
 **KALKSTEIN** – The worst evil is sometimes disgustingly ordinary. It consists of countless small, carefully performed duties for which no one is willing to accept responsibility.
 
@@ -310,7 +310,7 @@ tags:
 
 **YOU** – So *everything*, in the absolute sense, can't be seen as something separate?..
 
-**KALKSTEIN** – Exactly, my friend. To distinguish one thing, you have to separate it from what it is *not*. You need a boundary. Contrast. A difference... Or, in mathematical terms — a gradient, pointing in the direction where something changes most rapidly. Where nothing changes, neither the eye nor the mind has anything to grasp.
+**KALKSTEIN** – Exactly, my friend. To distinguish one thing, you have to separate it from what it is *not*. You need a boundary. Contrast. A difference... Or, in mathematical terms — a gradient, pointing in the direction in which something changes most rapidly. Where nothing changes, neither the eye nor the mind has anything to grasp.
 
 **ARTISTRY** [Medium: Success] – To see an entire building, you have to step outside it. But there is nowhere to *step outside* the universe.
 

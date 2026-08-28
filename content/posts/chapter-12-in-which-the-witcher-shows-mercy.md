@@ -20,7 +20,7 @@ tags:
 > It blesseth him that gives and him that takes."
 > *— William Shakespeare, The Merchant of Venice*
 
-**NARRATOR** – After waiting about ten minutes and pacing past the tavern doors a few times, you decide, for no particular reason, to visit the vacant lot once more. Almost nothing has changed. Wet ground, the crooked shed, the bare branches of the old tree — only the body is gone. All that remains are the round impressions in the earth where the guard had set up the ladder.
+**NARRATOR** – After waiting about ten minutes and pacing past the tavern doors a few times, you decide, for no particular reason, to visit the vacant lot once more. Almost nothing has changed. Wet ground, the crooked shed, the bare branches of the old tree — only the body is gone. All that remains are the round impressions in the earth where the guards had set up the ladder.
 
 **ARTISTRY** [Medium: Success] – Even without the hanged man, the vacant lot looks no less bleak.
 
@@ -46,7 +46,7 @@ tags:
 
 **NARRATOR** – The red-haired goblin raises the hammer over his head and, swaying on his feet, tries to assume some bizarre fighting stance. It does not go well. Just in case, the girl jumps across to the neighboring roof and scrambles higher.
 
-**VICE** [Easy: Success] – Dilated pupils, poor coordination, a trembling jaw, uncontrollable rage, and a desperate conviction in his own immortality. This kid is high on fisstech. He took far less than Jethro did, but even that was more than enough for a runt like him.
+**VICE** [Easy: Success] – Dilated pupils, poor coordination, a trembling jaw, uncontrollable rage, and a desperate belief in his own immortality. This kid is high on fisstech. He took far less than Jethro did, but even that was more than enough for a runt like him.
 
 **RUNE** – Hey, gray-hair, what part of that didn't you understand?! This yard belongs to Rune, so you've got five seconds to get the fuck out of here!
 
@@ -90,7 +90,7 @@ tags:
 
 **RUNE** – We ain't fucking buddies! Just two hard men showing each other some respect. All right, ask away, old man. What'd you wanna know? I'm feeling real fucking generous today.
 
-**SENSIBILITY** [Challenging: Success] – You can get through to Rune. His friend is another matter. She's completely feral — keeping as much distance as possible and in no hurry to trust some strange grown man. There's something in that look of hers... It's frightening to imagine what she may already have been through at such a young age.
+**SENSIBILITY** [Challenging: Success] – You can get through to Rune. His friend is another matter. She's completely feral — she keeps as much distance as possible and is in no hurry to trust some strange grown man. There's something in that look of hers... It's frightening to imagine what she may already have been through at such a young age.
 
 **NARRATOR** – You lean down toward Rune and ask quietly.
 
@@ -112,7 +112,7 @@ tags:
 
 **SENSIBILITY** [Medium: Success] – There's no boasting or anger in his voice now.
 
-**RUNE** – So I figured: if Rune's the king around here, then he's gotta look after his subjects, right?.. So I stole a hunk of bread and brought it back to the distillery. Runa threw a rock at me first, but then she ate the whole fucking thing anyway. Next day she showed up here, at the vacant lot... Been following me around ever since. At least she talks now.
+**RUNE** – So I figured: if Rune's the king around here, then he's gotta look after his subjects, right?.. So I stole a hunk of bread and brought it back to the distillery. Runa threw a rock at me first, but then she ate every fucking crumb anyway. Next day she showed up here, at the vacant lot... Been following me around ever since. At least she talks now.
 
 **NARRATOR** – The boy glances around furtively.
 
@@ -138,7 +138,7 @@ tags:
 
 **NARRATOR** – He rolls his eyes wildly and jabs a finger toward the tree.
 
-**DIALECTIC** [Easy: Success] – So the hanging must have taken place after midnight. Worth remembering.
+**DIALECTIC** [Easy: Success] – So the body must have been hanged after midnight. Worth remembering.
 
 **YOU** – Hmm... Were there any unfamiliar faces among those thugs? Anyone you hadn't seen before?
 

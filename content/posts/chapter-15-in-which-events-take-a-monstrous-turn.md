@@ -23,9 +23,9 @@ tags:
 
 **NARRATOR** – He gives you a light pat on the shoulder, then immediately turns and continues on his way. The gesture comes off a little awkward.
 
-**BOND OF STEEL** [Challenging: Success] – That's exactly why Vernon still puts up with you, even though he could have told you to get the hell out or thrown you behind bars long ago. He still believes in you.
+**BOND OF STEEL** [Challenging: Success] – That's exactly why Vernon still puts up with you, even though he could have told you to get the hell out or thrown you behind bars by now. He still believes in you.
 
-**VERNON ROCHE** – That went far better than I expected. At the very least, we've established one extremely important fact: Grave's men did not kill Lavelle, no matter how hard their leader tried to convince us otherwise. They may have desecrated the body, hung it from the tree, and concealed the circumstances of his death, but someone else fired the shot.
+**VERNON ROCHE** – That went far better than I expected. At the very least, we've established one extremely important fact: Grave's men did not kill Lavelle, no matter how hard their leader tried to convince us otherwise. They may have desecrated the body, hung it from the tree, and concealed the circumstances of his death, but everything points to someone else having fired the shot.
 
 **YOU** – Thank you... But does that mean Grave knows who did it and is covering for the real killer? What would he gain from that?
 
@@ -45,7 +45,7 @@ tags:
 
 **RESOLVE** – Whew. Thank the gods.
 
-**NARRATOR** – You trudge along the dark street. To your left rises a wall built of massive stones, separating Vizima from the outskirts. Lost in thought, you don't immediately notice a silhouette sharply outlined by the full moon some fifty meters ahead.
+**NARRATOR** – You trudge along the dark street. To your left rises a wall built of massive stones, separating Vizima from the outskirts. Lost in thought, you don't immediately notice a silhouette some fifty meters ahead, sharply outlined against the full moon.
 
 **ARTISTRY** [Medium: Success] – Like a hawk watching its prey.
 
@@ -193,7 +193,7 @@ tags:
 
 **VINCENT MEIS** – Because *he* is the exact opposite of a law-abiding citizen. He's not some gentle forest elf living peacefully among the trees, befriending animals, talking to oaks, and surviving on morning dew. He's Iorveth — leader of a Scoia'tael unit and one of the most dangerous and most wanted criminals in the region.
 
-**NARRATOR** – He slowly gets back to his feet.
+**NARRATOR** – He slowly props himself up.
 
 **VINCENT MEIS** – I won't press you about what exactly he was talking to you about, but you should know this: he's a scoundrel. A cold-blooded killer. Don't let his fine words mislead you.
 
@@ -263,7 +263,7 @@ tags:
 
 **NARRATOR** – With a single bound, he springs to his feet and disappears into the darkness. His claws clatter sharply against the cobblestones, then the sound grows fainter and fainter until it finally fades into the night. For several moments, the two of you stand in silence, watching him go. Then quiet settles over the street once more, as though the attack had never happened.
 
-**VERNON ROCHE** – Geralt, remember what I said about your talent for surprising me? You've managed it again. This is only the third day we've known each other, and already enough has happened to fill a month's worth of stories.
+**VERNON ROCHE** – Geralt, remember what I said about your talent for surprising me? You've managed it again. This is only the second day we've known each other, and already enough has happened to fill a month's worth of stories.
 
 **YOU** – To be honest, I really hope I haven't done something stupid again.
 
