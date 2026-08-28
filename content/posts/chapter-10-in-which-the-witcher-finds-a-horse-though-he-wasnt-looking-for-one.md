@@ -47,7 +47,7 @@ tags:
 
 **YOU** – By the way, why didn't you show him the snuffbox we confiscated from the junk dealer?
 
-**VERNON ROCHE** – Because I have no doubts about where it came from... And because the merchant already knows far too much as it is. There's no reason to show all our cards at once. Besides, I'd like to take a closer look at the thing this evening.
+**VERNON ROCHE** – Because I have no doubt where it came from... And because the merchant already knows far too much as it is. There's no reason to show all our cards at once. Besides, I'd like to take a closer look at the thing this evening.
 
 **NARRATOR** – You take a different route back to the tavern. Not that it looks any better here: the same neglect and poverty reign everywhere. Crooked little houses, boarded-up windows, mud, and rubbish. Apparently, once you've seen one street in the Temple Quarter, you've seen them all.
 
@@ -137,7 +137,7 @@ tags:
 
 **HORSE TRADER** – A-a-and then he went straight through the wattle fence by that tavern — the Shaggy Bear, you know. I just stood there, not knowing what to think. Then all of a sudden the gentleman comes riding back out and charges straight at me at full gallop. But I guess he couldn't stay in the saddle: he fell off the gelding right beside the fountain and started bellowing like a boar.
 
-**FORTITUDE** [Trivial: Success] – So *that's* why the... lower part of your back hurt like hell.
+**FORTITUDE** [Trivial: Success] – So *that's* why the... lower back hurt like hell.
 
 **HORSE TRADER** – I thought he'd killed himself for sure, but no... You know what they say: to a drunk, even the sea is only knee-deep. He got back up, started shouting again, waving his arms around like he was trying to drive off evil spirits, and then wandered off somewhere. And the horse came running straight over to me.
 
@@ -159,7 +159,7 @@ tags:
 
 **HORSE TRADER** – Thank you, pan soldier! Gods bless you! May every road before you be a smooth one!
 
-**SENSIBILITY** [Trivial: Success] – Vernon has decided to spare the poor bearded fellow. One night in a cell and ten lashes across the backside — all things considered, he got off lightly. This sort of thing could have landed him in much deeper trouble. Notice, too, that Vernon chose not to impose a fine. In view of the man's financial difficulties.
+**SENSIBILITY** [Trivial: Success] – Vernon has decided to spare the poor bearded fellow. One night in a cell and a flogging — all things considered, he got off lightly. This sort of thing could have landed him in much deeper trouble. Notice, too, that Vernon chose not to impose a fine. In view of the man's financial difficulties.
 
 **VERNON ROCHE** – I'll return the gelding to the royal stables myself.
 

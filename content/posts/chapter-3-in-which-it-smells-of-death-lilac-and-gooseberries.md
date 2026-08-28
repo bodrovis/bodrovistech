@@ -139,7 +139,7 @@ tags:
 
 **NARRATOR** – The words hang in the air.
 
-**VERNON ROCHE** – Still... it seems you're right. We won't manage this on our own. We'll have to negotiate with the local guards and have them send someone over with a ladder and a knife... They left the body untouched because they were waiting for us to arrive. Though the locals still managed to trample half the yard and strip the dead man of his belongings, ...so we can hardly call the crime scene untouched.
+**VERNON ROCHE** – Still... it seems you're right. We won't manage this on our own. We'll have to negotiate with the local guards and have them send someone over with a ladder and a knife... They left the body untouched because they were waiting for us to arrive. Though the locals still managed to trample half the yard and strip the dead man of his belongings, so we can hardly call the crime scene untouched.
 
 **NARRATOR** – Roche falls silent for a moment, gathering his thoughts.
 
@@ -157,7 +157,7 @@ tags:
 
 **KEEN EYE** [Trivial: Success] – More precisely, only the undergarments and boots remain.
 
-**DIALECTIC** [Easy: Success] – He was a nobleman, so his clothes were probably expensive. Hardly surprising that someone took them. Only the boots were left alone — most likely because so much foulness had collected inside that no one dared touch them.
+**DIALECTIC** [Easy: Success] – He was a nobleman, so his clothes were probably expensive. Hardly surprising that someone took them. Only the boots were left alone — most likely because so much filth had collected inside that no one dared touch them.
 
 **VERNON ROCHE** – Not to mention those young delinquents who are still mutilating the corpse by throwing stones at it.
 
@@ -323,7 +323,7 @@ tags:
 
 **YOU** – Maybe... I didn't want to be a witcher anymore.
 
-**BOND OF STEEL** [Challenging: Success] – The man suddenly gives you a sympathetic look. Apparently, he knows what that feels like. He's had difficult days of his own — days when he wanted to lay down his arms and surrender to himself.
+**BOND OF STEEL** [Challenging: Success] – The man suddenly gives you a sympathetic look. Apparently, he knows what that feels like. He's had difficult days of his own — days when he wanted to lay down his arms and give up on himself.
 
 **VERNON ROCHE** – Well... Let's see. Perhaps there's something else inside.
 
@@ -363,7 +363,7 @@ tags:
 
 **UMBRA** [Medium: Success] – You are sinking into the abyss, deeper and deeper.
 
-**FOREBODING** [Challenging: Success] – The lights of heaven will fade, and darkness will close in... And the world will smell of gooseberries and lilac...
+**FOREBODING** [Challenging: Success] – The lights of heaven will fade, and darkness will close in... And the world will smell of lilac and gooseberries...
 
 **LETTER** – Your dear friend...
 

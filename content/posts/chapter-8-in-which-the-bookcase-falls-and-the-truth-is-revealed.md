@@ -33,7 +33,7 @@ tags:
 
 **NARRATOR** – He seems to notice the guilty look on your face.
 
-**VERNON ROCHE** – There will be no sermon on your dissolute lifestyle. Nor do I care to repeat myself: I'm not your father, and what happens in your free time is your own affair. For now, all that matters is being fit to work.
+**VERNON ROCHE** – There will be no sermon on your dissolute lifestyle. Nor do I care to repeat myself: I'm not your father, and what happens in your free time is your own affair. For now, all that matters is being fit for work.
 
 **NARRATOR** – He gives a quiet grunt. Perhaps it was an expression of sympathy. Probably not.
 
@@ -75,7 +75,7 @@ tags:
 
 **NARRATOR** – Vernon puts the report away in his bag and abruptly rises to his feet.
 
-**VERNON ROCHE** – We must go to the Merchant Quarter at once and take a statement from merchant Leuvaarden. We need to establish exactly when his emissary disappeared. On the way, we should also stop by the junk dealer's shop, as pan Meis suggested.
+**VERNON ROCHE** – We must go to the Merchant Quarter at once and take a statement from the merchant Leuvaarden. We need to establish exactly when his emissary disappeared. On the way, we should also stop by the junk dealer's shop, as pan Meis suggested.
 
 **BOND OF STEEL** [Medium: Success] – Vernon seems more tense than he did yesterday. His hand keeps dropping reflexively to the hilt of his sword — when facts are scarce and questions too numerous, the familiar weight of a weapon helps put one's thoughts in order.
 
@@ -195,7 +195,7 @@ tags:
 
 **STEADINESS** – Last time this "maneuver" landed us at the bottom of a garbage pit.
 
-**DEFTNESS** – Alas, the intended movement turns into some bizarre gesture instead. The fingers twist into an impossible configuration, the air before the palm suddenly begins to shudder, and then a loud crack rings out.
+**DEFTNESS** – Alas, the intended movement turns into some bizarre gesture instead. The fingers twist into an impossible configuration, the air in front of your palm suddenly begins to shudder, and then a loud crack rings out.
 
 **REFLEX** [Challenging: Failure] – Back!..
 
@@ -327,7 +327,7 @@ tags:
 
 **STEADINESS** – Now that is a very bad sign.
 
-**TIBALD** – I'm sorry, but I resold them the very next day. I had no desire to keep merchandise like that around for long: the guards who occasionally visit my establishment might have started asking inconvenient questions. Some elderly lady bought the weapons. I agreed to a very low price.
+**TIBALD** – I'm sorry, but I resold them the very next day. I had no desire to keep merchandise like that around for long: the guards who occasionally visit my establishment might have started asking inconvenient questions. Some elderly lady bought the weapons. I let them go for a very low price.
 
 **MASQUE** [Challenging: Failure] – Maestro, perhaps she was an admirer of yours? A secret devotee in her twilight years, dreaming of keeping the blades close to her heart!
 

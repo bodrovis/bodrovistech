@@ -23,11 +23,11 @@ tags:
 
 **YOU** – So she's a half-blood?
 
-**CODEX** [Challenging: Success] – For many years now, there has been a ghetto in the Temple Quarter inhabited exclusively by nonhumans. And yes, most of its residents are elves, though you occasionally find dwarves there as well — usually the poorer sort. To call their lives happy or peaceful, however, would be a considerable stretch. Humans had always regarded the inhabitants of the ghetto with suspicion, but after several guerrilla raids carried out by the Scoia'tael, that suspicion hardened into open hostility. There were rumors — not entirely unfounded — that some nonhumans had dealings with the guerrillas and secretly provided them with temporary shelter in the city.
+**CODEX** [Challenging: Success] – For many years now, there has been a ghetto in the Temple Quarter inhabited exclusively by nonhumans. And yes, most of its residents are elves, though you occasionally find dwarves there as well — usually the poorer sort. To call their lives happy or peaceful, however, would be a considerable stretch. Humans have always regarded the inhabitants of the ghetto with suspicion, but after several guerrilla raids carried out by the Scoia'tael, that suspicion hardened into open hostility. There were rumors — not entirely unfounded — that some nonhumans had dealings with the guerrillas and secretly provided them with temporary shelter in the city.
 
 **YOU** – But where did all this hatred even come from? Why can't humans simply live in peace with these half-elves?
 
-**CODEX** – Good question. A detailed answer would take roughly three or four hours. In short, the elves arrived here — on this continent — first. Humans were the latecomers. In many respects, humans were inferior to elves, but they proved far less scrupulous and, moreover, bred like rabbits. In the end, it was they who took control of the lands most vital for survival. As the defeated side, the elves were left with two choices: scrape out an existence on the fringes of the known world, or move into human cities, where they are treated abominably. Things are different for dwarves and gnomes. They managed to establish mutually beneficial relations with humans. Dwarves, for instance, are known for their thrift and run several major banks in Vizima. An elf here is barely allowed to own a shop, let alone a bank.
+**CODEX** – Good question. A detailed answer would take roughly three or four hours. In short, the elves arrived here — on this continent — first. Humans were the latecomers. In many respects, humans were inferior to elves, but they proved far less scrupulous and, moreover, bred like rabbits. In the end, it was they who took control of the lands most vital for survival. As the defeated side, the elves were left with two choices: eke out an existence on the fringes of the known world, or move into human cities, where they are treated abominably. Things are different for dwarves and gnomes. They managed to establish mutually beneficial relations with humans. Dwarves, for instance, are known for their thrift and run several major banks in Vizima. An elf here is barely allowed to own a shop, let alone a bank.
 
 **WHISPER** [Medium: Success] – Put simply, humans have always been wary of those who are different. They don't trust these *outcomelings*. These *strangelings*.
 
@@ -267,4 +267,4 @@ tags:
 
 **DOMINANCE** [Trivial: Success] – Stop it.
 
-**VERNON ROCHE** – I don't know by how much, exactly. There was nothing on the subject in the documents good sir Dukat provided me with. I suggest you ask people who knew you before you started losing your swords, your boots, and your memory.
+**VERNON ROCHE** – I don't know by how much, exactly. There was nothing on the subject in the documents Bernard Ducat provided me with. I suggest you ask people who knew you before you started losing your swords, your boots, and your memory.

@@ -42,9 +42,9 @@ tags:
 
 **BRAWN** [Trivial: Success] – Not bad.
 
-**KEEN EYE** [Challenging: Failure] – The amount of damage is almost impressive. Maybe there was a mass brawl here? Or someone attacked you?
+**KEEN EYE** [Challenging: Failure] – The amount of damage is almost impressive. Maybe there was a full-blown brawl here? Or someone attacked you?
 
-**NARRATOR** – You have absolutely no idea what happened in this room. Whatever it was... you were clearly right in the middle of it. And judging by the looks of things, you didn't come out on top.
+**NARRATOR** – You have absolutely no idea what happened in this room. Whatever it was... you were clearly right in the middle of it. And judging by the look of things, you didn't come out on top.
 
 **FORTITUDE** [Medium: Failure] – Your head feels like a wyvern's nest on fire. Damn, it hurts like hell... Seems you had too much Swallow yesterday. Or was it White Gull?
 
@@ -72,7 +72,7 @@ tags:
 
 **BOND OF STEEL** [Trivial: Success] – Two swords. Any witcher worth his salt carries two swords. One for men... the other...
 
-**NARRATOR** – Suddenly, the medallion you slipped around your neck without thinking a minute ago begins to vibrate. Barely noticeable at first... then stronger and stronger, like an insect waking from sleep and stretching its tiny legs. You lower an uneasy gaze to your chest. It's a battered metal medallion shaped like a wolf's head, its jaws bared. And then, to your utter amazement, a *voice* comes from its mouth.
+**NARRATOR** – Suddenly, the medallion you slipped around your neck a minute ago without thinking begins to vibrate. Barely noticeable at first... then stronger and stronger, like an insect waking from sleep and stretching its tiny legs. You lower an uneasy gaze to your chest. It's a battered metal medallion shaped like a wolf's head, its jaws bared. And then, to your utter amazement, a *voice* comes from its mouth.
 
 **HORRIFIC MEDALLION** – OH, FORGET IT, kumpel! No need to overload those half-baked brains of yours.
 
@@ -90,7 +90,7 @@ tags:
 
 **RESOLVE** [Challenging: Success] – Oh yes.
 
-**MASQUE** [Impossible: Failure] – Maestro, it is perfectly obvious that the swords were taken from you in an unequal battle. Surely you fought an entire horde of enemies and suffered a crushing, yet honorable defeat! Minstrels will sing of this battle! It shall live on through the ages!
+**MASQUE** [Impossible: Failure] – Maestro, it is perfectly obvious that the swords were taken from you in an unequal battle. Surely you fought an entire horde of enemies and suffered a crushing yet honorable defeat! Minstrels will sing of this battle! It shall live on through the ages!
 
 **RESOLVE** – Nonsense. You lost them. Both swords. One forged from the finest meteorite iron; the other silvered by the goddess of fate herself. Gone without a trace.
 
@@ -116,17 +116,17 @@ tags:
 
 **FOREBODING** [Challenging: Success] – Wait. Something feels very wrong. You probably shouldn't do it. Sometimes ignorance really is bliss.
 
-**NARRATOR** – Your hand freezes for a moment. After a brief hesitation, you wipe the mirror anyway and cautiously peer into it...
+**NARRATOR** – Your hand freezes for a moment. After a brief hesitation, you wipe the mirror clean anyway and cautiously peer into it...
 
 **HORRIFIC MEDALLION** – Kumpel, that was an EXTREMELY ILL-ADVISED move! You're never going to *unsee* that.
 
-**NARRATOR** – A grim, gaunt man of indeterminate age stares back at you. His face is marked by a terrible scar and a strange, unnatural half-smile frozen in place. White hair hangs in dirty strands. Yellow, catlike eyes look predatory and yet endlessly tired.To complete the sorry picture, his skin is deathly pale and dry, covered in what look like pockmarks.
+**NARRATOR** – A grim, gaunt man of indeterminate age stares back at you. His face is marked by a terrible scar and a strange, unnatural half-smile frozen in place. White hair hangs in dirty strands. Yellow, catlike eyes look predatory and yet endlessly tired. To complete the sorry picture, his skin is deathly pale and dry, covered in what look like pockmarks.
 
 **YOU** – Gods, who the hell is that?!
 
 **ARTISTRY** [Medium: Failure] – A corpse. Obviously. *Rigor mortis* is plain to see. You're dead, my friend. Maybe have been for years.
 
-**WHISPER** [Easy: Success] – You were warned, by the way. Though nobody expected *this*. What happened to your eyes? And what's with that convulsive grimace you seem to be making without even realizing it?
+**WHISPER** [Easy: Success] – You were warned, by the way. Though nobody expected *this*. What happened to your eyes? And what's with that convulsive grimace you're making without even realizing it?
 
 **YOU** – No idea... I suppose it means something?
 
@@ -134,7 +134,7 @@ tags:
 
 **VICE** [Medium: Success] – Or maybe it's for the *ladies*. That's how you lure romantic souls into your trap — women dreaming of a dependable man who's got everything under control.
 
-**WHISPER** [Trivial: Success] – *You* have everything under control? You've lost your swords, your boot, your memory, and gods know what else. Don't fool yourself. The only thing you've got a grip on is a bottle of booze. And even that is a figurative bottle for now, existing only in your fevered imagination, since there doesn't appear to be any alcohol in the room either.
+**WHISPER** [Trivial: Success] – *You* have everything under control? You've lost your swords, your boot, your memory, and gods know what else. Don't fool yourself. The only thing you've got a grip on is a bottle of booze. And even that bottle is purely figurative for now, existing only in your fevered imagination, since there doesn't appear to be any alcohol in the room either.
 
 **CODEX** [Challenging: Success] – Nothing to worry about. If you really are a witcher, this is more or less how you're supposed to look. People won't be too surprised by your face, though it must be said, it's a pretty lousy one.
 
@@ -142,7 +142,7 @@ tags:
 
 **CODEX** – Because witchers, my little drinking enthusiast, usually undergo severe mutations. The Trial of the Grasses... Children of about fourteen are put through it. The few who survive that hell gain inhuman reflexes, heightened senses, and catlike vision. The rest gain nothing but an unmarked grave in the nearest cemetery.
 
-**NARRATOR** – You slowly step away from the mirror, having had more than enough time to enjoy the sight. It seems you and your reflection are equally unhappy with the introduction.
+**NARRATOR** – You slowly step away from the mirror, having had more than enough of the sight. It seems you and your reflection are equally unhappy with the introduction.
 
 **CODEX** – ...These days, however, there is almost no one left who can perform the Trial properly. New witchers are hardly *made* anymore. Either way, you owe your white hair and yellow eyes to some unknown sadist who spent a long time poisoning you with elixirs and mutagens.
 

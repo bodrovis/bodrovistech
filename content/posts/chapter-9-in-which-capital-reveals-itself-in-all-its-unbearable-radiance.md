@@ -49,7 +49,7 @@ tags:
 
 **NARRATOR** – You nod vigorously, making it abundantly clear that Vernon's every word has your full attention.
 
-**FORTITUDE** [Medium: Failure] – You should probably stop shaking your head like that before your vision starts to swim. Besides, you're not a horse.
+**FORTITUDE** [Medium: Failure] – You should probably stop nodding like that before your vision starts to swim. Besides, you're not a horse.
 
 **VERNON ROCHE** – I will do the talking. You are to keep quiet unless the master of the house addresses you directly. Touch nothing, do not stray a single step from my side, and do not breathe wine fumes in the merchant's face.
 
@@ -67,7 +67,7 @@ tags:
 
 **WHISPER** [Medium: Success] – Men of his importance usually arrange audiences several days in advance. This sort of eagerness means he really does want something from us.
 
-**NARRATOR** – You are shown inside the mansion and invited into the study. A heavy writing desk stands in the middle of the room, with a broad leather chair behind it — clearly purchased by a man accustomed to spending entire days working in a chair. Along the walls, bookcases stand in ranks like the king's guards: just as tall as Tibald's, only many times more expensive and with no obvious desire to collapse on top of you at the first opportunity.
+**NARRATOR** – You are shown inside the mansion and invited into the study. A heavy writing desk stands in the middle of the room, with a broad leather chair behind it — clearly purchased by a man accustomed to spending entire days at his desk. Along the walls, bookcases stand in ranks like the king's guards: just as tall as Tibald's, only many times more expensive and with no obvious desire to collapse on top of you at the first opportunity.
 
 **KEEN EYE** [Medium: Success] – Besides encyclopedias and reference works, the shelves hold ledgers and various documents.
 
@@ -221,7 +221,7 @@ tags:
 
 **VERNON ROCHE** – Tell me, where did you obtain this information?
 
-**LEUVAARDEN** – Oh, pan Roche, believe me: I have sources of my own. I am a man of influence, and there is much I can accomplish. Capital, you see, has a remarkable ability to open the most ingenious locks and uncover the best-hidden secrets.
+**LEUVAARDEN** – Oh, pan Roche, believe me: I have sources of my own. I am a man of influence, and there is much I can accomplish. Capital, you see, has a remarkable ability to open the most intricate locks and uncover the best-hidden secrets.
 
 **NARRATOR** – He purrs the last words with utterly indescribable self-satisfaction.
 
@@ -283,7 +283,7 @@ tags:
 
 **WHISPER** – What that actually means is: "The last thing I want is any competition whatsoever."
 
-**LEUVAARDEN** – But the real question is what methods are being used. And in this case, I must say, the methods hardly seem aboveboard. According to the information available to me, the drug trade has flourished in the Temple Quarter. Raw materials are smuggled in from the southern countries, while skilled alchemists in Vizima's underground laboratories turn them into finished product that has quite literally flooded the streets.
+**LEUVAARDEN** – But the real question is what methods are being used. And in this case, I must say, the methods hardly seem aboveboard. According to the information available to me, the drug trade has flourished in the Temple Quarter. Raw materials are smuggled in from the southern countries, while skilled alchemists in Vizima's underground laboratories turn them into a finished product that has quite literally flooded the streets.
 
 **VICE** [Easy: Success] – Now *that* is excellent news! It means getting hold of some fisstech for personal use should be easy enough. Make that a priority at the first opportunity!
 
@@ -381,7 +381,7 @@ tags:
 
 **BRAWN** [Medium: Success] – Now *that's* more like it! *Real men* ought to solve every problem exactly this way!
 
-**LEUVAARDEN** – Unfortunately, these are not empty threats. Armand commands one of the order's banners, which means he has a band of equally reckless daredevils at his disposal — men capable of almost anything. Including taking the field against forces many times their own strength.
+**LEUVAARDEN** – Unfortunately, these are not empty threats. Armand commands one of the order's banners, which means he has a band of equally reckless daredevils at his disposal — men capable of almost anything. Including taking the field against enemies many times their number.
 
 **CODEX** [Challenging: Success] – The Order of the Chalice arose during one of the Northern Wars, when ravaged settlements were left defenseless and the roads filled with marauders. Its brothers swore to protect civilians, pilgrims, and convoys carrying food. The chalice on their coat of arms symbolizes shelter, sustenance, and safety — things that should be offered to anyone in need.
 
@@ -421,7 +421,7 @@ tags:
 
 **NARRATOR** – Declan solemnly places a hand over his chest.
 
-**LEUVAARDEN** – But what would you have me do? Demand Armand's arrest? On what grounds? He hasn't actually done anything. Yes, he talks a great deal, but so what? People are generally prone to talking a great deal. The king has no time to involve himself in these complications at present. His Majesty is occupied with affairs of state importance — in particular, difficult negotiations with Redania.
+**LEUVAARDEN** – But what would you have me do? Demand Armand's arrest? On what grounds? He hasn't actually done anything. Yes, he talks a great deal, but so what? People are generally prone to talking a great deal. The king has no time to involve himself in these complications at present. His Majesty is occupied with matters of state — in particular, difficult negotiations with Redania.
 
 **RESOLVE** [Medium: Failure] – How did you end up mixed up in all of this? The interests of wealthy men, drugs, riots, enemy propaganda, some kind of backroom maneuvering...
 

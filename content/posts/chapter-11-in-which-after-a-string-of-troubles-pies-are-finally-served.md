@@ -93,7 +93,7 @@ tags:
 
 **NARRATOR** – Apparently, your face falls so dramatically that Enna hastens to cheer you up.
 
-**ENNA** – Don't worry! The next part will probably be finished soon. The story was written by a famous author, and she usually puts out new works pretty quickly. As soon as the book comes out, I'll be sure to let you know. Or better yet: come visit us, and I'll read it aloud to you!
+**ENNA** – Don't worry! The next part will probably be finished soon. The story was written by a famous author, and she usually publishes new books pretty quickly. As soon as the book comes out, I'll be sure to let you know. Or better yet: come visit us, and I'll read it aloud to you!
 
 **UMBRA** [Easy: Success] – You would like that very much... Just sitting with this little girl by the hearth, listening to some innocent children's tale. Not thinking about corpses, merchants, captains, thieves-in-law, or the stranger's name you now have to carry. Not remembering that one day the scent of lilac and gooseberries will find you again.
 
@@ -127,7 +127,7 @@ tags:
 
 **NARRATOR** – The girl's blue eyes widen. Her voice drops to a barely audible whisper.
 
-**ENNA** – That they won't bother finding out who's really guilty. Even if all you ever did was bake pies, mend boots, or sell books... Tribunal and punishment await everyone.
+**ENNA** – That they won't bother finding out who's really guilty. Even if all you ever did was bake pies, mend boots, or sell books... There will be a tribunal. And everyone will be punished.
 
 **UMBRA** – *Tribunal.* A grim word. Enna probably doesn't even fully understand what it means. She simply remembered the sound of it: heavy, iron-hard, adult.
 
@@ -175,7 +175,7 @@ tags:
 
 **NARRATOR** – Enna nods, listening to you with rapt attention.
 
-**YOU** – If Iorveth promised to help... I think he really will stand by you when things get difficult. And I... I'll protect you too, as best I can. The people of the ghetto won't be left alone. Hope for the best.
+**YOU** – If Iorveth promised to help... I think he really will stand by you when things get difficult. And I... I'll protect you too, as best I can. The people of the ghetto won't have to face this alone. Hope for the best.
 
 **UMBRA** – Even if you don't believe in a happy ending yourself... that doesn't mean there won't be one.
 
@@ -209,7 +209,7 @@ tags:
 
 **YOU** – Professional help. I've asked you so many questions! Adults usually charge money for that sort of work and call it a consultation.
 
-**NARRATOR** – Enna looks at the coins differently now: not as some random gift, but as money she honestly earned. That, apparently, makes all the difference.
+**NARRATOR** – Enna looks at the coins differently now: not as a random gift, but as money she honestly earned. That, apparently, makes all the difference.
 
 **YOU** – So, fair is fair. The difference is yours.
 

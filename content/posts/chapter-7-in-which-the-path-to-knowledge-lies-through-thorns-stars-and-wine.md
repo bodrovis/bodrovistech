@@ -49,7 +49,7 @@ tags:
 
 **NARRATOR** – The alchemist shakes his goatee and waves both hands energetically.
 
-**KALKSTEIN** – No, no, pan Beaupré, I rather doubt it. I simply noticed the medallion, the yellow eyes, and became extraordinarily interested in you from a scientific point of view...
+**KALKSTEIN** – No, no, pan Beaupré, I rather doubt it. I simply noticed the medallion and the yellow eyes, and became extraordinarily interested in you from a scientific point of view...
 
 **NARRATOR** – He hastily adds:
 
@@ -75,7 +75,7 @@ tags:
 
 **KALKSTEIN** – I happened to overhear your conversation about your financial difficulties... Don't worry, such misfortunes can befall anyone. I suppose you don't have any contracts at the moment?
 
-**DIALECTIC** [Challenging: Success] – Wait. He's a scholar. This is exactly the sort of person you should ask about your mysterious condition. Perhaps Kalkstein can shed some light on it. Worst case, he understands nothing — or understands it completely wrong and then writes a detailed paper about it.
+**DIALECTIC** [Challenging: Success] – Wait. He's a scholar. This is exactly the sort of person you should ask about your mysterious condition. Perhaps Kalkstein can shed some light on it. Worst case, he understands nothing — or gets it completely wrong and then writes a detailed paper about it.
 
 **SENSIBILITY** [Easy: Success] – Go on, don't be shy. This alchemist is perfectly harmless. More than that, the subject might genuinely interest him.
 
@@ -89,7 +89,7 @@ tags:
 
 **SENSIBILITY** – He believes you. He doesn't think you're just messing around.
 
-**KALKSTEIN** – In other words, you've lost your memory? Amnesia is rather unusual, though I have read about cases of this kind. Curious that some memories have remained intact. As you understand, my own field lies elsewhere, but... Well, allow me to ask you a few questions commonly used in situations like this.
+**KALKSTEIN** – In other words, you've lost your memory? Amnesia is rather unusual, though I have read about cases of this kind. Curious that some memories have remained intact. As you can imagine, my own field lies elsewhere, but... Well, allow me to ask you a few questions commonly used in situations like this.
 
 **CODEX** [Trivial: Success] – Oh, this is my department! Pan Archiwariusz Pedantski enters the fray — scourge of dusty folios and forgotten facts.
 
@@ -153,7 +153,7 @@ tags:
 
 **NARRATOR** – You tear hungrily into a piece of meat. Kalkstein, who had sobered up somewhat during the conversation about amnesia, gradually slips back into his former wine-warmed friendliness. His eyes begin to gleam again, his goatee comes back to life, and his voice takes on that peculiar creaking tone of a man about to deliver a lecture.
 
-**DIALECTIC** [Easy: Success] – Since you have a genuine scholar, alchemist, and man paying for your dinner sitting right in front of you, now is the perfect time to choose a topic. Something simple enough to ask, but interesting enough to discuss.
+**DIALECTIC** [Easy: Success] – Since you have a genuine scholar and alchemist sitting right in front of you — not to mention a man paying for your dinner — now is the perfect time to choose a topic. Something simple enough to ask, but interesting enough to discuss.
 
 **VICE** [Challenging: Failure] – For example, ask if he distills his own moonshine! And if he does, whether he holds public tastings for homeless witchers.
 

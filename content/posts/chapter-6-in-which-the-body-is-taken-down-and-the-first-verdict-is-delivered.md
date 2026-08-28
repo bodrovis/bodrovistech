@@ -37,7 +37,7 @@ tags:
 
 **NARRATOR** – The shorter guard busily sets the ladder beneath the tree, checks that its feet aren't slipping in the mud, and steadies it with both hands.
 
-**GUARD WITH THE LADDER** – Beg pardon, pan Roche! Humbly report, sir, we were told you needed help with some tree and a dead man. So we brought the saw. But don't you worry — my mate here'll snip through whatever needs snipping in no time!
+**GUARD WITH THE LADDER** – Beg pardon, pan Roche! Beg pardon, pan Roche! We were told you needed help with some tree and a dead man. So we brought the saw. But don't you worry — my mate here'll snip through whatever needs snipping in no time!
 
 **NARRATOR** – Vernon merely shakes his head in silence. The guard with the ladder beams at him. His companion spits on his palms, climbs a few rungs, awkwardly gets himself into position, and starts sawing through the wet, swollen rope. The saw moves lazily back and forth.
 
@@ -145,11 +145,11 @@ tags:
 
 **VERNON ROCHE** – What makes you think that?
 
-**YOU** – The rope marks are there, but they're just indentations. He wasn't struggling anymore.
+**YOU** – The rope marks are there, but they're just indentations. He doesn't seem to have struggled against the bindings.
 
 **RUNE** – Get this — some freak tied him up after he was already dead! That's fucked up!
 
-**VERNON ROCHE** – That is... highly unusual. I think we should wait for the coroner to confirm it. But if you're right, when could the binding have taken place? Hardly after he was already dangling five feet off the ground...
+**VERNON ROCHE** – That is... highly unusual. I think we should wait for the coroner to confirm it. But if you're right, when could the binding have taken place? Hardly after he was already dangling well above the ground...
 
 **NARRATOR** – You pause, thinking it over.
 
@@ -273,7 +273,7 @@ tags:
 
 **VERNON ROCHE** – Enough. Tell me, pan Garte, perhaps you'd be willing to accept this ring as compensation for the trouble we've caused and for our lodging? We won't be staying more than five or six days.
 
-**NARRATOR** – Your companion fishes a large ring set with a massive emerald from his belt pouch and holds it out to Garte. The innkeeper snatches up the piece with poorly concealed greed and examines it closely, paying particular attention to the stone.
+**NARRATOR** – Your companion fishes a large ring set with a massive emerald from his belt pouch and holds it out to Garte. The innkeeper snatches up the ring with poorly concealed greed and examines it closely, paying particular attention to the stone.
 
 **VICE** [Easy: Success] – O-o-oh, you could buy a lot of booze with a ring like that. An indecent amount. Enough to swim in — and not alone, either, but with some lovely creature for company.
 
@@ -281,7 +281,7 @@ tags:
 
 **KEEN EYE** [Challenging: Failure] – The stone really is large. No telling whether it's genuine, though. Then again, in your current financial situation even a piece of glass looks like a crown jewel.
 
-**GARTE** – Agreed, pan Roche. The two rooms at the far end of the second floor are yours. Unfortunately, pan witcher will have to stay in the one with the broken window — which, I might add, he smashed with his own hands. The glazier promised to replace it the day after tomorrow. And please, pan Roche: keep your... partner under control. As I already explained, business is bad enough as it is.
+**GARTE** – Agreed, pan Roche. The two rooms at the far end of the second floor are yours. Unfortunately, pan witcher will have to stay in the one with the broken window — which, I might add, he smashed himself. The glazier promised to replace it the day after tomorrow. And please, pan Roche: keep your... partner under control. As I already explained, business is bad enough as it is.
 
 **VERNON ROCHE** – Of course. Thank you.
 

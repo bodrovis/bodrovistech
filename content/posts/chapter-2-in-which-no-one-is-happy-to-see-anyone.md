@@ -37,7 +37,7 @@ tags:
 
 **NARRATOR** – Noticing your attention, the man in the turban casually raises a hand and gives a short nod, inviting you to come closer. You take a few unsteady steps toward him.
 
-**KEEN EYE** [Medium: Success] – Your gaze is drawn to the long sword at the stranger's hip. The blade rests in a well-made scabbard — apparently, it's well cared for.
+**KEEN EYE** [Medium: Success] – Your gaze is drawn to the long sword at the stranger's hip. The blade rests in a well-made scabbard — apparently, he takes good care of it.
 
 **WHISPER** [Easy: Success] – Well... Unlike you, he has at least one sword.
 
@@ -145,7 +145,7 @@ tags:
 
 **NARRATOR** – He frowns.
 
-**VERNON ROCHE** – I think that's enough for now. If you have any other questions about the case, we can discuss them this evening. And... from what I understand, you still haven't taken the body down from the tree. Which means it's been hanging there for five days now... Well. In any case, I'd like to speak with the innkeeper first. He may know something.
+**VERNON ROCHE** – I think that's enough for now. If you have any other questions about the case, we can discuss them this evening. And... from what I understand, you still haven't taken the body down from the tree. Which means this is the fifth day it's been hanging there... Well. In any case, I'd like to speak with the innkeeper first. He may know something.
 
 ---
 
@@ -181,7 +181,7 @@ tags:
 
 **NARRATOR** – For a moment, Garte stares at you in astonishment, clearly not expecting such eloquence. Then his face quickly turns dark red and his eyes narrow.
 
-**GARTE** – Listen, my good man... Did you not hear what I told you not a minute ago? I am *not* an innkeeper. I manage this establishment — one of several. I have other responsibilities. Not to mention that you trashed your room, broke the stuffed bird hanging by the entrance, and...
+**GARTE** – Listen, my good man... Didn't you hear what I told you not a minute ago? I am *not* an innkeeper. I manage this establishment — one of several. I have other responsibilities. Not to mention that you trashed your room, broke the stuffed bird hanging by the entrance, and...
 
 **DOMINANCE** [Medium: Success] – What is this worthless peasant even mumbling about??? YOU are the law here — or at least something close to it! It's time to put him in his place once and for all. Time to show some real TOUGHNESS!
 
@@ -227,7 +227,7 @@ tags:
 
 **NARRATOR** – He angrily jabs a finger at something behind the counter.
 
-**GARTE** – That was too much even for Sylvie, and she'd seen all kinds of customers in her two years working here — Grave's cutthroats included. So I bow at your feet, pan witcher! Now I have neither an employee nor any customers!
+**GARTE** – That was too much even for Sylvie, and she'd seen all kinds of customers during her two years here — Grave's cutthroats included. So I bow at your feet, pan witcher! Now I have neither an employee nor any customers!
 
 **DIALECTIC** [Medium: Success] – Hmm... That means you still had your swords three days ago. Well, at least one sword. Some good news, finally. It still doesn't explain what you did with your weapons afterward, though.
 
@@ -241,7 +241,7 @@ tags:
 
 **DISCERNMENT** [Challenging: Failure] – You can tell he's angry again, but you have no idea why.
 
-**GARTE** – Not so fast, gentlemen. Pan witcher still owes this establishment one hundred and twenty orens for the wrecked room and the drinks. And I might add, he drank enough for a whole gang of dwarves.
+**GARTE** – Not so fast, gentlemen. Pan witcher still owes this establishment one hundred and twenty orens for the damage to the room and the drinks. And I might add, he drank enough for a whole gang of dwarves.
 
 **CODEX** [Easy: Failure] – Orens?.. What are "orens"?
 
@@ -277,7 +277,7 @@ tags:
 
 ---
 
-**NARRATOR** – You pull open the front door and step uncertainly outside. The world before you is painted mostly in gray and muddy brown. Spring has already reached the city: puddles lie scattered across the unpaved roads, while filthy, thinning patches of snow still cling to the ditches. Ahead is a small square, dominated by the proud remains of a half-ruined fountain that clearly hasn't worked in years. At its center stands the statue of some unknown gentleman, generously coated in bird shit. A cluster of shabby little houses crowds around the square. On the wall of the nearest one, someone has scrawled in crooked letters: **"NONHUMANS OUT!"** Not far from the fountain, a pack of children around six years old are running about in torn clothes. They shout and laugh, apparently oblivious to the bleak little world around them.
+**NARRATOR** – You pull open the front door and step uncertainly outside. The world before you is painted mostly in shades of gray and muddy brown. Spring has already reached the city: puddles lie scattered across the unpaved roads, while filthy, thinning patches of snow still cling to the ditches. Ahead is a small square, dominated by the proud remains of a half-ruined fountain that clearly hasn't worked in years. At its center stands the statue of some unknown gentleman, generously coated in bird shit. A cluster of shabby little houses crowds around the square. On the wall of the nearest one, someone has scrawled in crooked letters: **"NONHUMANS OUT!"** Not far from the fountain, a pack of children around six years old are running about in torn clothes. They shout and laugh, apparently oblivious to the bleak little world around them.
 
 **FOREBODING** [Medium: Success] – A strange feeling takes hold of you... Yes. Spring has come to the capital. You are standing in the Temple Quarter, home to those who have lost almost everything, hope included. Hope that one day they might crawl out of this filth and grinding poverty. East of here stands Saint Lebioda's Hospital — a place for those whose hopes are fainter still. People often end up there not to be cured. They go there to die. Yes. You can smell it. That vile, clinging stench that, once known, can never quite be forgotten. Wet rags. Cheap herbs. Vomit. Rot. And the quiet despair of a person's final days.
 
@@ -371,7 +371,7 @@ tags:
 
 **JASKIER** – Oh no, sir, I wasn't even in Vizima at the time of that tragic event. I arrived later, and a few chance acquaintances at the tavern told me that the poor fellow had been killed by some dreadful beast. Which is why I sincerely hope my dear friend will return to his proper calling... and, instead of destroying lutes, turn his attention to monsters.
 
-**BRAWN** [Challenging: Success] – For the briefest instant, he is seized by an overwhelming urge to hit you. Hard. Just for a moment... He quickly suppresses the impulse, apparently surprised by it himself.
+**BRAWN** [Challenging: Success] – For the briefest instant, Jaskier is seized by an overwhelming urge to hit you. Hard. Just for a moment... He quickly suppresses the impulse, apparently surprised by it himself.
 
 **VERNON ROCHE** – Very well. Thank you. If you learn anything new or happen to remember something important, please let us know at once.
 

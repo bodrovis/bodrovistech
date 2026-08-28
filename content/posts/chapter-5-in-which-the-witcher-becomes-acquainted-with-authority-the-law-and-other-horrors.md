@@ -41,7 +41,7 @@ tags:
 
 **VERNON ROCHE** – Private!
 
-**NARRATOR** – No response. The soldier is in no condition for drill duty today.
+**NARRATOR** – No response. The soldier is in no condition for guard duty today.
 
 **VERNON ROCHE** – Private, I'm talking to you!
 
@@ -55,7 +55,7 @@ tags:
 
 **JETHRO** – P-Private Jethro, pan! Took up my post at eight this morning. No incidents to report since then. I'm in perfectly normal condition, guarding pan Vincent's office!
 
-**NARRATOR** – He struggles to focus on Vernon and attempts a salute. It goes badly: his hand first wanders somewhere toward his neck, then pokes himself in the cheek, before dropping limply to his side.
+**NARRATOR** – He struggles to focus on Vernon and attempts to salute. It goes badly: his hand first wanders somewhere toward his neck, then pokes himself in the cheek, before dropping limply to his side.
 
 **VERNON ROCHE** – "Normal"?!
 
@@ -63,7 +63,7 @@ tags:
 
 **NARRATOR** – Jethro's right eye, still twitching rhythmically, remains fixed on Vernon. The left suddenly drifts off to the side and locks directly onto you.
 
-**BOND OF STEEL** [Easy: Success] – Even in this state, he instinctively twists and wriggles his way out of trouble. It's simply in his nature. Deny the offense before a superior officer to the bitter end. That wild little hope shared by soldiers of every age keeps whispering that somehow, just maybe, he might still get away with it.
+**BOND OF STEEL** [Easy: Success] – Even in this state, he instinctively twists and wriggles his way out of trouble. It's simply in his nature. Deny the offense to a superior officer to the bitter end. That wild little hope shared by soldiers of every age keeps whispering that somehow, just maybe, he might still get away with it.
 
 **VERNON ROCHE** – Thank the gods I don't have time to deal with you right now, or I'd give you a week in the guardhouse for this kind of nonsense!
 
@@ -137,7 +137,7 @@ tags:
 
 **NARRATOR** – The unfortunate guard somehow pins the halberd under one elbow, smacks himself in the forehead with the haft, and pulls the door open with both hands.
 
-**VERNON ROCHE** – And get yourself into some kind of proper state! If I ever see you on duty like this again, I promise you'll regret it dearly. And just what Captain Meis is doing while all this goes on, I'd very much like to know!
+**VERNON ROCHE** – And get yourself into some kind of fit state for duty! If I ever see you on duty like this again, I promise you'll regret it dearly. And just what Captain Meis is doing while all this goes on, I'd very much like to know!
 
 **NARRATOR** – The door finally swings open, and you step into a room that is unexpectedly cozy. It smells of wax, dry paper, tobacco, and something meaty — perhaps yesterday's dinner. A fire crackles cheerfully in the hearth to the left. On the right hangs a detailed map of Vizima and the surrounding area. Directly opposite the entrance stands a wooden desk, behind which sits a slightly heavyset man of about forty-five. His hair is cut short, though the dark strands still insist on curling like the fleece of a young ram. His face is flat, almost ordinary-looking. But his intelligent eyes watch you with calm attention. For some reason, that gaze makes you uneasy, and your hand begins to drift behind your back of its own accord.
 
@@ -191,7 +191,7 @@ tags:
 
 **VERNON ROCHE** – Vernon Roche, commander of the Blue Stripes. Though, of course, you already know that as well.
 
-**NARRATOR** – Roche returns the handshake with a curt, almost excessively sharp shake. Vincent's smile grows wider. But not warmer.
+**NARRATOR** – Roche returns the handshake with a curt, almost excessively sharp grip. Vincent's smile grows wider. But not warmer.
 
 **SENSIBILITY** [Challenging: Success] – They're like two dogs meeting in the street. Sniffing each other out, neither quite sure yet whether it's time to growl.
 
@@ -265,7 +265,7 @@ tags:
 
 **NARRATOR** – He bends two fingers on each hand, drawing imaginary quotation marks in the air.
 
-**SENSIBILITY** [Challenging: Success] – Ah. There it is. You could have figured it out sooner. He's furious because they put you on the case instead of the the local keepers of the peace. In his own mind, he's king and god of the Temple Quarter.
+**SENSIBILITY** [Challenging: Success] – Ah. There it is. You could have figured it out sooner. He's furious because they put you on the case instead of the local keepers of the peace. In his own mind, he's king and god of the Temple Quarter.
 
 **VINCENT MEIS** – Naturally, we followed the order — and it came from the very top, if you take my meaning.
 
@@ -291,7 +291,7 @@ tags:
 
 **WHISPER** [Easy: Success] – ...and get the hell out of here while you still can.
 
-**ELOQUENCE** [Challenging: Success] – Biting. If words could wound, there wouldn't be a patch of unbroken skin left on either you or Vernon. The conclusion of this little philippic is simple enough: the guards will help take down the body and may even manage not to trample the tracks. But that is probably where their enthusiasm will end. Finding and questioning witnesses, gathering evidence, and handling the rest of the legwork will be up to you. Meis is not refusing to help outright, of course. He's far too clever for that. But he has left only one door open to you — the one he has no right to close without angering those above him. Formally, there is nothing to fault him for. In practice, he has told you to go to hell, along with your writ, royal seal, and special authority.
+**ELOQUENCE** [Challenging: Success] – Biting. If words could wound, there wouldn't be a patch of unbroken skin left on either you or Vernon. The conclusion of this little philippic is simple enough: the guards will help take down the body and may even manage not to trample the tracks. But that is probably where their enthusiasm will end. Finding and questioning witnesses, gathering evidence, and handling the rest of the legwork will be up to you. Meis is not refusing to help outright, of course. He's far too clever for that. But he has left only one door open to you — the one he has no right to close without angering those above him. There is nothing we can fault him for. In practice, he has told you to go to hell, along with your writ, royal seal, and special authority.
 
 **NARRATOR** – Vernon, his expression still perfectly impassive, gives a curt nod.
 
@@ -339,7 +339,7 @@ tags:
 
 **YOU** – Could he be involved in the murder somehow?
 
-**VERNON ROCHE** – Frankly, I doubt it. At least, I would not consider his direct involvement at this stage. But there is only one thing I can say with any certainty: we really should watch our backs and proceed carefully. His Majesty sent only the two of us here for a reason — he wants this matter resolved quietly, without unnecessary noise or attention. As you already know, the situation here is tense enough as it is.
+**VERNON ROCHE** – Frankly, I doubt it. At least, I see no reason to suspect his direct involvement at this stage. But there is only one thing I can say with any certainty: we really should watch our backs and proceed carefully. His Majesty sent only the two of us here for a reason — he wants this matter resolved quietly, without unnecessary noise or attention. As you already know, the situation here is tense enough as it is.
 
 **NARRATOR** – Roche gives you a light pat on the shoulder.
 
