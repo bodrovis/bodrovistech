@@ -4,8 +4,7 @@ draft: false
 meta_desc: "What do we actually know about Louis Wain’s illness? We compare his biography, medical records, archival documents, and the story behind the famous kaleidoscopic cats."
 date: 2026-08-28T01:00:00
 tags:
-- проза
-- личное
+- personal
 ---
 
 If you look at the first image in this article, you might recognize the artist’s very distinctive style even if you do not know his name and think, “Oh, right — that’s the guy who drew cats and then went mad!” You may even remember the familiar story that, as his illness progressed, he supposedly drew increasingly strange animals until they eventually dissolved into almost unimaginable forms. And someone might add: “The man was happily drawing cats, and then his evil sisters had him committed to an asylum.”
