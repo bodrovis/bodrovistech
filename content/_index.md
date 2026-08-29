@@ -70,9 +70,6 @@ draft: false
     <li>
       <a href="https://www.youtube.com/c/northernpridelotro" target="_blank" rel="noopener noreferrer">Northern Pride: a musical band playing in Lord of the Rings Online</a>&nbsp;<span class="badge">inactive</span></li>
     </li>
-    <li>
-      <a href="https://vk.com/ossiania_legends" target="_blank" rel="noopener noreferrer">Photo comics</a> (scenario)&nbsp;<span class="badge">inactive</span></li>
-    </li>
   </ul>
 </article>
 
