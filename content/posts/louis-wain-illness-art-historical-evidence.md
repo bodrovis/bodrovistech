@@ -85,7 +85,7 @@ Dale explicitly states that while preparing the revised edition of his book, he 
 
 There is still a gap when it comes to the final period of Wain's life. In 1930, he was transferred from Bethlem to Napsbury Hospital, where he remained until his death in 1939. The hospital archive survives only in part and is now divided between several repositories. I have already contacted the Wellcome Collection, which holds a small collection of Napsbury records from 1927–1956 (`GC/135`), but staff confirmed that it contains no individual patient case files. The main Napsbury collection (`H50`) is held by The London Archives; some registration records relating to Wain survive there, but so far I have been unable to locate his medical record from this period.
 
-Most of the artwork reproduced in this article comes from Catland, whose creators deserve a separate thank-you.
+Most of the artwork reproduced in this article comes from [Catland](https://catland.distin.org/), whose creators deserve a separate thank-you.
 
 With all the necessary preliminaries out of the way, let us move on to the main part of the article.
 
