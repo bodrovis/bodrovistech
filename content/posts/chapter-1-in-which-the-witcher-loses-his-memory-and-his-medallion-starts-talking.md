@@ -28,6 +28,12 @@ tags:
 
 **NARRATOR** – ...An infinite amount of time passes... At last, consciousness returns. You're lying on the floor in a bone-crushingly unnatural position. It's a miracle you haven't broken your neck in at least two places. The whole body is twisted as if someone tried to stuff it into a chest of drawers, but then gave up halfway through.
 
+<div class="callout">
+<p>
+This book <a href="/posts/glava-1-v-kotoroy-vedmak-teryaet-pamyat-a-medalon-obretaet-golos/">is also available in Russian</a>.
+</p>
+</div>
+
 **YOU** – Where am I?
 
 **UMBRA** [Impossible: Failure] – Unknown. There is, however, an even more pressing question: "*Who* are you?"
