@@ -1252,7 +1252,7 @@ In the reply, a member of the hospital staff reported that Wain had remained abs
 
 >}}
 
-So, once again: **Maclay himself arranged these eight drawings into a supposed chronological sequence** which, in his view, demonstrated the gradual deterioration of the artist's mental state. He had no dates to confirm that order. Interestingly, Allderidge notes that the "Maclay sequence" she saw does indeed match the one shown at the beginning of this article, although the order of the pictures appears to have been changed at least twice afterwards.
+So, once again: **Maclay himself arranged these eight drawings into a supposed chronological sequence** which, in his view, demonstrated the gradual deterioration of the artist's mental state. He had no dates to confirm that order. Interestingly, Allderidge notes that the "Maclay sequence" she saw does indeed match the one shown at the beginning of this article, although the order of the pictures appears to have been changed at least twice over the years.
 
 Dale rather pointedly describes the situation with the Latin phrase *post hoc ergo propter hoc*: simply placing one thing after another does not mean that the first turned into the second. More importantly, the surviving evidence and medical records fit this neat linear scheme rather poorly.
 
@@ -1292,6 +1292,6 @@ Finally, when it comes to the question of why Wain produced such unusual works a
 
 Turning these eight images into a kind of visual medical chart — "here is normal Wain, here schizophrenia begins, and here the personality has finally disintegrated" — is therefore completely unsupported by the historical evidence. Dale reaches much the same conclusion: what we have are simply several works by Wain, produced at different points in his life. The fact that someone later arranged them into a dramatic sequence tells us far more about how these pictures were interpreted in the twentieth century than it does about the actual course of Wain's illness.
 
-> *— Cat & Mouse team*
+> *— [Cat & Mouse team](https://catandmouseteam.xyz/)*
 >
 > Rīga, 2026
