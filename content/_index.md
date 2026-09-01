@@ -77,28 +77,6 @@ draft: false
   <a href="/blog" class="btn btn-lg">My blog</a>
 </div>
 
-<article class="block wide-block">
-  <h3>Supporting me</h3>
-
-  <ul>
-    <li>
-      <a href="https://www.youtube.com/channel/UCN2waErKU52T_41pGgUimXw/join" target="_blank" rel="noopener noreferrer">
-        YouTube sponsorship
-      </a>
-    </li>
-    <li>
-      <a href="https://boosty.to/bodrovis" target="_blank" rel="noopener noreferrer">
-        Boosty
-      </a>
-    </li>
-    <li>
-      <a href="https://www.patreon.com/bodrovis" target="_blank" rel="noopener noreferrer">
-        Patreon
-      </a>
-    </li>
-  </ul>
-</article>
-
 <aside id="social-links" class="block">
   <a class="icon-github" title="GitHub"
      href="https://github.com/bodrovis"
