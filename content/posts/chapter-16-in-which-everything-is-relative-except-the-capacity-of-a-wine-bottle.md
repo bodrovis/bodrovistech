@@ -14,8 +14,7 @@ tags:
 
 ---
 
-> "When a man sits with a pretty girl for an hour, it seems like a minute. But let him sit on a hot stove for a minute, and it seems longer than an hour. That's relativity."
->
+> "When a man sits with a pretty girl for an hour, it seems like a minute. But let him sit on a hot stove for a minute, and it seems longer than an hour. That's relativity."  
 > *— A joke traditionally attributed to Albert Einstein*
 
 **NARRATOR** – After standing there for half a minute, you too trudge toward the stairs leading to the second floor — when a familiar voice suddenly catches your ear. It's Kalkstein — scholar, alchemist, and brave captain of the first interstellar expedition. Before him rises an impressive array of empty plates, bowls, and goblets. He breaks into a broad smile and waves vigorously, inviting you to join him.

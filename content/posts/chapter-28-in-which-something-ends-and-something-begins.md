@@ -14,8 +14,7 @@ tags:
 
 ---
 
-> "Life's full of disappointments, and rightly so. Meat is best after a famine, and a bed soft after a hard trail."
-
+> "Life's full of disappointments, and rightly so. Meat is best after a famine, and a bed soft after a hard trail."  
 > *— Jack London, "A Relic of the Pliocene"*
 
 **NARRATOR** – You make your way back to the tavern in thoughtful silence. Even Rune, usually incapable of keeping his mouth shut for more than a few minutes, says nothing. He trails a little behind, hands shoved into his pockets, occasionally glancing at the two of you as though trying to decide whether everything he just saw really happened. You look absently over the familiar streets. Dusty windows, grimy facades, peeling signs — over the past few days, this dreary scenery has become almost familiar. But there is something new by the fountain: a small but rather motley group has gathered there. They are clearly waiting for you.

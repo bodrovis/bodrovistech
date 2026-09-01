@@ -14,9 +14,8 @@ tags:
 
 ---
 
-> "Blow winds, and crack your cheeks! Rage, blow!
-> You cataracts and hurricanoes, spout..."
->
+> "Blow winds, and crack your cheeks! Rage, blow!  
+> You cataracts and hurricanoes, spout..."  
 > *— William Shakespeare, King Lear*
 
 **NARRATOR** – You make your way toward Fountain Square. The sun is out, but it looks as though it rained not long ago: water still drips from wet awnings and eaves, puddles gleam in the cart ruts, and the cobblestones shine with a cold silver sheen. After the damp underground tunnels, the fresh air should feel like a relief, but... something is wrong.

@@ -14,10 +14,10 @@ tags:
 
 ---
 
-> "The quality of mercy is not strain'd,
-> It droppeth as the gentle rain from heaven
-> Upon the place beneath. It is twice blest,
-> It blesseth him that gives and him that takes."
+> "The quality of mercy is not strain'd,  
+> It droppeth as the gentle rain from heaven  
+> Upon the place beneath. It is twice blest,  
+> It blesseth him that gives and him that takes."  
 > *— William Shakespeare, The Merchant of Venice*
 
 **NARRATOR** – After waiting about ten minutes and pacing past the tavern doors a few times, you decide, for no particular reason, to visit the vacant lot once more. Almost nothing has changed. Wet ground, the crooked shed, the bare branches of the old tree — only the body is gone. All that remains are the round impressions in the earth where the guards had set up the ladder.

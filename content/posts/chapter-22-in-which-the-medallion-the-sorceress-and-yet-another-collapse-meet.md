@@ -14,8 +14,7 @@ tags:
 
 ---
 
-> "Try again. Fail again. Fail better."
->
+> "Try again. Fail again. Fail better."  
 > *— Samuel Beckett, Worstward Ho*
 
 **NARRATOR** – Around eleven in the morning, you and Vernon meet outside the Shaggy Bear. After yesterday's conversation with Grave, Vizima seems deceptively calm.

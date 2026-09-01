@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> "The law, in its majestic equality, forbids the rich as well as the poor to sleep under bridges, to beg in the streets, and to steal bread."
+> "The law, in its majestic equality, forbids the rich as well as the poor to sleep under bridges, to beg in the streets, and to steal bread."  
 > *— Anatole France, The Red Lily*
 
 **NARRATOR** – About ten minutes later, you reach the Temple Quarter barracks. The building greets you with the smell of sour cabbage and unwashed footcloths. In front of the massive oak door leading to the captain's office stands a lone fair-haired soldier with a halberd. He sways slightly, like a sailor who's just come ashore after a long voyage. His lips are stretched into an idiotic grin for no apparent reason, and his eyes are gleaming. The soldier lets out a foolish giggle, clearly unaware of your presence.

@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> "He who sups with the devil should have a long spoon."
+> "He who sups with the devil should have a long spoon."  
 > *— Traditional English proverb*
 
 **NARRATOR** – Another fifteen minutes pass. At last, Vernon approaches at a brisk pace, slightly out of breath.

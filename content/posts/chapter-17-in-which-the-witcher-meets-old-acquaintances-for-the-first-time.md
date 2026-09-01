@@ -14,8 +14,7 @@ tags:
 
 ---
 
-> "A true friend is, as it were, a second self."
->
+> "A true friend is, as it were, a second self."  
 > *— Marcus Tullius Cicero, On Friendship*
 
 **NARRATOR** – You wake around noon, somehow manage to get dressed, and head down to the common room. It's a little livelier than usual today: guests sit drinking coffee at the tables, carters argue by the bar, and someone in the far corner is already taking a pull from a mug.

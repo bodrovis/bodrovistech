@@ -14,8 +14,7 @@ tags:
 
 ---
 
-> "Nothing happens, nobody comes, nobody goes, it's awful!"
->
+> "Nothing happens, nobody comes, nobody goes, it's awful!"  
 > *— Samuel Beckett, Waiting for Godot*
 
 **NARRATOR** – The door closes behind you. You descend the creaking stairs, pass the wary landlady, and finally step outside. A cool wind immediately hits your face, carrying away the last traces of warmth, sandalwood, and orange oil. For several moments, you stand beneath the awning in silence, looking out over the half-empty square.

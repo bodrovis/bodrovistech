@@ -18,12 +18,12 @@ tags:
 
 ---
 
-> This was before Adam's time,
-> In heaven lived not God, but Brahma,
-> And he turned a blind eye to everything.
+> This was before Adam's time,  
+> In heaven lived not God, but Brahma,  
+> And he turned a blind eye to everything.  
 > *— Nikolai Gumilev, "The Tale"*
 
-> We are unknown to ourselves, we knowers: and with good reason...
+> We are unknown to ourselves, we knowers: and with good reason...  
 > *— Friedrich Nietzsche, "On the Genealogy of Morality"*
 
 **NARRATOR** – ...An infinite amount of time passes... At last, consciousness returns. You're lying on the floor in a bone-crushingly unnatural position. It's a miracle you haven't broken your neck in at least two places. The whole body is twisted as if someone tried to stuff it into a chest of drawers, but then gave up halfway through.
@@ -138,9 +138,9 @@ This book <a href="/posts/glava-1-v-kotoroy-vedmak-teryaet-pamyat-a-medalon-obre
 
 **BRAWN** [Challenging: Failure] – Absolutely. That grin tells everyone you're at the very top of the food chain. Everyone else is either prey or a witness to your greatness.
 
-**VICE** [Medium: Success] – Or maybe it's for the *ladies*. That's how you lure romantic souls into your trap — women dreaming of a dependable man who's got everything under control.
+**VICE** [Medium: Success] – Or maybe it's for the *ladies*. That's how you lure romantic souls into your trap — women dreaming of a dependable man who's got everything well in hand.
 
-**WHISPER** [Trivial: Success] – *You* have everything under control? You've lost your swords, your boot, your memory, and gods know what else. Don't fool yourself. The only thing you've got a grip on is a bottle of booze. And even that bottle is purely figurative for now, existing only in your fevered imagination, since there doesn't appear to be any alcohol in the room either.
+**WHISPER** [Trivial: Success] – *You* have everything in hand? You've lost your swords, your boot, your memory, and gods know what else. Don't fool yourself. The only thing you've got in hand is a bottle of booze. And even that bottle is purely figurative for now, existing only in your fevered imagination, since there doesn't appear to be any alcohol in the room either.
 
 **CODEX** [Challenging: Success] – Nothing to worry about. If you really are a witcher, this is more or less how you're supposed to look. People won't be too surprised by your face, though it must be said, it's a pretty lousy one.
 

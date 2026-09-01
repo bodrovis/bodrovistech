@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> "The truth is rarely pure and never simple."
+> "The truth is rarely pure and never simple."  
 > *— Oscar Wilde, "The Importance of Being Earnest"*
 
 **NARRATOR** – ...An infinite amount of time passes... At last, you come to lying on the bed in the posture of a man whose limbs quarreled during the night and wandered off in different directions.

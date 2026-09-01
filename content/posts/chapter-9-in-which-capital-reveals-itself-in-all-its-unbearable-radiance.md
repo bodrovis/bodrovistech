@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> "Capital is dead labour, that, vampire-like, only lives by sucking living labour, and lives the more, the more labour it sucks."
+> "Capital is dead labour, that, vampire-like, only lives by sucking living labour, and lives the more, the more labour it sucks."  
 > *— Karl Marx, Capital, Volume I*
 
 **NARRATOR** – The rest of the journey passes in grim silence. Vernon walks a little ahead without turning around, and somehow his back says more than any curse could. Ahead lies the legendary Merchant Quarter: clean facades, expensive signs, windows with lace curtains, and people who know how to pretend that dirt exists only in poor neighborhoods.

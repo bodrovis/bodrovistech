@@ -14,8 +14,7 @@ tags:
 
 ---
 
-> "The heart of a mother is a deep abyss at the bottom of which you will always find forgiveness."
->
+> "The heart of a mother is a deep abyss at the bottom of which you will always find forgiveness."  
 > *— Honoré de Balzac, A Woman of Thirty*
 
 **VERNON ROCHE** – So, the captain wasn't lying: some of that information really did prove useful. At the very least, we can now return to pan Leuvaarden in good conscience and report that the assignment is complete.

@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> "Hell is other people."
+> "Hell is other people."  
 > *— Jean-Paul Sartre, "No Exit"*
 
 **NARRATOR** – With great difficulty, you slowly make your way down to the ground floor of the tavern on numb, trembling legs, keeping a wary grip on the worn handrail. At least, you suspect this is a tavern. The common room is almost empty; in the middle of the day, most people are working rather than drinking themselves into oblivion.

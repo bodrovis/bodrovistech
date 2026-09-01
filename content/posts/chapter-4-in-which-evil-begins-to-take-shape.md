@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> "Where there is no privation of the good, there is no evil."
+> "Where there is no privation of the good, there is no evil."  
 > *— Augustine of Hippo, Enchiridion on Faith, Hope and Love*
 
 **NARRATOR** – You return to the square with the fountain. It is every bit as dreary as it was half an hour ago. Jaskier — the bard whose lute you smashed to pieces the night before — has disappeared somewhere. In his place, at the far end of the square, stands a very young girl. She calls out to every passerby and gestures energetically toward the door behind her.

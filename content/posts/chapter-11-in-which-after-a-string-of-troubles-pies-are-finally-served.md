@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> "Men's minds ought to have relaxation: they rise up better and more vigorous after rest."
+> "Men's minds ought to have relaxation: they rise up better and more vigorous after rest."  
 > *— Seneca, On Tranquility of Mind*
 
 **NARRATOR** – The sun disappears behind gathering clouds. A light drizzle begins again. Lost in gloomy thoughts, you make your way back to the fountain you've already grown sick to death of. Enna is still at her post, calling the occasional passerby into the shop. A tiny figure standing out in the rain.

@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> "Smell is a potent wizard that transports us across a thousand miles and all the years we have lived."
+> "Smell is a potent wizard that transports us across a thousand miles and all the years we have lived."  
 > *— Helen Keller, "The World I Live In"*
 
 **NARRATOR** – After parting ways with Jaskier, you follow the innkeeper's directions and set off in search of the fence and the hole he mentioned. Everything around you is bleak, damp, and gray. Vernon says nothing.

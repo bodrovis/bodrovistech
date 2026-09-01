@@ -14,8 +14,7 @@ tags:
 
 ---
 
-> "Life can only be understood backwards; but it must be lived forwards."
->
+> "Life can only be understood backwards; but it must be lived forwards."  
 > *— Søren Kierkegaard, Journals*
 
 **NARRATOR** – ...An infinite amount of time passes. You come to lying on a bed like a corpse hastily shoved into a coffin — except someone forgot to close the lid.

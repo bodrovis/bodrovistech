@@ -14,8 +14,7 @@ tags:
 
 ---
 
-> "True hope is swift, and flies with swallow's wings."
->
+> "True hope is swift, and flies with swallow's wings."  
 > *— William Shakespeare, Richard III*
 
 **NARRATOR** – A few minutes later, you arrive at the city barracks. From the outside, everything looks much the same as before: rain-darkened stone, a peeling sign, bored soldiers lingering in the yard. Jethro, once again standing guard, is sober today and consequently rather grim. The moment he spots Vernon, however, he snaps to attention, salutes, and swings the door open with a broad gesture. You enter the office.

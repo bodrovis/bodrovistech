@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> "Never say of anything, 'I have lost it,' but only, 'I have given it back.'"
+> "Never say of anything, 'I have lost it,' but only, 'I have given it back.'"  
 > *— Epictetus, Enchiridion, XI*
 
 **NARRATOR** – You make your way back, passing the same mansions and offices as before. Vernon looks dejected.

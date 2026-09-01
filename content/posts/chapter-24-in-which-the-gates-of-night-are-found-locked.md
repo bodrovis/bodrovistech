@@ -14,8 +14,7 @@ tags:
 
 ---
 
-> "Set me as a seal upon thine heart... for love is strong as death."
->
+> "Set me as a seal upon thine heart... for love is strong as death."  
 > *— Song of Solomon 8:6*
 
 > What can I do? I will always be in love with you.  

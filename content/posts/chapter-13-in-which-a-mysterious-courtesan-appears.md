@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> "Women are meant to be loved, not to be understood."
+> "Women are meant to be loved, not to be understood."  
 > *— Oscar Wilde, The Sphinx Without a Secret*
 
 **NARRATOR** – The clock strikes seven. Vernon should be here any minute now, so you return to the fountain and look around. With the bustle of the day gone, the square feels a little wider and a little darker. Smoke drifts lazily above the rooftops.

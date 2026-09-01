@@ -1,13 +1,13 @@
 ---
 title: "Louis Wain: Illness, Art, and Historical Evidence"
 draft: false
-meta_desc: "What do we actually know about Louis Wain’s illness? We compare his biography, medical records, archival documents, and the story behind the famous kaleidoscopic cats."
+meta_desc: "What do we actually know about Louis Wain's illness? We compare his biography, medical records, archival documents, and the story behind the famous kaleidoscopic cats."
 date: 2026-08-28T01:00:00
 tags:
 - personal
 ---
 
-If you look at the first image in this article, you might recognize the artist’s very distinctive style even if you do not know his name and think, “Oh, right — that’s the guy who drew cats and then went mad!” You may even remember the familiar story that, as his illness progressed, he supposedly drew increasingly strange animals until they eventually dissolved into almost unimaginable forms. And someone might add: “The man was happily drawing cats, and then his evil sisters had him committed to an asylum.”
+If you look at the first image in this article, you might recognize the artist's very distinctive style even if you do not know his name and think, “Oh, right — that's the guy who drew cats and then went mad!” You may even remember the familiar story that, as his illness progressed, he supposedly drew increasingly strange animals until they eventually dissolved into almost unimaginable forms. And someone might add: “The man was happily drawing cats, and then his evil sisters had him committed to an asylum.”
 
 <div class="callout">
 <p>
@@ -27,7 +27,7 @@ caption="Whatever is the Matter, Priscilla, my Love?"
 
 >}}
 
-Well, this really is “that guy” — the English artist **Louis Wain**, whose career stretched from the late nineteenth century into the 1930s. But his story is much more complicated than “his evil sisters drove him mad, and then he started drawing fractal cats.” He was an unusual man who had a difficult life, adored cats, and believed them to be far more intelligent than people generally assumed. More than that, he created an entire nation of cats. In Wain’s pictures, the animals behave just like humans: they do household chores, play tennis, go for walks, read books, and even attack the law-abiding “citizens” of this imaginary country.
+Well, this really is “that guy” — the English artist **Louis Wain**, whose career stretched from the late nineteenth century into the 1930s. But his story is much more complicated than “his evil sisters drove him mad, and then he started drawing fractal cats.” He was an unusual man who had a difficult life, adored cats, and believed them to be far more intelligent than people generally assumed. More than that, he created an entire nation of cats. In Wain's pictures, the animals behave just like humans: they do household chores, play tennis, go for walks, read books, and even attack the law-abiding “citizens” of this imaginary country.
 
 In my humble opinion, Wain was ahead of his time. His work would fit perfectly into the internet culture of the 2010s and 2020s, with its memes, stickers, and endless cat merchandise. Cats were already common household animals in Victorian Britain, but it was during this period that their social status began to change rapidly. Alongside their traditional role as mousers, they were increasingly becoming full-fledged companions, while pedigree breeding, cat clubs, and cat shows began to emerge. The first major modern cat show in Britain, which we will return to later, [was held in London in 1871](https://www.gccfcats.org/getting-a-cat/choosing/cat-breeds/british/).
 
@@ -45,9 +45,9 @@ In my humble opinion, Wain was ahead of his time. His work would fit perfectly i
 
 >}}
 
-I started working on this article because I wanted to understand Wain’s life and ideas better, while also checking some of the myths surrounding him. Unfortunately, people are generally very good at believing all sorts of legends, whether beautiful or horrifying — something I have already seen while working on several true crime stories.
+I started working on this article because I wanted to understand Wain's life and ideas better, while also checking some of the myths surrounding him. Unfortunately, people are generally very good at believing all sorts of legends, whether beautiful or horrifying — something I have already seen while working on several true crime stories.
 
-I am neither an artist nor a historian, but perhaps in some ways that is for the best. This is not going to be a “smart” article written for specialists. Rather, it is an attempt to bring together what can actually be established from the surviving sources: books, newspapers, contemporary recollections, and even Wain’s medical records, some of which rarely appear in popular accounts of his life.
+I am neither an artist nor a historian, but perhaps in some ways that is for the best. This is not going to be a “smart” article written for specialists. Rather, it is an attempt to bring together what can actually be established from the surviving sources: books, newspapers, contemporary recollections, and even Wain's medical records, some of which rarely appear in popular accounts of his life.
 
 So, let us begin.
 
@@ -573,15 +573,15 @@ caption="The Feathered Hat"
 align="left"
 >}}
 
-Even Wain’s biographer found it difficult to determine when exactly his condition began to change in a noticeable way. At first, his sisters linked what was happening to the omnibus accident in 1914 and, according to Dale, told the doctors at Springfield about it. Later, however, when Louis was transferred to Bethlem, the family provided another important detail: after the injury he had fully recovered, and the noticeable changes in his character had begun only about two years before his first hospitalization — that is, around 1922.
+Even Wain's biographer found it difficult to determine when exactly his condition began to change in a noticeable way. At first, his sisters linked what was happening to the omnibus accident in 1914 and, according to Dale, told the doctors at Springfield about it. Later, however, when Louis was transferred to Bethlem, the family provided another important detail: after the injury he had fully recovered, and the noticeable changes in his character had begun only about two years before his first hospitalization — that is, around 1922.
 
 Wain himself placed the beginning of his strange experiences somewhat earlier. Already at Springfield, he told one of the doctors that certain spirits had been troubling him “day and night for six years”, which, relative to 1924, would push the beginning of such experiences back to about 1918. Dale suggests that there may not actually be a direct contradiction here: unusual beliefs may have appeared earlier, while the changes in his everyday behaviour only became obvious to the family several years later.
 
-We can now add one more piece to the picture: the surviving Springfield admission register. In it, Wain’s case is marked as a first attack (*1st attack*), which had lasted about twelve months by the time of his admission. If we take that entry literally, the beginning of the current episode was placed around the middle of 1923. So even the documents and recollections from the time do not give us a single exact date: Wain himself pointed roughly to 1918, the family to about 1922, and the Springfield register to approximately 1923.
+We can now add one more piece to the picture: the surviving Springfield admission register. In it, Wain's case is marked as a first attack (*1st attack*), which had lasted about twelve months by the time of his admission. If we take that entry literally, the beginning of the current episode was placed around the middle of 1923. So even the documents and recollections from the time do not give us a single exact date: Wain himself pointed roughly to 1918, the family to about 1922, and the Springfield register to approximately 1923.
 
 Perhaps the simplest explanation is that these sources were talking about different things: the first unusual experiences, the character changes visible to other people, and the beginning of the condition that doctors already considered the current attack of illness. So it probably makes little sense to search for one exact date after which Wain suddenly “became ill”. This picture broadly matches what we have already seen in the recollections of people who knew him: from the late 1910s into the early 1920s, Wain increasingly gave the impression of being not merely eccentric, but clearly unusual. At the same time, the 1914 accident can hardly explain everything that followed.
 
-Patricia Allderidge cautiously notes that the deterioration seems to have begun during the First World War, when the family was gradually becoming poorer and sinking into debt. How much that difficult financial situation affected the artist’s health is now impossible to determine.
+Patricia Allderidge cautiously notes that the deterioration seems to have begun during the First World War, when the family was gradually becoming poorer and sinking into debt. How much that difficult financial situation affected the artist's health is now impossible to determine.
 
 Despite all this, Wain continued to draw at Springfield. He still accused his sisters of mistreating him, spoke about the electrical force contained within him, and even claimed to possess certain healing abilities. At the same time, life in the hospital did not in itself turn him into a helpless person: according to staff recollections, he had not lost his artistic skill and soon resumed working on drawings constantly. His sisters regularly brought him pencils and sketchbooks, and took finished works away with them.
 
@@ -833,7 +833,7 @@ Claire Wain reported both suspicious behaviour and violence. According to the ce
 
 A second medical certificate was completed by Dr J. Anderson Smith of 158 Willesden Lane. His own observations were strikingly similar:
 
-> Says his sisters are out of their minds, says they have been taking his cheques and therefore he had to lock everything up — thinks the flickering of the cinema has taken the electricity out of his sisters’ brains.
+> Says his sisters are out of their minds, says they have been taking his cheques and therefore he had to lock everything up — thinks the flickering of the cinema has taken the electricity out of his sisters' brains.
 
 The reference to the cinema is particularly curious. Wain apparently believed that its flickering had somehow removed the “electricity” from his sisters' brains — another example of electrical ideas, which had interested him for decades, appearing here in a very different form.
 

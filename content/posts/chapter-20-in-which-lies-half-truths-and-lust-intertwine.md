@@ -14,8 +14,7 @@ tags:
 
 ---
 
-> "The only way to get rid of a temptation is to yield to it."
->
+> "The only way to get rid of a temptation is to yield to it."  
 > *— Oscar Wilde, The Picture of Dorian Gray*
 
 **NARRATOR** – You approach the house by Fountain Square where the beautiful courtesan stood on the balcony yesterday. Something cloyingly floral drifts from a half-open window. From the second floor comes a burst of female laughter, almost immediately followed by a muffled male cough. Your knock is answered by a large, pockmarked woman in a greasy apron, her sleeves rolled up to the elbows. She gives you a suspicious once-over.

@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> "We are all in the gutter, but some of us are looking at the stars."
+> "We are all in the gutter, but some of us are looking at the stars."  
 > *— Oscar Wilde, "Lady Windermere's Fan"*
 
 **NARRATOR** – You shake Vernon's hand and wish him good night. He heads quickly up the stairs; a few moments later, the sound of a door slamming shut comes from above.

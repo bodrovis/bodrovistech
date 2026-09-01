@@ -14,7 +14,7 @@ tags:
 
 ---
 
-> "He who fights with monsters should be careful lest he thereby become a monster."
+> "He who fights with monsters should be careful lest he thereby become a monster."  
 > *— Friedrich Nietzsche, Beyond Good and Evil*
 
 **NARRATOR** – The door slams behind you, cutting off the tobacco smoke, drunken shouting, and the renewed wail of the bagpipes. After the stifling hall, the cold evening air feels almost restorative. Vernon walks on in silence without slowing his pace. Only when Grave's house is far behind does he finally stop and give you a long, searching look. For several moments, his face remains completely unreadable.

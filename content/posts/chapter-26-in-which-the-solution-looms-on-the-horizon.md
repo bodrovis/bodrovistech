@@ -14,8 +14,7 @@ tags:
 
 ---
 
-> "The world is full of obvious things which nobody by any chance ever observes."
->
+> "The world is full of obvious things which nobody by any chance ever observes."  
 > *— Arthur Conan Doyle, The Hound of the Baskervilles*
 
 **NARRATOR** – The door to the courtesan's room is unlocked. Vernon draws his sword just in case and steps decisively inside. You and Rune follow.
