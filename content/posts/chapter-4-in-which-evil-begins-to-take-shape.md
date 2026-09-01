@@ -47,7 +47,7 @@ tags:
 
 **SENSIBILITY** [Easy: Success] – He was about to brush the question aside, but then remembered that you collapsed unconscious five minutes ago.
 
-**VERNON ROCHE** – In any case, I don't know why this particular question has come up only now, but I'll give you my opinion. A witcher is still human — at least to begin with. As for the mutations...
+**VERNON ROCHE** – In any case, I don't know why this particular question has come up only now, but I'll give you my opinion. You are human — or at least, you were born human. As for the mutations...
 
 **NARRATOR** – He suddenly falls silent and looks up at the gray sky. The drizzle shows no sign of letting up.
 
@@ -85,9 +85,9 @@ tags:
 
 **CODEX** [Medium: Success] – Saint Lebioda was a renowned preacher and ascetic who taught love for one's fellow man and compassion. Evidently, not everyone cared to listen: he was arrested on false accusations and tortured to death.
 
-**YOU** – Like that wandering minstrel?..
+**YOU** – Like that wandering goliard?..
 
-**CODEX** – No. The minstrel was probably never tortured at all — for all we know, he may even have been released later. And let's be frank, the two are hardly comparable in stature. Have you ever heard of a "cult of the minstrel"? Exactly. You're the only one who still remembers him, wearing that grimace on your face like a mourning veil. The "cult of Saint Lebioda," on the other hand, survives to this day.
+**CODEX** – No. The goliard was probably never tortured at all — for all we know, he may even have been released later. And let's be frank, the two are hardly comparable in stature. Have you ever heard of a "cult of the goliard"? Exactly. You're the only one who still remembers him, wearing that grimace on your face like a mourning veil. The "cult of Saint Lebioda," on the other hand, survives to this day.
 
 **VERNON ROCHE** – I understand the logic behind this "absence of good," but it's rather strange to hear such ideas from you of all people. In effect, you're denying evil any independent existence — claiming that it exists only where good does not. I don't know about you, but I've seen a great deal of evil in my life that simply doesn't fit into that framework.
 
@@ -127,7 +127,7 @@ tags:
 
 **GIRL BY THE FOUNTAIN** – For example, a seasoned warrior like you would surely be interested in a book about the hundred most famous battles in history! It even covers the Battle of Brenna! And if you have children, we also sell picture books for younger readers — like the new *Who Stole Mother Goose's Golden Egg?* Little ones adore that story, especially the chapter where the crafty jackal tricks the hard-of-hearing bear judge!
 
-**REFLEX** [Easy: Success] – A seasoned warrior? What gave her that idea? Some warrior you are — you've managed to lose your swords. Right now, you look more like a sack of shit.
+**REFLEX** [Easy: Success] – A seasoned warrior? What gave her that idea? A fine warrior you are — you’ve managed to lose your swords. Right now, you look more like a sack of shit.
 
 **MASQUE** [Challenging: Failure] – No, no. You look like the protagonist of some... hmm... tragedy. A very famous and very sad one. Full of endlessly long monologues and violins sobbing softly in the background.
 
@@ -137,7 +137,7 @@ tags:
 
 **NARRATOR** – The girl keeps smiling brightly, but there is a hint of uncertainty in her eyes.
 
-**WHISPER** [Challenging: Failure] – Looks like you said something stupid. It's not entirely clear what, exactly, but you should probably feel guilty about it. Just in case.
+**WHISPER** [Challenging: Failure] – Looks like you said something stupid. It's not entirely clear what, exactly, but feel guilty about it anyway. Just in case.
 
 **GIRL BY THE FOUNTAIN** – My name is Enna, pan. And I... well, I remember you, and I know you're a real witcher!
 
@@ -167,7 +167,7 @@ tags:
 
 **ELOQUENCE** [Easy: Failure] – You want to describe the weapons in a little more detail, but all that comes to mind is something stupid like, "You know, long, sharp swords?"
 
-**CODEX** [Trivial: Success] – Strictly speaking, they probably are quite long and exceedingly sharp.
+**CODEX** [Trivial: Success] – Strictly speaking, they are indeed quite long and exceedingly sharp.
 
 **ELOQUENCE** – Thank you. That was very helpful.
 
@@ -247,7 +247,7 @@ tags:
 
 **YOU** – No.
 
-**CODEX** – I didn't think so. Well, somehow you know what faces a long-forgotten minstrel used to pull. And he, mind you, was rotting in prison back in the days of the current ruler's father.
+**CODEX** – I didn't think so. Well, somehow you know what faces a long-forgotten goliard used to pull. And he, mind you, was rotting in prison back in the days of the current ruler's father.
 
 **UMBRA** [Challenging: Failure] – Gods... What does all this mean?..
 
@@ -267,6 +267,6 @@ tags:
 
 **DOMINANCE** [Trivial: Success] – Stop it.
 
-**VERNON ROCHE** – I don't know by how much, exactly. There was nothing on the subject in the documents Bernard Ducat provided me with. I suggest you ask people who knew you before you started losing your swords, your boots, and your memory.
+**VERNON ROCHE** – I don't know by how much, exactly. There was nothing on the subject in the documents Bernard Ducat provided me with. I believe the details of your biography would be better obtained from people who knew you before you began losing your swords, your boots, and your memory.
 
 → [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

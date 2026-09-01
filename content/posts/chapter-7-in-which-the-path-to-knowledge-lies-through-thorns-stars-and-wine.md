@@ -4,7 +4,7 @@ subtitle: "The Case of the Hanged Man"
 title: "Chapter 7: In Which the Path to Knowledge Lies Through Thorns, Stars, and Wine"
 draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 7: In Which the Path to Knowledge Lies Through Thorns, Stars, and Wine"
-date: 2026-08-07
+date: 2026-08-07T12:00:00
 skip_toc: true
 tags:
 - witcher return to elysium

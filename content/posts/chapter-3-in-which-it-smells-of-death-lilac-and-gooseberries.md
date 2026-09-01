@@ -149,7 +149,7 @@ tags:
 
 **SENSIBILITY** – "Sensible" does not mean "best" in this case. He's merely choosing the lesser of two evils.
 
-**VERNON ROCHE** – Although, from what I've heard, the captain of the guard in the Temple Quarter is a difficult man to deal with. There are also reasons to suspect he may be taking bribes, which means he is unlikely to welcome our attention.
+**VERNON ROCHE** – Although, from what I've heard, the captain of the guard in the Temple Quarter is a difficult man to deal with. There are also reasons to suspect that some of his dealings may not be entirely above board, which means he is unlikely to welcome our attention.
 
 **ARTISTRY** [Trivial: Success] – A corrupt guard captain in a poor district? How depressingly commonplace.
 
@@ -313,7 +313,7 @@ tags:
 
 **FORTITUDE** [Challenging: Failure] – Your hand is visibly trembling. You are unable to stop it.
 
-**VERNON ROCHE** – Do you know what this is? It's the royal letter of credence we were discussing an hour ago. So this is where it ended up... You threw your own satchel, with an important document inside, onto a rubbish heap in some godforsaken wasteland. There are also several sealed vials in here — witcher potions, I presume. Children could have found the vials, drunk the contents, and poisoned themselves.
+**VERNON ROCHE** – Do you know what this is? It's the royal writ we were discussing an hour ago. So this is where it ended up... You threw your own satchel, with an important document inside, onto a rubbish heap in some godforsaken wasteland. There are also several sealed vials in here — witcher potions, I presume. Children could have found the vials, drunk the contents, and poisoned themselves.
 
 **SENSIBILITY** [Medium: Success] – He speaks slowly and distinctly, trying to keep his emotions under control.
 
@@ -331,7 +331,7 @@ tags:
 
 **DISCERNMENT** [Medium: Success] – It... it smells of lilac and gooseberries. What a strange scent.
 
-**UMBRA** [Impossible: Failure] – Then why does it make your heart beat faster? Why can you barely stay on your feet? Why do you feel as though you might shatter into a thousand pieces?
+**UMBRA** [Impossible: Failure] – Then why does it make your heart beat faster? Why can you barely stay on your feet? Why do you want to shatter into a thousand pieces?
 
 **HORRIFIC MEDALLION** – Oh no, kumpel! Put that fucking thing away. NOW. Shove it somewhere out of sight and forget about the damn letter! I'm telling you, there's NOTHING good in there!
 

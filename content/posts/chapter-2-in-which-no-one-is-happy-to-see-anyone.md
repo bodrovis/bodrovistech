@@ -59,7 +59,7 @@ tags:
 
 **WHISPER** [Challenging: Failure] – He clearly has you confused with someone else.
 
-**YOU** – Uh... listen, friend... What body? I don't really... like bodies. Not much, anyway. Actually, not at all. I think you've got the wrong man.
+**YOU** – Uh... listen, friend... What body? I don't really... like bodies. Not much, anyway. Actually, not at all. I think you've got the wrong guy.
 
 **DISCERNMENT** [Medium: Success] – The man lets out an almost inaudible sigh. Clearly, he was prepared for just about anything — except that answer.
 

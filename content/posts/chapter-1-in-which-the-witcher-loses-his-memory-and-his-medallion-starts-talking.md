@@ -156,11 +156,11 @@ This book <a href="/posts/glava-1-v-kotoroy-vedmak-teryaet-pamyat-a-medalon-obre
 
 **WHISPER** [Easy: Success] – Obviously, to create another monster-killing machine. To keep the line going. To make sure the witcher clan doesn't die out. *This* isn't inherited, and even if it were, witchers are sterile. New ones have to be made... by hand.
 
-**CODEX** – As for that creepy grin of yours... Many years ago — around the time the current king's father first planted his royal ass on the throne, I think — the songs of a certain wandering minstrel were all the rage. His name has long since faded from folk memory. He roamed the country, strummed his lute, and bellowed all kinds of nonsense about love, wine, and dancing. Those merry, drunken, peaceful years of Temeria... Sadly, they passed far too quickly, leaving behind nothing but fond memories.
+**CODEX** – As for that creepy grin of yours... Many years ago — around the time the current king's father first planted his royal ass on the throne, I think — the songs of a certain wandering goliard were all the rage. His name has long since faded from folk memory. He roamed the country, strummed his lute, and bellowed all kinds of nonsense about love, wine, and dancing. Those merry, drunken, peaceful years of Temeria... Sadly, they passed far too quickly, leaving behind nothing but fond memories.
 
 **VICE** [Trivial: Success] – Oh yes! Wine flowed like a river back then!
 
-**CODEX** – It did. Until blood began to flow instead... That minstrel wore the same sort of expression, as if nothing in the world could touch him. Though once he was thrown into gaol for vagrancy and some trumped-up insult to His Majesty, he probably stopped making faces soon enough. No one knows what became of him after that. The age of endless wars began, and there were far more pressing problems to worry about.
+**CODEX** – It did. Until blood began to flow instead... That goliard wore the same sort of expression, as if nothing in the world could touch him. Though once he was thrown into gaol for vagrancy and some trumped-up insult to His Majesty, he probably stopped making faces soon enough. No one knows what became of him after that. The age of endless wars began, and there were far more pressing problems to worry about.
 
 **NARRATOR** – You shake your head, give your reflection one last look, then sigh and head for the door.
 

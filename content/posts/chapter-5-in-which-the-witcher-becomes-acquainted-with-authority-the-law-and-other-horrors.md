@@ -37,7 +37,7 @@ tags:
 
 **HORRIFIC MEDALLION** – No, it's the VERY FIRST thing you need! The most essential thing! That useless bastard must have some powder left. Ask him. If you have to, threaten him, intimidate him — SMEAR HIM ACROSS THE WALL, for fuck's sake!!! We need that goddamn fisstech!
 
-**NARRATOR** – Meanwhile, Vernon walks right up to the guard and fixes him with a murderous stare. Any normal soldier under that gaze would have remembered the rules of guard duty, the entire military code, and probably his own mother besides. This particular specimen, however, floating in blissful harmony with the universe, merely gives Roche the soft, beatific smile of an idiot. Your partner finally loses patience and barks straight into his face.
+**NARRATOR** – Meanwhile, Vernon walks right up to the guard and fixes him with a murderous stare. Any normal soldier under that gaze would have remembered the rules of guard duty, the entire military code, and probably his own mother besides. This particular specimen, however, floating in blissful harmony with the universe, merely gives Roche the all-understanding smile of an idiot.
 
 **VERNON ROCHE** – Private!
 
@@ -243,7 +243,7 @@ tags:
 
 **VERNON ROCHE** – You understand correctly. We require whatever assistance you can reasonably provide with the investigation.
 
-**NARRATOR** – Vernon's voice is remarkably colorless. He sounds as though he's reciting lines from a role he's long since grown tired of, all in the same dull monotone. Vincent leans back in his chair and gives him a charming smile, waiting for him to continue.
+**NARRATOR** – Vernon's voice is remarkably colorless. He sounds as though he's reciting lines from a role he's long since grown tired of, all in the same dull monotone. Vincent leans back in his chair and gives Roche a charming smile, clearly expecting more.
 
 **VERNON ROCHE** – At present, the victim's body is hanging from a tree in the backyard of the Shaggy Bear Inn — though I imagine you're perfectly well aware of that.
 

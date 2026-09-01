@@ -37,7 +37,7 @@ tags:
 
 **NARRATOR** – The shorter guard busily sets the ladder beneath the tree, checks that its feet aren't slipping in the mud, and steadies it with both hands.
 
-**GUARD WITH THE LADDER** – Beg pardon, pan Roche! Beg pardon, pan Roche! We were told you needed help with some tree and a dead man. So we brought the saw. But don't you worry — my mate here'll snip through whatever needs snipping in no time!
+**GUARD WITH THE LADDER** – Beg pardon, pan Roche! We were told you needed help with some tree and a dead man. So we brought the saw. But don't you worry — my mate here'll snip through whatever needs snipping in no time!
 
 **NARRATOR** – Vernon merely shakes his head in silence. The guard with the ladder beams at him. His companion spits on his palms, climbs a few rungs, awkwardly gets himself into position, and starts sawing through the wet, swollen rope. The saw moves lazily back and forth.
 
@@ -115,11 +115,11 @@ tags:
 
 **NARRATOR** – The runt on the roof turns red and shouts in righteous indignation.
 
-**RUNE** – Hey, Bedouin, what the hell?! What d'you mean "low"? Those rocks were going FUCKING FAST!
+**RUNE** – Hey, Bedouin, what the hell?! What d'you mean "low"? Those rocks were fucking FLYING!
 
 **NARRATOR** – Vernon continues writing without the slightest reaction.
 
-**VERNON ROCHE** – ...The juvenile offender, having entered the crime scene without authorization, admitted to mutilating the body by throwing stones at it. He also stated that the rocks were going fucking fast.
+**VERNON ROCHE** – ...The juvenile offender, having entered the crime scene without authorization, admitted to mutilating the body by throwing stones at it. He also stated that the rocks were "fucking flying."
 
 **SENSIBILITY** [Easy: Success] – Sometimes — very occasionally — he allows himself a joke. A little humor really wouldn't hurt right now.
 
@@ -183,7 +183,7 @@ tags:
 
 **ARTISTRY** [Easy: Success] – The sort who beg for alms outside the Temple of the Eternal Fire, wailing the same pitiful story year after year.
 
-**GUARD WITH THE LADDER** – Good day, Mr. Coroner! Let us give you a hand.
+**GUARD WITH THE LADDER** – Good day, pan coroner! Here, let us help you.
 
 **CORONER** – And a good day to you too, lads! Much obliged for the help. I couldn't haul a great brute like this on my own anymore — back's not what it used to be. Take the poor fellow over yonder to the fence; my cart's waiting in the street. Easy with him, mind... He won't be telling *you* anything now, but he may yet have a thing or two to tell me. If you know how to ask the right questions, heh-heh...
 
@@ -265,7 +265,7 @@ tags:
 
 **NARRATOR** – You slam your fist down hard on the countertop. The noise is loud enough to silence even the arguing men for a second. One of them looks at you with respect. Or pity.
 
-**FORTITUDE** [Medium: Failure] – Ow! That hurt, you son of a cat!
+**FORTITUDE** [Medium: Failure] – Ow! That hurt, you little cat bastard!
 
 **GARTE** – I already told you, I'm not even—
 
