@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 10: In Which the Witcher Finds a Horse Though He Wasn't Looking for One"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 10: In Which the Witcher Finds a Horse Though He Wasn't Looking for One"
 date: 2026-08-09
 skip_toc: true

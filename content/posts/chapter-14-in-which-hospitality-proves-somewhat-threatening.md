@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 14: In Which Hospitality Proves Somewhat Threatening"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 14: In Which Hospitality Proves Somewhat Threatening"
 date: 2026-08-13
 skip_toc: true

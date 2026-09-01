@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 21: In Which Nothing Happened"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 21: In Which Nothing Happened"
 date: 2026-08-20
 skip_toc: true

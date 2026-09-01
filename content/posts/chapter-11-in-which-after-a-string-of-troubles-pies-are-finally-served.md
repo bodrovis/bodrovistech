@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 11: In Which, After a String of Troubles, Pies Are Finally Served"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 11: In Which, After a String of Troubles, Pies Are Finally Served"
 date: 2026-08-10
 skip_toc: true

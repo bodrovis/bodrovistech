@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 6: In Which the Body Is Taken Down and the First Verdict Is Delivered"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 6: In Which the Body Is Taken Down and the First Verdict Is Delivered"
 date: 2026-08-06
 skip_toc: true

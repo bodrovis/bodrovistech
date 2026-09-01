@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 20: In Which Lies, Half-Truths, and Lust Intertwine"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 20: In Which Lies, Half-Truths, and Lust Intertwine"
 date: 2026-08-19
 skip_toc: true

@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 26: In Which the Solution Looms on the Horizon"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 26: In Which the Solution Looms on the Horizon"
 date: 2026-08-25
 skip_toc: true

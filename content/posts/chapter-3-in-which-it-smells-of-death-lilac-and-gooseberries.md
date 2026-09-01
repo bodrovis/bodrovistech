@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 3: In Which It Smells of Death, Lilac and Gooseberries"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 3: In Which It Smells of Death, Lilac and Gooseberries."
 date: 2026-08-03
 skip_toc: true

@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 24: In Which the Gates of Night Are Found Locked"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 24: In Which the Gates of Night Are Found Locked"
 date: 2026-08-23
 skip_toc: true

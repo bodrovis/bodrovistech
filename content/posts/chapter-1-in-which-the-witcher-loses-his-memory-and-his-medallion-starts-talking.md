@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 1: In Which the Witcher Loses His Memory and His Medallion Starts Talking"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 1: In Which the Witcher Loses His Memory and His Medallion Starts Talking."
 date: 2026-08-01
 skip_toc: true

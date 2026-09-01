@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 15: In Which Events Take a Monstrous Turn"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 15: In Which Events Take a Monstrous Turn"
 date: 2026-08-14
 skip_toc: true

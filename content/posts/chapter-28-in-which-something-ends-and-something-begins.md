@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 28: In Which Something Ends and Something Begins"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 28: In Which Something Ends and Something Begins"
 date: 2026-08-27
 skip_toc: true

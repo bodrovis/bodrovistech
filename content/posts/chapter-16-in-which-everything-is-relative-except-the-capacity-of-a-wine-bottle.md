@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 16: In Which Everything Is Relative Except the Capacity of a Wine Bottle"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 16: In Which Everything Is Relative Except the Capacity of a Wine Bottle"
 date: 2026-08-15
 skip_toc: true

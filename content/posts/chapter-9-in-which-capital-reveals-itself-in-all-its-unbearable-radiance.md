@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 9: In Which Capital Reveals Itself in All Its Unbearable Radiance"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 9: In Which Capital Reveals Itself in All Its Unbearable Radiance"
 date: 2026-08-08
 skip_toc: true

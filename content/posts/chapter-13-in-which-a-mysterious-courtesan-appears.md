@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 13: In Which a Mysterious Courtesan Appears"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 13: In Which a Mysterious Courtesan Appears"
 date: 2026-08-12
 skip_toc: true

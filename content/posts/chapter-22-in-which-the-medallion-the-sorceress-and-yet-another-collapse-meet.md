@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 22: In Which the Medallion, the Sorceress, and Yet Another Collapse Meet"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 22: In Which the Medallion, the Sorceress, and Yet Another Collapse Meet"
 date: 2026-08-21
 skip_toc: true

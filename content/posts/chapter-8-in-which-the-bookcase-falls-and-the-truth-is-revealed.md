@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 8: In Which the Bookcase Falls and the Truth Is Revealed"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 8: In Which the Bookcase Falls and the Truth Is Revealed"
 date: 2026-08-07
 skip_toc: true

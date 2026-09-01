@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 4: In Which Evil Begins to Take Shape"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 4: In Which Evil Begins to Take Shape"
 date: 2026-08-04
 skip_toc: true

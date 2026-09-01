@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 2: In Which No One Is Happy to See Anyone"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 2: In Which No One Is Happy to See Anyone."
 date: 2026-08-02
 skip_toc: true

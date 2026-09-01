@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 27: In Which Coincidences Turn Out to Be Coincidences"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 27: In Which Coincidences Turn Out to Be Coincidences"
 date: 2026-08-26
 skip_toc: true

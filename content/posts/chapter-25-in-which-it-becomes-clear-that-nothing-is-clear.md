@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 25: In Which It Becomes Clear That Nothing Is Clear"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 25: In Which It Becomes Clear That Nothing Is Clear"
 date: 2026-08-24
 skip_toc: true

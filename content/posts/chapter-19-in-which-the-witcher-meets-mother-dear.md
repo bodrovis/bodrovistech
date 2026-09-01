@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 19: In Which the Witcher Meets Mother Dear"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 19: In Which the Witcher Meets Mother Dear"
 date: 2026-08-18
 skip_toc: true

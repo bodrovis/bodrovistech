@@ -2,7 +2,7 @@
 general_title: "The Witcher: Return to Elysium"
 subtitle: "The Case of the Hanged Man"
 title: "Chapter 5: In Which the Witcher Becomes Acquainted with Authority, the Law, and Other Horrors"
-draft: true
+draft: false
 meta_desc: "The Witcher: Return to Elysium. The Case of the Hanged Man. Chapter 5: In Which the Witcher Becomes Acquainted with Authority, the Law, and Other Horrors"
 date: 2026-08-05
 skip_toc: true
