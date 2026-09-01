@@ -370,3 +370,5 @@ tags:
 **FORTITUDE** [Medium: Failure] – It feels as though he just punched you in the liver. The words hurt almost physically.
 
 **DIALECTIC** [Trivial: Success] – Because he's right.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

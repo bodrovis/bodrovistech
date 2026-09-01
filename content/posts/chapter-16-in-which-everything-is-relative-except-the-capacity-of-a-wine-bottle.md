@@ -336,3 +336,5 @@ tags:
 **VICE** [Easy: Failure] – Maybe time really has slowed down... Or sped up?.. Either way, this bottle emptied much faster than the last one.
 
 **NARRATOR** – At this point, any coherent account of events comes to an end. You have absolutely no memory of leaving the square, making your way back to the tavern, climbing the stairs, or ending up in your room. Apparently, space and time did undergo some fairly serious distortions after all.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

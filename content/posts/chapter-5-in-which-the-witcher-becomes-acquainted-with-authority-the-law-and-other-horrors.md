@@ -346,3 +346,5 @@ tags:
 **BOND OF STEEL** [Challenging: Success] – He's showing that he trusts you. And reminding you that in the struggle ahead, the two of you may have no one to rely on but each other. You certainly shouldn't expect the entire royal host to come marching to your aid.
 
 **VERNON ROCHE** – Let's return to the vacant lot and wait for them to take the body down. We need to make sure it reaches the coroner instead of being left there for those children to play with.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

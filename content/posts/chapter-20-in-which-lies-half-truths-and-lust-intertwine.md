@@ -652,3 +652,5 @@ tags:
 **KARMEN** – I don't know how to thank you, panowie. You've shown me true nobility.
 
 **VERNON ROCHE** – If possible, try not to leave the house at all. There may be unrest and pogroms. Be extremely careful. And now we should go. Come along, witcher. Unfortunately, our work is still far from finished.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

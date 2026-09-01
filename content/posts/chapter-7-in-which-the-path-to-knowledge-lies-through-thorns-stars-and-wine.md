@@ -346,3 +346,5 @@ tags:
 **RESOLVE** [Trivial: Success] – Victory. Incidentally, this time you managed not to lose the other boot.
 
 **NARRATOR** – Then everything drops away into a black sleep where there are no debts, no stars, and no letters from your former life.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

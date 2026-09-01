@@ -264,3 +264,5 @@ tags:
 **BRAWN** – Ancient warriors are not troubled by such trifles.
 
 **NARRATOR** – You begin climbing the narrow spiral staircase. The old wooden steps creak softly underfoot, but otherwise the tower is completely silent. Vernon leads the way with his sword ready. You follow, trying to tread as quietly as possible. Rune huffs along behind you — surprisingly, without saying a word.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

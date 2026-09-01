@@ -334,3 +334,5 @@ tags:
 **NARRATOR** – Garte nods vigorously and hurries through a side door that presumably leads to the kitchen. The ring seems to have put fresh energy into him. Roche turns back to you.
 
 **VERNON ROCHE** – Forgive me, but I am completely exhausted. The past few days have been rather trying, and I believe they are catching up with me. With your permission, I shall have dinner in my room and retire early. Unless you have any urgent questions, let us postpone any further discussion of the investigation until morning. Besides, the coroner promised to send us his report tomorrow.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

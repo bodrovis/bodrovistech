@@ -488,3 +488,5 @@ tags:
 **ELOQUENCE** [Medium: Failure] – Tell him it's not a bribe, merely a temporary stabilization of your... liquidity. No. Better not.
 
 **VERNON ROCHE** – It's time to return to the Temple Quarter and take stock of this long and rather peculiar conversation.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

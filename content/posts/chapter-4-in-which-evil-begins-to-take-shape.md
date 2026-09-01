@@ -268,3 +268,5 @@ tags:
 **DOMINANCE** [Trivial: Success] – Stop it.
 
 **VERNON ROCHE** – I don't know by how much, exactly. There was nothing on the subject in the documents Bernard Ducat provided me with. I suggest you ask people who knew you before you started losing your swords, your boots, and your memory.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

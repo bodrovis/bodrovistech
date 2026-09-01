@@ -422,3 +422,5 @@ tags:
 **NARRATOR** – With Vernon's help, you get back on your feet. There's still a faint ringing in your ears, and your mouth tastes as though an entire caravan of Nazairi merchants had camped in it overnight.
 
 **VERNON ROCHE** – Come, witcher. We still have much to do.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

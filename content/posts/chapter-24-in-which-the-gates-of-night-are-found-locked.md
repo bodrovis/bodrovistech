@@ -162,3 +162,5 @@ tags:
 **YOU** – It turns in the void. No one is listening anymore.
 
 **FORTITUDE** [Challenging: Success] – Wake up, witcher. Welcome back.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

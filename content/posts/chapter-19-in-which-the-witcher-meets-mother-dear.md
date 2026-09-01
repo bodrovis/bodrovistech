@@ -358,3 +358,5 @@ tags:
 **YOU** – So what now?
 
 **VERNON ROCHE** – Now we have another difficult conversation ahead of us — this time with the mysterious pani Karmen. Come along.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

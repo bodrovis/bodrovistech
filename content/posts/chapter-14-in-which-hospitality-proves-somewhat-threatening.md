@@ -368,3 +368,5 @@ tags:
 **NARRATOR** – Without saying a word, Vernon rises from the table and strides toward the exit. You follow him. Behind you, the thief-in-law's roar fills the room.
 
 **GRAVE** – Well, why the fuck did everyone go quiet?! This ain't a wake! Get the musicians back in here, tell the cook to bring more meat, and let's fucking drink!
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

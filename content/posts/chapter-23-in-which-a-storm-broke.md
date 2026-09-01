@@ -437,3 +437,5 @@ tags:
 **FORTITUDE** [Challenging: Failure] – Your eyes close. You sink into darkness.
 
 **UMBRA** – And once again... *Nihil aeternum*. Welcome back.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

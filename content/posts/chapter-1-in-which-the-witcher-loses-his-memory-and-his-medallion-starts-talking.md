@@ -163,3 +163,5 @@ This book <a href="/posts/glava-1-v-kotoroy-vedmak-teryaet-pamyat-a-medalon-obre
 **CODEX** – It did. Until blood began to flow instead... That minstrel wore the same sort of expression, as if nothing in the world could touch him. Though once he was thrown into gaol for vagrancy and some trumped-up insult to His Majesty, he probably stopped making faces soon enough. No one knows what became of him after that. The age of endless wars began, and there were far more pressing problems to worry about.
 
 **NARRATOR** – You shake your head, give your reflection one last look, then sigh and head for the door.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

@@ -224,3 +224,5 @@ tags:
 **ROSIE** – Sure. Give him my warmest regards.
 
 **NARRATOR** – The gnome turns her full attention back to the book, making it perfectly clear that the conversation is over.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

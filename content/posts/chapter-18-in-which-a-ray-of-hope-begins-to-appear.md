@@ -196,3 +196,5 @@ tags:
 **VINCENT MEIS** – Believe me, I couldn't forget it even if I wanted to.
 
 **NARRATOR** – You leave the captain alone with his secrets, step out of the barracks, and walk slowly down the now-familiar street for a while, turning over everything you've just heard.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

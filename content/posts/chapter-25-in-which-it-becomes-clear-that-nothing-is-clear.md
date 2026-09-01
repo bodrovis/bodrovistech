@@ -358,3 +358,5 @@ tags:
 **RUNE** – Hey, I didn't understand a fucking word of that. Who the hell is Katarzyna? Your lover or something? Why are you two so hung up on her? We've got an investigation to do, remember!
 
 **VERNON ROCHE** – Yes, the boy is right. Enough theorizing. I suggest we go back to Karmen's room and take another look at where the shot could have come from.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

@@ -350,3 +350,5 @@ tags:
 **NARRATOR** – He shakes your hand and leaves, calling out to Garte on the way and asking him to have dinner brought up to his room. Dishes still clatter all around you, someone is talking quietly by the bar, and logs crackle in the fireplace. And yet, for some reason, the tavern suddenly feels noticeably quieter.
 
 **UMBRA** [Easy: Success] – How strange... Over these past two days, you've already grown used to having that tall, self-assured swordsman in his doublet and turban beside you. As though he had always been part of your life — the very life you remember nothing about.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

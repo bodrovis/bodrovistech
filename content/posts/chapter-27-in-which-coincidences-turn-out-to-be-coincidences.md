@@ -414,3 +414,5 @@ tags:
 **UMBRA** [Challenging: Success] – You know two theories already... Evil as the absence of good. Evil as the refusal to think. But Wojciech was neither "empty" nor thoughtless. He reflected, he felt pity, he brought flowers to a grieving woman — and still he kept killing. He simply built a view of the world in which every shot made him a savior rather than a murderer. Perhaps the most frightening person is not the one who cannot tell good from evil, but the one who claims the right to decide where the boundary lies.
 
 **VERNON ROCHE** – In any case, well done, Geralt. Excellent work. Now let's return to the square and decide what to do next...
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

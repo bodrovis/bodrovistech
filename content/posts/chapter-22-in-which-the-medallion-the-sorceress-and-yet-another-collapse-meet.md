@@ -362,3 +362,5 @@ tags:
 **NARRATOR** – Once you've recovered enough to move, you limp back toward the exit. Bright sunlight hits your eyes, still aching from Elżbieta's parting gift. The world looks offensively fresh — as though it hadn't just watched the two of you nearly get smeared across a dungeon floor.
 
 **VERNON ROCHE** – I suggest we return to the tavern and think this through properly.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

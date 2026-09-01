@@ -210,3 +210,5 @@ tags:
 **NARRATOR** – He disappears into the shed. The white horse stands by the fence with calm dignity.
 
 **UMBRA** [Medium: Success] – And now you are alone again... So much has been lost over the past few days... and all you've gained is a name you don't even like.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

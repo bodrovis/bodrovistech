@@ -380,3 +380,5 @@ tags:
 **CODEX** [Easy: Failure] – You haven't the faintest idea what "Gwent" is.
 
 **VICE** [Trivial: Success] – But you know *exactly* what "a drink" means! Maybe this Jaskier fellow isn't so bad after all!
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

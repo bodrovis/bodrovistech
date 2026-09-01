@@ -414,3 +414,5 @@ tags:
 **VERNON ROCHE** – Come. We need a proper night's sleep.
 
 **NARRATOR** – You walk away down the dark street. Somewhere in the wind, a sign creaks. From an open window across the street comes the sound of a quiet lullaby, while around the corner an unseen cat meows. Vizima sleeps uneasily, as though already tormented by the nightmares of tomorrow.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

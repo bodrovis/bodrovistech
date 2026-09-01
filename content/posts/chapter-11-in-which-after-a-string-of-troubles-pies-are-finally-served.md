@@ -226,3 +226,5 @@ tags:
 **NARRATOR** – She nods, waves goodbye, and disappears through the door of the bookshop. For some reason, you find yourself grinning from ear to ear as you turn on your heel and stroll back toward the tavern. For the first time, the surrounding streets don't seem quite so awful.
 
 **UMBRA** [Easy: Success] – In a way, you were right. The Temple Quarter really is short on kindness. But I suspect that kindness will have to be fought for.
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)

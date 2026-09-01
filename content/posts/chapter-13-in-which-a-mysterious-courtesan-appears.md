@@ -144,3 +144,5 @@ tags:
 **UMBRA** [Challenging: Failure] – What a strange conversation... Why did he even speak to you? Just to chat? Or did you fail to notice something important again?
 
 **YOU** – No idea...
+
+→ [Read all other chapters of *The Witcher: Return to Elysium*](https://bodrovis.tech/tags/witcher-return-to-elysium/)
