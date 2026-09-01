@@ -62,7 +62,7 @@ draft: false
       <a href="https://catandmouseteam.xyz/" target="_blank" rel="noopener">Cat &amp; Mouse team</a> &mdash; translations, writing &amp; research
     </li>
     <li>
-      <a href="https://bodrovis.tech/tags/%D0%B2%D0%B5%D0%B4%D1%8C%D0%BC%D0%B0%D0%BA-%D0%B2%D0%BE%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-%D1%8D%D0%BB%D0%B8%D0%B7%D0%B8%D1%83%D0%BC/" target="_blank" rel="noopener">Ведьмак: Возвращение в Элизиум</a> &mdash; фанфик по мотивам вселенных The Witcher и Disco Elysium. Детективная история, приправленная разнообразными философскими размышлениями.
+      <a href="/tags/witcher-return-to-elysium/" target="_blank" rel="noopener">The Witcher: Return to Elysium</a> &mdash; a fanfiction inspired by the worlds of The Witcher and Disco Elysium. A detective story mixed with various philosophical reflections.
     </li>
     <li>
       <a href="https://harrypot.lol" target="_blank" rel="noopener">"Гарри и вагон косяков"</a> &mdash; юмористический проект, посвящённый грехам в книгах о знаменитом персонаже
