@@ -69,7 +69,7 @@ tags:
 
 **HORRIFIC MEDALLION** – YES!!! Don't listen to that bore! He'd ask for water at his own funeral.
 
-**KALKSTEIN** – The meal is on me, of course, pan Beaupré.
+**KALKSTEIN** – Naturally, the meal is on me, pan Beaupré.
 
 **NARRATOR** – Your new acquaintance smiles and settles back into his seat. In a way, he has just bought himself a pleasant evening, a willing conversation partner, and perhaps material for a future anatomical paper.
 
@@ -85,7 +85,7 @@ tags:
 
 **UMBRA** [Challenging: Failure] – Home. A good word. A warm one. So why does it feel empty inside? Dead cold.
 
-**NARRATOR** – Kalkstein listens with great attention, thoughtfully turning the wineglass in his hands, a little wine still left at the bottom. He even seems to sober up slightly.
+**NARRATOR** – Kalkstein listens with great attention, thoughtfully turning the goblet in his hands, a little wine still left at the bottom. He even seems to sober up slightly.
 
 **SENSIBILITY** – He believes you. He doesn't think you're just messing around.
 
@@ -117,7 +117,7 @@ tags:
 
 **YOU** – Six hundred and thirty-nine.
 
-**NARRATOR** – The scholar shakes his head in disappointment, like a doctor reluctant to alarm his patient right from the start.
+**NARRATOR** – The scholar shakes his head in disappointment, like a doctor reluctant to alarm his patient too soon.
 
 **KALKSTEIN** – I'm afraid not, pan witcher... The correct answer is almost twice that. Still, I should point out that you do know some things, which means the situation is far from hopeless. What do you think might have caused an episode like this? Could your mind perhaps be trying to protect itself from some traumatic memories?
 
@@ -265,7 +265,7 @@ tags:
 
 **UMBRA** [Medium: Failure] – What a strange feeling... How can that even be possible?
 
-**YOU** – What do you mean, "they're gone"?.. I can see them right now.
+**YOU** – What do you mean, "they no longer exist"? I can see them right now.
 
 **KEEN EYE** [Medium: Failure] – You can. Though almost all of them seem to be strangely doubled, and some keep jumping back and forth. Suspicious behavior for celestial bodies.
 
@@ -319,11 +319,11 @@ tags:
 
 **CODEX** [Trivial: Failure] – Actually, there was some well-known saying about starting not with a tavern, but with... a square, I think. Starting from one. Or standing in one... I don't remember.
 
-**FOREBODING** [Challenging: Success] – But even there, in those unknown reaches, you will smell lilac and gooseberries again. Their scent will drift through alien air. It will live in strange grasses. Lurk among the flowers of that mysterious world. It will not let you go. Ever. And the celestial gates remain locked.
+**FOREBODING** [Challenging: Success] – But even there, in those unknown reaches, you will smell lilac and gooseberries again. Their scent will drift through alien air. It will live in strange grasses. Lurk among the flowers of that mysterious world. It will not let you go. Ever. And the gates of heaven remain locked.
 
 **YOU** – I... don't understand anything anymore... What gates?..
 
-**FOREBODING** – The ones opened with a silver key... She who keeps it has not yet appeared. The time has not yet come.
+**FOREBODING** – The ones for which there is a silver key... She who keeps it has not yet appeared. The time has not yet come.
 
 **NARRATOR** – How exactly you made it back to your room at the Shaggy Bear is already impossible to remember. The evening has broken apart into separate fragments, clumsily glued together: the cold stone of the fountain, Kalkstein's shoulder, another bottle of wine, and a piece of cheese your star-brother had thoughtfully brought along, only to drop it into some ditch...
 

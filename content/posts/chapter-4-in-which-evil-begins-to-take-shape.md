@@ -127,7 +127,7 @@ tags:
 
 **GIRL BY THE FOUNTAIN** – For example, a seasoned warrior like you would surely be interested in a book about the hundred most famous battles in history! It even covers the Battle of Brenna! And if you have children, we also sell picture books for younger readers — like the new *Who Stole Mother Goose's Golden Egg?* Little ones adore that story, especially the chapter where the crafty jackal tricks the hard-of-hearing bear judge!
 
-**REFLEX** [Easy: Success] – A seasoned warrior? What gave her that idea? A fine warrior you are — you’ve managed to lose your swords. Right now, you look more like a sack of shit.
+**REFLEX** [Easy: Success] – A seasoned warrior? What gave her that idea? A fine warrior you are — you've managed to lose your swords. Right now, you look more like a sack of shit.
 
 **MASQUE** [Challenging: Failure] – No, no. You look like the protagonist of some... hmm... tragedy. A very famous and very sad one. Full of endlessly long monologues and violins sobbing softly in the background.
 

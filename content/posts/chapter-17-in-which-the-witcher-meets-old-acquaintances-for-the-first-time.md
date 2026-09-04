@@ -125,7 +125,7 @@ tags:
 
 **MAN WITH ORANGE EYES** – Exactly! Astonishing. How did you ever guess?
 
-**DIALECTIC** [Trivial: Failure] – You're pretty sharp yourself! Anyone can see it: this guy's got brains.
+**DIALECTIC** [Trivial: Failure] – You're no slouch yourself! Anyone can see it: this guy's got brains.
 
 **MAN WITH ORANGE EYES** – Our headquarters is in the old fortress of Kaer Morhen. Ever heard of it?
 

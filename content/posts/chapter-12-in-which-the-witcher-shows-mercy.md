@@ -88,7 +88,7 @@ tags:
 
 **NARRATOR** – The red-haired runt just waves her off.
 
-**RUNE** – We ain't fucking buddies! Just two hard men showing each other some respect. All right, ask away, old man. What'd you wanna know? I'm feeling real fucking generous today.
+**RUNE** – We ain't fucking buddies! Just two hard men showing each other some respect. All right, ask away, gramps. What'd you wanna know? I'm feeling real fucking generous today.
 
 **SENSIBILITY** [Challenging: Success] – You can get through to Rune. His friend is another matter. She's completely feral — she keeps as much distance as possible and is in no hurry to trust some strange grown man. There's something in that look of hers... It's frightening to imagine what she may already have been through at such a young age.
 

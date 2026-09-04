@@ -85,7 +85,7 @@ tags:
 
 **NARRATOR** – To the right of the entrance, you are surprised to find the young gnome from yesterday. She is sitting on a tiny chair with one leg crossed over the other, absorbed in some book. A glass of coffee stands on the little table beside her.
 
-**REFLEX** [Challenging: Failure] – Maybe she's reading Mother Goose?
+**REFLEX** [Challenging: Failure] – Maybe she's reading about Mother Goose?
 
 **GNOME** – Ah, you again! Morning, gentlemen! Just in case, I should mention: we're still in Vizima.
 
