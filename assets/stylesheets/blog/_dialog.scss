@@ -8,25 +8,31 @@
   backdrop-filter: blur(3px);
 
   padding: 3rem 1rem 2rem;
+  box-sizing: border-box;
+
+  align-items: center;
+  justify-content: center;
 
   .dialog-content {
-    position: relative;
-    margin: 0 auto;
-    width: 90%;
-    max-width: 90%;
+    width: fit-content;
+    max-width: min(90vw, 1200px);
+    max-height: calc(100vh - 5rem);
+
+    margin: 0;
     background: transparent;
 
     img {
       display: block;
       max-width: 100%;
-      max-height: calc(100vh - 8rem);
+      max-height: calc(100vh - 9rem);
       width: auto;
       height: auto;
-      margin: 0 auto 1rem;
+      margin: 0 auto 0.75rem;
       object-fit: contain;
     }
 
     p {
+      max-width: 100%;
       text-align: center;
       font-size: 1rem;
       margin: 0;
@@ -34,10 +40,33 @@
     }
   }
 
+  .gallery-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    margin: 0.4rem 0 0.75rem;
+    font-size: 0.85rem;
+    color: #666;
+
+    &::before {
+      content: '';
+      width: 0.9rem;
+      height: 0.9rem;
+      border: 2px solid #ccc;
+      border-top-color: #444;
+      border-radius: 50%;
+      animation: gallery-spin 0.8s linear infinite;
+      flex: 0 0 auto;
+    }
+  }
+
   .close-dialog {
     position: fixed;
     top: 10px;
     right: 25px;
+
     text-decoration: none;
     font-size: 3rem;
     font-weight: bold;
@@ -49,5 +78,11 @@
     &:focus-visible {
       color: #444;
     }
+  }
+}
+
+@keyframes gallery-spin {
+  to {
+    transform: rotate(360deg);
   }
 }

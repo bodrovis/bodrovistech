@@ -49,12 +49,19 @@ blockquote {
 a {
   color: shared.$radiant;
   text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.12em;
 
   &:hover,
-  &:focus,
   &:active {
     text-decoration: none;
     color: color.adjust(shared.$radiant, $lightness: 5%);
+  }
+
+  &:focus-visible {
+    color: color.adjust(shared.$radiant, $lightness: 5%);
+    outline: 2px solid shared.$radiant;
+    outline-offset: 2px;
   }
 }
 

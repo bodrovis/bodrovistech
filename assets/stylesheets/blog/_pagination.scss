@@ -8,21 +8,32 @@
 
   li {
     border: 1px solid #ccc;
-    border-right: 0 none;
+    border-right: 0;
+
+    &.ellipsis {
+      span {
+        color: #777;
+        cursor: default;
+      }
+    }
+
+    a,
+    span {
+      display: block;
+      padding: 0.2em 0.7em;
+    }
 
     a {
       color: shared.$radiant;
-      display: block;
       text-decoration: none;
-      border: 0;
-      padding: 0.2em 0.7em;
+
       transition:
         background-color 0.2s ease,
         color 0.2s ease;
 
       &:hover {
-        background-color: #f0f0f0;
         color: #222;
+        background-color: #f0f0f0;
       }
 
       &:focus-visible {
@@ -31,38 +42,36 @@
       }
     }
 
-    &.active,
+    &.active {
+      span {
+        color: #222;
+        background-color: #f0f0f0;
+      }
+    }
+
     &.disabled {
-      a {
-        &,
-        &:hover,
-        &:focus-visible {
-          cursor: default;
-          color: #ccc;
-          background-color: transparent;
-          outline: none;
-        }
+      span {
+        color: #ccc;
+        cursor: default;
       }
     }
 
     &:first-of-type {
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
+      border-radius: 10px 0 0 10px;
 
-      a {
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+      a,
+      span {
+        border-radius: 10px 0 0 10px;
       }
     }
 
     &:last-of-type {
       border-right: 1px solid #ccc;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
+      border-radius: 0 10px 10px 0;
 
-      a {
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+      a,
+      span {
+        border-radius: 0 10px 10px 0;
       }
     }
   }

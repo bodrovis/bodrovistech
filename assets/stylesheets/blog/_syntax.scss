@@ -6,16 +6,10 @@
 .chroma {
   background-color: #fff;
 }
-/* Other */
-.chroma .x {
-}
 /* Error */
 .chroma .err {
   color: #a61717;
   background-color: #e3d2d2;
-}
-/* CodeLine */
-.chroma .cl {
 }
 /* LineLink */
 .chroma .lnlinks {
@@ -98,9 +92,6 @@
   color: #458;
   font-weight: bold;
 }
-/* Name */
-.chroma .n {
-}
 /* NameAttribute */
 .chroma .na {
   color: #008080;
@@ -141,9 +132,6 @@
   color: #900;
   font-weight: bold;
 }
-/* NameFunctionMagic */
-.chroma .fm {
-}
 /* NameLabel */
 .chroma .nl {
   color: #900;
@@ -152,12 +140,6 @@
 /* NameNamespace */
 .chroma .nn {
   color: #555;
-}
-/* NameOther */
-.chroma .nx {
-}
-/* NameProperty */
-.chroma .py {
 }
 /* NameTag */
 .chroma .nt {
@@ -178,15 +160,6 @@
 /* NameVariableInstance */
 .chroma .vi {
   color: #008080;
-}
-/* NameVariableMagic */
-.chroma .vm {
-}
-/* Literal */
-.chroma .l {
-}
-/* LiteralDate */
-.chroma .ld {
 }
 /* LiteralString */
 .chroma .s {
@@ -282,9 +255,6 @@
   color: #000;
   font-weight: bold;
 }
-/* Punctuation */
-.chroma .p {
-}
 /* Comment */
 .chroma .c {
   color: #998;
@@ -322,9 +292,6 @@
   color: #999;
   font-weight: bold;
   font-style: italic;
-}
-/* Generic */
-.chroma .g {
 }
 /* GenericDeleted */
 .chroma .gd {

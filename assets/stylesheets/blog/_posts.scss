@@ -6,17 +6,14 @@
     padding-top: 0;
 
     a {
-      &:is(:link, :visited, :active) {
-        border: 0;
-        text-decoration: none;
-        color: shared.$radiant;
-        transition: text-shadow 0.8s ease 0s;
-      }
+      border: 0;
+      text-decoration: none;
+      color: shared.$radiant;
+      transition: text-shadow 0.8s ease;
 
       &:hover,
       &:focus-visible {
         text-shadow: 1px 1px 4px #93c6c6;
-        outline: none;
       }
     }
   }

@@ -1,0 +1,107 @@
+{{ $paginator := .Paginator }}
+{{ $current := $paginator.PageNumber }}
+{{ $total := $paginator.TotalPages }}
+{{ $radius := 3 }}
+
+{{ if gt $total 1 }}
+<nav aria-label="Pagination">
+  <ul class="pagination">
+
+    {{/* Previous */}}
+    {{ if $paginator.HasPrev }}
+      <li>
+        <a
+          href="{{ $paginator.Prev.URL }}"
+          rel="prev"
+          aria-label="Previous page"
+        >
+          &laquo;
+        </a>
+      </li>
+    {{ else }}
+      <li class="disabled">
+        <span aria-hidden="true">&laquo;</span>
+      </li>
+    {{ end }}
+
+    {{/* First page */}}
+    {{ if eq $current 1 }}
+      <li class="active">
+        <span aria-current="page">1</span>
+      </li>
+    {{ else }}
+      <li>
+        <a href="{{ $paginator.First.URL }}">1</a>
+      </li>
+    {{ end }}
+
+    {{/* Left ellipsis */}}
+    {{ if gt $current (add $radius 2) }}
+      <li class="ellipsis">
+        <span aria-hidden="true">&hellip;</span>
+      </li>
+    {{ end }}
+
+    {{/* Pages around current page, excluding first and last */}}
+    {{ range $paginator.Pagers }}
+      {{ $number := .PageNumber }}
+      {{ $distance := sub $number $current }}
+
+      {{ if and
+        (gt $number 1)
+        (lt $number $total)
+        (ge $distance (mul -1 $radius))
+        (le $distance $radius)
+      }}
+        {{ if eq $number $current }}
+          <li class="active">
+            <span aria-current="page">{{ $number }}</span>
+          </li>
+        {{ else }}
+          <li>
+            <a href="{{ .URL }}">{{ $number }}</a>
+          </li>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Right ellipsis */}}
+    {{ if lt $current (sub $total (add $radius 1)) }}
+      <li class="ellipsis">
+        <span aria-hidden="true">&hellip;</span>
+      </li>
+    {{ end }}
+
+    {{/* Last page */}}
+    {{ if gt $total 1 }}
+      {{ if eq $current $total }}
+        <li class="active">
+          <span aria-current="page">{{ $total }}</span>
+        </li>
+      {{ else }}
+        <li>
+          <a href="{{ $paginator.Last.URL }}">{{ $total }}</a>
+        </li>
+      {{ end }}
+    {{ end }}
+
+    {{/* Next */}}
+    {{ if $paginator.HasNext }}
+      <li>
+        <a
+          href="{{ $paginator.Next.URL }}"
+          rel="next"
+          aria-label="Next page"
+        >
+          &raquo;
+        </a>
+      </li>
+    {{ else }}
+      <li class="disabled">
+        <span aria-hidden="true">&raquo;</span>
+      </li>
+    {{ end }}
+
+  </ul>
+</nav>
+{{ end }}

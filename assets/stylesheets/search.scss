@@ -1,12 +1,46 @@
-@use 'shared/icomoon';
-@use 'shared/shared';
-@use 'modern-normalize/modern-normalize';
-@use 'blog/global';
-@use 'blog/main_blocks';
-@use 'blog/conditional';
+@use "shared/icomoon";
+@use "shared/shared";
+@use "modern-normalize/modern-normalize";
+@use "blog/global";
+@use "blog/main_blocks";
+@use "blog/conditional";
 
 :root {
-  --pf-font: 'PT Sans', sans-serif;
-  --pf-outline-focus: shared.$radiant;
-  --pf-border-focus: shared.$radiant;
+  --pf-font: "PT Sans", sans-serif;
+
+  --pf-mark: #{shared.$radiant};
+  --pf-outline-focus: #{shared.$radiant};
+  --pf-border-focus: #{shared.$radiant};
+
+  --pf-input-height: 52px;
+  --pf-input-font-size: 1.3rem;
+  --pf-searchbox-max-width: 100%;
+  --pf-border-radius: 8px;
+}
+
+#content {
+  pagefind-searchbox {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    margin: 2rem auto;
+
+    --pf-summary-font-size: 1rem;
+
+    .pf-searchbox-result-title {
+      font-size: 1.3rem !important;
+      line-height: 1.3;
+    }
+
+    .pf-searchbox-result-excerpt {
+      font-size: 1.1rem !important;
+      line-height: 1.45;
+      color: #666 !important;
+    }
+
+    .pf-searchbox-footer-hint {
+      font-size: 0.95rem !important;
+      color: #777 !important;
+    }
+  }
 }

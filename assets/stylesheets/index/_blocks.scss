@@ -11,15 +11,10 @@ body {
   font-size: 16px;
   min-width: 320px;
   font-family: "Trebuchet MS", Tahoma, sans-serif;
-  word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 ::selection {
-  background-color: color.adjust(#ccc, $lightness: -5%);
-}
-
-::-moz-selection {
   background-color: color.adjust(#ccc, $lightness: -5%);
 }
 
@@ -49,10 +44,9 @@ body {
 }
 
 .wide-block {
-  width: 50em;
-  @include shared.auto_margin();
-  margin-bottom: 2em;
-  margin-top: 2em;
+  width: min(50em, calc(100% - 2rem));
+  margin-inline: auto;
+  margin-block: 2em;
   padding: 1em;
 
   .logo-img {
@@ -60,12 +54,12 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    @include shared.auto_margin();
+   margin-inline: auto;
   }
 
   .logo {
     display: block;
-    @include shared.auto_margin();
+    margin-inline: auto;
     width: 120px;
   }
 
@@ -96,8 +90,7 @@ body {
   background-color: shared.$radiant;
   color: shared.$lightgrey;
   border-radius: 0.5em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-inline: 0.5em;
   height: 2rem;
   line-height: 2rem;
   display: inline-block;
@@ -145,7 +138,7 @@ body {
   transition: box-shadow 0.3s ease 0s;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     box-shadow: inset #e0e0e0 -3px -3px 4px;
     color: shared.$radiant;
   }

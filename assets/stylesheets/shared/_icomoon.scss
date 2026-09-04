@@ -1,11 +1,9 @@
 @font-face {
   font-family: "icomoon";
-  src: url("/fonts/icomoon.eot?5ucb3y");
   src:
-    url("/fonts/icomoon.eot?5ucb3y#iefix") format("embedded-opentype"),
-    url("/fonts/icomoon.ttf?5ucb3y") format("truetype"),
-    url("/fonts/icomoon.woff?5ucb3y") format("woff"),
-    url("/fonts/icomoon.svg?5ucb3y#icomoon") format("svg");
+    url("/fonts/icomoon.woff2?5ucb3y") format("woff2"),
+    url("/fonts/icomoon.woff?5ucb3y") format("woff");
+
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,44 +11,50 @@
 
 [class^="icon-"],
 [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  // speak: never;
+
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
 
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-tags:before {
+.icon-tags::before {
   content: "\e903";
 }
-.icon-book:before {
+
+.icon-book::before {
   content: "\e91f";
 }
-.icon-search:before {
+
+.icon-search::before {
   content: "\e986";
 }
-.icon-home:before {
+
+.icon-home::before {
   content: "\e900";
 }
-.icon-envelop:before {
+
+.icon-envelop::before {
   content: "\e945";
 }
-.icon-telegram:before {
+
+.icon-telegram::before {
   content: "\ea95";
 }
-.icon-youtube:before {
+
+.icon-youtube::before {
   content: "\ea9d";
 }
-.icon-github:before {
+
+.icon-github::before {
   content: "\eab0";
 }
-.icon-linkedin:before {
+
+.icon-linkedin::before {
   content: "\eac9";
 }

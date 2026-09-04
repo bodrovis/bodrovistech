@@ -21,16 +21,22 @@
   </div>
 
   <div id="logo">
-    {{ with resources.GetMatch "images/icon150trans.webp" }}
-    <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="Ilya Krukowski logo"
-      class="img-logo">
-    {{ end }}
+    <a href="{{ "/blog" | relURL }}">
+      {{ with resources.GetMatch "images/icon150trans.webp" }}
+        <img
+          src="{{ .RelPermalink }}"
+          width="{{ .Width }}"
+          height="{{ .Height }}"
+          alt="Ilya Krukowski logo"
+          class="img-logo"
+        >
+      {{ end }}
 
-    <p>
-      <a href="{{ "/blog" | relURL }}">
-        <span class="capital">I</span>lya <span class="capital">K</span>rukowski
+      <p>
+        <span class="capital">I</span>lya
+        <span class="capital">K</span>rukowski
         <span class="subtitle">https://bodrovis.tech</span>
-      </a>
-    </p>
+      </p>
+    </a>
   </div>
 </header>
