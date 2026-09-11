@@ -32,7 +32,7 @@ tags:
 
 **JANUSZ** – We should report this to the captain.
 
-**JURAJDA** – Yeah. And I should've been born the son of a rich merchant instead of standing here knee-deep in somebody else's shit. But here we are. Fucking job... All right, enough standing around. Move!
+**JURAJDA** – Yeah. And I should've been born the son of a rich merchant instead of standing here knee-deep in somebody else's shit. But here we are. Damn this job... All right, enough standing around. Move!
 
 **BOND OF STEEL** – They turn and run toward the barracks.
 

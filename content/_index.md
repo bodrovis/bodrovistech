@@ -90,4 +90,6 @@ draft: false
   <a class="icon-linkedin" title="LinkedIn"
      href="https://linkedin.com/in/bodrovis"
      target="_blank" rel="noopener noreferrer"></a>
+  <a class="icon-envelop" title="E-mail"
+     href="mailto:bodrovis@proton.me"></a>
 </aside>
