@@ -6,13 +6,7 @@ draft: false
   <h3>Hello!</h3>
 
   <p>
-    My name is <strong>Ilya Krukowski</strong> (<strong>Илья Круковский</strong>, also known as <strong>bodrovis</strong>).
-    I am a developer (Ethereum/Solidity, Go, Ruby/Rails, JS/TS, Elixir, Python), lead of content/documentation/onboarding at Lokalise,
-    Microsoft and Cisco specialist, author and tutor.
-    Learn more on my
-    <a href="https://linkedin.com/in/bodrovis" target="_blank" rel="noopener noreferrer">LinkedIn page</a>
-    and
-    <a href="https://github.com/bodrovis" target="_blank" rel="noopener noreferrer">GitHub</a>.
+    My name is <strong>Elijah S. Krukowski</strong> (<strong>Илья Круковский</strong>, also known as <strong>bodrovis</strong>). I am a developer (Ethereum/Solidity, Go, Ruby/Rails, JS/TS, Elixir, Python, sometimes Rust), lead of content/documentation/onboarding at Lokalise, Microsoft and Cisco specialist, author and tutor. Learn more on my <a href="https://linkedin.com/in/bodrovis" target="_blank" rel="noopener noreferrer">LinkedIn page</a> and <a href="https://github.com/bodrovis" target="_blank" rel="noopener noreferrer">GitHub</a>.
   </p>
 </article>
 
