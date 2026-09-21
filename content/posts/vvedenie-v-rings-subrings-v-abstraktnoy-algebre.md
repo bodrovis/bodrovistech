@@ -9,6 +9,10 @@ tags:
 - zero knowledge
 ---
 
+{{< video TfuGSM3Tb8E >}}
+
+{{< video _rgPeRwj1Rc >}}
+
 До сих пор мы в основном изучали **groups / группы**. У группы есть **одна основная операция**. Например:
 
 ```text

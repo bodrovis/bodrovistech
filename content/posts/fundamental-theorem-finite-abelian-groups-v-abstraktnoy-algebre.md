@@ -9,6 +9,8 @@ tags:
 - zero knowledge
 ---
 
+{{< video KXAiLVEvXig >}}
+
 Мы уже знаем, как собирать новые группы с помощью external direct product:
 
 ```text

@@ -19,8 +19,19 @@
   </section>
 
   <div id="posts-list">
-    {{ range .Data.Pages }}
+
+    {{ $pages := .Data.Pages }}
+
+    {{ if eq (.Params.sort_order | default "desc") "asc" }}
+      {{ $pages = $pages.ByDate }}
+    {{ else }}
+      {{ $pages = $pages.ByDate.Reverse }}
+    {{ end }}
+
+    {{ range $pages }}
+
     <article class="entry">
+
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
 
       <aside>
@@ -34,8 +45,11 @@
       </p>
 
       <hr>
+
     </article>
+
     {{ end }}
+
   </div>
 </main>
 
