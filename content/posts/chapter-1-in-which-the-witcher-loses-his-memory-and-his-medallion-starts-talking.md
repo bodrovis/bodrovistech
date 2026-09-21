@@ -26,6 +26,8 @@ tags:
 > We are unknown to ourselves, we knowers: and with good reason...  
 > *— Friedrich Nietzsche, "On the Genealogy of Morality"*
 
+<img src="/img/witcher_cover_en_small.jpg" alt="The Witcher: Return to Elysium cover image" />
+
 **NARRATOR** – ...An infinite amount of time passes... At last, consciousness returns. You're lying on the floor in a bone-crushingly unnatural position. It's a miracle you haven't broken your neck in at least two places. The whole body is twisted as if someone tried to stuff it into a chest of drawers, but then gave up halfway through.
 
 <div class="callout">
