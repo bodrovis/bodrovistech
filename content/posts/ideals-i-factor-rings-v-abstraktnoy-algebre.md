@@ -29,6 +29,8 @@ G / N
 
 В ring theory происходит похожая история.
 
+{{< video xrKJpCIEBAQ >}}
+
 Subrings похожи на subgroups, но для построения quotient structures их недостаточно. Нужна более сильная структура:
 
 ```text
