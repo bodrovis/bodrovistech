@@ -203,10 +203,10 @@ align="left"
 Честно говоря, лично мне это утверждение кажется довольно спорным, хотя рассказ о нелёгкой судьбе своей жены художник действительно строит вокруг фигуры Питера. Чтобы развлечь Эмили, Уэйн начал учить кота трюкам, а также изображал его во всевозможных ситуациях. Луис часто рисовал, сидя возле кровати больной жены, а кот оказался прекрасной «моделью». Эмили советовала мужу показать эти наброски издателям, но тот считал, что ими никто не заинтересуется.
 
 {{< gallery
-src="https://catland.distin.org/_images/f0a4de9ee733af7a19a6f1f09202652a/8579%20-%208subjects%20black_and_white%20book_item%20cane%20carrying%20cat%20cat%3Atuxedo%20clothes%3Abowtie%20color%3Awhite%20dog%20frightened%20indoors%20ink%20kitten%20meta%3Ahas_source%20meta%3Aneedsyear%20profile%20realistic%20unhappy.png"
-preview="https://catland.distin.org/_thumbs/f0a4de9ee733af7a19a6f1f09202652a/thumb.jpg"
-alt="The New Dog Fancy- Bassett Hounds"
-caption="The New Dog Fancy- Bassett Hounds"
+src="https://catland.distin.org/_images/04a28f2f869e1a5b9f811cbae17da542/2401%20-%20black_and_white%20caption%20crab%20fish%20lobster%20manysubjects%20meta%3Ahas_source%20meta%3Aneedsyear%20octopus%20profile%20realistic%20signature.jpg"
+preview="https://catland.distin.org/_thumbs/04a28f2f869e1a5b9f811cbae17da542/thumb.jpg"
+alt="Odd Fish at the International Fisheries Exhibition"
+caption="Odd Fish at the International Fisheries Exhibition"
 >}}
 
 Первый рисунок Уэйна, опубликованный в *Illustrated London News* под его собственным именем, появился в 1883 году и назывался *Odd Fish at the International Fisheries Exhibition*. Уже в следующем году в журнале вышла работа *A New Dog-Fancy: The Basset Hounds*, где среди собак появились и три кошки — две из них были срисованы с Питера. Вообще, довольно интересно, что в этот период Луис много рисовал собак и других животных: кошки ещё не успели стать его фирменной темой. Да и их положение в викторианском доме было несколько иным, чем сегодня: кошек уже держали в качестве домашних любимцев и устраивали для них выставки, однако такой статус был куда менее устоявшимся, чем у собак.
@@ -214,6 +214,13 @@ caption="The New Dog Fancy- Bassett Hounds"
 В том же 1884 году Уэйн опубликовал *Our Cats: A Domestic History* — одну из ранних сюжетных серий с Питером в главной роли. По сюжету кот остаётся без должного внимания: хозяева уезжают на море, из-за чего он теряет форму и уже не может достойно выступить на кошачьей выставке в Crystal Palace. Получается, что ещё до знаменитых антропоморфных сцен Уэйн уже превращал кошек в героев маленьких комических историй.
 
 Очень похоже, что чёрно-белый кот действительно изменил направление карьеры Уэйна. Впоследствии наш герой рассказывал, что «старый добрый Питер» был чрезвычайно умным: выполнял команды, мог сидеть с очками на носу, держать в лапах открытки и ждал возвращения хозяина возле двери. Вообще, Луис считал, что интеллект кошек сильно недооценивают. В качестве примера он приводил забавный случай. По ночам в доме слышались загадочные звуки, которые гости принимали едва ли не за шаги привидения. Виновником оказался Питер: он поднимал край дверного коврика и ронял его обратно, повторяя это через равные промежутки времени, пока кто-нибудь не открывал ему дверь.
+
+{{< gallery
+src="https://catland.distin.org/_images/f0a4de9ee733af7a19a6f1f09202652a/8579%20-%208subjects%20black_and_white%20book_item%20cane%20carrying%20cat%20cat%3Atuxedo%20clothes%3Abowtie%20color%3Awhite%20dog%20frightened%20indoors%20ink%20kitten%20meta%3Ahas_source%20meta%3Aneedsyear%20profile%20realistic%20unhappy.png"
+preview="https://catland.distin.org/_thumbs/f0a4de9ee733af7a19a6f1f09202652a/thumb.jpg"
+alt="The New Dog Fancy - Bassett Hounds"
+caption="The New Dog Fancy - Bassett Hounds"
+>}}
 
 Надо сказать, в доме Уэйна со временем появлялись и другие кошки. Согласно воспоминаниям очевидца, знакомые приносили Луису брошенных котят, и вскоре в доме развелось столько хвостатых жителей, что некоторым пришлось переехать во двор. Несмотря на это, Питер всегда оставался своеобразным патриархом или «пра-котом», как его называл художник.
 

@@ -244,15 +244,10 @@ Things at home, however, were far from happy: because of progressing cancer, Emi
 Personally, I find that claim rather debatable, although it is true that Wain builds his account of his wife's difficult fate around Peter. To amuse Emily, Wain began teaching the cat tricks and drawing him in all sorts of situations. Louis often worked while sitting beside his sick wife's bed, and the cat proved to be an excellent “model.” Emily advised her husband to show these sketches to publishers, but he believed no one would be interested.
 
 {{< gallery
-
-src="https://catland.distin.org/_images/f0a4de9ee733af7a19a6f1f09202652a/8579%20-%208subjects%20black_and_white%20book_item%20cane%20carrying%20cat%20cat%3Atuxedo%20clothes%3Abowtie%20color%3Awhite%20dog%20frightened%20indoors%20ink%20kitten%20meta%3Ahas_source%20meta%3Aneedsyear%20profile%20realistic%20unhappy.png"
-
-preview="https://catland.distin.org/_thumbs/f0a4de9ee733af7a19a6f1f09202652a/thumb.jpg"
-
-alt="The New Dog Fancy- Bassett Hounds"
-
-caption="The New Dog Fancy- Bassett Hounds"
-
+src="https://catland.distin.org/_images/04a28f2f869e1a5b9f811cbae17da542/2401%20-%20black_and_white%20caption%20crab%20fish%20lobster%20manysubjects%20meta%3Ahas_source%20meta%3Aneedsyear%20octopus%20profile%20realistic%20signature.jpg"
+preview="https://catland.distin.org/_thumbs/04a28f2f869e1a5b9f811cbae17da542/thumb.jpg"
+alt="Odd Fish at the International Fisheries Exhibition"
+caption="Odd Fish at the International Fisheries Exhibition"
 >}}
 
 The first drawing Wain published under his own name in *Illustrated London News* appeared in 1883 and was titled *Odd Fish at the International Fisheries Exhibition*. The very next year, the magazine printed *A New Dog-Fancy: The Basset Hounds*, in which three cats appear among the dogs — two of them drawn from Peter. It is quite interesting that at this stage Louis drew many dogs and other animals: cats had not yet become his signature subject. And their place in the Victorian home was somewhat different from what it is today: cats were already kept as pets and shown at exhibitions, but their status was still far less firmly established than that of dogs.
@@ -262,6 +257,13 @@ That same year, 1884, Wain published *Our Cats: A Domestic History* — one of h
 It very much seems that the black-and-white cat really did change the direction of Wain's career. Later on, our hero recalled that “good old Peter” was extraordinarily intelligent: he obeyed commands, could sit with spectacles on his nose, hold postcards in his paws, and wait by the door for his master's return. More generally, Louis believed that the intelligence of cats was greatly underestimated. As an example, he told an amusing story. At night, mysterious noises could be heard in the house, and guests sometimes took them for the footsteps of a ghost. The culprit turned out to be Peter: he would lift the edge of the doormat and let it drop again, repeating this at regular intervals until someone opened the door for him.
 
 It should be said that other cats later appeared in Wain's household as well. According to one eyewitness, acquaintances brought Louis abandoned kittens, and before long there were so many furry residents in the house that some of them had to move out into the yard. Despite this, Peter always remained a kind of patriarch — or “proto-cat,” as the artist called him.
+
+{{< gallery
+src="https://catland.distin.org/_images/f0a4de9ee733af7a19a6f1f09202652a/8579%20-%208subjects%20black_and_white%20book_item%20cane%20carrying%20cat%20cat%3Atuxedo%20clothes%3Abowtie%20color%3Awhite%20dog%20frightened%20indoors%20ink%20kitten%20meta%3Ahas_source%20meta%3Aneedsyear%20profile%20realistic%20unhappy.png"
+preview="https://catland.distin.org/_thumbs/f0a4de9ee733af7a19a6f1f09202652a/thumb.jpg"
+alt="The New Dog Fancy - Bassett Hounds"
+caption="The New Dog Fancy - Bassett Hounds"
+>}}
 
 Still, we know the names of some of the artist's other favourites as well: Leo, a long-haired tabby; Minna, a small cat of a French breed; and [Bigit](https://cat-o-pedia.org/goblin.html) (*an incorrect version of the name, “Brigit,” can be found online*). The last of these was a magnificent Siamese cat, and Louis — clearly exaggerating — claimed that he was so enormous that the neighbours took him for a wild predator escaped from the zoo.
 
