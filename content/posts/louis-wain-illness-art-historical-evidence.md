@@ -274,15 +274,10 @@ Emily died in 1887, and Louis moved with Peter into the home of an old acquainta
 Around the same time, Wain gradually began moving in the circles of London artists and journalists. In 1925, Alfred Praga recalled frequently meeting Louis at the studio of the well-known artist Phil May. Wain also attended Praga's musical evenings, where he improvised at the piano and surprised those present with unusual harmonies. His love of music had clearly never disappeared: Praga also remembered Wain talking about several operas he had written and still hoped one day to see performed on stage.
 
 {{< gallery
-
-src="https://catland.distin.org/_images/b756e6f6ca3e4ad9eb6ff5f8086d7f27/8913%20-%201912%203subjects%20book%20book%3Aannual1912%20cat%20cat%3Atabby%20color%3Abrown%20color%3Agrey%20color%3Aorange%20humanised%20indoors%20kitten%20meta%3Afrom_beetles%20meta%3Ahas_source%20meta%3Aourscan%20profile%20signature%20smiling%20wet%20wink.jpg"
-
-preview="https://catland.distin.org/_thumbs/b756e6f6ca3e4ad9eb6ff5f8086d7f27/thumb.jpg"
-
-alt="Title unknown"
-
-caption="Title unknown"
-
+src="https://catland.distin.org/_images/5012efb56e0b46622fd1ee705299f9ac/2263%20-%201884%20bird%20biting%20black_and_white%20cage%20caption%20cat%20cat%3Atabby%20cat%3Atuxedo%20color%3Awhite%20drinking%20grooming%20knife%20manysubjects%20meta%3Ahas_source%20meta%3Aneedstranscribing%20mouse%20profile%20realistic%20sign%20signature%20sleeping%20tongue_out%20toy.jpg"
+preview="https://catland.distin.org/_thumbs/5012efb56e0b46622fd1ee705299f9ac/thumb.jpg"
+alt="Our Cats, a Domestic History"
+caption="Our Cats, a Domestic History"
 >}}
 
 According to Praga, however, Wain's favourite subjects of conversation were not cats at all, but various mystical and "psychic" phenomena. That interest in mysticism was hardly unusual for the period in itself. Arthur Conan Doyle, for example, was already taking a serious interest in paranormal research in the 1890s and joined the Society for Psychical Research in 1893. In any case, it is striking that a man already inseparably associated with cats in the public imagination apparently spoke very little about them in ordinary conversation.
@@ -292,6 +287,13 @@ By around 1890, the unmistakable "Wain cat" we recognize today had begun to take
 That same year, Wain was elected president of the National Cat Club, succeeding Harrison Weir, one of the founders of Britain's pedigree cat movement. It is interesting that Wain's rapid rise in popularity coincided with a period in which cats themselves were becoming increasingly fashionable as household pets. Of course, it would be far too simple to attribute that change to Wain alone: attitudes toward cats had already begun to shift before his rise to fame and were part of a much broader social trend.
 
 ## "Cat science"
+
+{{< gallery
+src="https://catland.distin.org/_images/b756e6f6ca3e4ad9eb6ff5f8086d7f27/8913%20-%201912%203subjects%20book%20book%3Aannual1912%20cat%20cat%3Atabby%20color%3Abrown%20color%3Agrey%20color%3Aorange%20humanised%20indoors%20kitten%20meta%3Afrom_beetles%20meta%3Ahas_source%20meta%3Aourscan%20profile%20signature%20smiling%20wet%20wink.jpg"
+preview="https://catland.distin.org/_thumbs/b756e6f6ca3e4ad9eb6ff5f8086d7f27/thumb.jpg"
+alt="Title unknown"
+caption="Title unknown"
+>}}
 
 By this point, Wain had acquired a reputation as a genuine expert on cats and, according to later recollections, even planned to write a substantial book covering almost every aspect of the subject. As already mentioned, Louis was convinced that cats were far more intelligent than people generally assumed and that they could be trained very successfully — humans simply lacked the patience required to bring out their abilities. Wain claimed that he raised his own animals entirely through kindness and believed that even the wildest cats could gradually be taught not to fight or steal.
 
