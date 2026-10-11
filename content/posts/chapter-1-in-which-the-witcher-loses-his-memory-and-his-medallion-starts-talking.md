@@ -34,7 +34,7 @@ tags:
 <p>
 This book <a href="/posts/glava-1-v-kotoroy-vedmak-teryaet-pamyat-a-medalon-obretaet-golos/">is also available in Russian</a>.
 
-This work is also <a href="https://archiveofourown.org/works/94010941">published on AO3</a> and currently being published on Royal Road.
+This work is also <a href="https://archiveofourown.org/works/94010941">published on AO3</a> and currently being published on Royal Road, SpaceBattles, and SufficientVelocity.
 </p>
 </div>
 
