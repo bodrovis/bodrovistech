@@ -36,6 +36,8 @@ tags:
 <p>
 Предпочитаете слушать, а не читать? <strong><a href="https://youtu.be/rXqLZtgwYu0" target="_blank">Аудиоверсию можно найти на YouTube</a></strong>.<br>
 This book <a href="/posts/chapter-1-in-which-the-witcher-loses-his-memory-and-his-medallion-starts-talking/">is also available in English</a>.
+
+Эта работа также <a href="https://archiveofourown.org/works/94022961">опубликована на AO3</a>.
 </p>
 </div>
 
