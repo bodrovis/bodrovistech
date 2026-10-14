@@ -33,6 +33,8 @@ multiplication
 
 Поэтому ring homomorphism должен сохранять обе.
 
+{{< video Z6WHr31Ph_E >}}
+
 ## Ring homomorphism
 
 Пусть `R` и `S` — rings.
