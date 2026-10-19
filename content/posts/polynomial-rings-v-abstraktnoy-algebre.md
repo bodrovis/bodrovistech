@@ -37,6 +37,8 @@ C[x]
 R[x]
 ```
 
+{{< video BoCfW73ZON8 >}}
+
 ## Что означает `R[x]`
 
 Пусть `R` — commutative ring. Тогда:
