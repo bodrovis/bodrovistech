@@ -1,0 +1,235 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+
+  <title>Obfuscation Lab — Experiment 08: Asynchronous DOM Mutations</title>
+  <link rel="stylesheet" href="/obfs-lab/styles.css">
+
+  <style>
+    .price {
+      min-height: 3rem;
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.25;
+      white-space: nowrap;
+    }
+
+    .price span {
+      display: inline;
+    }
+
+    .markup-output {
+      max-height: 320px;
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <p class="eyebrow">Obfuscation Lab / Experiment 08</p>
+
+    <h1>Asynchronous DOM mutations</h1>
+
+    <p class="intro">
+      The price appears after a delay and is rebuilt character by
+      character every few seconds. Reading the DOM at the wrong
+      moment can return an empty or incomplete value.
+    </p>
+
+    <section class="card" aria-labelledby="product-title">
+      <h2 class="product-name" id="product-title">
+        Demo portable speaker
+      </h2>
+
+      <p class="product-description">
+        Fictional product · no actual purchase available
+      </p>
+
+      <p class="price-label">Price</p>
+
+      <div
+        class="price"
+        id="dynamic-price"
+        data-phase="waiting"
+        data-generation="0"
+      >Loading…</div>
+
+      <div>
+        <button type="button" id="refresh" disabled>
+          Rebuild price now
+        </button>
+      </div>
+
+      <p class="status" id="status" aria-live="polite">
+        Waiting for the first render…
+      </p>
+    </section>
+
+    <section class="panel" aria-labelledby="inspection-title">
+      <h2 id="inspection-title">Live extraction results</h2>
+
+      <p class="note">
+        A normal page load does not guarantee that JavaScript has
+        finished generating content. Watch the values during each rebuild.
+      </p>
+
+      <div class="data-row">
+        <strong><code>textContent</code></strong>
+        <code id="result-text"></code>
+      </div>
+
+      <div class="data-row">
+        <strong><code>innerText</code></strong>
+        <code id="result-inner"></code>
+      </div>
+
+      <div class="data-row">
+        <strong>Rendering phase</strong>
+        <code id="result-phase"></code>
+      </div>
+
+      <div class="data-row">
+        <strong>Completed generations</strong>
+        <code id="result-generation"></code>
+      </div>
+
+      <div class="data-row">
+        <strong>Current wrappers</strong>
+        <code id="result-spans"></code>
+      </div>
+
+      <h2>Current generated HTML</h2>
+      <pre class="markup-output"><code id="result-markup"></code></pre>
+
+      <h2>What this experiment demonstrates</h2>
+
+      <p class="note">
+        The price starts as a placeholder. JavaScript later builds it
+        one character at a time and periodically replaces the wrappers.
+        The browser's <code>load</code> event doesn't mean the price
+        is ready, and the DOM can temporarily contain incomplete data.
+      </p>
+
+      <p class="note">
+        This demo exposes <code>data-phase</code> and
+        <code>data-generation</code> for testing. Real websites may
+        not provide such signals, so a scraper might need to monitor
+        the target element for stability.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const price = document.getElementById('dynamic-price');
+    const status = document.getElementById('status');
+    const button = document.getElementById('refresh');
+
+    const source = '$79.50';
+
+    let generation = 0;
+    let building = false;
+
+    function randomClass() {
+      return `wrap-${Math.random().toString(36).slice(2, 10)}`;
+    }
+
+    function createCharacter(char) {
+      let node = document.createElement('span');
+      node.className = randomClass();
+      node.textContent = char;
+
+      // Add zero, one, or two extra wrapping layers.
+      const extraLayers = Math.floor(Math.random() * 3);
+
+      for (let i = 0; i < extraLayers; i++) {
+        const wrapper = document.createElement('span');
+        wrapper.className = randomClass();
+        wrapper.append(node);
+        node = wrapper;
+      }
+
+      return node;
+    }
+
+    function inspect() {
+      document.getElementById('result-text').textContent =
+        JSON.stringify(price.textContent);
+
+      document.getElementById('result-inner').textContent =
+        JSON.stringify(price.innerText);
+
+      document.getElementById('result-phase').textContent =
+        price.dataset.phase;
+
+      document.getElementById('result-generation').textContent =
+        price.dataset.generation;
+
+      document.getElementById('result-spans').textContent =
+        String(price.querySelectorAll('span').length);
+
+      document.getElementById('result-markup').textContent =
+        price.outerHTML.replaceAll('><', '>\n<');
+    }
+
+    const delay = (ms) =>
+      new Promise((resolve) => setTimeout(resolve, ms));
+
+    async function rebuild(reason) {
+      if (building) return;
+
+      building = true;
+      button.disabled = true;
+
+      price.dataset.phase = 'building';
+      price.replaceChildren();
+
+      status.textContent = `${reason}: rebuilding the price…`;
+      inspect();
+
+      // Simulate asynchronous, character-by-character rendering.
+      for (const char of source) {
+        price.append(createCharacter(char));
+        inspect();
+
+        await delay(120);
+      }
+
+      // Only now is the price complete.
+      generation++;
+
+      price.dataset.generation = String(generation);
+      price.dataset.phase = 'stable';
+
+      status.textContent =
+        `Generation ${generation}: price complete. ` +
+        'Next automatic rebuild in ~5 seconds.';
+
+      building = false;
+      button.disabled = false;
+
+      inspect();
+    }
+
+    button.addEventListener('click', () => {
+      void rebuild('Manual update');
+    });
+
+    inspect();
+
+    // Initial rendering starts after the page has already loaded.
+    setTimeout(async () => {
+      await rebuild('Initial asynchronous render');
+
+      // Keep rebuilding the DOM automatically.
+      setInterval(() => {
+        void rebuild('Automatic update');
+      }, 5000);
+    }, 1500);
+  </script>
+</body>
+</html>
