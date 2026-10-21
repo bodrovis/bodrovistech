@@ -1,0 +1,257 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+
+  <title>Obfuscation Lab — Experiment 07: Shuffled Character Wrappers</title>
+  <link rel="stylesheet" href="/obfs-lab/styles.css">
+
+  <style>
+    .price {
+      display: inline-flex;
+      align-items: baseline;
+      direction: ltr;
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -.035em;
+      white-space: nowrap;
+    }
+
+    .price > span { flex: 0 0 auto; }
+    .price span span { display: inline; }
+
+    .markup-output { max-height: 320px; }
+  </style>
+</head>
+
+<body>
+  <main>
+    <p class="eyebrow">Obfuscation Lab / Experiment 07</p>
+
+    <h1>Shuffled character wrappers</h1>
+
+    <p class="intro">
+      JavaScript shuffles the characters in the DOM, gives their wrappers
+      random classes, and uses Flexbox to restore their visual order.
+      Regenerate the markup to see a different DOM sequence without
+      changing what visitors see.
+    </p>
+
+    <section class="card" aria-labelledby="product-title">
+      <h2 class="product-name" id="product-title">
+        Demo noise-cancelling headphones
+      </h2>
+
+      <p class="product-description">
+        Fictional product · no actual purchase available
+      </p>
+
+      <p class="price-label">Price</p>
+
+      <!-- JavaScript generates the shuffled price here. -->
+      <div class="price" id="dynamic-price"></div>
+
+      <div>
+        <button type="button" id="reshuffle">
+          Reshuffle characters
+        </button>
+      </div>
+
+      <p class="status" id="status" aria-live="polite"></p>
+    </section>
+
+    <section class="panel" aria-labelledby="inspection-title">
+      <h2 id="inspection-title">Live extraction results</h2>
+
+      <p class="note">
+        The price is assembled after JavaScript runs. Every rebuild
+        changes the DOM order and randomly generated class names.
+      </p>
+
+      <div class="data-row">
+        <strong><code>textContent</code></strong>
+        <code id="result-text"></code>
+      </div>
+
+      <div class="data-row">
+        <strong><code>innerText</code></strong>
+        <code id="result-inner"></code>
+      </div>
+
+      <div class="data-row">
+        <strong>Character order in the DOM</strong>
+        <code id="result-dom-order"></code>
+      </div>
+
+      <div class="data-row">
+        <strong>Order after applying Flexbox <code>order</code></strong>
+        <code id="result-css-order"></code>
+      </div>
+
+      <div class="data-row">
+        <strong>Number of generations</strong>
+        <code id="result-builds"></code>
+      </div>
+
+      <h2>Current generated HTML</h2>
+      <pre class="markup-output"><code id="result-markup"></code></pre>
+
+      <h2>What's going on?</h2>
+
+      <p class="note">
+        JavaScript creates one flex item per character in a randomized
+        DOM sequence. Each item's inline CSS <code>order</code>
+        restores the intended reading order. Extra nested spans
+        and random classes make the markup change on every rebuild.
+      </p>
+
+      <p class="note">
+        <strong>Key observation:</strong>
+        Both <code>textContent</code> and <code>innerText</code>
+        follow the source structure, not the visual order produced by
+        Flexbox. A geometry-based extractor can read the characters
+        by their screen positions instead.
+      </p>
+
+      <p class="note warning">
+        <strong>Accessibility warning:</strong>
+        CSS ordering doesn't generally change the reading order
+        for assistive technologies. This is an adversarial
+        demonstration, not a recommended way to display prices.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const price = document.getElementById('dynamic-price');
+    const status = document.getElementById('status');
+    const source = '$79.50';
+
+    let builds = 0;
+    let previousOrder = null;
+
+    function randomClass() {
+      return `wrap-${Math.random().toString(36).slice(2, 10)}`;
+    }
+
+    // Fisher-Yates shuffle.
+    function shuffle(indices) {
+      const result = [...indices];
+
+      for (let i = result.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [result[i], result[j]] = [result[j], result[i]];
+      }
+
+      return result;
+    }
+
+    function nextOrder() {
+      const original = [...source].map((_, i) => i);
+      let indices;
+
+      // Avoid the original order and the immediately previous order.
+      do {
+        indices = shuffle(original);
+      } while (
+        indices.every((index, position) => index === position) ||
+        (
+          previousOrder &&
+          indices.every(
+            (index, position) => index === previousOrder[position]
+          )
+        )
+      );
+
+      previousOrder = indices;
+      return indices;
+    }
+
+    function createWrapper(char, logicalIndex) {
+      const item = document.createElement('span');
+
+      item.className = randomClass();
+
+      // CSS restores the intended order.
+      item.style.order = String(logicalIndex);
+
+      let current = document.createElement('span');
+      current.className = randomClass();
+      current.textContent = char;
+
+      // Add zero, one, or two extra wrapping layers.
+      const extraLayers = Math.floor(Math.random() * 3);
+
+      for (let i = 0; i < extraLayers; i++) {
+        const wrapper = document.createElement('span');
+        wrapper.className = randomClass();
+        wrapper.append(current);
+        current = wrapper;
+      }
+
+      item.append(current);
+      return item;
+    }
+
+    function inspect() {
+      const items = [...price.children];
+
+      const visual = [...items].sort(
+        (a, b) =>
+          Number(getComputedStyle(a).order) -
+          Number(getComputedStyle(b).order)
+      );
+
+      document.getElementById('result-text').textContent =
+        JSON.stringify(price.textContent);
+
+      document.getElementById('result-inner').textContent =
+        JSON.stringify(price.innerText);
+
+      document.getElementById('result-dom-order').textContent =
+        JSON.stringify(
+          items.map((element) => element.textContent).join('')
+        );
+
+      document.getElementById('result-css-order').textContent =
+        JSON.stringify(
+          visual.map((element) => element.textContent).join('')
+        );
+
+      document.getElementById('result-builds').textContent =
+        String(builds);
+
+      document.getElementById('result-markup').textContent =
+        price.outerHTML.replaceAll('><', '>\n<');
+    }
+
+    function rebuild() {
+      const fragment = document.createDocumentFragment();
+
+      // Append characters in randomized DOM order.
+      for (const index of nextOrder()) {
+        fragment.append(createWrapper(source[index], index));
+      }
+
+      price.replaceChildren(fragment);
+      price.dataset.ready = 'true';
+
+      builds++;
+
+      status.textContent =
+        `Generation ${builds}: shuffled DOM, unchanged visual price.`;
+
+      inspect();
+    }
+
+    document.getElementById('reshuffle')
+      .addEventListener('click', rebuild);
+
+    rebuild();
+  </script>
+</body>
+</html>
