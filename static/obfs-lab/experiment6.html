@@ -1,0 +1,200 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+
+  <title>Obfuscation Lab — Experiment 06: Dynamic Character Wrapping</title>
+  <link rel="stylesheet" href="/obfs-lab/styles.css">
+
+  <style>
+    /* Demo-specific styles only. */
+    .price {
+      display: inline-block;
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -.035em;
+      white-space: nowrap;
+    }
+
+    .price span {
+      display: inline;
+    }
+
+    .markup-output {
+      max-height: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <p class="eyebrow">Obfuscation Lab / Experiment 06</p>
+
+    <h1>Dynamic character wrapping</h1>
+
+    <p class="intro">
+      JavaScript turns a simple price into a forest of nested spans,
+      with randomly generated class names. Every rebuild changes
+      the HTML without changing the visible price.
+    </p>
+
+    <section class="card" aria-labelledby="product-title">
+      <h2 class="product-name" id="product-title">
+        Demo wireless headphones
+      </h2>
+
+      <p class="product-description">
+        Fictional product · no actual purchase available
+      </p>
+
+      <p class="price-label">Price</p>
+
+      <!-- Initially empty. JavaScript creates the character wrappers. -->
+      <div class="price" id="dynamic-price"></div>
+
+      <div>
+        <button type="button" id="rebuild">
+          Regenerate character wrappers
+        </button>
+      </div>
+
+      <p class="status" id="status" aria-live="polite"></p>
+    </section>
+
+    <section class="panel" aria-labelledby="inspection-title">
+      <h2 id="inspection-title">Live extraction results</h2>
+
+      <p class="note">
+        The HTML structure is regenerated every time you click the
+        button. Compare the text values with the generated markup.
+      </p>
+
+      <div class="data-row">
+        <strong><code>textContent</code></strong>
+        <code id="result-text"></code>
+      </div>
+
+      <div class="data-row">
+        <strong><code>innerText</code></strong>
+        <code id="result-inner"></code>
+      </div>
+
+      <div class="data-row">
+        <strong>Number of nested <code>span</code> elements</strong>
+        <code id="result-spans"></code>
+      </div>
+
+      <div class="data-row">
+        <strong>Number of rebuilds</strong>
+        <code id="result-builds"></code>
+      </div>
+
+      <h2>Current generated HTML</h2>
+      <pre class="markup-output"><code id="result-markup"></code></pre>
+
+      <h2>What this experiment demonstrates</h2>
+
+      <p class="note">
+        The original HTML contains an empty price container.
+        JavaScript creates a separate text wrapper for every
+        character, sometimes nesting it inside extra spans.
+        Class names and nesting change each time, so selectors
+        that depend on a particular child structure can break.
+      </p>
+
+      <p class="note">
+        <strong>Important:</strong>
+        Character wrapping alone does not scramble text.
+        Once JavaScript has run, both <code>textContent</code>
+        and <code>innerText</code> can still return the correct
+        price. Later experiments will combine wrapping with
+        more disruptive techniques.
+      </p>
+
+      <p class="note warning">
+        <strong>Accessibility note:</strong>
+        Splitting words into many elements can make text harder
+        to navigate or announce in some assistive technologies.
+        This is a deliberately artificial demo, not a recommended
+        way to present prices.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const price = document.getElementById('dynamic-price');
+    const status = document.getElementById('status');
+    const source = '$79.50';
+
+    let rebuilds = 0;
+
+    function randomClass() {
+      return `wrap-${Math.random().toString(36).slice(2, 10)}`;
+    }
+
+    function createCharacter(char) {
+      const leaf = document.createElement('span');
+      leaf.className = randomClass();
+      leaf.textContent = char;
+
+      // Give each character between one and three nested wrappers.
+      let current = leaf;
+      const extraLayers = Math.floor(Math.random() * 3);
+
+      for (let i = 0; i < extraLayers; i++) {
+        const wrapper = document.createElement('span');
+        wrapper.className = randomClass();
+        wrapper.append(current);
+        current = wrapper;
+      }
+
+      return current;
+    }
+
+    function inspect() {
+      document.getElementById('result-text').textContent =
+        JSON.stringify(price.textContent);
+
+      document.getElementById('result-inner').textContent =
+        JSON.stringify(price.innerText);
+
+      document.getElementById('result-spans').textContent =
+        String(price.querySelectorAll('span').length);
+
+      document.getElementById('result-builds').textContent =
+        String(rebuilds);
+
+      // Add line breaks for display only, without changing the live DOM.
+      document.getElementById('result-markup').textContent =
+        price.outerHTML.replaceAll('><', '>\n<');
+    }
+
+    function rebuildPrice() {
+      const fragment = document.createDocumentFragment();
+
+      for (const char of source) {
+        fragment.append(createCharacter(char));
+      }
+
+      price.replaceChildren(fragment);
+      price.dataset.ready = 'true';
+
+      rebuilds++;
+
+      status.textContent =
+        `Generation ${rebuilds}: same price, new wrappers.`;
+
+      inspect();
+    }
+
+    document.getElementById('rebuild')
+      .addEventListener('click', rebuildPrice);
+
+    rebuildPrice();
+  </script>
+</body>
+</html>
