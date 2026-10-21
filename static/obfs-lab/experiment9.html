@@ -1,0 +1,289 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Obfuscation Lab — Experiment 09: Combined Dynamic Obfuscation</title>
+  <link rel="stylesheet" href="/obfs-lab/styles.css">
+
+  <style>
+    .price {
+      display: inline-flex;
+      align-items: baseline;
+      direction: ltr;
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -.035em;
+      white-space: nowrap;
+      min-height: 3rem;
+    }
+
+    .price > span {
+      flex: 0 0 auto;
+    }
+
+    .price span span {
+      display: inline;
+    }
+
+    /* Generate the currency symbol through a nested pseudo-element. */
+    .price .currency-host {
+      display: inline-block;
+    }
+
+    .price .currency-host::before {
+      content: "$";
+      display: inline-block;
+    }
+
+    /* Hide fake digits in different ways. */
+    .price .decoy--opacity {
+      position: absolute;
+      opacity: 0;
+    }
+
+    .price .decoy--font {
+      font-size: 0;
+    }
+
+    .markup-output {
+      max-height: 320px;
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <p class="eyebrow">Obfuscation Lab / Experiment 09</p>
+
+    <h1>Combined dynamic obfuscation</h1>
+
+    <p class="intro">
+      JavaScript builds and repeatedly shuffles a price, hides extra
+      digits, and generates the currency symbol with a nested CSS
+      pseudo-element. Extraction requires both timing and rendering
+      information.
+    </p>
+
+    <section class="card" aria-labelledby="product-title">
+      <h2 class="product-name" id="product-title">
+        Demo mechanical keyboard
+      </h2>
+
+      <p class="product-description">
+        Fictional product · no actual purchase available
+      </p>
+
+      <p class="price-label">Price</p>
+
+      <div class="price" id="dynamic-price">Loading…</div>
+
+      <div>
+        <button id="rebuild" type="button" disabled>
+          Rebuild obfuscated price
+        </button>
+      </div>
+
+      <p class="status" id="status" aria-live="polite">
+        Waiting for JavaScript to begin rendering…
+      </p>
+    </section>
+
+    <section class="panel" aria-labelledby="inspection-title">
+      <h2 id="inspection-title">Live extraction results</h2>
+
+      <p class="note">
+        While the price is loading, the DOM may be empty or incomplete.
+        Even after it's complete, the source text won't match what the
+        browser displays.
+      </p>
+
+      <div class="data-row">
+        <strong><code>textContent</code></strong>
+        <code id="result-text"></code>
+      </div>
+
+      <div class="data-row">
+        <strong><code>innerText</code></strong>
+        <code id="result-inner"></code>
+      </div>
+
+      <div class="data-row">
+        <strong>Completed generations</strong>
+        <code id="result-generation"></code>
+      </div>
+
+      <div class="data-row">
+        <strong>Wrapper count</strong>
+        <code id="result-spans"></code>
+      </div>
+
+      <h2>Current generated HTML</h2>
+      <pre class="markup-output"><code id="result-markup"></code></pre>
+
+      <h2>What's happening?</h2>
+
+      <p class="note">
+        JavaScript waits, then creates price fragments one at a time
+        in randomized DOM order. Flexbox restores their visual order,
+        two extra digits are hidden, and a nested pseudo-element
+        generates the dollar sign. Automatic rebuilding continues
+        every five seconds.
+      </p>
+
+      <p class="note">
+        <strong>Important:</strong>
+        The price element exposes no ready flag. A scraper must
+        decide when to extract the rendered value and verify that
+        it's complete.
+      </p>
+
+      <p class="note warning">
+        <strong>Accessibility warning:</strong>
+        This intentionally hostile markup is unsuitable for actual
+        storefronts. Visual order may differ from assistive
+        technology reading order.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const price = document.getElementById('dynamic-price');
+    const status = document.getElementById('status');
+    const button = document.getElementById('rebuild');
+
+    let generations = 0;
+    let building = false;
+
+    function randomClass() {
+      return `wrap-${Math.random().toString(36).slice(2, 10)}`;
+    }
+
+    function shuffle(values) {
+      const result = [...values];
+
+      for (let i = result.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [result[i], result[j]] = [result[j], result[i]];
+      }
+
+      return result;
+    }
+
+    // Logical visual order is determined by CSS, not DOM order.
+    // Fake digits are deliberately mixed into the fragments.
+    const parts = [
+      { text: '7', order: 1 },
+      { text: '9', order: 2 },
+      { text: '.', order: 3 },
+      { text: '5', order: 4 },
+      { text: '0', order: 5 },
+      { pseudo: true, order: 0 },
+      { text: '8', order: 2, decoy: 'opacity' },
+      { text: '6', order: 4, decoy: 'font' },
+    ];
+
+    function createPart(part) {
+      const item = document.createElement('span');
+
+      item.className = randomClass();
+      item.style.order = String(part.order);
+
+      const leaf = document.createElement('span');
+
+      leaf.className = part.pseudo
+        ? 'currency-host'
+        : part.decoy
+          ? `decoy--${part.decoy}`
+          : randomClass();
+
+      if (!part.pseudo) {
+        leaf.textContent = part.text;
+      }
+
+      let child = leaf;
+      const nesting = Math.floor(Math.random() * 3);
+
+      for (let i = 0; i < nesting; i++) {
+        const wrapper = document.createElement('span');
+        wrapper.className = randomClass();
+        wrapper.append(child);
+        child = wrapper;
+      }
+
+      item.append(child);
+      return item;
+    }
+
+    function inspect() {
+      document.getElementById('result-text').textContent =
+        JSON.stringify(price.textContent);
+
+      document.getElementById('result-inner').textContent =
+        JSON.stringify(price.innerText);
+
+      document.getElementById('result-generation').textContent =
+        String(generations);
+
+      document.getElementById('result-spans').textContent =
+        String(price.querySelectorAll('span').length);
+
+      document.getElementById('result-markup').textContent =
+        price.outerHTML.replaceAll('><', '>\n<');
+    }
+
+    const delay = (ms) =>
+      new Promise((resolve) => setTimeout(resolve, ms));
+
+    async function rebuild(reason) {
+      if (building) return;
+
+      building = true;
+      button.disabled = true;
+
+      price.replaceChildren();
+
+      status.textContent =
+        `${reason}: building a new obfuscated price…`;
+
+      inspect();
+
+      // Add fragments one at a time in a randomized DOM order.
+      for (const part of shuffle(parts)) {
+        price.append(createPart(part));
+        inspect();
+        await delay(140);
+      }
+
+      generations++;
+      building = false;
+      button.disabled = false;
+
+      status.textContent =
+        `Generation ${generations} complete; ` +
+        'the markup will refresh automatically.';
+
+      inspect();
+    }
+
+    button.addEventListener('click', () => {
+      void rebuild('Manual update');
+    });
+
+    inspect();
+
+    // Start rendering after the initial page load.
+    setTimeout(async () => {
+      await rebuild('Initial render');
+
+      setInterval(() => {
+        void rebuild('Automatic update');
+      }, 5000);
+    }, 1400);
+  </script>
+</body>
+</html>
