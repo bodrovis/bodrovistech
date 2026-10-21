@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+
+  <title>CSS Obfuscation Lab — Experiment 05: Layered CSS Obfuscation</title>
+  <link rel="stylesheet" href="/obfs-lab/styles.css">
+
+  <style>
+    /* Experiment 05: several obfuscation techniques combined. */
+
+    .price {
+      display: inline-flex;
+      direction: ltr;
+      align-items: baseline;
+      font-size: 2.4rem;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -.035em;
+      white-space: nowrap;
+    }
+
+    .price__whole {
+      display: inline-flex;
+      align-items: baseline;
+    }
+
+    .price__digits {
+      display: inline-block;
+    }
+
+    /* Trick 1: Reverse the order of the price fragments. */
+    .price.is-obfuscated .price__fraction {
+      order: 2;
+    }
+
+    .price.is-obfuscated .price__whole {
+      order: 1;
+    }
+
+    /* Trick 2: Generate the currency symbol inside a child element. */
+    .price.is-obfuscated .price__currency::before {
+      content: "$";
+      display: inline-block;
+    }
+
+    /* Trick 3: Display "97" as "79". */
+    .price.is-obfuscated .price__digits {
+      direction: rtl;
+      unicode-bidi: bidi-override;
+    }
+
+    /* Trick 4: Hide additional fake digits. */
+    .price.is-obfuscated .decoy--opacity {
+      position: absolute;
+      opacity: 0;
+    }
+
+    .price.is-obfuscated .decoy--font {
+      font-size: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <p class="eyebrow">CSS Obfuscation Lab / Experiment 05</p>
+
+    <h1>Layered CSS obfuscation</h1>
+
+    <p class="intro">
+      One price combines Flexbox reordering, a nested CSS pseudo-element,
+      invisible decoy digits, and bidirectional text. Can a generic text
+      extractor reconstruct what the browser displays?
+    </p>
+
+    <section class="card" aria-labelledby="product-title">
+      <h2 class="product-name" id="product-title">
+        Demo mechanical keyboard
+      </h2>
+
+      <p class="product-description">
+        Fictional product · no actual purchase available
+      </p>
+
+      <p class="price-label">Displayed price</p>
+
+      <!-- Keep the actual price markup on one line.
+           The DOM contains ".560978", without a dollar sign. -->
+      <div class="price is-obfuscated" id="obfuscated-price"><span class="price__fraction">.5<span
+            class="decoy decoy--font">6</span>0</span><span class="price__whole"><span
+            class="price__currency"></span><span class="price__digits">97</span><span
+            class="decoy decoy--opacity">8</span></span></div>
+
+      <div>
+        <button type="button" id="toggle-obfuscation" aria-pressed="true">
+          Disable CSS obfuscation
+        </button>
+      </div>
+
+      <p class="status" id="obfuscation-status" aria-live="polite">
+        Obfuscation is ON. The browser displays $79.50.
+      </p>
+    </section>
+
+    <section class="panel" aria-labelledby="inspection-title">
+      <h2 id="inspection-title">Live extraction results</h2>
+
+      <p class="note">
+        All readings below come from the actual price element above.
+        Toggle obfuscation to compare the raw DOM against the browser rendering.
+      </p>
+
+      <div class="data-row">
+        <strong><code>textContent</code></strong>
+        <code id="result-text"></code>
+      </div>
+
+      <div class="data-row">
+        <strong><code>innerText</code></strong>
+        <code id="result-inner"></code>
+      </div>
+
+      <div class="data-row">
+        <strong>Root <code>::before</code> content</strong>
+        <code id="result-root-before"></code>
+      </div>
+
+      <div class="data-row">
+        <strong>Nested <code>::before</code> content</strong>
+        <code id="result-nested-before"></code>
+      </div>
+
+      <div class="data-row">
+        <strong>Flexbox <code>order</code> (whole / fraction)</strong>
+        <code id="result-order"></code>
+      </div>
+
+      <div class="data-row">
+        <strong>Computed <code>unicode-bidi</code> on the digits</strong>
+        <code id="result-bidi"></code>
+      </div>
+
+      <h2>Actual price markup (simplified)</h2>
+
+      <pre><code>&lt;div class="price is-obfuscated"&gt;
+  &lt;span class="price__fraction"&gt;
+    .5&lt;span class="decoy decoy--font"&gt;6&lt;/span&gt;0
+  &lt;/span&gt;
+  &lt;span class="price__whole"&gt;
+    &lt;span class="price__currency"&gt;&lt;/span&gt;
+    &lt;span class="price__digits"&gt;97&lt;/span&gt;
+    &lt;span class="decoy decoy--opacity"&gt;8&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+      <p class="note">
+        The example above is formatted for readability. The live price
+        markup contains no formatting whitespace between its fragments.
+      </p>
+
+      <h2>CSS responsible for the tricks</h2>
+
+      <pre><code>.price.is-obfuscated .price__fraction { order: 2; }
+.price.is-obfuscated .price__whole { order: 1; }
+
+.price.is-obfuscated .price__currency::before {
+  content: "$";
+}
+
+.price.is-obfuscated .price__digits {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.price.is-obfuscated .decoy--opacity {
+  position: absolute;
+  opacity: 0;
+}
+
+.price.is-obfuscated .decoy--font {
+  font-size: 0;
+}</code></pre>
+
+      <p class="note">
+        <strong>Key observation:</strong>
+        A geometry-based extractor can recover the visible DOM digits
+        but still miss the dollar sign. It comes from a nested pseudo-element,
+        not from a text node or the root element's own pseudo-elements.
+      </p>
+
+      <p class="note warning">
+        <strong>Accessibility warning:</strong>
+        This deliberately adversarial price is unsuitable for real product
+        pages. Visual ordering differs from DOM reading order, and
+        CSS-generated symbols may not be exposed consistently to
+        assistive technologies.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const price = document.getElementById('obfuscated-price');
+    const button = document.getElementById('toggle-obfuscation');
+    const status = document.getElementById('obfuscation-status');
+
+    function inspect() {
+      const currency = price.querySelector('.price__currency');
+      const whole = price.querySelector('.price__whole');
+      const fraction = price.querySelector('.price__fraction');
+      const digits = price.querySelector('.price__digits');
+
+      document.getElementById('result-text').textContent =
+        JSON.stringify(price.textContent);
+
+      document.getElementById('result-inner').textContent =
+        JSON.stringify(price.innerText);
+
+      document.getElementById('result-root-before').textContent =
+        getComputedStyle(price, '::before').content;
+
+      document.getElementById('result-nested-before').textContent =
+        getComputedStyle(currency, '::before').content;
+
+      document.getElementById('result-order').textContent =
+        `${getComputedStyle(whole).order} / ${getComputedStyle(fraction).order}`;
+
+      document.getElementById('result-bidi').textContent =
+        getComputedStyle(digits).unicodeBidi;
+    }
+
+    button.addEventListener('click', () => {
+      const enabled = price.classList.toggle('is-obfuscated');
+
+      button.textContent = enabled
+        ? 'Disable CSS obfuscation'
+        : 'Enable CSS obfuscation again';
+
+      button.setAttribute('aria-pressed', String(enabled));
+
+      status.textContent = enabled
+        ? 'Obfuscation is ON. The browser displays $79.50.'
+        : 'Obfuscation is OFF. The browser now shows the unmodified DOM fragments.';
+
+      inspect();
+    });
+
+    inspect();
+  </script>
+</body>
+
+</html>

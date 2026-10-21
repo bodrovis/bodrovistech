@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,24 +32,37 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 16px;
     }
-    .price-comparison .card { margin-bottom: 0; }
-    .comparison-title { margin: 0 0 8px; font-size: 1.04rem; }
+
+    .price-comparison .card {
+      margin-bottom: 0;
+    }
+
+    .comparison-title {
+      margin: 0 0 8px;
+      font-size: 1.04rem;
+    }
+
     .comparison-price {
       font-size: 2rem;
       font-weight: 800;
       letter-spacing: -.035em;
       white-space: nowrap;
     }
+
     @media (max-width: 560px) {
-      .price-comparison { grid-template-columns: 1fr; }
+      .price-comparison {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
+
 <body>
   <main>
     <p class="eyebrow">CSS Obfuscation Lab / Experiment 04</p>
     <h1>Bidirectional text override</h1>
-    <p class="intro">The HTML stores a backwards price. Two CSS declarations reverse the visual order of its characters without changing the DOM. Compare what appears on screen with what JavaScript reads.</p>
+    <p class="intro">The HTML stores a backwards price. Two CSS declarations reverse the visual order of its characters
+      without changing the DOM. Compare what appears on screen with what JavaScript reads.</p>
 
     <section class="card" aria-labelledby="product-title">
       <h2 class="product-name" id="product-title">Demo wireless keyboard</h2>
@@ -58,12 +72,14 @@
       <div>
         <button type="button" id="toggle-bidi" aria-pressed="true">Disable CSS override</button>
       </div>
-      <p class="status" id="bidi-status" aria-live="polite">Override is ON. The backwards DOM text is visually reversed.</p>
+      <p class="status" id="bidi-status" aria-live="polite">Override is ON. The backwards DOM text is visually reversed.
+      </p>
     </section>
 
     <section class="panel" aria-labelledby="inspection-title">
       <h2 id="inspection-title">Live extraction results</h2>
-      <p class="note">These values are read directly from the price element above. Disabling the CSS override changes the visible price, but does not change the text nodes.</p>
+      <p class="note">These values are read directly from the price element above. Disabling the CSS override changes
+        the visible price, but does not change the text nodes.</p>
       <div class="data-row">
         <strong><code>textContent</code></strong>
         <code id="result-text"></code>
@@ -88,8 +104,13 @@
   direction: rtl;
   unicode-bidi: bidi-override;
 }</code></pre>
-      <p class="note"><strong>Key observation:</strong> Both <code>textContent</code> and <code>innerText</code> return the original DOM string, <code>05.97$</code>, even though the browser paints the price as <code>$79.50</code>. Reading computed CSS properties reveals that a bidirectional override is active, but extracting the visual reading order requires additional logic.</p>
-      <p class="note warning"><strong>Accessibility warning:</strong> CSS visual reordering does not rewrite DOM reading order. Screen readers and copy/paste may expose the backwards price. This is an intentionally adversarial demo, not a recommended way to display real prices.</p>
+      <p class="note"><strong>Key observation:</strong> Both <code>textContent</code> and <code>innerText</code> return
+        the original DOM string, <code>05.97$</code>, even though the browser paints the price as <code>$79.50</code>.
+        Reading computed CSS properties reveals that a bidirectional override is active, but extracting the visual
+        reading order requires additional logic.</p>
+      <p class="note warning"><strong>Accessibility warning:</strong> CSS visual reordering does not rewrite DOM reading
+        order. Screen readers and copy/paste may expose the backwards price. This is an intentionally adversarial demo,
+        not a recommended way to display real prices.</p>
     </section>
   </main>
 
@@ -119,4 +140,5 @@
     inspect();
   </script>
 </body>
+
 </html>

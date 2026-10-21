@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,60 +20,107 @@
       line-height: 1.25;
     }
 
-    .price.is-obfuscated .decoy--display { display: none; }
+    .price.is-obfuscated .decoy--display {
+      display: none;
+    }
+
     .price.is-obfuscated .decoy--visibility {
-      position: absolute; /* Prevent an invisible glyph from leaving a gap. */
+      position: absolute;
+      /* Prevent an invisible glyph from leaving a gap. */
       visibility: hidden;
     }
+
     .price.is-obfuscated .decoy--opacity {
-      position: absolute; /* Opacity alone would leave a visible gap. */
+      position: absolute;
+      /* Opacity alone would leave a visible gap. */
       opacity: 0;
     }
-    .price.is-obfuscated .decoy--font { font-size: 0; }
+
+    .price.is-obfuscated .decoy--font {
+      font-size: 0;
+    }
 
     /* Presentation for the four cases; the shared stylesheet handles
        typography, colors, cards, panels, buttons, and general spacing. */
-    .case-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-    .case-list .card { margin-bottom: 0; }
-    .case-title { font-size: 1.04rem; margin: 0 0 8px; }
-    .case-description { font-size: .88rem; color: var(--color-muted); margin: 0 0 20px; }
-    .case-price { margin-top: 4px; }
-    @media (max-width: 580px) { .case-list { grid-template-columns: 1fr; } }
+    .case-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .case-list .card {
+      margin-bottom: 0;
+    }
+
+    .case-title {
+      font-size: 1.04rem;
+      margin: 0 0 8px;
+    }
+
+    .case-description {
+      font-size: .88rem;
+      color: var(--color-muted);
+      margin: 0 0 20px;
+    }
+
+    .case-price {
+      margin-top: 4px;
+    }
+
+    @media (max-width: 580px) {
+      .case-list {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
+
 <body>
   <main>
     <p class="eyebrow">CSS Obfuscation Lab / Experiment 03</p>
     <h1>Invisible decoy digits</h1>
-    <p class="intro">Four fictional product prices contain extra digits in their HTML. CSS hides the decoys in four different ways. Compare what you <em>see</em> against what JavaScript extracts.</p>
+    <p class="intro">Four fictional product prices contain extra digits in their HTML. CSS hides the decoys in four
+      different ways. Compare what you <em>see</em> against what JavaScript extracts.</p>
 
     <div class="case-list" aria-label="Four CSS hiding methods">
       <section class="card" aria-labelledby="case-display-title">
         <h2 class="case-title" id="case-display-title"><code>display: none</code></h2>
         <p class="case-description">Removes the fake digits from layout.</p>
         <p class="price-label">Demo USB microphone · Price</p>
-        <div class="case-price"><div class="price is-obfuscated" id="price-display">$7<span class="decoy decoy--display">4</span>9<span class="decoy decoy--display">8</span>.5<span class="decoy decoy--display">6</span>0</div></div>
+        <div class="case-price">
+          <div class="price is-obfuscated" id="price-display">$7<span class="decoy decoy--display">4</span>9<span
+              class="decoy decoy--display">8</span>.5<span class="decoy decoy--display">6</span>0</div>
+        </div>
       </section>
 
       <section class="card" aria-labelledby="case-visibility-title">
         <h2 class="case-title" id="case-visibility-title"><code>visibility: hidden</code></h2>
         <p class="case-description">Makes the digits invisible; absolute positioning removes their gaps.</p>
         <p class="price-label">Demo USB microphone · Price</p>
-        <div class="case-price"><div class="price is-obfuscated" id="price-visibility">$7<span class="decoy decoy--visibility">4</span>9<span class="decoy decoy--visibility">8</span>.5<span class="decoy decoy--visibility">6</span>0</div></div>
+        <div class="case-price">
+          <div class="price is-obfuscated" id="price-visibility">$7<span class="decoy decoy--visibility">4</span>9<span
+              class="decoy decoy--visibility">8</span>.5<span class="decoy decoy--visibility">6</span>0</div>
+        </div>
       </section>
 
       <section class="card" aria-labelledby="case-opacity-title">
         <h2 class="case-title" id="case-opacity-title"><code>opacity: 0</code></h2>
         <p class="case-description">Fully transparent digits can still appear in extracted text.</p>
         <p class="price-label">Demo USB microphone · Price</p>
-        <div class="case-price"><div class="price is-obfuscated" id="price-opacity">$7<span class="decoy decoy--opacity">4</span>9<span class="decoy decoy--opacity">8</span>.5<span class="decoy decoy--opacity">6</span>0</div></div>
+        <div class="case-price">
+          <div class="price is-obfuscated" id="price-opacity">$7<span class="decoy decoy--opacity">4</span>9<span
+              class="decoy decoy--opacity">8</span>.5<span class="decoy decoy--opacity">6</span>0</div>
+        </div>
       </section>
 
       <section class="card" aria-labelledby="case-font-title">
         <h2 class="case-title" id="case-font-title"><code>font-size: 0</code></h2>
         <p class="case-description">Leaves the characters in the DOM but shrinks them out of view.</p>
         <p class="price-label">Demo USB microphone · Price</p>
-        <div class="case-price"><div class="price is-obfuscated" id="price-font">$7<span class="decoy decoy--font">4</span>9<span class="decoy decoy--font">8</span>.5<span class="decoy decoy--font">6</span>0</div></div>
+        <div class="case-price">
+          <div class="price is-obfuscated" id="price-font">$7<span class="decoy decoy--font">4</span>9<span
+              class="decoy decoy--font">8</span>.5<span class="decoy decoy--font">6</span>0</div>
+        </div>
       </section>
     </div>
 
@@ -81,7 +129,8 @@
 
     <section class="panel" aria-labelledby="inspection-title">
       <h2 id="inspection-title">Live extraction results</h2>
-      <p class="note">Values are measured from the four price elements above, not hard-coded. Click the button to remove the obfuscation classes, then watch the results change.</p>
+      <p class="note">Values are measured from the four price elements above, not hard-coded. Click the button to remove
+        the obfuscation classes, then watch the results change.</p>
       <table class="results-table">
         <thead>
           <tr>
@@ -92,10 +141,30 @@
           </tr>
         </thead>
         <tbody>
-          <tr><th scope="row"><code>display</code></th><td><code id="display-text"></code></td><td><code id="display-inner"></code></td><td><code id="display-style"></code></td></tr>
-          <tr><th scope="row"><code>visibility</code></th><td><code id="visibility-text"></code></td><td><code id="visibility-inner"></code></td><td><code id="visibility-style"></code></td></tr>
-          <tr><th scope="row"><code>opacity</code></th><td><code id="opacity-text"></code></td><td><code id="opacity-inner"></code></td><td><code id="opacity-style"></code></td></tr>
-          <tr><th scope="row"><code>font-size</code></th><td><code id="font-text"></code></td><td><code id="font-inner"></code></td><td><code id="font-style"></code></td></tr>
+          <tr>
+            <th scope="row"><code>display</code></th>
+            <td><code id="display-text"></code></td>
+            <td><code id="display-inner"></code></td>
+            <td><code id="display-style"></code></td>
+          </tr>
+          <tr>
+            <th scope="row"><code>visibility</code></th>
+            <td><code id="visibility-text"></code></td>
+            <td><code id="visibility-inner"></code></td>
+            <td><code id="visibility-style"></code></td>
+          </tr>
+          <tr>
+            <th scope="row"><code>opacity</code></th>
+            <td><code id="opacity-text"></code></td>
+            <td><code id="opacity-inner"></code></td>
+            <td><code id="opacity-style"></code></td>
+          </tr>
+          <tr>
+            <th scope="row"><code>font-size</code></th>
+            <td><code id="font-text"></code></td>
+            <td><code id="font-inner"></code></td>
+            <td><code id="font-style"></code></td>
+          </tr>
         </tbody>
       </table>
 
@@ -105,7 +174,8 @@
   &lt;span class="decoy decoy--display"&gt;8&lt;/span&gt;.5
   &lt;span class="decoy decoy--display"&gt;6&lt;/span&gt;0
 &lt;/div&gt;</code></pre>
-      <p class="note">The example above is formatted for readability. In the live HTML, all the price characters are kept on one line so whitespace doesn't alter the results.</p>
+      <p class="note">The example above is formatted for readability. In the live HTML, all the price characters are
+        kept on one line so whitespace doesn't alter the results.</p>
 
       <h2>CSS doing the hiding</h2>
       <pre><code>.price.is-obfuscated .decoy--display {
@@ -122,8 +192,14 @@
 .price.is-obfuscated .decoy--font {
   font-size: 0;
 }</code></pre>
-      <p class="note"><strong>Key observation:</strong> <code>textContent</code> always includes every decoy because it reads DOM text without considering CSS. <code>innerText</code> considers some rendering rules, but it is not a guaranteed representation of all visually readable text. A scraping approach that filters <code>display: none</code> alone can still get the wrong price.</p>
-      <p class="note warning"><strong>Accessibility warning:</strong> These are deliberately hostile demo patterns, not recommendations. Hidden content can behave differently in the accessibility tree: for example, <code>opacity: 0</code> and <code>font-size: 0</code> do not reliably prevent assistive technologies from encountering the extra digits. Do not use CSS-obfuscated prices on real commerce sites.</p>
+      <p class="note"><strong>Key observation:</strong> <code>textContent</code> always includes every decoy because it
+        reads DOM text without considering CSS. <code>innerText</code> considers some rendering rules, but it is not a
+        guaranteed representation of all visually readable text. A scraping approach that filters
+        <code>display: none</code> alone can still get the wrong price.</p>
+      <p class="note warning"><strong>Accessibility warning:</strong> These are deliberately hostile demo patterns, not
+        recommendations. Hidden content can behave differently in the accessibility tree: for example,
+        <code>opacity: 0</code> and <code>font-size: 0</code> do not reliably prevent assistive technologies from
+        encountering the extra digits. Do not use CSS-obfuscated prices on real commerce sites.</p>
     </section>
   </main>
 
@@ -163,4 +239,5 @@
     inspect();
   </script>
 </body>
+
 </html>
