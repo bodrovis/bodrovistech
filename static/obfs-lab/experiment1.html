@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>CSS Obfuscation Lab — Experiment 01: Reordered Price</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    /* Experiment 01: the DOM says ".99$49", but CSS renders "$49.99". */
+    .price {
+      display: inline-flex;
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -.035em;
+    }
+    .price__cents { order: 2; }
+    .price__dollars { order: 1; }
+
+    /* Turn off the visual reorder without changing the HTML. */
+    .price:not(.is-obfuscated) > span { order: 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">CSS Obfuscation Lab / Experiment 01</p>
+    <h1>Reordered product price</h1>
+    <p class="intro">A tiny, self-contained example of CSS-based text obfuscation. The rendered price looks normal, but its characters appear in a different order in the HTML.</p>
+
+    <section class="card" aria-labelledby="product-title">
+      <h2 class="product-name" id="product-title">Demo coffee grinder</h2>
+      <p class="product-description">Fictional product · no actual purchase available</p>
+      <p class="price-label">Price</p>
+
+      <!-- The HTML source is deliberately in the WRONG order. -->
+      <div class="price is-obfuscated" id="obfuscated-price"><span class="price__cents">.99</span><span class="price__dollars">$49</span></div>
+
+      <div>
+        <button type="button" id="toggle-order" aria-pressed="true">Disable CSS reordering</button>
+        <p class="status" id="order-status" aria-live="polite">CSS reordering is ON.</p>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="inspection-title">
+      <h2 id="inspection-title">What JavaScript extracts</h2>
+      <p class="note">These values are read directly from the price element above. They update when you reload the page; the toggle changes only CSS, never the DOM.</p>
+      <div class="data-row">
+        <strong><code>element.textContent</code></strong>
+        <code id="text-content-result"></code>
+      </div>
+      <div class="data-row">
+        <strong><code>element.innerText</code></strong>
+        <code id="inner-text-result"></code>
+      </div>
+      <h2>Actual price markup</h2>
+      <pre><code>&lt;div class="price is-obfuscated"&gt;&lt;span class="price__cents"&gt;.99&lt;/span&gt;&lt;span class="price__dollars"&gt;$49&lt;/span&gt;&lt;/div&gt;</code></pre>
+      <p class="note">CSS gives the dollar amount <code>order: 1</code> and the cents <code>order: 2</code>, reversing how they appear on screen.</p>
+      <p class="note warning"><strong>Accessibility warning:</strong> This is an intentionally problematic pattern. Screen readers generally follow the DOM reading order, not the visual CSS order, so this price may be announced incorrectly. The expected visual price is <strong>$49.99</strong>. Do not use this pattern for real product prices.</p>
+    </section>
+  </main>
+
+  <script>
+    const price = document.getElementById('obfuscated-price');
+    const button = document.getElementById('toggle-order');
+    const status = document.getElementById('order-status');
+
+    document.getElementById('text-content-result').textContent = JSON.stringify(price.textContent);
+    document.getElementById('inner-text-result').textContent = JSON.stringify(price.innerText);
+
+    button.addEventListener('click', () => {
+      const active = price.classList.toggle('is-obfuscated');
+      button.textContent = active ? 'Disable CSS reordering' : 'Enable CSS reordering';
+      button.setAttribute('aria-pressed', String(active));
+      status.textContent = `CSS reordering is ${active ? 'ON' : 'OFF'}.`;
+      document.getElementById('inner-text-result').textContent = JSON.stringify(price.innerText);
+    });
+  </script>
+</body>
+</html>
